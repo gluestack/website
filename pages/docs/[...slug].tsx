@@ -73,7 +73,7 @@ export async function getStaticProps({ params }: any) {
     params.slug.length === 1 &&
     isValidVersion(params.slug[0])
   ) {
-    console.log("here");
+    console.log("params", params);
 
     isIndexSlug = true;
     indexSlugVersion = params.slug[0];

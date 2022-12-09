@@ -4,6 +4,8 @@ let filePaths: string[] = [""];
 import versions from "../../versions.json";
 const baseDirPath = process.cwd();
 import path from "path";
+import fs from "fs";
+// const { fs } = require("fs");
 // const { parse } = require("@babel/parser");
 // const traverse = require("@babel/traverse").default;
 // const generate = require("@babel/generator").default;
@@ -531,7 +533,8 @@ export const getPages = (sidebar: any, filename: string) => {
   }
 
   return {
-    showToc: pages[fileIndex].showToc === false ? false : true,
+    showToc: true,
+    // showToc: pages[fileIndex].showToc === false ? false : true,
     currentPage: pages[fileIndex],
     nextPage,
     previousPage,
