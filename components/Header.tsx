@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 export const Header = () => {
   return (
     <div className="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
@@ -13,74 +15,7 @@ export const Header = () => {
             />
           </a>
         </div>
-        <div>
-          <button
-            id="dropdownDefault"
-            data-dropdown-toggle="dropdown"
-            className="text-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:border-blue-500 border-2 dark:hover:bg-blue-200 "
-            type="button"
-          >
-            Versions
-            <svg
-              className="ml-2 w-4 h-4"
-              aria-hidden="true"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
 
-          <div
-            id="dropdown"
-            className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
-          >
-            <ul
-              className="py-1 text-sm text-gray-700 dark:text-gray-200"
-              aria-labelledby="dropdownDefault"
-            >
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Earnings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Sign out
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
         <ul className="relative text-black hidden lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">
           <li>
             <a href="https://forge.laravel.com">Forge</a>
