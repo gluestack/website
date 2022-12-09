@@ -1,0 +1,15 @@
+{
+  "sidebar": [
+    {
+      "type": "heading",
+      "title": "Introduction",
+      "pages": [
+        {
+          "id": "hello",
+          "title": "hello",
+          "showToc": false
+        }
+      ]
+    }
+  ]
+}

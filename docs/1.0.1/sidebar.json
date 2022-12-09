@@ -1,0 +1,20 @@
+{
+  "sidebar": [
+    {
+      "type": "heading",
+      "title": "Introduction",
+      "pages": [
+        {
+          "id": "cli",
+          "title": "CLI",
+          "showToc": false
+        },
+        {
+          "id": "hosting",
+          "title": "hosting",
+          "showToc": false
+        }
+      ]
+    }
+  ]
+}

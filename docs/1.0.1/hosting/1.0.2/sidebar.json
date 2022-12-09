@@ -1,0 +1,32 @@
+{
+  "sidebar": [
+    {
+      "type": "heading",
+      "title": "Introduction",
+      "pages": [
+        {
+          "id": "first",
+          "title": "first",
+          "showToc": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "title": "Introduction",
+      "pages": [
+        {
+          "type": "heading",
+          "title": "second",
+          "pages": [
+            {
+              "id": "second/first",
+              "title": "first",
+              "showToc": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
