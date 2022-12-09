@@ -20,7 +20,7 @@ export const Docs = () => {
         <div className="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
           <div className="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div className="">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a className="inline-flex items-center">
                   {/*  eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -118,7 +118,7 @@ export const Docs = () => {
               </li>
             </ul>
             <div>
-              <Link href="/docs" passHref>
+              <Link href="/docs" passHref legacyBehavior>
                 <a className="group relative inline-flex border border-red-600 focus:outline-none hidden lg:ml-4 lg:inline-flex">
                   <span className="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1">
                     Documentation
