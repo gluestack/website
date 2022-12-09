@@ -13,18 +13,19 @@ export const FirstFold = () => {
               <span className="text-red-500">you build apps</span>
             </h1>
             <p className="mt-6 max-w-xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10">
-              Power up your app development with our full stack framework - all
-              the tools you need in one place!
+              Elevate your app development with our powerful and intuitive
+              framework. Streamline your workflow and bring your ideas to life
+              with ease - all the tools you need in one place!
             </p>
             <div className="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
-              <a
+              {/* <a
                 className="group relative inline-flex border border-red-500 focus:outline-none w-full sm:w-auto"
                 href="/docs"
-              >
-                <span className="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-white text-center font-bold uppercase bg-red-500 ring-1 ring-red-500 ring-offset-1 ring-offset-red-500 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1">
-                  Coming soon
-                </span>
-              </a>
+              > */}
+              <span className="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-white text-center font-bold uppercase bg-red-500 ring-1 ring-red-500 ring-offset-1 ring-offset-red-500 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1">
+                Coming soon
+              </span>
+              {/* </a> */}
               {/* <a
                 className="group relative inline-flex border border-red-600 focus:outline-none w-full sm:w-auto"
                 href="https://laracasts.com"

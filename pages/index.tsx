@@ -12,7 +12,7 @@ export default function Home() {
         <title>GlueStack</title>
         <meta
           name="description"
-          content="Power up your app development with our full stack framework "
+          content="Power up your app development with our full stack framework"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
