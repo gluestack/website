@@ -73,6 +73,8 @@ export async function getStaticProps({ params }: any) {
     params.slug.length === 1 &&
     isValidVersion(params.slug[0])
   ) {
+    console.log("here");
+
     isIndexSlug = true;
     indexSlugVersion = params.slug[0];
   }
@@ -102,32 +104,32 @@ export async function getStaticProps({ params }: any) {
     : params.slug[0];
   // console.log("currentVersion", currentVersion);
   let sidebar = await getSidebarJson(currentVersion);
-  // console.log("sidebar", sidebar.sidebar);
-  const markdownWithMeta = await getDocBySlug(filename, currentVersion);
+  // // console.log("sidebar", sidebar.sidebar);
+  // const markdownWithMeta = await getDocBySlug(filename, currentVersion);
 
-  const { data: frontMatter, content } = matter(markdownWithMeta);
-  // console.log("frontmatter", frontMatter);
-  const filenameWithOutVersionArray = filename.split("/");
-  filenameWithOutVersionArray.splice(0, 1); // removed the version
+  // const { data: frontMatter, content } = matter(markdownWithMeta);
+  // // console.log("frontmatter", frontMatter);
+  // const filenameWithOutVersionArray = filename.split("/");
+  // filenameWithOutVersionArray.splice(0, 1); // removed the version
 
-  const { showToc, ...pages } = getPages(
-    sidebar,
-    path.join(...filenameWithOutVersionArray)
-  );
+  // const { showToc, ...pages } = getPages(
+  //   sidebar,
+  //   path.join(...filenameWithOutVersionArray)
+  // );
 
-  const mdxSource = await serialize(content);
-  // const toc = getTOCArray(markdownWithMeta);
+  // const mdxSource = await serialize(content);
+  // // const toc = getTOCArray(markdownWithMeta);
 
   return {
     props: {
-      frontMatter,
-      mdxSource,
+      // frontMatter,
+      // mdxSource,
       currentVersion,
       sidebar: sidebar.sidebar,
       // tocArray: toc,
       tocArray: [],
-      pages,
-      showToc,
+      // pages,
+      // showToc,
       youtubeEmbedd,
     },
   };

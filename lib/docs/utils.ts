@@ -1,4 +1,4 @@
-// import fs from "fs";
+import fs from "fs";
 import DirectoryTree from "directory-tree";
 let filePaths: string[] = [""];
 import versions from "../../versions.json";
