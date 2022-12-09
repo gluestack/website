@@ -78,16 +78,17 @@ export const getTOCArray = (file: string) => {
 
 export const getFilePaths = (
   tree: DirectoryTree.DirectoryTree
-  // index: number = 0,
 ): string[] | undefined => {
   if (!tree.children) {
-    if (tree.path.match(/\.mdx?$/)) {
-      filePaths = [...filePaths, tree.path];
+    let path = tree.path.split("/docs/")[1];
+    if (path.match(/\.mdx?$/)) {
+      filePaths = [...filePaths, path];
     }
   }
   if (tree.children) {
     for (let i = 0; i < tree.children.length; i++) {
-      filePaths = [...filePaths, tree.children[i].path];
+      let path = tree.children[i].path.split("/docs/")[1];
+      filePaths = [...filePaths, path];
       getFilePaths(tree.children[i]);
     }
   }
