@@ -142,16 +142,12 @@ export async function getStaticPaths() {
   let paths: any = [];
   filePaths?.map((filename) => {
     let slug = filename.split(".md")[0].split("/");
-    // let slugPath = slug.join("/");
-    console.log("slug", slug);
     paths.push({
       params: {
         slug: slug,
       },
     });
-    console.log("paths", paths);
   });
-  console.log("pathsfinal", paths);
   return {
     paths,
     fallback: false,
