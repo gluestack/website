@@ -55,8 +55,54 @@ function isValidVersion(version: string) {
   }
   return false;
 }
+
+const sidebar = {
+  sidebar: [
+    {
+      type: "heading",
+      title: "Introduction",
+      pages: [
+        {
+          id: "getting-started",
+          title: "Getting Started",
+          showToc: false,
+        },
+        {
+          id: "installation",
+          title: "Installation",
+          showToc: false,
+        },
+        {
+          id: "install-rn",
+          title: "Install RN",
+          notVisibleInSidebar: true,
+        },
+        {
+          id: "install-cra",
+          title: "Install CRA",
+          notVisibleInSidebar: true,
+        },
+        {
+          id: "install-expo",
+          title: "Installation",
+          notVisibleInSidebar: true,
+        },
+        {
+          id: "install-next",
+          title: "Installation",
+          notVisibleInSidebar: true,
+        },
+
+        {
+          id: "setup-provider",
+          title: "Setup NativeBase Provider",
+        },
+      ],
+    },
+  ],
+};
+
 export async function getStaticProps({ params }: any) {
-  console.log("params", params);
   // const baseDirPath = process.cwd();
   // check if nested path
   // parse version and id
@@ -92,8 +138,6 @@ export async function getStaticProps({ params }: any) {
   if (filename.includes(".md")) {
     filename = filename.split(".md")[0];
   }
-  let componentName = filename.split("/").pop();
-  let youtubeEmbedd = config.componentOfTheWeek[componentName ?? ""] ?? "";
 
   const currentVersion = isIndexSlug
     ? indexSlugVersion
@@ -116,19 +160,25 @@ export async function getStaticProps({ params }: any) {
   );
 
   const mdxSource = await serialize(content);
-  // const toc = getTOCArray(markdownWithMeta);
-
+  const toc = getTOCArray(markdownWithMeta);
+  console.log(
+    frontMatter,
+    mdxSource,
+    currentVersion,
+    sidebar.sidebar,
+    toc,
+    pages,
+    showToc
+  );
   return {
     props: {
       frontMatter,
       mdxSource,
       currentVersion,
       sidebar: sidebar.sidebar,
-      // tocArray: toc,
-      tocArray: [],
+      tocArray: toc,
       pages,
       showToc,
-      youtubeEmbedd,
     },
   };
 }
