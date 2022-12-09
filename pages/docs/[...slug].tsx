@@ -55,8 +55,8 @@ function isValidVersion(version: string) {
   }
   return false;
 }
-
 export async function getStaticProps({ params }: any) {
+  console.log("params", params);
   // const baseDirPath = process.cwd();
   // check if nested path
   // parse version and id
@@ -73,6 +73,8 @@ export async function getStaticProps({ params }: any) {
     params.slug.length === 1 &&
     isValidVersion(params.slug[0])
   ) {
+    console.log("params", params);
+
     isIndexSlug = true;
     indexSlugVersion = params.slug[0];
   }
@@ -92,6 +94,8 @@ export async function getStaticProps({ params }: any) {
   if (filename.includes(".md")) {
     filename = filename.split(".md")[0];
   }
+  let componentName = filename.split("/").pop();
+  let youtubeEmbedd = config.componentOfTheWeek[componentName ?? ""] ?? "";
 
   const currentVersion = isIndexSlug
     ? indexSlugVersion
@@ -100,39 +104,33 @@ export async function getStaticProps({ params }: any) {
     : params.slug[0];
   // console.log("currentVersion", currentVersion);
   let sidebar = await getSidebarJson(currentVersion);
-  // console.log("sidebar", sidebar.sidebar);
-  const markdownWithMeta = await getDocBySlug(filename, currentVersion);
+  // // console.log("sidebar", sidebar.sidebar);
+  // const markdownWithMeta = await getDocBySlug(filename, currentVersion);
 
-  const { data: frontMatter, content } = matter(markdownWithMeta);
-  // console.log("frontmatter", frontMatter);
-  const filenameWithOutVersionArray = filename.split("/");
-  filenameWithOutVersionArray.splice(0, 1); // removed the version
+  // const { data: frontMatter, content } = matter(markdownWithMeta);
+  // // console.log("frontmatter", frontMatter);
+  // const filenameWithOutVersionArray = filename.split("/");
+  // filenameWithOutVersionArray.splice(0, 1); // removed the version
 
-  const { showToc, ...pages } = getPages(
-    sidebar,
-    path.join(...filenameWithOutVersionArray)
-  );
+  // const { showToc, ...pages } = getPages(
+  //   sidebar,
+  //   path.join(...filenameWithOutVersionArray)
+  // );
 
-  const mdxSource = await serialize(content);
-  const toc = getTOCArray(markdownWithMeta);
-  console.log(
-    frontMatter,
-    mdxSource,
-    currentVersion,
-    sidebar.sidebar,
-    toc,
-    pages,
-    showToc
-  );
+  // const mdxSource = await serialize(content);
+  // // const toc = getTOCArray(markdownWithMeta);
+
   return {
     props: {
-      frontMatter,
-      mdxSource,
+      // frontMatter,
+      // mdxSource,
       currentVersion,
       sidebar: sidebar.sidebar,
-      tocArray: toc,
-      pages,
-      showToc,
+      // tocArray: toc,
+      tocArray: [],
+      // pages,
+      // showToc,
+      youtubeEmbedd,
     },
   };
 }
