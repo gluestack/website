@@ -15,7 +15,7 @@ import path from "path";
 // import Navbar from "../src/new-components/Navbar";
 // import MobileNavbar from "../src/new-components/MobileNavbar";
 
-import { AppContext } from "../src/AppContext";
+// import { AppContext } from "../src/AppContext";
 // import MainContent from "../src/new-components/MainContent";
 
 // import { MobileSidebarVersionDropdown } from "../src/new-components/MobileSidebarVersionDropdown";
@@ -23,6 +23,8 @@ import { AppContext } from "../src/AppContext";
 // import NativebaseIconLogo from "../src/new-components/NativebaseIconLogo";
 import Script from "next/script";
 import { isLatestVersionSlug } from "../lib/docs/utils";
+import MainContent from "../docs-components/MainContent";
+// import MainContent from "../src/new-components/MainContent";
 // import { isLatestVersionSlug } from "../src/utils";
 
 function Layout({
@@ -36,45 +38,58 @@ function Layout({
   showToc,
   youtubeEmbedd,
 }: any) {
-  // console.log("Sidebar", sidebar);
-  const {
-    isNavbarOpen,
-    activeSidebarItem,
-    setActiveVersion,
-    setActiveSidebarItem,
-    activeVersion,
-  } = useContext(AppContext);
+  console.log(
+    "Sidebar",
+    content,
+    "DGDHH",
+    typeof content,
+    currentVersion,
+    tocArray,
+    sidebar,
+    versionList,
+    frontMatter,
+    pages,
+    showToc,
+    youtubeEmbedd
+  );
+  // const {
+  //   isNavbarOpen,
+  //   activeSidebarItem,
+  //   setActiveVersion,
+  //   setActiveSidebarItem,
+  //   activeVersion,
+  // } = useContext(AppContext);
 
   // const bgColor = useColorModeValue(
   //   useToken("colors", "backgroundLight"),
   //   useToken("colors", "backgroundDark")
   // );
   const [isOpenSidebar, setIsOpenSidebar] = React.useState(false);
-  useEffect(() => {
-    const currentPathArray = window?.location.href.split("/");
+  // useEffect(() => {
+  //   const currentPathArray = window?.location.href.split("/");
 
-    let pathArray: string[] = [];
-    currentPathArray.map((val, ind) => {
-      ind < 3 ? null : pathArray.push(val);
-    });
+  //   let pathArray: string[] = [];
+  //   currentPathArray.map((val, ind) => {
+  //     ind < 3 ? null : pathArray.push(val);
+  //   });
 
-    let actVersion = currentVersion;
-    if ([...versionList, "next"].includes(pathArray[0])) {
-      actVersion = pathArray[0];
-    } else {
-      actVersion = "";
-    }
-    setActiveVersion(actVersion);
+  //   let actVersion = currentVersion;
+  //   if ([...versionList, "next"].includes(pathArray[0])) {
+  //     actVersion = pathArray[0];
+  //   } else {
+  //     actVersion = "";
+  //   }
+  //   setActiveVersion(actVersion);
 
-    if (pathArray[0] === actVersion) {
-      pathArray.splice(0, 1);
-      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
-    } else {
-      setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
-    }
-    // @ts-ignore
-    document.getElementById("scrollview-id").scrollTop = 0;
-  }, [content]);
+  //   if (pathArray[0] === actVersion) {
+  //     pathArray.splice(0, 1);
+  //     setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
+  //   } else {
+  //     setActiveSidebarItem(path.join(...pathArray).split("#")[0]);
+  //   }
+  //   // @ts-ignore
+  //   // document.getElementById("scrollview-id").scrollTop = 0;
+  // }, [content]);
 
   // useEffect(() => {
   //   document.getElementsByTagName("body")[0].style.backgroundColor = bgColor;
@@ -90,23 +105,25 @@ function Layout({
   //   }
   // }, [isLargeScreen]);
 
-  const title = `${
-    frontMatter && frontMatter.title
-      ? frontMatter.title +
-        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
-        " | NativeBase | Universal Components for React and React Native"
-      : pages?.currentPage?.title +
-        (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
-        " | NativeBase | Universal Components for React and React Native"
-  }`;
+  // const title = `${
+  //   frontMatter && frontMatter.title
+  //     ? frontMatter.title +
+  //       (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
+  //       " | NativeBase | Universal Components for React and React Native"
+  //     : pages?.currentPage?.title +
+  //       (!isLatestVersionSlug(activeVersion) ? ` | ${activeVersion}` : "") +
+  //       " | NativeBase | Universal Components for React and React Native"
+  // }`;
+  const title = "hello vidhi kataria title";
 
-  const pageTitle = `${
-    frontMatter && frontMatter.title
-      ? frontMatter.title + " | NativeBase "
-      : pages?.currentPage?.title + " | NativeBase "
-  }`;
+  // const pageTitle = `${
+  //   frontMatter && frontMatter.title
+  //     ? frontMatter.title + " | NativeBase "
+  //     : pages?.currentPage?.title + " | NativeBase "
+  // }`;
+  const pageTitle = "hello vidhi kataria page title";
 
-  let href = "https://docs.nativebase.io/" + pages.currentPage.id;
+  // let href = "https://docs.nativebase.io/" + pages.currentPage.id;
 
   return (
     <>
@@ -141,10 +158,10 @@ function Layout({
           content="NativeBase 3.0 lets you build consistently across android, iOS & web. It is inspired by the Styled System and is accessible, highly themeable, and responsive."
         />
         <link rel="icon" href="/img/nativebaselogo.svg" />
-        <link
+        {/* <link
           rel="canonical"
           href={"https://docs.nativebase.io/" + pages.currentPage.id}
-        />
+        /> */}
       </Head>
       <Script async src="https://snack.expo.dev/embed.js"></Script>
       <Script src="/js/gtag.js"></Script>
@@ -269,7 +286,16 @@ function Layout({
           </Text>
         </Link>
       </Box> */}
-      <div>hello</div>
+      <div>
+        <MainContent
+          pages={pages}
+          frontMatter={frontMatter}
+          content={content}
+          tocArray={tocArray}
+          showToc={showToc}
+          youtubeEmbedd={youtubeEmbedd}
+        />
+      </div>
     </>
   );
 }

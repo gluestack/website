@@ -56,52 +56,6 @@ function isValidVersion(version: string) {
   return false;
 }
 
-const sidebar = {
-  sidebar: [
-    {
-      type: "heading",
-      title: "Introduction",
-      pages: [
-        {
-          id: "getting-started",
-          title: "Getting Started",
-          showToc: false,
-        },
-        {
-          id: "installation",
-          title: "Installation",
-          showToc: false,
-        },
-        {
-          id: "install-rn",
-          title: "Install RN",
-          notVisibleInSidebar: true,
-        },
-        {
-          id: "install-cra",
-          title: "Install CRA",
-          notVisibleInSidebar: true,
-        },
-        {
-          id: "install-expo",
-          title: "Installation",
-          notVisibleInSidebar: true,
-        },
-        {
-          id: "install-next",
-          title: "Installation",
-          notVisibleInSidebar: true,
-        },
-
-        {
-          id: "setup-provider",
-          title: "Setup NativeBase Provider",
-        },
-      ],
-    },
-  ],
-};
-
 export async function getStaticProps({ params }: any) {
   // const baseDirPath = process.cwd();
   // check if nested path

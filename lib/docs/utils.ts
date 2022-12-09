@@ -112,7 +112,7 @@ export const getFileExtension = async (slug: string) => {
       return files[i].split(".")[1];
     }
   }
-  return "file_not_found";
+  return "mdx";
 };
 
 const getAdmonitionTag = (str: string) => {
@@ -535,9 +535,9 @@ export const getPages = (sidebar: any, filename: string) => {
   return {
     showToc: true,
     // showToc: pages[fileIndex].showToc === false ? false : true,
-    currentPage: pages[fileIndex],
+    // currentPage: pages[fileIndex],
     nextPage,
-    previousPage,
+    // previousPage,
   };
 };
 
