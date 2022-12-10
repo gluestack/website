@@ -14,12 +14,12 @@ function Button({
   return (
     <>
       <Link href={`${link}`} prefetch={false} legacyBehavior>
-        <a className="border border-primary group focus:outline-none lg:ml-4 lg:inline-flex">
+        <a className="border border-primary-100 group focus:outline-none lg:ml-4 lg:inline-flex">
           <span
             className={`btn${
               isSecondary
-                ? " text-white  bg-primary ring-1 ring-primary  ring-offset-primary "
-                : " text-primary  bg-white ring-1 ring-primary "
+                ? " text-white  bg-primary ring-1 ring-primary-100  ring-offset-primary-100 "
+                : " text-primary  bg-white ring-1 ring-primary-100 "
             } ${
               sm
                 ? "text-sm px-2 py-2"

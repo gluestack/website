@@ -1,11 +1,11 @@
 import React, { Children, useState } from "react";
 import Link from "next/link";
-const Linktag = ({ href, text, children,isDropdown }: any) => {
+const Linktag = ({ href, text, children,isDropdown,style }: any) => {
   const [open, setOpen] = useState(false);
   return (
    <>
    {!isDropdown ?  <Link href={href} legacyBehavior>
-   <a className={`hover:text-primary text-base`}>
+   <a className={`hover:text-primary text-base ${style}`}>
      {text}
      {children}
    </a>
@@ -14,7 +14,7 @@ const Linktag = ({ href, text, children,isDropdown }: any) => {
 <div>
 
 <div >
-<button onClick={()=>setOpen(!open)} className={`hover:text-primary text-md`}>
+<button onClick={()=>setOpen(!open)} className={`hover:text-primary text-md ${style}`}>
   {text}
   {children}
 </button>

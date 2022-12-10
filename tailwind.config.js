@@ -27,8 +27,22 @@ module.exports = {
       colors: {
         textColors: "#565454",
 
-        primary: "#F9322C",
+        primary: {
+          DEFAULT: "#F9322C",
+          100: "#EB4432",
+        },
+
       },
+      fontWeight: {
+        thin: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        bolder: 900,
+      }
     },
   },
   plugins: [

@@ -12,7 +12,7 @@ export default function Home() {
       <Sponsors />
 
       {/* //////TESTING//////// */}
-      <Button isSecondary>Documentation</Button>
+      {/* <Button isSecondary>Documentation</Button>
       <Button sm >Documentation</Button>
       <Button lg >Documentation</Button>
       <Button sm isSecondary >Get Started</Button>
@@ -20,10 +20,11 @@ export default function Home() {
       <Button >Documentation</Button>
 
 
-      <Linktag isDropdown >Link</Linktag>
+      <Linktag isDropdown style="font-thin" >Link</Linktag>
+      <Linktag href='./' >Link</Linktag>
 
       <Heading title={undefined} isLight={undefined} color={undefined} priority={1} >Heading</Heading>
-      <Text size="lg">Text</Text>
+      <Text size="lg">Text</Text> */}
     </>
   );
 }
