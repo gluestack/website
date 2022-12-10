@@ -16,7 +16,7 @@ const Linktag = ({ href, text, children, isDropdown, style }: any) => {
         </Link>
       ) : (
         <div>
-          <div className="flex ">
+          <div className="flex cursor-pointer">
             <a
               onClick={() => setOpen(!open)}
               className={`hover:text-primary text-md ${style}`}
@@ -44,9 +44,7 @@ const Linktag = ({ href, text, children, isDropdown, style }: any) => {
             </span>
           </div>
           {open && (
-            <Modal isVisible={showModel} onClose={() => setModel(false)}>
-              <DropdownList/>
-            </Modal>
+            <DropdownList/>
           )}
         </div>
       )}

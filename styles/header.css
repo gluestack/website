@@ -1,5 +1,5 @@
 .nav{
-    @apply fixed top-0 left-0 z-20 w-full px-2 py-4 bg-white border-b sm:px-4
+    @apply fixed top-0 left-0 z-20 w-full px-2 py-4 bg-white sm:px-4
 }
 .inner-nav{
     @apply container flex flex-wrap items-center justify-between mx-auto

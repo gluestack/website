@@ -31,6 +31,7 @@ module.exports = {
           DEFAULT: "#F9322C",
           100: "#EB4432",
         },
+        secondary:"#171923",
 
       },
       fontWeight: {
