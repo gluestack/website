@@ -32,15 +32,16 @@ export const Header = () => {
             <a href="https://vapor.laravel.com"> Ecosystem</a>
           </li>
         </ul> */}
-        {/* <div>
-          <a
-            className="group relative inline-flex border border-red-600 focus:outline-none hidden lg:ml-4 lg:inline-flex"
-            href="/docs"
-          >
-            <span className="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"></span>
-            <span>(Coming Soon)</span>
-          </a>
-        </div> */}
+        <div>
+          <Link href="/docs" legacyBehavior>
+            <a className="group relative inline-flex border border-red-600 focus:outline-none hidden lg:ml-4 lg:inline-flex">
+              <span className="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1">
+                Docs
+              </span>
+              {/* <span>(Coming Soon)</span> */}
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
   );
