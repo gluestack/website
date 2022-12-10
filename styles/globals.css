@@ -26,5 +26,7 @@
 }
 
 
-@import './button.css'
+@import './button.css';
+@import './modal.css';
+@import './header.css'
 

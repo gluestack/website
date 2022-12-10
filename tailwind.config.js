@@ -44,6 +44,28 @@ module.exports = {
         bolder: 900,
       }
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '999px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
   },
   plugins: [
     function ({ addComponents }) {
@@ -52,8 +74,8 @@ module.exports = {
           maxWidth: "100%",
           "@screen sm": {
             maxWidth: "640px",
-            paddingLeft: "15px",
-            paddingRight: "15px",
+            paddingLeft: "20px",
+            paddingRight: "20px",
           },
           "@screen md": {
             maxWidth: "768px",

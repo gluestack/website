@@ -1,0 +1,33 @@
+.nav{
+    @apply fixed top-0 left-0 z-20 w-full px-2 py-4 bg-white border-b sm:px-4
+}
+.inner-nav{
+    @apply container flex flex-wrap items-center justify-between mx-auto
+}
+.hide-btn{
+    @apply relative inline-flex items-center justify-center w-10 h-10 p-2 ml-2 text-gray-700 lg:hidden
+}
+.nav-list{
+    @apply w-full md:flex md:items-center md:w-auto transition-all delay-100 duration-500 overflow-hidden
+}
+.nav-list-ul{
+    @apply flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium
+}
+.item{
+    @apply py-2 lg:py-0
+}
+.item-btn{
+    @apply py-2  text-center
+}
+
+/* //Dropdown List// */
+.card-list{
+    @apply relative flex items-center justify-center w-12 h-12 overflow-hidden rounded-lg shrink-0 
+}
+.card-image{
+    @apply absolute inset-0 w-full h-full bg-gradient-to-b from-[#df575733] to-[#806ae533]
+}
+
+.list_grid{
+    @apply grid gap-6 sm:grid-cols-2 md:grid-cols-3
+}
