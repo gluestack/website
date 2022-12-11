@@ -1,0 +1,9 @@
+.para{
+    @apply max-w-xl mx-auto mt-6 leading-relaxed text-center text-gray-700 text-md md:mt-8 md:text-lg lg:mt-10
+}
+.hero-btn{
+    @apply flex flex-col items-center justify-center  gap-5 mx-auto mt-6 sm:flex-row md:mt-8 lg:mt-10
+}
+.hero-gradient-color{
+    @apply hidden absolute bg-gradient-to-r from-primary  opacity-[.18] pointer-events-none lg:inline-flex left-[-20%] -top-24 w-[640px] h-[640px]
+}

@@ -1,30 +1,23 @@
-import Button from "../components/Button";
-import { FirstFold } from "../components/FirstFold";
-import Heading from "../elements/Heading";
-import Linktag from "../elements/Linktag";
-import Text from '../elements/Text'
+import SubBanner from "../components/SubBanner";
+import HeroSection from "../section/HeroSection";
+import Services from "../section/Services";
 import Sponsors from "../section/Sponsors";
+import SubSection from "../section/SubSection";
+import phpcodeimage from "../public/phpcode.png";
 
 export default function Home() {
   return (
     <>
-      <FirstFold />
+      <HeroSection />
       <Sponsors />
-
-      {/* //////TESTING//////// */}
-      {/* <Button isSecondary>Documentation</Button>
-      <Button sm >Documentation</Button>
-      <Button lg >Documentation</Button>
-      <Button sm isSecondary >Get Started</Button>
-      <Button sm isSecondary >Documentation</Button>
-      <Button >Documentation</Button>
-
-
-      <Linktag isDropdown style="font-thin" >Link</Linktag>
-      <Linktag href='./' >Link</Linktag>
-
-      <Heading title={undefined} isLight={undefined} color={undefined} priority={1} >Heading</Heading>
-      <Text size="lg">Text</Text> */}
+      <SubSection />
+      <Services />
+      <SubBanner
+        heading="Move fast...with confidence."
+        desc="Laravel is committed to delivering the best testing experience you can imagine. No more brittle tests that are a nightmare to maintain. Beautiful testing APIs, database seeding, and painless browser testing let you ship with confidence."
+        btntext="LEARN MORE"
+        src={phpcodeimage}
+      />
     </>
   );
 }

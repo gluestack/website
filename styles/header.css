@@ -2,7 +2,7 @@
     @apply fixed top-0 left-0 z-20 w-full px-2 py-4 bg-white sm:px-4
 }
 .inner-nav{
-    @apply container flex flex-wrap items-center justify-between mx-auto
+    @apply container flex flex-wrap items-center justify-between mx-auto 
 }
 .hide-btn{
     @apply relative inline-flex items-center justify-center w-10 h-10 p-2 ml-2 text-gray-700 lg:hidden
@@ -19,7 +19,9 @@
 .item-btn{
     @apply py-2  text-center
 }
-
+.linkstyle{
+    @apply font-thin p-4 mt-4 rounded
+}
 /* //Dropdown List// */
 .card-list{
     @apply relative flex items-center justify-center w-12 h-12 overflow-hidden rounded-lg shrink-0 
@@ -30,4 +32,8 @@
 
 .list_grid{
     @apply grid gap-6 sm:grid-cols-2 md:grid-cols-3
+}
+
+.dropdown-div{
+    @apply z-50 p-2 px-2 bg-white rounded-md drop-shadow-2xl lg:px-6
 }

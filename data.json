@@ -1,0 +1,47 @@
+{
+    "ecosystem":[
+        {
+            "id":1,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":2,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":3,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":4,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":5,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"/public/ecosystem/breeze.min.svg"
+
+        }
+    ],
+    "service":[
+        {
+            "id":1,
+            "title":"Database",
+            "desc":"Laravel's Eloquent ORM provides best-in-class database abstraction without the headaches. Query and update your data without breaking a sweat. Eloquent pairs perfectly with MySQL, Postgres, SQLite, and SQL Server",
+            "image":"/public/icon/database.svg"
+        }
+    ]
+}

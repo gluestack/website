@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Button from "../Button";
 import Menu from "./Menu";
@@ -9,10 +9,16 @@ import SearchBar from "./SearchBar";
 export const Header = () => {
   const [expand, setExpand] = useState(false);
   const [showModel, setModel] = useState(false);
+
+  useEffect(() => {
+    if (expand) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "visible";
+  }, [expand]);
+
   return (
     <>
-      <nav className={`nav`}>
-        <div className="inner-nav">
+      <nav className={`py-4`}>
+        <div className="py-4 inner-nav">
           <Logo />
           <div className="flex md:order-2">
             <div
@@ -34,7 +40,11 @@ export const Header = () => {
                 ></path>
               </svg>
             </div>
-            <Modal height="3/6" isVisible={showModel} onClose={() => setModel(false)}>
+            <Modal
+              height="3/6"
+              isVisible={showModel}
+              onClose={() => setModel(false)}
+            >
               <SearchBar />
             </Modal>
             <div className="hidden lg:block">

@@ -7,10 +7,10 @@ function Text({ text, size, isLight, color, font, style,children }: any) {
         className={`${
           size == "xs"
             ? `lg:text-xl text-xl`
-            : size == "vsm"
-            ? "md:text-vsm text-xs"
-            : size == "2xs"
-            ? "  text-xl "
+            : size == "md"
+            ? "text-md"
+            : size == "xl"
+            ? "  text-xxl "
             : size == "xs"
             ? "text-xs "
             : size == "sm"

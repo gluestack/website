@@ -26,8 +26,8 @@ function Button({
                 : lg
                 ? "px-8 py-2"
                 : xl
-                ? "px-[80px] py-2 md:px-[50px]  font-bold"
-                : "px-4 py-2 text-sm"
+                ? "px-[70px] py-2 md:px-[50px]  font-bold"
+                : "lg:px-4 lg:py-2 px-12 py-2  text-sm"
             }
             `}
           >

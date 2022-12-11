@@ -8,12 +8,12 @@ function Menu({ expand }: any) {
       <div className={`${expand ? "h-[50em]" : ` h-0 md:h-auto`}  nav-list`}>
         <ul className="nav-list-ul">
           <li className="item">
-            <Linktag href="" style="font-thin p-4 mt-4 rounded">
+            <Linktag href="/car" style="linkstyle">
               Forge
             </Linktag>
           </li>
           <li className="item">
-            <Linktag href="" style="font-thin p-4 mt-4 rounded">
+            <Linktag href="" style="linkstyle">
               Vapor
             </Linktag>
           </li>
@@ -23,12 +23,12 @@ function Menu({ expand }: any) {
             </Linktag>
           </li>
           <li className="item">
-            <Linktag href="" style="font-thin p-4 mt-4 rounded">
+            <Linktag href="" style="linkstyle">
               News
             </Linktag>
           </li>
           <li className="item">
-            <Linktag href="" style="font-thin p-4 mt-4 rounded">
+            <Linktag href="" style="linkstyle">
               Partners
             </Linktag>
           </li>

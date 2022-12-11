@@ -17,7 +17,7 @@ module.exports = {
         md: "1.125rem", // 18px
         lg: "1.25rem", // 20px
         xl: ["2.5rem", "4rem"], //40
-        xxl: "1.5rem", // 24px
+        xxl: "1.625rem", // 26px
         "3xl": "1.875rem", // 30px
         "4xl": "2.25rem", // 36px
         "5xl": "3rem", // 48px
@@ -25,6 +25,7 @@ module.exports = {
       },
 
       colors: {
+
         textColors: "#565454",
 
         primary: {
@@ -49,8 +50,8 @@ module.exports = {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '999px',
-      // => @media (min-width: 768px) { ... }
+      'md': '998px',
+      // => @media (min-width: 998px) { ... }
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
