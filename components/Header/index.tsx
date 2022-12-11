@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Logo from "./Logo";
 import Button from "../Button";
 import Menu from "./Menu";
 import Hamburger from "./Hamburger";
-import Modal from "../modal/Modal";
+const Modal = dynamic(() => import("../modal/Modal"));
 import SearchBar from "./SearchBar";
 
 export const Header = () => {

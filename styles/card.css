@@ -1,0 +1,10 @@
+.card{
+    @apply flex items-start px-4 pt-4 pb-6 border border-gray-200 border-opacity-60
+}
+.card_image{
+    @apply flex items-center justify-center w-12 h-12 overflow-hidden rounded-lg shrink-0
+}
+
+.blockquote{
+    @apply w-full p-5 bg-white border border-gray-200 break-inside-avoid-column
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../components/Button";
-import Heading from "../elements/Heading";
-import Text from "../elements/Text";
+import Button from "../../components/Button";
+import Heading from "../../elements/Heading";
+import Text from "../../elements/Text";
 
 function HeroSection() {
   return (
@@ -9,8 +9,8 @@ function HeroSection() {
       <div className="container mx-auto">
         <section className="py-28">
           <span className="hero-gradient-color"></span>
-          <div className="max-w-screen-xl px-5 mx-auto ">
-            <div className="absolute -left-2 -translate-y-12 pointer-events-none md:left-[12%]">
+          <div className="px-5 ">
+            <div className="absolute left-2 -translate-y-12 pointer-events-none md:left-[12%]">
               <svg
                 x-data="{
         initializeAnimation: false,

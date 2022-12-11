@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Heading from "../elements/Heading";
-import databaseimg from "../public/icon/database.svg";
-import queuesimg from "../public/icon/queues.svg";
-import websocket from "../public/icon/websocket.svg";
-import auth from "../public/icon/auth.svg";
+import Heading from "../../elements/Heading";
+import databaseimg from "public/icon/database.svg";
+import queuesimg from "/public/icon/queues.svg";
+import websocket from "/public/icon/websocket.svg";
+import auth from "/public/icon/auth.svg";
 
 function Services() {
   return (

@@ -14,7 +14,7 @@ function Button({
   return (
     <>
       <Link href={`${link}`} prefetch={false} legacyBehavior>
-        <a className="border border-primary-100 group focus:outline-none lg:ml-4 lg:inline-flex">
+        <a className="btn_outline group">
           <span
             className={`btn${
               isSecondary

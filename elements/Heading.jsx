@@ -7,7 +7,7 @@ const Heading = ({ title, isLight, color, priority,children }) => {
       <DynamicTag
         className={`${
           priority == 1
-            ? "lg:text-6xl text-4xl "
+            ? "lg:text-6xl text-4xl font-extrabold "
             : priority == 2
             ? "text-4xl md:text-5xl "
             : priority == 3

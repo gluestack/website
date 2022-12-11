@@ -15,7 +15,7 @@ function DropdownList() {
               <ul className=" list_grid">
                 {data.ecosystem.map((ele: any) => {
                   return (
-                    <li>
+                    <li key={ele.id}>
                       <a href="" className="flex">
                         <div className="card-list">
                           <span className="card-image"></span>

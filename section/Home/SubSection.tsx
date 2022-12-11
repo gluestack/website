@@ -1,7 +1,7 @@
 import React from "react";
-import SubBanner from "../components/SubBanner";
-import vscode from "../public/vscode.png";
-import stepsimg from '../public/stepsimg.png'
+import SubBanner from "../../components/SubBanner";
+import vscode from "/public/vscode.png";
+import stepsimg from '/public/stepsimg.png'
 
 function SubSection() {
   return (

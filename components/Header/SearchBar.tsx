@@ -3,14 +3,14 @@ import React from "react";
 function SearchBar() {
   return (
     <>
-      <form className="relative w-full max-w-2xl px-8 pt-8 pb-16 bg-dark-700">
+      <form className="form bg-dark-700">
         <label
           htmlFor="default-search"
-          className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          className="lable"
         >
           Search
         </label>
-        <div className="relative w-full overflow-hidden transition-all duration-500 border-b border-gray-600 border-opacity-50 focus-within:border-gray-600">
+        <div className="search_div">
           <svg
             className="absolute inset-y-0 left-0 w-5 h-5 mt-1 text-gray-500 pointer-events-none"
             fill="none"
@@ -27,7 +27,7 @@ function SearchBar() {
           <input
             type="search"
             id="default-search"
-            className="flex-1 w-full py-1 pl-8 pr-4 tracking-wide text-gray-400 placeholder-gray-500 bg-transparent border-b focus:outline-none"
+            className="search"
             placeholder="Search Mockups, Logos..."
             required
           />

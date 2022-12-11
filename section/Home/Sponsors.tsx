@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import img2 from "../public/images/disney.png";
-import img3 from "../public/images/st-jude.png";
-import img4 from "../public/images/twitch.png";
+import img2 from "/public/images/disney.png";
+import img3 from "/public/images/st-jude.png";
+import img4 from "/public/images/twitch.png";
 
 function Sponsors() {
   return (

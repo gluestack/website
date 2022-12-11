@@ -9,7 +9,8 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
   return (
     <>
       <div className="container mx-auto">
-        <div className="py-20 lg:py-28">
+        <div className="py-12  lg:py-28">
+        {/* <span className="hidden absolute bg-gradient-to-l from-primary opacity-[.15] pointer-events-none lg:inline-flex right-[-20%] top-0 w-[640px] h-[640px]"></span> */}
           <div
             className={`flex flex-wrap  ${
               isright
@@ -29,7 +30,7 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
                     {heading}
                   </Heading>
                   <Text style="leading-relaxed">{desc}</Text>
-                  <div className="py-4">
+                  <div className="py-8">
                     <Button lg>{btntext}</Button>
                   </div>
                 </div>
