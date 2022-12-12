@@ -4,6 +4,7 @@ import vscode from "../public/images/vscode.png";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import Button from "./Button";
+import Description from "../elements/Description";
 
 function SubBanner({ heading, desc, src, btntext, isright }: any) {
   return (
@@ -28,7 +29,7 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
                   >
                     {heading}
                   </Heading>
-                  <Text style="leading-relaxed">{desc}</Text>
+                  <Description>{desc}</Description>
                   <div className="py-8">
                     <Button lg>{btntext}</Button>
                   </div>

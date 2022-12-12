@@ -32,8 +32,8 @@ function Menu({ expand }: any) {
               Contact
             </Linktag>
           </li>
-          <li>
-            <div className={`${expand ? "block" : "hidden"} item-btn`}>
+          <li  className={`${expand ? "block" : "hidden"} item-btn`}>
+            <div>
               <Button xl>DOCUMENTATION</Button>
             </div>
           </li>

@@ -8,19 +8,19 @@
     @apply relative inline-flex items-center justify-center w-10 h-10 p-2 ml-2 text-gray-700 lg:hidden
 }
 .nav-list{
-    @apply w-full md:flex md:items-center md:w-auto transition-all delay-100 duration-500 overflow-hidden
+    @apply w-full md:flex md:items-center md:w-auto transition-all delay-100 duration-500 overflow-hidden justify-center
 }
 .nav-list-ul{
     @apply flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium
 }
 .item{
-    @apply py-2 lg:py-0
+    @apply py-2 lg:py-0 px-2
 }
 .item-btn{
     @apply py-2  text-center
 }
 .linkstyle{
-    @apply font-thin p-4 mt-4 rounded
+    @apply text-secondary font-normal text-md
 }
 /* //Dropdown List// */
 .card-list{

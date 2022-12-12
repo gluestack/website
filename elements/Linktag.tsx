@@ -9,7 +9,7 @@ const Linktag = ({ href, text, children, isDropdown, style }: any) => {
     <>
       {!isDropdown ? (
         <Link href={href} legacyBehavior>
-          <a className={`hover:text-primary text-base ${style}`}>
+          <a className={`hover:text-primary  ${style}`}>
             {text}
             {children}
           </a>
