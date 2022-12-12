@@ -3,6 +3,7 @@ import React from "react";
 const Card = dynamic(() => import("../../components/Card"));
 import data from "../../data.json";
 import Heading from "../../elements/Heading";
+import Description from "../../elements/Description";
 
 function Solution() {
   return (
@@ -17,7 +18,7 @@ function Solution() {
           >
             Enterprise scale without the enterprise complexity.
           </Heading>
-          <p className="py-6 leading-relaxed text-gray-700">
+          <Description>
             Our vast library of meticulously maintained packages means you're
             ready for anything. Let{" "}
             <a className="underline" href="/docs/octane">
@@ -29,7 +30,7 @@ function Solution() {
               Laravel Vapor
             </a>
             , our serverless deployment platform powered by AWS Lambda.
-          </p>
+          </Description>
         </div>
         <ul className="sol_grid md:grid-cols-2">
           {data.largeCards.map((ele: any) => (

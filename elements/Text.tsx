@@ -26,7 +26,6 @@ function Text({ text, size, isLight, color, font, style,children }: any) {
         isLight ? "text-white" : `text-${color}` ? `font-${font}` : ``
       } `}
       >
-        {text}
         {children}
       </p>
     </>
