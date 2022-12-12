@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import vscode from "../public/vscode.png";
+import vscode from "../public/images/vscode.png";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import Button from "./Button";

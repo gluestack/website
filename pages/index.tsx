@@ -3,7 +3,7 @@ import HeroSection from "../section/Home/HeroSection";
 import Services from "../section/Home/Services";
 import Sponsors from "../section/Home/Sponsors";
 import SubSection from "../section/Home/SubSection";
-import phpcodeimage from "../public/phpcode.png";
+import phpcodeimage from "../public/images/phpcode.png";
 import Solution from "../section/Home/Solution";
 import Testimonial from "../section/Home/Testimonial";
 import Community from "../section/Home/Community";
