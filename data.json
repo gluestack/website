@@ -1,0 +1,194 @@
+{
+    "ecosystem":[
+        {
+            "id":1,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":2,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":3,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":4,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"./public/ecosystem/breeze.min.svg"
+
+        },
+        {
+            "id":5,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "img":"/public/ecosystem/breeze.min.svg"
+
+        }
+    ],
+    "service":[
+        {
+            "id":1,
+            "title":"Database",
+            "desc":"Laravel's Eloquent ORM provides best-in-class database abstraction without the headaches. Query and update your data without breaking a sweat. Eloquent pairs perfectly with MySQL, Postgres, SQLite, and SQL Server",
+            "image":"/public/icon/database.svg"
+        }
+    ],
+    "largeCards":[
+        {
+            "id":1,
+            "title":"Forge",
+            "desc":"Server management doesn't have to be a nightmare. Provision and deploy unlimited PHP applications on DigitalOcean, Linode, Vultr, Amazon, Hetzner and more.",
+            "image":"/public/ecosystem/forge.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":2,
+            "title":"Vapor",
+            "desc":"Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS. Launch your Laravel infrastructure on Vapor and fall in love with the scalable simplicity of serverless.",
+            "image":"/public/ecosystem/vapor.min.svg",
+            "color":"green-900"
+        }
+    ],
+    "smallCards":[
+        {
+            "id":1,
+            "title":"Breeze",
+            "desc":"Lightweight starter kit scaffolding for new applications with Blade or Inertia.",
+            "image":"/public/ecosystem/breeze.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":2,
+            "title":"Casher",
+            "desc":"Take the pain out of managing subscriptions on Stripe or Paddle.",
+            "image":"/public/ecosystem/cashier.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":3,
+            "title":"Dusk",
+            "desc":"Automated browser testing to ship your application with confidence.",
+            "image":"/public/ecosystem/dusk.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":4,
+            "title":"Echo",
+            "desc":"Listen for WebSocket events broadcast by your Laravel application.",
+            "image":"/public/ecosystem/echo.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":3,
+            "title":"Dusk",
+            "desc":"Automated browser testing to ship your application with confidence.",
+            "image":"/public/ecosystem/dusk.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":4,
+            "title":"Echo",
+            "desc":"Listen for WebSocket events broadcast by your Laravel application.",
+            "image":"/public/ecosystem/echo.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":3,
+            "title":"Dusk",
+            "desc":"Automated browser testing to ship your application with confidence.",
+            "image":"/public/ecosystem/dusk.min.svg",
+            "color":"green-900"
+        },
+        {
+            "id":4,
+            "title":"Echo",
+            "desc":"Listen for WebSocket events broadcast by your Laravel application.",
+            "image":"/public/ecosystem/echo.min.svg",
+            "color":"green-900"
+        }
+        
+    ],
+    "testimonials":[
+        {
+            "id":1,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":2,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":3,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":4,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":2,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":3,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":4,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":2,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":3,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        },
+        {
+            "id":4,
+            "title":"Ive been using Laravel for nearly a decade and never been tempted to switch to anything else.",
+            "name":"Adam Wathan",
+            "creator":"Tailwind CSS",
+            "image":"/public/ecosystem/breeze.min.svg"
+        }
+    ]
+}

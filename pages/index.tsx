@@ -1,26 +1,35 @@
-import Head from "next/head";
-import Image from "next/image";
-import { FirstFold } from "../components/FirstFold";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import styles from "../styles/Home.module.css";
+import SubBanner from "../components/SubBanner";
+import HeroSection from "../section/Home/HeroSection";
+import Services from "../section/Home/Services";
+import Sponsors from "../section/Home/Sponsors";
+import SubSection from "../section/Home/SubSection";
+import phpcodeimage from "../public/phpcode.png";
+import Solution from "../section/Home/Solution";
+import Testimonial from "../section/Home/Testimonial";
+import Community from "../section/Home/Community";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>GlueStack</title>
-        <meta
-          name="description"
-          content="Power up your app development with our full stack framework"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <Header />
-        <FirstFold />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <HeroSection />
+      <Sponsors />
+      <SubSection />
+      <Services />
+      <SubBanner
+        heading="Move fast...with confidence."
+        desc="Laravel is committed to delivering the best testing experience you can imagine. No more brittle tests that are a nightmare to maintain. Beautiful testing APIs, database seeding, and painless browser testing let you ship with confidence."
+        btntext="LEARN MORE"
+        src={phpcodeimage}
+      />
+      <Solution />
+      <Testimonial/>
+      <Community/>
+      <SubBanner
+        heading="Hire a partner for your next project"
+        desc="Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project."
+        btntext="BROWSE PARTNERS"
+        src={phpcodeimage}
+      />
+    </>
   );
 }

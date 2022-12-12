@@ -1,0 +1,12 @@
+.form{
+    @apply px-8 pt-8 pb-16 
+}
+.search_div{
+    @apply relative w-full overflow-hidden transition-all duration-500 border-b border-gray-600 border-opacity-50 focus-within:border-gray-600
+}
+.search{
+    @apply flex-1 w-full py-1 pl-8 pr-4 tracking-wide text-gray-400 placeholder-gray-500 bg-transparent border-b focus:outline-none
+}
+.lable{
+    @apply mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white
+}
