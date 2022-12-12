@@ -10,7 +10,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="relative">
+    <div className="relative max-w-[1800px] m-auto">
       <div className="absolute top-0 bottom-0">
                   <Image src={banner} alt={"vscode"} />
                   </div>
