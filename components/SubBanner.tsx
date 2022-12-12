@@ -10,9 +10,8 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
     <>
       <div className="container mx-auto">
         <div className="py-12 lg:py-28">
-        {/* <span className="hidden absolute bg-gradient-to-l from-primary opacity-[.15] pointer-events-none lg:inline-flex right-[-20%] top-0 w-[640px] h-[640px]"></span> */}
           <div
-            className={`flex flex-wrap  ${
+            className={`flex flex-wrap items-center ${
               isright
                 ? "flex-col-reverse lg:flex-row"
                 : "flex-col-reverse  lg:flex-row-reverse"

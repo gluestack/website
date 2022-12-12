@@ -26,11 +26,11 @@ module.exports = {
 
       colors: {
 
-        textColor: "#565454",
 
         primary: {
-          DEFAULT: "#0000FF",
-          100: "#0000FF",
+          DEFAULT: "#5551FF",
+          600: "#4440E9",
+          700:'#302CBB',
         },
         secondary:"#171923",
 

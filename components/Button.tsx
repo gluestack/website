@@ -16,10 +16,10 @@ function Button({
       <Link href={`${link}`} prefetch={false} legacyBehavior>
         <a className="btn_outline group">
           <span
-            className={`btn${
+            className={`btn ${
               isSecondary
-                ? " text-white  bg-primary ring-1 ring-primary-100  ring-offset-primary-100 "
-                : " text-primary  bg-white ring-1 ring-primary-100 "
+                ? "text-white  bg-primary  ring-primary  ring-offset-primary "
+                : "text-primary  bg-white ring-primary "
             } ${
               sm
                 ? "text-sm px-2 py-2"
@@ -27,7 +27,7 @@ function Button({
                 ? "px-8 py-2"
                 : xl
                 ? "px-[70px] py-2 md:px-[50px]  font-bold"
-                : "lg:px-4 lg:py-2 px-12 py-2  text-sm"
+                : "lg:px-6 lg:py-2 px-12 py-2  text-sm"
             }
             `}
           >
