@@ -1,0 +1,12 @@
+.footer_grid{
+    @apply grid grid-cols-12 mt-6 md:gap-x-8 gap-y-12 sm:py-6
+}
+.para_text{
+    @apply col-span-12 lg:col-span-4
+}
+.list_col{
+    @apply col-span-6 text-xs md:col-span-3 lg:col-span-2
+}
+.social_icon{
+    @apply flex items-center py-6 space-x-7
+}
