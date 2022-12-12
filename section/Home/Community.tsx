@@ -6,8 +6,9 @@ import Text from "../../elements/Text";
 
 function Community() {
   return (
-    <div className="container relative mx-auto">
+    <div className="relative overflow-hidden ">
          <span className="hidden absolute bg-gradient-to-r from-primary opacity-[.15] pointer-events-none lg:inline-flex left-[-20%] -top-24 w-[640px] h-[640px]"></span>
+    <div className="container relative mx-auto py-14 lg:py-24">
       <div className="grid gap-12 md:pt-24 lg:grid-cols-2 lg:pt-16">
         <div className="flex items-center justify-center lg:justify-start">
           <div className="">
@@ -28,7 +29,7 @@ function Community() {
             <div className="grid grid-cols-2 gap-10 mt-10 md:grid-cols-3">
               <Linktag style="inline-flex items-center" href="/car">
                 <svg
-                  className="w-8 h-8 text-red-600"
+                  className="w-8 h-8 text-primary"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +48,7 @@ function Community() {
               </Linktag>
               <Linktag style="inline-flex items-center" href="/car">
                 <svg
-                  className="w-8 h-8 text-red-600"
+                  className="w-8 h-8 text-primary"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +67,7 @@ function Community() {
               </Linktag>
               <Linktag style="inline-flex items-center" href="/car">
                 <svg
-                  className="w-8 h-8 text-red-600"
+                  className="w-8 h-8 text-primary"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +86,7 @@ function Community() {
               </Linktag>
               <Linktag style="inline-flex items-center" href="/car">
                 <svg
-                  className="w-8 h-8 text-red-600"
+                  className="w-8 h-8 text-primary"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +105,7 @@ function Community() {
               </Linktag>
               <Linktag style="inline-flex items-center" href="/car">
                 <svg
-                  className="w-8 h-8 text-red-600"
+                  className="w-8 h-8 text-primary"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +126,7 @@ function Community() {
           </div>
         </div>
         <div className="flex justify-center lg:justify-end">
-          <div className="w-full max-w-sm px-6 pt-8 pb-12 border border-gray-200 -rotate-1 lg:px-12 lg:border-red-600">
+          <div className="w-full max-w-sm px-6 pt-8 pb-12 border border-gray-200 -rotate-1 lg:px-12 lg:border-primary">
             <img
               src="/images/laracon.png"
               className="max-w-[218px] w-full mx-auto"
@@ -152,6 +153,7 @@ function Community() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

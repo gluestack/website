@@ -12,15 +12,7 @@ function HeroSection() {
           <div className="px-5 ">
             <div className="absolute left-2 -translate-y-12 pointer-events-none md:left-[12%]">
               <svg
-                x-data="{
-        initializeAnimation: false,
-        init() {
-            setTimeout(() => {
-                this.initializeAnimation = true;
-            }, 0);
-        },
-    }"
-                className="text-red-600 "
+                className=" text-primary"
                 width="46"
                 height="53"
                 viewBox="0 0 46 53"

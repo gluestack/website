@@ -13,7 +13,7 @@ function Sponsors() {
             <Image
               src={img2}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
@@ -21,7 +21,7 @@ function Sponsors() {
             <Image
               src={img3}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
@@ -29,7 +29,7 @@ function Sponsors() {
             <Image
               src={img4}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
@@ -37,7 +37,7 @@ function Sponsors() {
             <Image
               src={img2}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
@@ -45,7 +45,7 @@ function Sponsors() {
             <Image
               src={img3}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
@@ -53,7 +53,7 @@ function Sponsors() {
             <Image
               src={img4}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
@@ -61,7 +61,7 @@ function Sponsors() {
             <Image
               src={img3}
               alt="The New York Times"
-              width={250}
+              width={180}
               height={50}
             />
           </div>
