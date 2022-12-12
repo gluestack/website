@@ -1,4 +1,4 @@
-export default ({ env }) => ({
+export default ({env} :any) => ({
   connection: {
     client: 'postgres',
     connection: {
@@ -16,3 +16,5 @@ export default ({ env }) => ({
 });
 
 //env.bool('DATABASE_SSL', false),
+
+

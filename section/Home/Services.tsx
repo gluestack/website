@@ -5,7 +5,7 @@ import databaseimg from "public/icon/database.svg";
 import queuesimg from "/public/icon/queues.svg";
 import websocket from "/public/icon/websocket.svg";
 import auth from "/public/icon/auth.svg";
-import List from "../../components/list";
+import List from "../../components/List";
 
 function Services() {
   return (
