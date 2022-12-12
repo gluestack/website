@@ -10,9 +10,9 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="relative max-w-[1800px] m-auto">
+    <div className="relative max-w-[1800px] m-auto py-20">
       <div className="absolute top-0 bottom-0">
-                  <Image src={banner} alt={"vscode"} />
+                  <Image src={banner} alt={"vscode"} objectFit="contain"  />
                   </div>
 
       <div className="container mx-auto">

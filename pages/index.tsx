@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <SubSection />
       <Services />
       <SubBanner

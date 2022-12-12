@@ -8,28 +8,28 @@ function Menu({ expand }: any) {
       <div className={`${expand ? "h-[50em]" : ` h-0 md:h-auto`}  nav-list`}>
         <ul className="nav-list-ul">
           <li className="item">
-            <Linktag href="/car" style="linkstyle">
-              Forge
+            <Linktag href="/" style="linkstyle">
+            Home
             </Linktag>
           </li>
           <li className="item">
-            <Linktag href="" style="linkstyle">
-              Vapor
+            <Linktag href="/" style="linkstyle">
+            Design System
             </Linktag>
           </li>
           <li className="hidden md:block">
-            <Linktag isDropdown style="font-thin ">
-              Ecosystem
+            <Linktag href="/" style="linkstyle">
+            Hosting
+            </Linktag>
+          </li>
+          <li className="item">
+            <Linktag href="/" style="linkstyle">
+              Blog
             </Linktag>
           </li>
           <li className="item">
             <Linktag href="" style="linkstyle">
-              News
-            </Linktag>
-          </li>
-          <li className="item">
-            <Linktag href="" style="linkstyle">
-              Partners
+              Contact
             </Linktag>
           </li>
           <li>
