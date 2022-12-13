@@ -1,0 +1,12 @@
+.newsletter{
+    @apply m-auto bg-[url('/images/newsletter.png')] py-16 lg:py-20 relative
+}
+.plane{
+    @apply absolute left-[64%] top-[3%] lg:top-[11%]
+}
+.newsText{
+    @apply flex flex-wrap items-center justify-center py-2
+}
+.newsInput{
+    @apply py-2 pl-4 pr-24 bg-white rounded-md lg:pr-48 focus:outline-none hover:cursor-pointer
+}

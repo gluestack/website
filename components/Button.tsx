@@ -9,6 +9,7 @@ function Button({
   xl,
   link,
   onClick,
+  bgcolor,
   children,
 }: any) {
   return (
@@ -18,7 +19,7 @@ function Button({
           <span
             className={`btn ${
               isSecondary
-                ? "text-white  bg-primary  ring-primary  ring-offset-primary "
+                ? `text-white ${bgcolor ? bgcolor : 'bg-primary'} ring-primary  ring-offset-primary `
                 : "text-primary  bg-white ring-primary "
             } ${
               sm

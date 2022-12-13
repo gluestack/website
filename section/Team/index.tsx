@@ -18,7 +18,7 @@ function Team({team}:any) {
   return (
     <>
     
-      <div className="container mx-auto bg-white">
+      <div className="container pb-24 mx-auto bg-white">
         {/* <div className="text-center">
           <Heading
             title={undefined}
