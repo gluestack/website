@@ -6,9 +6,11 @@ import linkedin from "../../public/team/Vectorin.svg";
 import Text from "../../elements/Text";
 import Linktag from "../../elements/Linktag";
 
-{/* <div className="absolute z-10 w-full rounded-xl">
+{
+  /* <div className="absolute z-10 w-full rounded-xl">
        <Image src={bg} alt=''/>
-       </div>  */}
+       </div>  */
+}
 
 function Members({
   designation,
@@ -17,23 +19,30 @@ function Members({
   linkedinlink,
   githublink,
   profile,
-  bgcolor
+  bgcolor,
+  alt,
 }: any) {
-  
   return (
     <>
       <div className="">
-        <div className="relative">
-       <div className={`absolute z-10 ${bgcolor ? `${bgcolor}` : ''} top-14 w-60 h-60 rounded-xl `}>
-       </div>
-       <div className="relative z-20 w-full rounded-xl">
-       <Image src={profile} alt="" className="rounded-xl"/>
-       </div>
+        <div className="member">
+          <div
+            className={`absolute z-10 ${
+              bgcolor ? `${bgcolor}` : "bg-yellow-500"
+            } top-14 w-60 h-60 rounded-xl `}
+          ></div>
+          <div className="memberImg">
+            <Image
+              src={profile}
+              alt={`${alt ? alt : "image"} `}
+              className="rounded-xl"
+            />
+          </div>
         </div>
-        <div className="">
+        <div className="memberName">
           <div className="pt-2">
             <Text size="lg" font="bold">
-            {name}
+              {name}
             </Text>
           </div>
           <div className="pb-2">
@@ -43,13 +52,13 @@ function Members({
           </div>
           <div className="flex gap-x-3">
             <Linktag href={twitterlink}>
-              <Image src={twitter} alt="icon" height={25} />
+              <Image src={twitter} alt="icon" height={20} width={20} />
             </Linktag>
             <Linktag href={linkedinlink}>
-              <Image src={linkedin} alt="icon" />
+              <Image src={linkedin} alt="icon" height={20} width={20} />
             </Linktag>
             <Linktag href={githublink}>
-              <Image src={github} alt="icon" />
+              <Image src={github} alt="icon" height={20} width={20} />
             </Linktag>
           </div>
         </div>
