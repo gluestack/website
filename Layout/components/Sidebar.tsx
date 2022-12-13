@@ -1,20 +1,14 @@
 import { useState } from "react";
 import React from "react";
 import Link from "next/link";
+import { Dropdown } from "./Dropdown";
 
 export default function Sidebar(props: any) {
   return (
-    <nav className="md:left-0 fixed md:h-full md:overflow-y-auto md:flex-row md:flex-nowrap shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-96 z-10 ">
+    <nav className="md:left-0 md:h-full md:overflow-y-auto md:flex-row md:flex-nowrap shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-96 z-10 ">
       <div className="md:flex-col md:items-stretch overflow-hidden md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full">
         <div className="pt-4">
           <SidebarDocs {...props} linkUrl="/docs" />
-          {/* {props.sidebar.map((sidebarItem: any) => {
-            return (
-              <div className="mt-4 ">
-                <SidebarItems props={sidebarItem} version={props.version} />
-              </div>
-            );
-          })} */}
         </div>
       </div>
     </nav>
@@ -22,42 +16,46 @@ export default function Sidebar(props: any) {
 }
 
 const SidebarDocs = (props: any) => {
-  function getVersion(versionInfo: any) {
-    return Object.keys(versionInfo)[0];
+  let versionData = props.versions[props.versions.length - 1];
+  const [mainDocsVersion, setMainDocsVersion] = useState(
+    getVersion(versionData)
+  );
+
+  for (let i = 0; i < props.versions.length; i++) {
+    if (getVersion(props.versions[i]) == mainDocsVersion) {
+      versionData = props.versions[i];
+    }
   }
 
+  const mainDocsVersionData = versionData[mainDocsVersion].sidebar;
+  const linkUrl = props.linkUrl + "/" + mainDocsVersion;
+
   return (
-    <>
-      {props.versions.map((versionInfo: any) => {
-        const version = getVersion(versionInfo);
-
-        const sidebarInfo = versionInfo[version].sidebar;
-
-        return (
-          <div>
-            <RenderSidebar
-              sidebarData={sidebarInfo}
-              linkUrl={props.linkUrl + "/" + version}
-            />
-          </div>
-        );
-      })}
-    </>
+    <div>
+      <div className="flex justify-between mx-2 items-center">
+        <p className="text-black">{props?.title}</p>
+        <Dropdown
+          selectedVersion={mainDocsVersion}
+          versions={props.versions}
+          setVersion={setMainDocsVersion}
+        ></Dropdown>
+      </div>
+      <div className="my-6"></div>
+      <RenderSidebar sidebarData={mainDocsVersionData} linkUrl={linkUrl} />
+    </div>
   );
 };
 
 const RenderSidebar = (props: any) => {
-  // console.log(props.linkUrl, "VERSION");
   return (
     <>
       {props.sidebarData.map((info: any) => {
-        // console.log(info);
+        console.log(info, "HERE IS THERE");
         if (info.type == "docs") {
-          // console.log(info, "DOCS");
           return (
             <div>
-              <div className="text-black">{info.title}</div>
               <SidebarDocs
+                title={info.title}
                 versions={info.versions}
                 linkUrl={props.linkUrl + "/" + info.title}
               />
@@ -203,3 +201,7 @@ const HeadingDropdown = ({ props, version }: any) => {
     </div>
   );
 };
+
+function getVersion(versionInfo: any) {
+  return Object.keys(versionInfo)[0];
+}

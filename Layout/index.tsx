@@ -6,7 +6,6 @@ import { Header } from "../components/Header";
 import { versions } from "../versions.json";
 
 function PagesLayout(props: any) {
-  // console.log(versions);
   return (
     <div className="relative  overflow-hidden">
       {/* <Navbar
