@@ -1,5 +1,5 @@
 export default function () {}
-import { indexSlugFileName } from "../../docs.config";
+import { indexSlugFileName } from "../docs.config";
 
 export async function getServerSideProps(context: any) {
   return {

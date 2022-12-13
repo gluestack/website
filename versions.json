@@ -4,16 +4,134 @@
       "1.0.x": {
         "sidebar": [
           {
-            "type": "heading",
-            "title": "Intrduction",
-            "pages": [
+            "type": "docs",
+            "title": "cli",
+            "versions": [
               {
-                "id": "heading",
-                "title": "mdx-example"
+                "1.0.x": {
+                  "sidebar": [
+                    {
+                      "type": "heading",
+                      "title": "Heading Example for v1.0.x",
+                      "pages": [
+                        {
+                          "id": "mdx-example",
+                          "title": "MDX Example 1"
+                        },
+                        {
+                          "id": "react-example",
+                          "title": "React Example 1"
+                        }
+                      ]
+                    }
+                  ]
+                }
               },
               {
-                "id": "react-example",
-                "title": "react example"
+                "1.1.x": {
+                  "sidebar": [
+                    {
+                      "type": "heading",
+                      "title": "Heading Example for v1.1.x",
+                      "pages": [
+                        {
+                          "id": "mdx-example",
+                          "title": "MDX Example 2"
+                        },
+                        {
+                          "id": "react-example",
+                          "title": "React Example 2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "1.2.x": {
+                  "sidebar": [
+                    {
+                      "type": "heading",
+                      "title": "Heading Example for v1.2.x",
+                      "pages": [
+                        {
+                          "id": "mdx-example",
+                          "title": "MDX Example 3"
+                        },
+                        {
+                          "id": "react-example",
+                          "title": "React Example 3"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "docs",
+            "title": "ui",
+            "versions": [
+              {
+                "1.0.x": {
+                  "sidebar": [
+                    {
+                      "type": "heading",
+                      "title": "Heading Example for v1.0.x",
+                      "pages": [
+                        {
+                          "id": "mdx-example",
+                          "title": "MDX Example 1"
+                        },
+                        {
+                          "id": "react-example",
+                          "title": "React Example 1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "1.1.x": {
+                  "sidebar": [
+                    {
+                      "type": "heading",
+                      "title": "Heading Example for v1.1.x",
+                      "pages": [
+                        {
+                          "id": "mdx-example",
+                          "title": "MDX Example 2"
+                        },
+                        {
+                          "id": "react-example",
+                          "title": "React Example 2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "1.2.x": {
+                  "sidebar": [
+                    {
+                      "type": "heading",
+                      "title": "Heading Example for v1.2.x",
+                      "pages": [
+                        {
+                          "id": "mdx-example",
+                          "title": "MDX Example 3"
+                        },
+                        {
+                          "id": "react-example",
+                          "title": "React Example 3"
+                        }
+                      ]
+                    }
+                  ]
+                }
               }
             ]
           }
