@@ -13,29 +13,8 @@ import Aswathy from '../../public/team/imagesales.png'
 import Gaurav from '../../public/team/image.png'
 import atul from '../../public/team/imagecoo.png'
 
-function Team() {
-  // const team = [
-  //   {
-  //     id: "1",
-  //     name: "Sanket Sahu",
-  //     image: "",
-  //     designation: "Chief Executive Officer (CEO)",
-  //     twitterlink: "",
-  //     linkedinlink: "",
-  //     githublink: "",
-  //     bgcolor: "red-500",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Sanket Sahu",
-  //     designation: "Chief Executive Officer (CEO)",
-  //     twitterlink: "",
-  //     linkedinlink: "",
-  //     githublink: "",
-  //   },
-  // ];
-
-  // As Tailwind Doc we cant use bg-${variable}-500
+function Team({team}:any) {
+  // As Tailwind Doc we cant use as bg-${variable}-500
   return (
     <>
     

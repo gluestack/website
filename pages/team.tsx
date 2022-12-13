@@ -1,8 +1,10 @@
 import React from "react";
 import GlobalBaanner from "../components/GlobalBanner";
 import Team from "../section/Team";
+import { teamService } from "../services";
 
-function team() {
+function team({team}:any) {
+  
   return (
     <>
       <GlobalBaanner
@@ -13,9 +15,26 @@ function team() {
          unstoppable force. Meet the members of our team below and learn more
           about what makes us tick"
       />
-      <Team/>
+      <Team team={team}/>
     </>
   );
 }
 
 export default team;
+
+// export async function getServerSideProps() {
+//   let team;
+
+//   try {
+//     const { data } = await teamService();
+//     const content = data.teams.data;
+//     team = content ?? {};
+//   } catch (error) {}
+
+//   return {
+//     props: {
+//       team: team,
+//     },
+//   };
+// }
+
