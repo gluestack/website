@@ -1,0 +1,24 @@
+{
+  "versions": [
+    {
+      "1.0.x": {
+        "sidebar": [
+          {
+            "type": "heading",
+            "title": "Intrduction",
+            "pages": [
+              {
+                "id": "heading",
+                "title": "mdx-example"
+              },
+              {
+                "id": "react-example",
+                "title": "react example"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
