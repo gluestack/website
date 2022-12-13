@@ -18,7 +18,7 @@ function Text({ text, size, isLight, color, font, style,children }: any) {
             : size == "base"
             ? "text-base"
             : size == "lg"
-            ? "md:text-lg text-sm"
+            ? "md:text-lg text-md"
             : "text-base "
         }
         ${style}
