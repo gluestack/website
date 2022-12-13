@@ -19,7 +19,7 @@ function HeroSection() {
         <section className="py-28">
           <span className="hero-gradient-color"></span>
           <div className="px-5 ">
-            <div className="absolute left-2 -translate-y-12 pointer-events-none md:left-[12%]">
+            {/* <div className="absolute left-2 -translate-y-12 pointer-events-none md:left-[12%]">
               <svg
                 className=" text-primary"
                 width="46"
@@ -62,7 +62,7 @@ function HeroSection() {
                   d="M0 0h25.491v25.491H0z"
                 ></path>
               </svg>
-            </div>
+            </div> */}
 
             <div className="">
               <div className="text-center">

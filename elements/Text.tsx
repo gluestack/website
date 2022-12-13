@@ -5,12 +5,12 @@ function Text({ text, size, isLight, color, font, style,children }: any) {
     <>
       <p
         className={`${
-          size == "xs"
-            ? `lg:text-xl text-xl`
+          size == "xxl"
+            ? `lg:text-xxl text-lg`
             : size == "md"
             ? "text-md"
             : size == "xl"
-            ? "  text-xxl "
+            ? "  text-xl "
             : size == "xs"
             ? "text-xs "
             : size == "sm"
