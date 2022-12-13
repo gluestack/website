@@ -19,7 +19,6 @@ function Testimonial() {
         </div>
         <div className="px-0 text-center lg:px-44">
           <Heading
-            title={undefined}
             isLight={undefined}
             color={undefined}
             priority={2}

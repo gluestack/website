@@ -16,7 +16,6 @@ function Services() {
           <div className="">
             <div className="lg:w-5/12">
               <Heading
-                title={undefined}
                 isLight={undefined}
                 color={undefined}
                 priority={2}

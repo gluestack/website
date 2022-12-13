@@ -11,7 +11,6 @@ function Solution() {
       <div className="container mx-auto">
         <div className="lg:w-6/12">
           <Heading
-            title={undefined}
             isLight={undefined}
             color={undefined}
             priority={2}

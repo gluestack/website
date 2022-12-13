@@ -13,7 +13,6 @@ function Community() {
         <div className="flex items-center justify-center lg:justify-start">
           <div className="">
             <Heading
-              title={undefined}
               isLight={undefined}
               color={undefined}
               priority={2}
@@ -134,7 +133,6 @@ function Community() {
             />
             <div className="text-primary">
               <Heading
-                title={undefined}
                 isLight={undefined}
                 color={undefined}
                 priority={3}

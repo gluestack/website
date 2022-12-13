@@ -22,7 +22,6 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
               <div className="flex items-center justify-center xl:px-0 ">
                 <div className="sm:max-w-[480px]">
                   <Heading
-                    title={undefined}
                     isLight={undefined}
                     color={undefined}
                     priority={2}
