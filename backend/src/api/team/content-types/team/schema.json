@@ -32,10 +32,14 @@
     "altText": {
       "type": "string"
     },
-    "socail": {
-      "type": "component",
-      "repeatable": true,
-      "component": "social.social"
+    "twitter": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
     }
   }
 }
