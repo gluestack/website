@@ -36,6 +36,9 @@
 @import './search.css';
 @import './testimonial.css';
 @import './footer.css';
-@import './team/team.css'
+@import './team/team.css';
 
 
+.filter-primary{
+  filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg) brightness(104%) contrast(101%);
+}

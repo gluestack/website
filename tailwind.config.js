@@ -32,7 +32,11 @@ module.exports = {
           600: "#4440E9",
           700:'#302CBB',
         },
-        secondary:"#171923",
+        secondary: {
+          400: "#404040",
+          DEFAULT: "#222020",
+        
+        },
 
       },
       fontWeight: {

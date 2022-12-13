@@ -3,21 +3,18 @@ import React from "react";
 import Button from "../../components/Button";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
-import banner from '/public/images/banner.png';
+import banner from "/public/images/banner.png";
 import Image from "next/image";
-
-
 
 function HeroSection() {
   return (
     <div className="relative max-w-[1800px] m-auto py-20">
       <div className="absolute top-0 bottom-0">
-                  <Image src={banner} alt={"vscode"} objectFit="contain"  />
-                  </div>
+        <Image src={banner} alt={"vscode"} objectFit="contain" />
+      </div>
 
       <div className="container mx-auto">
         <section className="py-28">
-          <span className="hero-gradient-color"></span>
           <div className="px-5 ">
             {/* <div className="absolute left-2 -translate-y-12 pointer-events-none md:left-[12%]">
               <svg

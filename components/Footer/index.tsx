@@ -63,7 +63,7 @@ export const Footer = () => {
             <div className="mt-5">
               <ul className="space-y-3 text-gray-700 ">
                 {
-                    data.map((ele:any)=> <LinkList title={ele.title} link={ele.link}/>)
+                    data.map((ele,index:any)=> <LinkList title={ele.title} link={ele.link} key={index} />)
                 }
               </ul>
             </div>
@@ -75,7 +75,7 @@ export const Footer = () => {
             <div className="mt-5">
               <ul className="space-y-3 text-gray-700 ">
                 {
-                    data.map((ele:any)=> <LinkList title={ele.title} link={ele.link}/>)
+                    data.map((ele,index:any)=> <LinkList title={ele.title} link={ele.link} key={index} />)
                 }
               </ul>
             </div>
@@ -87,7 +87,7 @@ export const Footer = () => {
             <div className="mt-5">
               <ul className="space-y-3 text-gray-700 ">
                 {
-                    data.map((ele:any)=> <LinkList title={ele.title} link={ele.link}/>)
+                    data.map((ele, index:any)=> <LinkList title={ele.title} link={ele.link} key={index} />)
                 }
               </ul>
             </div>
@@ -99,7 +99,7 @@ export const Footer = () => {
             <div className="mt-5">
               <ul className="space-y-3 text-gray-700 ">
                 {
-                    data.map((ele:any)=> <LinkList title={ele.title} link={ele.link}/>)
+                    data.map((ele, index:any)=> <LinkList title={ele.title} link={ele.link} key={index}/>)
                 }
               </ul>
             </div>
