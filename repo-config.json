@@ -1,0 +1,14 @@
+{
+  "cli": {
+    "gitUrl": "https://github.com/gluestack/cli.git",
+    "pagesPath": "",
+    "repoName": "cli",
+    "ignoredFolders": []
+  },
+  "docs": {
+    "gitUrl": "https://github.com/gluestack/template-docs.git",
+    "pagesPath": "pages",
+    "repoName": "template-docs",
+    "ignoredfolders": []
+  }
+}
