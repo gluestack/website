@@ -1,4 +1,4 @@
-export default ({ env } :any) => ({
+module.exports = ({ env }) => ({
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },

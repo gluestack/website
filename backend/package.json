@@ -9,8 +9,8 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.5.3",
     "@strapi/plugin-i18n": "4.5.3",
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
@@ -21,7 +21,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "4756ef0b-1f93-4f9c-97d3-1c08272f4b05"
+    "uuid": "a75b9a87-3fc4-423f-ab63-7bc1d087743d"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
