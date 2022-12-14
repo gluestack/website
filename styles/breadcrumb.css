@@ -1,0 +1,6 @@
+.breadcrumb{
+    @apply flex flex-wrap items-center p-4 py-4 bg-white
+}
+.crumbList{
+    @apply inline-flex items-center cursor-pointer
+}

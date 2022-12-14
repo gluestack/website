@@ -37,6 +37,7 @@
 @import './testimonial.css';
 @import './footer.css';
 @import './team/team.css';
+@import './breadcrumb.css';
 
 
 .filter-primary{
@@ -44,5 +45,5 @@
 }
 
 .twitter > div{
-  @apply grid grid-cols-3	gap-4;
+  @apply grid grid-cols-3 gap-4;
 }

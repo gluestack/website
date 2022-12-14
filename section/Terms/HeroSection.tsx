@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Breadcrumb from "../../components/Breadcrumb";
 import Heading from "../../elements/Heading";
-import Linktag from "../../elements/Linktag";
-import Text from "../../elements/Text";
 function HeroSection() {
+  const [category, setCaregory]=useState(['Home','page1','page2']);
   return (
     <>
       <div className="container py-6">
-      
+      {/* <Breadcrumb crumbs={category}/> */}
         <Heading priority={1}>Terms and Conditions</Heading>
       </div>
     </>
