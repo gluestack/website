@@ -24,7 +24,7 @@ export const Docs = () => {
     //   setVersion={setVersion}
     //   versionsData={versions}
     // >
-    <div>hihihi</div>
+    <div>hihihi in docs</div>
     // </Layout>
   );
 };

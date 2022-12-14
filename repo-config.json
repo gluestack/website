@@ -3,12 +3,21 @@
     "gitUrl": "https://github.com/gluestack/cli.git",
     "pagesPath": "",
     "repoName": "cli",
-    "ignoredFolders": []
+    "ignoredFolders": [],
+    "destinationPath": "/docs"
   },
   "docs": {
     "gitUrl": "https://github.com/gluestack/template-docs.git",
-    "pagesPath": "pages",
+    "pagesPath": "pages/1.2.x",
     "repoName": "template-docs",
-    "ignoredfolders": []
+    "ignoredfolders": [],
+    "destinationPath": "/docs/template-docs"
+  },
+  "framework": {
+    "gitUrl": "https://github.com/gluestack/template-docs.git",
+    "pagesPath": "pages/1.2.x",
+    "repoName": "template-docs",
+    "ignoredfolders": [],
+    "destinationPath": "/docs"
   }
 }
