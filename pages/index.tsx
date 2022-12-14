@@ -25,12 +25,12 @@ export default function Home() {
       <Solution />
       <Testimonial/>
       <Community/>
-      <div className="container">
+      {/* <div className="container">
         <div className="flex twitter">
           <TweetEmbed tweetId='771763270273294336' />
       </div>
 
-      </div>
+      </div> */}
       <SubBanner
         heading="Hire a partner for your next project"
         desc="Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project."

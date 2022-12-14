@@ -15,7 +15,9 @@ const DynamicTag :any = `h${priority}`;
             : priority == 2
             ? "text-4xl md:text-5xl "
             : priority == 3
-            ? "l text-lg"
+            ? " text-3xl"
+            : priority == 4
+            ? " text-lg"
             : priority == 5
             ? "lg:text-xl text-lg"
             : priority == 6
