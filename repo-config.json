@@ -4,7 +4,7 @@
     "pagesPath": "",
     "repoName": "cli",
     "ignoredFolders": [],
-    "destinationPath": "/docs"
+    "destinationPath": "/docs/cli"
   },
   "docs": {
     "gitUrl": "https://github.com/gluestack/template-docs.git",
@@ -14,9 +14,9 @@
     "destinationPath": "/docs/template-docs"
   },
   "framework": {
-    "gitUrl": "https://github.com/gluestack/template-docs.git",
-    "pagesPath": "pages/1.2.x",
-    "repoName": "template-docs",
+    "gitUrl": "https://github.com/vidhi499/test-website.git",
+    "pagesPath": "pages/1.0.x",
+    "repoName": "test-website",
     "ignoredfolders": [],
     "destinationPath": "/docs"
   }

@@ -8,10 +8,10 @@ const nextConfig = {
 
   async rewrites() {
     return [
-      {
-        source: "/docs",
-        destination: "/framework",
-      },
+      // {
+      //   source: "/docs",
+      //   destination: "/framework",
+      // },
       // {
       //   source: "/docs/*",
       //   destination: "/docs/1.0.x/*",

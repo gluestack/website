@@ -8,25 +8,24 @@ const fs = require("fs-extra");
 const pagesPath = path.join(__dirname, "../pages");
 const ignoredfolder = ["_app.tsx", "index.tsx", "api"];
 const tmpPath = path.join(__dirname, "tmp");
-const copyPath = path.join(pagesPath, "/docs");
 
 const cloneRepoPages = () => {
   Object.keys(repoConfig).map((e) => {
-    // execSync("git clone " + repoConfig[e].gitUrl, {
-    //   stdio: [0, 1, 2], // we need this so node will print the command output
-    //   cwd: tmpPath, // path to where you want to save the file
-    // });
-
-    if (!fs.existsSync(path.join(copyPath, repoConfig[e]["repoName"]))) {
-      fs.mkdirSync(path.join(copyPath, repoConfig[e]["repoName"]));
+    // console.log(e, repoConfig[e]);
+    let repoInfo = repoConfig[e];
+    let copyPath = path.join(pagesPath, repoInfo.destinationPath);
+    execSync("git clone " + repoConfig[e].gitUrl, {
+      stdio: [0, 1, 2], // we need this so node will print the command output
+      cwd: tmpPath, // path to where you want to save the file
+    });
+    if (!fs.existsSync(path.join(copyPath))) {
+      fs.mkdirSync(path.join(copyPath));
     }
-
     copyFiles(
-      path.join(tmpPath, repoConfig[e]["repoName"], repoConfig[e]["pagesPath"]),
-      path.join(copyPath, repoConfig[e]["repoName"])
+      path.join(tmpPath, repoInfo["repoName"], repoInfo["pagesPath"]),
+      path.join(copyPath)
     );
-
-    deleteIgnoredFiles(path.join(copyPath, repoConfig[e]["repoName"]));
+    // deleteIgnoredFiles(path.join(copyPath));
   });
 };
 
