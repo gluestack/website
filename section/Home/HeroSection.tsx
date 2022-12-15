@@ -8,12 +8,14 @@ import Button from "../../components/Button";
 import gifSteps from "../../public/animation/animation.gif";
 import Image from "next/image";
 import Head from "next/head";
+import { Header } from "../../components/Header";
 function HeroSection() {
   return (
     <>
     <Head>
-    <script src="//embed.typeform.com/next/embed.js"></script>
+      <script src="//embed.typeform.com/next/embed.js"></script>
     </Head>
+      <Header />
       <Banner cover={banner} altText="banner">
         <div className="herobanner">
           <div className="heroflex">

@@ -40,6 +40,6 @@ export default function Home() {
         src={phpcodeimage}
       /> */}
       <DeveloperPreview/>
-    </>
+    </Layout>
   );
 }
