@@ -22,11 +22,10 @@ export const Header = () => {
         <div className="py-4 inner-nav">
           <Logo />
           <div className="flex md:order-2">
-            <div
+            {/* <div
               onClick={() => setModel(!showModel)}
               className="mt-2 cursor-pointer"
             >
-              {/* // Search Icon Working pending */}
               <svg
                 className="w-6 h-6 text-gray-700"
                 fill="none"
@@ -40,7 +39,7 @@ export const Header = () => {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 ></path>
               </svg>
-            </div>
+            </div> */}
             <Modal
               height="3/6"
               isVisible={showModel}

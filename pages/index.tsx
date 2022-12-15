@@ -6,12 +6,16 @@ import phpcodeimage from "../public/images/phpcode.png";
 import Solution from "../section/Home/Solution";
 import Testimonial from "../section/Home/Testimonial";
 import Community from "../section/Home/Community";
+import DeveloperPreview from "../components/DeveloperPreview";
+import Hook from "../components/Animation";
 import Layout from "../Layout/Layout";
 
 export default function Home() {
   return (
     <Layout>
       <HeroSection />
+      {/* <Sponsors /> */}
+      {/* <SubSection />
       <SubSection />
       <Services />
       <SubBanner
@@ -21,15 +25,21 @@ export default function Home() {
         src={phpcodeimage}
       />
       <Solution />
-      <Testimonial />
-      <Community />
+      <Testimonial/>
+      <Community/> */}
+      {/* <div className="container">
+        <div className="flex twitter">
+          <TweetEmbed tweetId='771763270273294336' />
+      </div>
 
-      <SubBanner
+      </div> */}
+      {/* <SubBanner
         heading="Hire a partner for your next project"
         desc="Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project."
         btntext="BROWSE PARTNERS"
         src={phpcodeimage}
-      />
+      /> */}
+      <DeveloperPreview/>
     </Layout>
   );
 }
