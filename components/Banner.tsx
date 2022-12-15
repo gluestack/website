@@ -7,9 +7,9 @@ function Banner({ cover, altText, children }: any) {
       {/* <div className="absolute top-0 bottom-0 left-0 right-0">
         <Image src={cover} alt={altText} objectFit="contain" />
       </div> */}
-
+    {/* py-16 */}
       <div className="container mx-auto ">
-        <section className="py-16">{children}</section>
+        <section className="">{children}</section>
       </div>
     </div>
   );

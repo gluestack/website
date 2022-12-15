@@ -7,7 +7,8 @@ import phpcodeimage from "../public/images/phpcode.png";
 import Solution from "../section/Home/Solution";
 import Testimonial from "../section/Home/Testimonial";
 import Community from "../section/Home/Community";
-import TweetEmbed from 'react-tweet-embed'
+import DeveloperPreview from "../components/DeveloperPreview";
+import Hook from "../components/Animation";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         btntext="BROWSE PARTNERS"
         src={phpcodeimage}
       /> */}
+      <DeveloperPreview/>
     </>
   );
 }
