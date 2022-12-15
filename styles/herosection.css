@@ -10,7 +10,7 @@
 
 
 .herobanner{
-    @apply flex flex-col-reverse flex-wrap items-center px-2 md:flex-row
+    @apply flex flex-col flex-wrap items-center px-2 md:flex-row
 }
 .heroflex{
     @apply w-full lg:w-1/2

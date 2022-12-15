@@ -10,12 +10,13 @@ function Button({
   xxl,
   link,
   onClick,
+  data,
   children,
 }: any) {
   return (
     <>
       <Link href={`${link}`} prefetch={false} legacyBehavior>
-        <a className="btn_outline group">
+        <a className="btn_outline group" data-tf-popup={data} >
           <span
             className={`btn ${
               isSecondary

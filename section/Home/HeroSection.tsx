@@ -5,11 +5,15 @@ import Text from "../../elements/Text";
 import banner from "/public/images/banner.png";
 import Banner from "../../components/Banner";
 import Button from "../../components/Button";
-import gifSteps from "../../public/animation/animation.gif"
+import gifSteps from "../../public/animation/animation.gif";
 import Image from "next/image";
+import Head from "next/head";
 function HeroSection() {
   return (
     <>
+    <Head>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    </Head>
       <Banner cover={banner} altText="banner">
         <div className="herobanner">
           <div className="heroflex">
@@ -26,13 +30,22 @@ function HeroSection() {
                 </Text>
               </div>
               <div className="herobtn">
-                <Button
+                {/* <Button
+                data="QWcoG0YF"
                   xxl
                   isSecondary
-                  link={"https://form.typeform.com/to/QWcoG0YF"}
+                  link={""}
                 >
                   Join the waitlist for early access{" "}
-                </Button>
+                </Button> */}
+                <span className="btn_outline group">
+                <button
+                  data-tf-popup="QWcoG0YF"
+                  className="text-white capitalize bg-primary ring-primary ring-offset-primary btn"
+                >
+                  Join the waitlist for early access
+                </button>
+                </span>
               </div>
             </div>
           </div>
