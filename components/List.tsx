@@ -12,7 +12,6 @@ function List({ src, title,children}: any) {
     <Image src={src} alt={"Database"} className="filter-primary" />
     <div className="py-4">
       <Heading
-        title={undefined}
         isLight={undefined}
         color={undefined}
         priority={3}

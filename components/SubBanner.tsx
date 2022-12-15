@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import vscode from "../public/images/vscode.png";
 import Heading from "../elements/Heading";
-import Text from "../elements/Text";
 import Button from "./Button";
 import Description from "../elements/Description";
 
@@ -22,9 +20,6 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
               <div className="flex items-center justify-center xl:px-0 ">
                 <div className="sm:max-w-[480px]">
                   <Heading
-                    title={undefined}
-                    isLight={undefined}
-                    color={undefined}
                     priority={2}
                   >
                     {heading}

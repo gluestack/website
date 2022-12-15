@@ -13,7 +13,7 @@ import Aswathy from '../../public/team/imagesales.png'
 import Gaurav from '../../public/team/image.png'
 import atul from '../../public/team/imagecoo.png'
 
-function Team({team}:any) {
+function Details({team}:any) {
   // As Tailwind Doc we cant use as bg-${variable}-500
   return (
     <>
@@ -145,4 +145,4 @@ function Team({team}:any) {
   );
 }
 
-export default Team;
+export default Details;
