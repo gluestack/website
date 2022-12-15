@@ -18,8 +18,8 @@ function HeroSection() {
             </Heading>
             <div className="herotext md:w-5/7">
               <Text size={"lg"} style="font-normal">
-                <span className="font-semibold">100% open source</span>
-                full-stack framework that takes away the complexities of
+                <span className="font-semibold">100% open source </span>
+                 full-stack framework that takes away the complexities of
                 building modern web & mobile apps. Build effortlessly and scale
                 swiftly from idea to enterprise.
               </Text>

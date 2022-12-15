@@ -16,7 +16,7 @@
     @apply w-full lg:w-1/2
 }
 .heroHead{
-    @apply py-10 text-justify sm:text-start
+    @apply py-10  text-start
 }
 .heroImage{
     @apply justify-end md:w-1/2 lg:block sm:flex
@@ -25,5 +25,5 @@
     @apply py-8 lg:relative lg:right-3
 }
 .herotext{
-    @apply pt-4 text-justify 
+    @apply pt-4 lg:text-justify  text-start
 }
