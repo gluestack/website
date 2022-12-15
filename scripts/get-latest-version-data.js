@@ -9,16 +9,26 @@ const pagesPath = path.join(__dirname, "../pages");
 const ignoredfolder = ["_app.tsx", "index.tsx", "api"];
 const tmpPath = path.join(__dirname, "tmp");
 let data1 = [];
+let sidebarTemplate = {
+  versions: [
+    {
+      "1.x": {
+        sidebar: [],
+      },
+    },
+  ],
+};
+// sidebarTemplate.versions[0]['1.x'].sidebar.push()
 const cloneRepoPages = () => {
   Object.keys(repoConfig).map((e) => {
     // console.log(e, repoConfig[e]);
     let repoInfo = repoConfig[e];
 
     let copyPath = path.join(pagesPath, repoInfo.destinationPath);
-    // execSync("git clone " + repoConfig[e].gitUrl, {
-    //   stdio: [0, 1, 2], // we need this so node will print the command output
-    //   cwd: tmpPath, // path to where you want to save the file
-    // });
+    execSync("git clone " + repoConfig[e].gitUrl, {
+      stdio: [0, 1, 2], // we need this so node will print the command output
+      cwd: tmpPath, // path to where you want to save the file
+    });
     if (
       fs.existsSync(path.join(tmpPath, repoInfo["repoName"], "versions.json"))
     ) {
@@ -35,26 +45,47 @@ const cloneRepoPages = () => {
           Object.keys(getLatestVersion(data.versions))[0]
         ].sidebar,
       ];
-      console.log(
-        // getLatestVersion(data.versions)[
-        //   Object.keys(getLatestVersion(data.versions))[0]
-        // ].sidebar,
-        data1,
-        JSON.stringify(data1)
+      let sidebarData = getLatestVersion(data.versions)[
+        Object.keys(getLatestVersion(data.versions))[0]
+      ].sidebar;
+
+      if (repoInfo.rootDocs) {
+        // console.log(sidebarData);
+        sidebarData.map((data) => {
+          sidebarTemplate.versions[0]["1.x"].sidebar.push(data);
+        });
+        // console.log(sidebarTemplate.versions[0]["1.x"].sidebar);
+      } else {
+        let obj = {
+          type: "sidebar",
+          title: repoInfo["repoName"],
+          pages: [],
+        };
+        sidebarData.map((data) => {
+          obj.pages.push(data);
+        });
+        sidebarTemplate.versions[0]["1.x"].sidebar.push(obj);
+      }
+
+      if (!fs.existsSync(path.join(copyPath))) {
+        fs.mkdirSync(path.join(copyPath));
+      }
+      if (fs.existsSync(path.join(__dirname, "../versions.json"))) {
+        fs.writeFileSync(
+          path.join(__dirname, "../versions.json"),
+          JSON.stringify(sidebarTemplate)
+        );
+      }
+      copyFiles(
+        path.join(
+          tmpPath,
+          repoInfo["repoName"],
+          "pages",
+          Object.keys(getLatestVersion(data.versions))[0]
+        ),
+        path.join(copyPath)
       );
-      // if (!fs.existsSync(path.join(copyPath))) {
-      //   fs.mkdirSync(path.join(copyPath));
-      // }
-      // copyFiles(
-      //   path.join(
-      //     tmpPath,
-      //     repoInfo["repoName"],
-      //     "pages",
-      //     Object.keys(getLatestVersion(data.versions))[0]
-      //   ),
-      //   path.join(copyPath)
-      // );
-      // deleteIgnoredFiles(path.join(copyPath));
+      deleteIgnoredFiles(path.join(copyPath));
     }
   });
 };
