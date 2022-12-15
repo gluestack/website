@@ -4,20 +4,20 @@
     "pagesPath": "",
     "repoName": "cli",
     "ignoredFolders": [],
-    "destinationPath": "/docs/cli"
+    "destinationPath": "/docs/1.x/cli"
   },
   "docs": {
     "gitUrl": "https://github.com/gluestack/template-docs.git",
     "pagesPath": "pages/1.2.x",
     "repoName": "template-docs",
     "ignoredfolders": [],
-    "destinationPath": "/docs/template-docs"
+    "destinationPath": "/docs/1.x/template-docs"
   },
   "framework": {
     "gitUrl": "https://github.com/vidhi499/test-website.git",
     "pagesPath": "pages/1.0.x",
     "repoName": "test-website",
     "ignoredfolders": [],
-    "destinationPath": "/docs"
+    "destinationPath": "/docs/1.x"
   }
 }
