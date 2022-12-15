@@ -2,7 +2,7 @@
   "framework": {
     "gitUrl": "https://github.com/gluestack/framework",
     "docsPath": "docs",
-    "branchName": "feat/docs-updated",
+    "branchName": "master",
     "repoName": "framework",
     "rootDocs": true,
     "ignoredfolders": [],
