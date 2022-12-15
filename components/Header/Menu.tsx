@@ -9,7 +9,7 @@ function Menu({ expand }: any) {
         <ul className="nav-list-ul">
           <li className="item">
             <Linktag href="/" style="linkstyle">
-            Home
+            Hosting
             </Linktag>
           </li>
           <li className="item">
@@ -17,19 +17,19 @@ function Menu({ expand }: any) {
             Design System
             </Linktag>
           </li>
-          <li className="hidden md:block">
+          {/* <li className="hidden md:block">
             <Linktag href="/" style="linkstyle">
-            Hosting
+            Blogs
+            </Linktag>
+          </li> */}
+          <li className="item">
+            <Linktag href="/" style="linkstyle">
+            Blogs
             </Linktag>
           </li>
           <li className="item">
             <Linktag href="/" style="linkstyle">
-              Blog
-            </Linktag>
-          </li>
-          <li className="item">
-            <Linktag href="" style="linkstyle">
-              Contact
+            Contact Us
             </Linktag>
           </li>
           <li  className={`${expand ? "block" : "hidden"} item-btn`}>

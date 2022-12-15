@@ -15,22 +15,22 @@ module.exports = {
         sm: ".875rem", // 14px
         base: "1rem", // 16px
         md: "1.125rem", // 18px
-        lg: "1.25rem", // 20px
+        lg: "1.5rem", // 24px
         xl: ["2.5rem", "4rem"], //40
         xxl: "1.625rem", // 26px
         "3xl": "2.125rem", // 34px
         "4xl": "2.25rem", // 36px
         "5xl": "3rem", // 48px
-        "6xl": ["4.5rem", "4.563rem"],
+        "6xl": "5.125rem",
       },
 
       colors: {
 
 
         primary: {
-          DEFAULT: "#5551FF",
-          600: "#4440E9",
-          700:'#302CBB',
+          DEFAULT: "#8944CE",
+          600: "#8944CE",
+          700:'#8944CE',
         },
         secondary: {
           400: "#404040",

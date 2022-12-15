@@ -1,17 +1,13 @@
 import React from "react";
 
-
-const Heading = ({isLight, color, priority, children }: any) => {
-
-
-
-const DynamicTag :any = `h${priority}`;
+const Heading = ({ isLight, color, priority, children }: any) => {
+  const DynamicTag: any = `h${priority}`;
   return (
     <div>
       <DynamicTag
         className={`${
           priority == 1
-            ? "lg:text-6xl text-4xl font-extrabold "
+            ? "lg:text-6xl text-4xl leading-normal lg:leading-[98px]"
             : priority == 2
             ? "text-4xl md:text-5xl "
             : priority == 3

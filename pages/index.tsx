@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <HeroSection />
       {/* <Sponsors /> */}
-      <SubSection />
+      {/* <SubSection />
       <Services />
       <SubBanner
         heading="Move fast...with confidence."
@@ -24,19 +24,19 @@ export default function Home() {
       />
       <Solution />
       <Testimonial/>
-      <Community/>
+      <Community/> */}
       {/* <div className="container">
         <div className="flex twitter">
           <TweetEmbed tweetId='771763270273294336' />
       </div>
 
       </div> */}
-      <SubBanner
+      {/* <SubBanner
         heading="Hire a partner for your next project"
         desc="Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project."
         btntext="BROWSE PARTNERS"
         src={phpcodeimage}
-      />
+      /> */}
     </>
   );
 }
