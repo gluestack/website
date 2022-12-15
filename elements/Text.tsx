@@ -1,9 +1,9 @@
-import React, { Children } from "react";
+import React from "react";
 
-function Text({ text, size, isLight, color, font, style,children }: any) {
+function Text({  size, isLight, color, font, style,children }: any) {
   return (
     <>
-      <p
+      <div
         className={`${
           size == "xxl"
             ? `lg:text-xxl text-lg`
@@ -27,11 +27,10 @@ function Text({ text, size, isLight, color, font, style,children }: any) {
       } `}
       >
         {children}
-      </p>
+      </div>
     </>
   );
 }
 
 export default Text;
 
-// md:text-xl

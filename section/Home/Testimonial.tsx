@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../../components/Card";
 import Heading from "../../elements/Heading";
 import data from '../../data.json'
+import TweetEmbed from 'react-tweet-embed'
 
 function Testimonial() {
   return (
@@ -19,20 +20,21 @@ function Testimonial() {
         </div>
         <div className="px-0 text-center lg:px-44">
           <Heading
-            title={undefined}
-            isLight={undefined}
-            color={undefined}
             priority={2}
           >
             Loved by thousands of developers around the world.
           </Heading>
         </div>
+        <div className=" twitter ">
+          <TweetEmbed tweetId='771763270273294336' />
+      </div>
 
-        <div className="testimonial_grid">
+
+        {/* <div className="testimonial_grid">
             {
                 data.testimonials.map((ele:any)=> <Card istestimonial image={ele.image} href='/car' name={ele.name} title={ele.title} creator={ele.creator}/>)
             }
-        </div>
+        </div> */}
       </div>
     </>
   );

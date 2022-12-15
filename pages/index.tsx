@@ -1,18 +1,17 @@
 import SubBanner from "../components/SubBanner";
 import HeroSection from "../section/Home/HeroSection";
 import Services from "../section/Home/Services";
-import Sponsors from "../section/Home/Sponsors";
 import SubSection from "../section/Home/SubSection";
 import phpcodeimage from "../public/images/phpcode.png";
 import Solution from "../section/Home/Solution";
 import Testimonial from "../section/Home/Testimonial";
 import Community from "../section/Home/Community";
+import Layout from "../Layout/Layout";
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <HeroSection />
-      {/* <Sponsors /> */}
       <SubSection />
       <Services />
       <SubBanner
@@ -22,14 +21,15 @@ export default function Home() {
         src={phpcodeimage}
       />
       <Solution />
-      <Testimonial/>
-      <Community/>
+      <Testimonial />
+      <Community />
+
       <SubBanner
         heading="Hire a partner for your next project"
         desc="Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project."
         btntext="BROWSE PARTNERS"
         src={phpcodeimage}
       />
-    </>
+    </Layout>
   );
 }

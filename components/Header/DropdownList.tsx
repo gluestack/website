@@ -29,7 +29,6 @@ function DropdownList() {
                         </div>
                         <div className="ml-4 leading-5">
                           <Heading
-                            title={undefined}
                             isLight={undefined}
                             color={undefined}
                             priority={6}

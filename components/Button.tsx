@@ -2,13 +2,11 @@ import React, { Children } from "react";
 import Link from "next/link";
 
 function Button({
-  text,
   isSecondary,
   sm,
   lg,
   xl,
   link,
-  onClick,
   children,
 }: any) {
   return (

@@ -15,16 +15,11 @@ function Services() {
         <div className="container py-16 mx-auto">
           <div className="">
             <div className="lg:w-5/12">
-              <Heading
-                title={undefined}
-                isLight={undefined}
-                color={undefined}
-                priority={2}
-              >
+              <Heading priority={2}>
                 Everything you need to be amazing.
               </Heading>
             </div>
-            <div className="service_grid">
+            <div className="grid py-6 lg:grid-cols-4  grid-cols-2">
               <List src={databaseimg} title="Database">
                 {" "}
                 Laravel's{" "}

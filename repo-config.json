@@ -1,14 +1,11 @@
 {
-  "cli": {
-    "gitUrl": "https://github.com/gluestack/cli.git",
-    "pagesPath": "",
-    "repoName": "cli",
-    "ignoredFolders": []
-  },
-  "docs": {
-    "gitUrl": "https://github.com/gluestack/template-docs.git",
-    "pagesPath": "pages",
-    "repoName": "template-docs",
-    "ignoredfolders": []
+  "framework": {
+    "gitUrl": "https://github.com/gluestack/framework",
+    "docsPath": "docs",
+    "branchName": "feat/docs-updated",
+    "repoName": "framework",
+    "rootDocs": true,
+    "ignoredfolders": [],
+    "destinationPath": "/docs/1.x"
   }
 }
