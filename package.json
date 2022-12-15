@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "get-repos": "node scripts/get-latest-version-data.js"
+    "get-docs-data": "node scripts/get-docs-data.js"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
