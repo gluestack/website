@@ -5,19 +5,19 @@
         "sidebar": [
           {
             "type": "sidebar",
-            "title": "cli",
+            "title": "template-docs",
             "pages": [
               {
                 "type": "heading",
-                "title": "Heading Example for v1.0.x",
+                "title": "Heading",
                 "pages": [
                   {
                     "id": "mdx-example",
-                    "title": "MDX Example 1"
+                    "title": "MDX Example 1444"
                   },
                   {
                     "id": "react-example",
-                    "title": "React Example 1"
+                    "title": "React Example 144"
                   }
                 ]
               }
@@ -25,15 +25,16 @@
           },
           {
             "type": "heading",
-            "title": "Heading Example for v1.0.x",
+            "title": "Heading Example",
+            "isCollapsable": true,
             "pages": [
               {
-                "id": "mdx-example",
-                "title": "MDX Example 1"
+                "id": "getting-started",
+                "title": "Getting started"
               },
               {
-                "id": "react-example",
-                "title": "React Example 1"
+                "id": "introduction",
+                "title": "Introduction"
               }
             ]
           }

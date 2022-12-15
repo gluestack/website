@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { Content } from "./components/Content";
 import { Header } from "../components/Header";
 import { versions } from "../versions.json";
+import SidebarLatest from "./components/SidebarLatest";
 
 function PagesLayout(props: any) {
   return (
@@ -15,11 +16,12 @@ function PagesLayout(props: any) {
       /> */}
       <Header />
       <div className="h-full w-full flex row ">
-        <Sidebar
+        <SidebarLatest versions={versions} />
+        {/* <Sidebar
           versions={versions}
           // {...props.versionInfo[props.version]}
           // version={props.version}
-        />
+        /> */}
         <Content {...props} />
       </div>
     </div>
