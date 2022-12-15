@@ -22,18 +22,27 @@ jobs:
         run: |
           yarn get-docs-data
 
-      - name: Commit & Push changes
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
-          message: "Auto updated docs"
+      - name: Push Website with Latest Changes
+        run: |
+          git add .
+          git config user.name ${{ secrets.MY_GITHUB_USERNAME }}
+          git config user.email ${{ secrets.MY_GITHUB_EMAIL }}
+          git commit -am "Imported TestA"
+          git checkout -b feat/${{ github.event.repository.name }}--${{ github.sha || github.run_id || github.ref }}
+          git push origin feat/${{ github.event.repository.name }}--${{ github.sha || github.run_id || github.ref }}
 
-      # - name: Run the Action
-      #   uses: devops-infra/action-pull-request@v0.5.3
+      # - name: Commit & Push changes
+      #   uses: actions-js/push@master
       #   with:
       #     github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-      #     source_branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
-      #     target_branch: main
-      #     title: Docs Update
-      #     body: "**Automated pull request**"
+      #     branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
+      #     message: "Auto updated docs"
+
+      - name: Run the Action
+        uses: devops-infra/action-pull-request@v0.5.3
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          source_branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
+          target_branch: main
+          title: Docs Update
+          body: "**Automated pull request**"
