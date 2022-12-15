@@ -1,14 +1,13 @@
 #! /bin/bash
-
 const path = require("path");
-const { execSync } = require("child_process");
+const { execSync, spawn } = require("child_process");
 const repoConfig = require("../repo-config.json");
 const fs = require("fs-extra");
 
 const pagesPath = path.join(__dirname, "../pages");
 const ignoredfolder = ["_app.tsx", "index.tsx", "api"];
 const tmpPath = path.join(__dirname, "tmp");
-let data1 = [];
+
 let sidebarTemplate = {
   versions: [
     {
@@ -18,83 +17,96 @@ let sidebarTemplate = {
     },
   ],
 };
+
+main();
+function main() {
+  cleanUp(tmpPath);
+  cloneRepoPages();
+}
+
 // sidebarTemplate.versions[0]['1.x'].sidebar.push()
-const cloneRepoPages = () => {
+function cloneRepoPages() {
   Object.keys(repoConfig).map((e) => {
     // console.log(e, repoConfig[e]);
     let repoInfo = repoConfig[e];
+    const versionJsonPath = path.join(
+      tmpPath,
+      repoInfo["repoName"],
+      repoInfo["docsPath"],
+      "versions.json"
+    );
+
+    const repoPath = path.join(tmpPath, repoInfo["repoName"]);
 
     let copyPath = path.join(pagesPath, repoInfo.destinationPath);
     execSync("git clone " + repoConfig[e].gitUrl, {
       stdio: [0, 1, 2], // we need this so node will print the command output
       cwd: tmpPath, // path to where you want to save the file
     });
-    if (
-      fs.existsSync(path.join(tmpPath, repoInfo["repoName"], "versions.json"))
-    ) {
-      let data = fs.readFileSync(
-        path.join(tmpPath, repoInfo["repoName"], "versions.json"),
-        {
-          encoding: "utf-8",
+
+    console.log("Cloned", repoInfo["repoName"]);
+    changeBranch(repoPath, repoInfo["branchName"])
+      .then((data) => {
+        console.log(data, "Data from shell script to checkout branch");
+        if (fs.existsSync(versionJsonPath)) {
+          let data = fs.readFileSync(versionJsonPath, {
+            encoding: "utf-8",
+          });
+          data = JSON.parse(data);
+          let sidebarData = getLatestVersion(data.versions)[
+            Object.keys(getLatestVersion(data.versions))[0]
+          ].sidebar;
+
+          if (repoInfo.rootDocs) {
+            sidebarData.map((data) => {
+              sidebarTemplate.versions[0]["1.x"].sidebar.push(data);
+            });
+          } else {
+            let obj = {
+              type: "sidebar",
+              title: repoInfo["repoName"],
+              pages: [],
+            };
+            sidebarData.map((data) => {
+              obj.pages.push(data);
+            });
+            sidebarTemplate.versions[0]["1.x"].sidebar.push(obj);
+          }
+
+          if (!fs.existsSync(path.join(copyPath))) {
+            fs.mkdirSync(path.join(copyPath));
+          }
+          if (fs.existsSync(path.join(__dirname, "../versions.json"))) {
+            fs.writeFileSync(
+              path.join(__dirname, "../versions.json"),
+              JSON.stringify(sidebarTemplate)
+            );
+          }
+          copyFiles(
+            path.join(
+              tmpPath,
+              repoInfo["repoName"],
+              repoInfo["docsPath"],
+              "pages",
+              Object.keys(getLatestVersion(data.versions))[0]
+            ),
+            path.join(copyPath)
+          );
+          deleteIgnoredFiles(path.join(copyPath));
+          cleanUp(tmpPath);
         }
-      );
-      data = JSON.parse(data);
-      data1 = [
-        ...data1,
-        getLatestVersion(data.versions)[
-          Object.keys(getLatestVersion(data.versions))[0]
-        ].sidebar,
-      ];
-      let sidebarData = getLatestVersion(data.versions)[
-        Object.keys(getLatestVersion(data.versions))[0]
-      ].sidebar;
-
-      if (repoInfo.rootDocs) {
-        // console.log(sidebarData);
-        sidebarData.map((data) => {
-          sidebarTemplate.versions[0]["1.x"].sidebar.push(data);
-        });
-        // console.log(sidebarTemplate.versions[0]["1.x"].sidebar);
-      } else {
-        let obj = {
-          type: "sidebar",
-          title: repoInfo["repoName"],
-          pages: [],
-        };
-        sidebarData.map((data) => {
-          obj.pages.push(data);
-        });
-        sidebarTemplate.versions[0]["1.x"].sidebar.push(obj);
-      }
-
-      if (!fs.existsSync(path.join(copyPath))) {
-        fs.mkdirSync(path.join(copyPath));
-      }
-      if (fs.existsSync(path.join(__dirname, "../versions.json"))) {
-        fs.writeFileSync(
-          path.join(__dirname, "../versions.json"),
-          JSON.stringify(sidebarTemplate)
-        );
-      }
-      copyFiles(
-        path.join(
-          tmpPath,
-          repoInfo["repoName"],
-          "pages",
-          Object.keys(getLatestVersion(data.versions))[0]
-        ),
-        path.join(copyPath)
-      );
-      deleteIgnoredFiles(path.join(copyPath));
-    }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   });
-};
+}
 
 function getLatestVersion(data) {
   return data[data.length - 1];
 }
 
-const deleteIgnoredFiles = (path1) => {
+function deleteIgnoredFiles(path1) {
   for (let i = 0; i < ignoredfolder.length; i++) {
     if (fs.existsSync(path.join(path1, ignoredfolder[i]))) {
       if (ignoredfolder[i].includes(".")) {
@@ -107,9 +119,9 @@ const deleteIgnoredFiles = (path1) => {
       }
     }
   }
-};
+}
 
-const copyFiles = (srcDir, destDir) => {
+function copyFiles(srcDir, destDir) {
   try {
     if (fs.existsSync(srcDir)) {
       fs.copySync(srcDir, destDir, {
@@ -119,6 +131,60 @@ const copyFiles = (srcDir, destDir) => {
   } catch (err) {
     console.error(err);
   }
-};
+}
 
-cloneRepoPages();
+function cleanUp(tmpPath) {
+  console.log("Cleanig up tmp");
+  let files = fs.readdirSync(tmpPath);
+  for (let i = 0; i < files.length; i++) {
+    const fileDir = path.join(tmpPath, files[i]);
+    if (!fileDir.includes(".gitignore")) {
+      fs.rmSync(fileDir, { recursive: true, force: true });
+    }
+  }
+}
+
+async function changeBranch(repoPath, repoName) {
+  let scriptPath = path.join(__dirname, "change-branch.sh");
+  let ls = spawn("sh", [scriptPath, repoPath, repoName]);
+
+  let data = "";
+  for await (const chunk of ls.stdout) {
+    console.log("stdout chunk: " + chunk);
+    data += chunk;
+  }
+  let error = "";
+  for await (const chunk of ls.stderr) {
+    console.error("stderr chunk: " + chunk);
+    error += chunk;
+  }
+  const exitCode = await new Promise((resolve, reject) => {
+    ls.on("close", resolve);
+  });
+
+  if (exitCode) {
+    throw new Error(`subprocess error exit ${exitCode}, ${error}`);
+  }
+  return data;
+}
+
+// function changeBranch(repoPath, repoName) {
+//   let scriptPath = path.join(__dirname, "change-branch.sh");
+//   let ls = spawn("sh", [scriptPath, repoPath, repoName]);
+
+//   ls.stdout.on("data", function (data) {
+//     console.log(`Output: ${data}`);
+//   });
+
+//   ls.stderr.on("data", (data) => {
+//     console.log(`stderr: ${data}`);
+//   });
+
+//   ls.on("error", (error) => {
+//     console.log(`error: ${error.message}`);
+//   });
+
+//   ls.on("close", (code) => {
+//     return 1;
+//   });
+// }

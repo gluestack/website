@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "get-repos": "node scripts/get-latest-version-data.js"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
