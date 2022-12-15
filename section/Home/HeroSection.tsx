@@ -5,8 +5,8 @@ import Text from "../../elements/Text";
 import banner from "/public/images/banner.png";
 import Banner from "../../components/Banner";
 import Button from "../../components/Button";
-import Animation from "../../components/Animation";
-import animationData from "public/animation/AnimationSteps.json";
+import gifSteps from "../../public/animation/animation.gif"
+import Image from "next/image";
 function HeroSection() {
   return (
     <>
@@ -37,7 +37,8 @@ function HeroSection() {
             </div>
           </div>
           <div className="heroImage">
-            <Animation data={animationData} />
+            <Image src={gifSteps} alt="image" />
+            {/* <Animation data={animationData} /> */}
           </div>
         </div>
       </Banner>

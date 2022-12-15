@@ -3,7 +3,7 @@ import lottie from "lottie-web";
 function Animation({data}) {
   useEffect(() => {
     const instance =  lottie.loadAnimation({
-      container: document.querySelector('#car'), 
+      container: document.querySelector('#animation'), 
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -17,7 +17,7 @@ function Animation({data}) {
     return () => instance.destroy();
    }, [])
   return (
-    <div id="car"   className=''></div>
+    <div id="animation"   className=''></div>
   )
 }
 
