@@ -6,16 +6,17 @@ import banner from "/public/images/banner.png";
 import heroBanner from "/public/images/bannerbackground.png";
 import Image from "next/image";
 import Banner from "../../components/Banner";
+import Button from "../../components/Button";
 function HeroSection() {
   return (
     <Banner cover={banner} altText="banner">
       <div className="herobanner">
-        <div className="herotext">
-          <div className="py-10 text-center sm:text-start">
+        <div className="heroflex">
+          <div className="heroHead">
             <Heading isLight={false} priority={1}>
               One stack for web, mobile, & backend
             </Heading>
-            <div className="pt-2 md:w-10/12">
+            <div className="herotext md:w-5/7">
               <Text size={"lg"} style="font-normal">
                 <span className="font-semibold">100% open source</span>
                 full-stack framework that takes away the complexities of
@@ -23,6 +24,10 @@ function HeroSection() {
                 swiftly from idea to enterprise.
               </Text>
             </div>
+            <div className="herobtn">
+              <Button xxl isSecondary link={''} >Join the waitlist for early access</Button>
+            </div>
+
           </div>
         </div>
         <div className="heroImage">
