@@ -21,9 +21,9 @@ export default function Home() {
         src={phpcodeimage}
       />
       <Solution />
-      <Testimonial/>
-      <Community/>
-     
+      <Testimonial />
+      <Community />
+
       <SubBanner
         heading="Hire a partner for your next project"
         desc="Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project."
