@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Heading from "../elements/Heading";
 import Linktag from "../elements/Linktag";
 import Text from "../elements/Text";
 import forgeimage from "../public/ecosystem/forge.min.svg";

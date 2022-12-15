@@ -1,0 +1,39 @@
+name: Print on external push
+
+# Controls when the action will run. Triggers the workflow on repository_dispatch and filters by type of event (i.e. `event_type`)
+on:
+  repository_dispatch:
+    types: [dispatch_website_docs]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run Fetch Repo Script
+        run: |
+          yarn get-docs-data
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
+          message: "Auto updated docs"
+
+      - name: Run the Action
+        uses: devops-infra/action-pull-request@v0.5.3
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          source_branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
+          target_branch: main
+          title: Docs Update
+          body: "**Automated pull request**"

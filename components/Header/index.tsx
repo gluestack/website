@@ -48,7 +48,7 @@ export const Header = () => {
               <SearchBar />
             </Modal>
             <div className="hidden lg:block">
-              <Button>DOCUMENTATION</Button>
+              <Button link="/docs">DOCUMENTATION</Button>
             </div>
             <Hamburger setExpand={setExpand} expand={expand} />
           </div>

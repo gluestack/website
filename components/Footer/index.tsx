@@ -28,7 +28,7 @@ export const Footer = () => {
         <Logo/>
         <div className="footer_grid">
           <div className="para_text">
-            <Text size='sm' style='text-textcolor' font='light'> Laravel is a web application framework with expressive, elegant
+            <Text size='sm'  font='light'> Laravel is a web application framework with expressive, elegant
               syntax. We believe development must be an enjoyable and creative
               experience to be truly fulfilling. Laravel attempts to take the
               pain out of development by easing common tasks used in most web
@@ -108,10 +108,10 @@ export const Footer = () => {
           
         </div>
         <div className="py-6 pt-6 pb-16 border-t border-gray-200 ">
-            <p className="text-xs text-textcolor ">
+            <p className="text-xs  ">
                 Laravel is a Trademark of Taylor Otwell. Copyright © 2011-2022 Laravel LLC.
             </p>
-            <p className="py-4 text-xs text-textcolor ">
+            <p className="py-4 text-xs  ">
                 Code highlighting provided by <a href="https://torchlight.dev">Torchlight</a>
             </p>
         </div>

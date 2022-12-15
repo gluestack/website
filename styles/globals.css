@@ -3,46 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  html,body{
-    -webkit-text-size-adjust: 100%;
-  font-family: scandia-web, ui-sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+
   
-  * {
-    box-sizing: border-box;
-  }
-}
+
 
 
 @import './button.css';
 @import './modal.css';
 @import './header.css';
 @import './herosection.css';
-@import './service.css';
 @import './card.css';
-@import './solution.css';
 @import './search.css';
 @import './testimonial.css';
 @import './footer.css';
 @import './team/team.css';
 
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
 
 .filter-primary{
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg) brightness(104%) contrast(101%);
 }
 
 .twitter > div{
-  @apply grid grid-cols-3	gap-4;
+  @apply grid grid-cols-3	gap-6 py-6;
 }

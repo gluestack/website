@@ -1,0 +1,11 @@
+{
+  "framework": {
+    "gitUrl": "https://github.com/gluestack/framework",
+    "docsPath": "docs",
+    "branchName": "master",
+    "repoName": "framework",
+    "rootDocs": true,
+    "ignoredfolders": [],
+    "destinationPath": "/docs/1.x"
+  }
+}
