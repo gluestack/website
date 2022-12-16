@@ -48,12 +48,12 @@ export const Header = () => {
             >
               <SearchBar />
             </Modal>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <Button link="/docs">DOCUMENTATION</Button>
-            </div>
-            <Hamburger setExpand={setExpand} expand={expand} />
+            </div> */}
+            {/* <Hamburger setExpand={setExpand} expand={expand} /> */}
           </div>
-          <Menu expand={expand} />
+          {/* <Menu expand={expand} /> */}
         </div>
       </nav>
     </>
