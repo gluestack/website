@@ -9,7 +9,6 @@ import Community from "../section/Home/Community";
 import DeveloperPreview from "../components/DeveloperPreview";
 import Hook from "../components/Animation";
 import Layout from "../Layout/Layout";
-
 export default function Home() {
   return (
     <>

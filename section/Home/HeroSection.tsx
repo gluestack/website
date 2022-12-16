@@ -5,14 +5,11 @@ import Banner from "../../components/Banner";
 import Button from "../../components/Button";
 import gifSteps from "../../public/animation/animation.gif";
 import Image from "next/image";
-import Head from "next/head";
-import { Header } from "../../components/Header";
+import Script from 'next/script'
 function HeroSection() {
   return (
     <>
-    <Head>
-      <script src="//embed.typeform.com/next/embed.js"></script>
-    </Head>
+      <Script src="//embed.typeform.com/next/embed.js"></Script>
       <Banner cover={''} altText="banner">
         <div className="herobanner">
           <div className="heroflex">
@@ -29,22 +26,21 @@ function HeroSection() {
                 </Text>
               </div>
               <div className="herobtn">
-                {/* <Button
-                data="QWcoG0YF"
+                <Button
                   xxl
                   isSecondary
-                  link={""}
+                  dataId="QWcoG0YF"
                 >
                   Join the waitlist for early access{" "}
-                </Button> */}
-                <span className="btn_outline group">
+                </Button>
+                {/* <span className="btn_outline group">
                 <button
                   data-tf-popup="QWcoG0YF"
                   className="text-white capitalize bg-primary ring-primary ring-offset-primary btn"
                 >
                   Join the waitlist for early access
                 </button>
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
