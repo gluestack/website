@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import logo from "/public/logo/lightLogo.svg"
 
 function Logo() {
   return (
@@ -9,9 +10,9 @@ function Logo() {
         <a className="inline-flex items-center">
           <Image
             className=""
-            src="/images/logo.png"
+            src={logo}
             alt="gluestack"
-            width={140}
+            width={200}
             height={100}
           />
         </a>
