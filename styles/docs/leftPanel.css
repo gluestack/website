@@ -1,0 +1,7 @@
+.left-panel {
+    /* md:left-0 bg-[#f6faf9] md:h-full md:overflow-y-auto md:flex-row md:flex-nowrap shadow-xl bg-white flex-wrap items-center justify-between relative w-2/6 z-10 */
+    @apply bg-white md:left-0 text-sm md:flex-row md:flex-nowrap flex-wrap items-center justify-between relative w-2/6 z-10
+}
+.active {
+    @apply before:absolute before:w-2 before:h-2 before:rounded-2xl before:bg-primary-100 before:top-4 before:left-2 before:mt-0.5 relative
+}
