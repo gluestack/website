@@ -53,7 +53,7 @@ function Button({
                 : xl
                 ? "px-[70px] py-2 md:px-[50px]  font-bold"
                 : xxl
-                ? "lg:px-20  py-2  text-sm lg:text-base"
+                ? "lg:px-20  px-2 py-2  text-sm lg:text-base"
                 : "lg:px-6 lg:py-2 px-12 py-2  text-base"
             }
             `}
