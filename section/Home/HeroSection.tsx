@@ -7,13 +7,15 @@ import gifSteps from "../../public/animation/animation.gif";
 import Image from "next/image";
 import Head from "next/head";
 import { Header } from "../../components/Header";
+import Meta from "../../components/Meta/Meta";
 function HeroSection() {
   return (
     <>
-    <Head>
-      <script src="//embed.typeform.com/next/embed.js"></script>
-    </Head>
-      <Banner cover={''} altText="banner">
+      <Head>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+      </Head>
+      <Meta description="gluestack - One stack for web, mobile, & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps." />
+      <Banner cover={""} altText="banner">
         <div className="herobanner">
           <div className="heroflex">
             <div className="heroHead">
@@ -38,12 +40,12 @@ function HeroSection() {
                   Join the waitlist for early access{" "}
                 </Button> */}
                 <span className="btn_outline group">
-                <button
-                  data-tf-popup="QWcoG0YF"
-                  className="text-white capitalize bg-primary ring-primary ring-offset-primary btn"
-                >
-                  Join the waitlist for early access
-                </button>
+                  <button
+                    data-tf-popup="QWcoG0YF"
+                    className="px-2 py-2 text-sm text-white capitalize lg:px-20 lg:py-2 lg:text-base bg-primary ring-primary ring-offset-primary btn"
+                  >
+                    Join the waitlist for early access
+                  </button>
                 </span>
               </div>
             </div>
