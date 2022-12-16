@@ -1,8 +1,6 @@
-// import { url } from "inspector";
 import React from "react";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
-import banner from "/public/images/banner.png";
 import Banner from "../../components/Banner";
 import Button from "../../components/Button";
 import gifSteps from "../../public/animation/animation.gif";
@@ -15,8 +13,7 @@ function HeroSection() {
     <Head>
       <script src="//embed.typeform.com/next/embed.js"></script>
     </Head>
-      <Header />
-      <Banner cover={banner} altText="banner">
+      <Banner cover={''} altText="banner">
         <div className="herobanner">
           <div className="heroflex">
             <div className="heroHead">

@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import Hamburger from "./Hamburger";
 const Modal = dynamic(() => import("../modal/Modal"));
 import SearchBar from "./SearchBar";
+import React from "react";
 
 export const Header = () => {
   const [expand, setExpand] = useState(false);
