@@ -23,13 +23,13 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
         />
         <meta
           property="twitter:description"
-          content={description || "One stack for web, mobile, & backend"}
+          content={description || "gluestack - One stack for web, mobile, & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."}
         />
 
         <meta key="og:image" property="og:image" content={ogImgUrl || '/ogimage/og-image.png'} />
         <meta
           property="twitter:image"
-          content={ogImgUrl || "https://geekyants.com/images/og.jpeg"}
+          content={ogImgUrl || "/ogimage/og-image.png"}
         />
         <meta key="og:url" property="og:url" content={ogUrl} />
       </Head>

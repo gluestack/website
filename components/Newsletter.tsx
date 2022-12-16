@@ -3,7 +3,7 @@ import React from "react";
 function Newletter() {
   return (
     <div className="sib-form">
-      <div id="sib-form-container" className="sib-form-container">
+      {/* <div id="sib-form-container" className="sib-form-container">
         <div id="error-message" className="sib-form-message-panel">
           <div className="sib-form-message-panel__text sib-form-message-panel__text--center">
             <svg
@@ -95,7 +95,7 @@ function Newletter() {
             <input type="hidden" name="locale" value="en" />
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
