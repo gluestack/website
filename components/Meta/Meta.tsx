@@ -13,7 +13,6 @@ function Meta({title,description,ogImgUrl,ogUrl,date}:any) {
         <meta key="og:description" property="og:description" content={description} />
         <meta key="og:image" property="og:image" content={ogImgUrl} />
         <meta key="og:url" property="og:url" content={ogUrl} />
-       <meta property='Blog' content={date}/>
         </Head>
     </>
   )

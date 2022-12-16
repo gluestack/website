@@ -1,12 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-  
-
-
 
 @import './button.css';
 @import './modal.css';
@@ -23,11 +18,17 @@
   padding:0;
   margin:0;
 }
+@layer base {
+  html{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 252, 252);
+  }
+}
 
 .filter-primary{
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg) brightness(104%) contrast(101%);
 }
 
 .twitter > div{
-  @apply grid grid-cols-3	gap-6 py-6;
+  @apply grid grid-cols-3 gap-6 py-6;
 }

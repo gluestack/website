@@ -6,7 +6,7 @@ function Menu({ expand }: any) {
   return (
     <>
       <div className={`${expand ? "h-[50em]" : ` h-0 md:h-auto`}  nav-list`}>
-        <ul className="nav-list-ul">
+        {/* <ul className="nav-list-ul">
           <li className="item">
             <Linktag href="/" style="linkstyle font-light">
             Hosting
@@ -17,11 +17,11 @@ function Menu({ expand }: any) {
             Design System
             </Linktag>
           </li>
-          {/* <li className="hidden md:block">
+          <li className="hidden md:block">
             <Linktag href="/" style="linkstyle">
             Blogs
             </Linktag>
-          </li> */}
+          </li>
           <li className="item">
             <Linktag href="/" style="linkstyle font-light">
             Blogs
@@ -37,7 +37,7 @@ function Menu({ expand }: any) {
               <Button xl>DOCUMENTATION</Button>
             </div>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </>
   );
