@@ -22,15 +22,72 @@
 
 @layer base {
   html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'SF Pro';
     background-color: rgb(255, 252, 252);
   }
 }
 
-@layer base {
-  html {
-    font-family: 'Open Sans', sans-serif;
-  }
+@font-face {
+  font-family: "display-Regular";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Regular.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-Light";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "display-Bold";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Bold1.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-Heavy";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Heavy.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-Semibold";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Semibold.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-BoldItalic";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-BoldItalic.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-display: fallback;
+
+}
+@font-face {
+  font-family: "display-Medium";
+  src: url("/fonts/sf-pro/SFProDisplay-Medium.woff2" ) format("woff2");
+  
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
 }
 
 

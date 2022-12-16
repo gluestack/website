@@ -43,7 +43,7 @@ function Button({
         <span
             className={`btn ${
               isSecondary
-                ? "text-white  bg-primary  ring-primary  ring-offset-primary "
+                ? "text-white  bg-primary  ring-primary  ring-offset-primary capitalize "
                 : "text-primary  bg-white ring-primary "
             } ${
               sm

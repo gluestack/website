@@ -11,7 +11,7 @@ function Layout({ children }) {
   };
   return (
     <>
-      <Meta title={pageTitle(router.asPath) || "Home"} ogUrl={`localhost:3000${router.asPath}`}/>
+      <Meta title={pageTitle(router.asPath)} ogUrl={`localhost:3000${router.asPath}`}/>
       <Header/>
       {children}
       {/* <Footer /> */}
