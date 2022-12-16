@@ -5,24 +5,28 @@ import { Content } from "./components/Content";
 import { Header } from "../components/Header";
 import { versions } from "../versions.json";
 import SidebarLatest from "./components/SidebarLatest";
+import ContentHeader from "./components/ContentHeader";
 
 function PagesLayout(props: any) {
   return (
-    <div className="relative  overflow-hidden">
+    <div className="relative h-[100vh] overflow-hidden">
       {/* <Navbar
         setVersion={props.setVersion}
         version={props.version}
         versionsData={props.versionsData}
       /> */}
-      <Header />
-      <div className="h-full w-full flex row ">
+      {/* <Header /> */}
+      <div className="flex h-full row ">
         <SidebarLatest versions={versions} />
         {/* <Sidebar
           versions={versions}
           // {...props.versionInfo[props.version]}
           // version={props.version}
         /> */}
-        <Content {...props} />
+        <div className="w-[100vw]">
+          <ContentHeader />
+          <Content {...props} />
+        </div>
       </div>
     </div>
   );
