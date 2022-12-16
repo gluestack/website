@@ -7,7 +7,7 @@ export default function ContentHeader(props: any) {
     <>
       {/* Navbar */}
       <nav className=" top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center ">
-        <div className="px-20 w-full pt-12">
+        <div className="px-20 w-full pt-12 pr-60">
           <div className="flex row ">
             <SearchInput />
             <Dropdown />

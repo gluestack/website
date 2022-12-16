@@ -9,7 +9,7 @@ import ContentHeader from "./components/ContentHeader";
 
 function PagesLayout(props: any) {
   return (
-    <div className="relative h-[100vh] overflow-hidden">
+    <div className="relative">
       {/* <Navbar
         setVersion={props.setVersion}
         version={props.version}

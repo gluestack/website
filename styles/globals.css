@@ -17,6 +17,26 @@
 @import './testimonial.css';
 @import './footer.css';
 @import './team/team.css';
+@import './docs/leftPanel.css';
+
+
+@font-face {
+  font-family: "SFPro";
+  src: url("../public/fonts/SF-Pro-Text-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("../public/fonts/SF-Pro-Display-Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("../public/fonts/SF-Pro-Display-Bold.otf");
+  font-weight: 700;
+}
 
 * {
   box-sizing: border-box;
