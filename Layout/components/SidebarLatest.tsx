@@ -11,8 +11,8 @@ export default function SidebarLatest(props: any) {
       <div className="xmx-auto px-12 pt-16">
         <SidebarHeader />
       </div>
-      <div className="md:flex-col px-6 md:items-stretch overflow-hidden md:min-h-full md:flex-nowrap flex flex-wrap items-center justify-between w-full">
-        <div className="pt-8">
+      <div className="md:flex-col px-6 md:items-stretch md:min-h-full md:flex-nowrap flex flex-wrap items-center justify-between w-full pt-8  ">
+        <div className="link-list">
           <SidebarDocs {...props} linkUrl="/docs" />
         </div>
       </div>
