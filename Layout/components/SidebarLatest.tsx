@@ -7,7 +7,7 @@ import { link, linkSync } from "fs";
 
 export default function SidebarLatest(props: any) {
   return (
-    <nav className="left-panel font-SFPro">
+    <nav className="left-panel font-displaySemibold">
       <div className="xmx-auto px-12 pt-16">
         <SidebarHeader />
       </div>
@@ -115,7 +115,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
             ) : (
               // <div className="text-black">hihihi</div>
               <>
-                <h2 className="font-sm ml-2 font-bold text-black-100 leading-tight mt-0 mb-2 px-6 ">
+                <h2 className="font-sm ml-2 font-displayHead text-black-100 leading-tight mt-0 mb-2 px-6 ">
                   {props.title}
                 </h2>
                 {props?.pages.map((pageInfo: any) => {
