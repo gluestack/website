@@ -58,6 +58,24 @@ module.exports = {
         bolder: 900,
       }
     },
+    fontFamily: {
+      body: ['display-Regular', 'sans-serif'],
+      display: ['display-Regular', 'sans-serif'],
+      displayHead: ['display-Bold', 'sans-serif'],
+      displaySemibold: [
+        'display-Semibold',
+        'sans-serif',
+      ],
+      displayHeavy: ['display-Heavy', 'sans-serif'],
+      displayLight: ['display-Light', 'sans-serif'],
+      displayItalic: [
+        'display-BoldItalic',
+        'sans-serif',
+      ],
+      displayMedium: ['display-Medium', 'sans-serif'],
+      // pacifico: ['Pacifico', 'cursive'],
+      Lora: ['Lora', 'serif'],
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

@@ -1,12 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-  
-
-
 
 @import './button.css';
 @import './modal.css';
@@ -40,14 +36,85 @@
 
 * {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-.filter-primary{
+@layer base {
+  html {
+    @appy font-display;
+    background-color: rgb(255, 252, 252);
+  }
+}
+
+@font-face {
+  font-family: "display-Regular";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Regular.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-Light";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "display-Bold";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Bold1.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-Heavy";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Heavy.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-Semibold";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Semibold.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "display-BoldItalic";
+  src: local("â˜º"),
+    url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-BoldItalic.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-display: fallback;
+
+}
+@font-face {
+  font-family: "display-Medium";
+  src: url("/fonts/sf-pro/SFProDisplay-Medium.woff2" ) format("woff2");
+  
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+
+.filter-primary {
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg) brightness(104%) contrast(101%);
 }
 
-.twitter > div{
-  @apply grid grid-cols-3	gap-6 py-6;
+.twitter>div {
+  @apply grid grid-cols-3 gap-6 py-6;
 }

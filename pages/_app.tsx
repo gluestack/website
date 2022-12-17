@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
@@ -16,8 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
   } else {
     return (
       <Layout>
-        <Component {...pageProps} />;
-      </Layout>
+        <Component {...pageProps} />
+     </Layout>
     );
   }
 }

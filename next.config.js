@@ -16,7 +16,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost", `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}`],
+    domains: ["localhost", `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}`,'flowbite.s3.amazonaws.com'],
   },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 };
