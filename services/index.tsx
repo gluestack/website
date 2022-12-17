@@ -1,23 +1,38 @@
 import client from "./apollo-client";
 import { gql } from "@apollo/client";
 
-export function teamService() {
-    return client.query({
-      query: gql`
-      query{
-        teams{
-          data{
-            id
-            attributes{
-              name
-              designation
-              twitter
-              github
-              linkedin
-              image{
-                data{
-                  attributes{
+export function BlogService() {
+  return client.query({
+    query: gql`
+      query getBlog {
+        blogs {
+          data {
+            attributes {
+              title
+              shortDes
+              slug
+              coverImg {
+                data {
+                  attributes {
                     url
+                  }
+                }
+              }
+              altText
+              details
+              publish_date
+              blog_author {
+                data {
+                  attributes {
+                    name
+                    image {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                    altText
                   }
                 }
               }
@@ -25,8 +40,6 @@ export function teamService() {
           }
         }
       }
-      `,
-    });
-  }
-  
-  
+    `,
+  });
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({ isLight, color, priority, children }: any) => {
+const Heading = ({ isLight, color, priority,style, children }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
     <div>
