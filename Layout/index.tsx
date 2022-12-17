@@ -11,7 +11,7 @@ function PagesLayout(props: any) {
   return (
     <div className="relative layout-theme ">
       {/* Add 'fixed' class beside 'layout-theme' to have fixed layout */}
-      
+
       {/* <Navbar
         setVersion={props.setVersion}
         version={props.version}

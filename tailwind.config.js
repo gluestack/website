@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
+
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./elements/**/*.{js,ts,jsx,tsx}",
     "./layout/**/*.{js.ts,jsx,tsx}",
     "./section/**/*.{js.ts,jsx,tsx}",
+    "./Layout/*.{js.ts,jsx,tsx}",
   ],
 
   theme: {
@@ -25,26 +28,22 @@ module.exports = {
       },
 
       colors: {
-
-
         primary: {
           DEFAULT: "#8944CE",
           100: "#BF7EFF",
           600: "#8944CE",
-          700:'#8944CE',
+          700: "#8944CE",
         },
         secondary: {
           400: "#404040",
           DEFAULT: "#222020",
-        
         },
         black: {
           DEFAULT: "#000000",
-          100: "#222020"
-        }
-
+          100: "#222020",
+        },
       },
-     
+
       fontWeight: {
         thin: 200,
         light: 300,
@@ -54,46 +53,40 @@ module.exports = {
         bold: 700,
         extrabold: 800,
         bolder: 900,
-      }
+      },
     },
     fontFamily: {
-      body: ['display-Regular', 'sans-serif'],
-      display: ['display-Regular', 'sans-serif'],
-      displayHead: ['display-Bold', 'sans-serif'],
-      displaySemibold: [
-        'display-Semibold',
-        'sans-serif',
-      ],
-      displayHeavy: ['display-Heavy', 'sans-serif'],
-      displayLight: ['display-Light', 'sans-serif'],
-      displayItalic: [
-        'display-BoldItalic',
-        'sans-serif',
-      ],
-      displayMedium: ['display-Medium', 'sans-serif'],
+      body: ["display-Regular", "sans-serif"],
+      display: ["display-Regular", "sans-serif"],
+      displayHead: ["display-Bold", "sans-serif"],
+      displaySemibold: ["display-Semibold", "sans-serif"],
+      displayHeavy: ["display-Heavy", "sans-serif"],
+      displayLight: ["display-Light", "sans-serif"],
+      displayItalic: ["display-BoldItalic", "sans-serif"],
+      displayMedium: ["display-Medium", "sans-serif"],
       // pacifico: ['Pacifico', 'cursive'],
-      Lora: ['Lora', 'serif'],
+      Lora: ["Lora", "serif"],
     },
     screens: {
-      'sm': '640px',
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '998px',
+      md: "998px",
       // => @media (min-width: 998px) { ... }
 
-      'lg': '1024px',
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
     container: {
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
     },
   },
@@ -125,5 +118,7 @@ module.exports = {
         },
       });
     },
+
+    require("@tailwindcss/typography"),
   ],
 };
