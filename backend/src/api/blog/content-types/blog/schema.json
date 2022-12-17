@@ -13,12 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "text"
     },
-    "autherName": {
-      "type": "string"
+    "shortDes": {
+      "type": "text"
     },
-    "autherImage": {
+    "details": {
+      "type": "richtext"
+    },
+    "coverImg": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -29,48 +32,33 @@
         "audios"
       ]
     },
-    "date": {
+    "blog_author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-author.blog-author",
+      "inversedBy": "blogs"
+    },
+    "altText": {
+      "type": "string"
+    },
+    "blog_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blogs-category.blogs-category",
+      "inversedBy": "blogs"
+    },
+    "publish_date": {
       "type": "date"
-    },
-    "blogImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "subImages": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
-    "blogImageAlt": {
-      "type": "string"
-    },
-    "category": {
+    "blog_tags": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::blogs-category.blogs-category",
+      "relation": "manyToMany",
+      "target": "api::blog-tag.blog-tag",
       "inversedBy": "blogs"
-    },
-    "details": {
-      "type": "component",
-      "repeatable": true,
-      "component": "title-description.question-answer"
     }
   }
 }

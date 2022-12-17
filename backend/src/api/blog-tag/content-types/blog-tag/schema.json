@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs_categories",
+  "collectionName": "blog_tags",
   "info": {
-    "singularName": "blogs-category",
-    "pluralName": "blogs-categories",
-    "displayName": "BlogCategory",
-    "description": ""
+    "singularName": "blog-tag",
+    "pluralName": "blog-tags",
+    "displayName": "BlogTag"
   },
   "options": {
     "draftAndPublish": true
@@ -19,7 +18,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::blog.blog",
-      "inversedBy": "blog_categories"
+      "mappedBy": "blog_tags"
     }
   }
 }
