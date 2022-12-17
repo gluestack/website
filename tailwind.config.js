@@ -10,6 +10,9 @@ module.exports = {
 
   theme: {
     extend: {
+      fontFamily: {
+        sfPro: ["displayRegular", "cursive"],
+      },
       fontSize: {
         xs: ".75rem", // 12px
         sm: ".875rem", // 14px

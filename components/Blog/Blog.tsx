@@ -34,9 +34,9 @@ function Blog() {
                   height={50}
                   alt={""}
                 />
-                <div className="hidden md:flex">
-                <Text size="sm">Williams</Text>
-                <span className="px-2">|</span>
+                <div className="flex">
+                <Text size="sm">Williams rocket</Text>
+                <span className="px-1">|</span>
                 <Text size="sm">November 28, 2022</Text>   
                 </div>
                 <Button isSecondary sm>

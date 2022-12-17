@@ -22,13 +22,13 @@
 
 @layer base {
   html {
-    @appy font-display;
+   font-family: 'sfPro';
     background-color: rgb(255, 252, 252);
   }
 }
 
 @font-face {
-  font-family: "display-Regular";
+  font-family: "displayRegular";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Regular.woff2")
       format("woff2");

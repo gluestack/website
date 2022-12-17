@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({ isLight, color, priority, children }: any) => {
+const Heading = ({ isLight, color, priority,style, children }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
     <div>
@@ -20,7 +20,7 @@ const Heading = ({ isLight, color, priority, children }: any) => {
             ? "text-base font-light "
             : "text-lg font-medium "
         }
-      ${isLight ? "text-white" : `text-${color} `} font-bold `}
+      ${isLight ? "text-white" : `text-${color} `} font-bold ${style} `}
       >
         {children}
       </DynamicTag>
