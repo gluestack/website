@@ -4,18 +4,34 @@ import Linktag from "../elements/Linktag";
 import Text from "../elements/Text";
 import forgeimage from "../public/ecosystem/forge.min.svg";
 
-function Card({ title, desc, image, color,name,href,creator, istestimonial,alt }: any) {
+function Card({
+  title,
+  desc,
+  image,
+  color,
+  name,
+  href,
+  creator,
+  istestimonial,
+  alt,
+}: any) {
   return (
     <>
       {istestimonial ? (
         <blockquote className="blockquote">
-         
-          <Text size='sm' font='normal'>{title}</Text>
+          <Text size="sm" font="normal">
+            {title}
+          </Text>
           <div className="flex items-start gap-4 mt-5">
-          {/* className="object-cover object-center w-10 h-10" */}
-            <Image  src={image} alt={`${alt ?  alt : 'image'}`} width={50} height={50}/>
+            {/* className="object-cover object-center w-10 h-10" */}
+            <Image
+              src={image}
+              alt={`${alt ? alt : "image"}`}
+              width={50}
+              height={50}
+            />
             <div>
-              <Text >{name}</Text>
+              <Text>{name}</Text>
               <p className="text-sm text-gray-700">
                 Creator of
                 <a
@@ -24,14 +40,14 @@ function Card({ title, desc, image, color,name,href,creator, istestimonial,alt }
                   className="text-red-500"
                   rel="noreferrer"
                 >
-                 {creator}
+                  {creator}
                 </a>
               </p>
             </div>
           </div>
         </blockquote>
       ) : (
-        <Linktag href={'/test'} style="card">
+        <Linktag href={"/test"} style="card">
           <div className={`card_image bg-forge bg-green-400 `}>
             <Image src={forgeimage} alt={"Icon"} width={50} height={50} />
           </div>

@@ -23,7 +23,7 @@ export async function getServerSideProps() {
     const { data } = await BlogService();
     const content = data.blogs.data;
      blogs =content
-    console.log(blogs);
+    console.log(blogs,"qqq");
     
   } catch (error) {}
 

@@ -1,22 +1,17 @@
-import React, { Children } from "react";
+import React from "react";
 
 function Tags({ isTag, children }: any) {
   return (
     <>
-      {isTag ? (
-        <button className="px-8 py-3 mb-1 mr-1 font-bold text-black bg-gray-200 rounded-full text-md ">
-          {children}
-        </button>
-      ) : (
-        <li className="p-2">
-          <a
-            href="#"
-            className="inline-block px-4 py-3 text-black border rounded-lg text-md"
-          >
-            {children}
-          </a>
-        </li>
-      )}
+      <button
+        className={`${
+          isTag
+            ? "px-8 py-2   text-black bg-gray-200 rounded-full text-md"
+            : "inline-block px-4 py-2 text-black border rounded-lg text-md"
+        }`}
+      >
+        {children}
+      </button>
     </>
   );
 }

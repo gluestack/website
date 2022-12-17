@@ -4,6 +4,7 @@ import blognext from "/public/blog/Rectangle 3467571next.svg";
 import leftArrow from "/public/blog/left.svg";
 import rightArrow from "/public/blog/rightarrow.svg";
 import Text from "../../elements/Text";
+import Linktag from "../../elements/Linktag";
 function BlogControl({ right, left, arrowTitle, blogTitle }: any) {
   return (
     <>
@@ -19,13 +20,15 @@ function BlogControl({ right, left, arrowTitle, blogTitle }: any) {
             />
           </div>
           <div className="col-span-1 ">
-            <div className="flex p-1">
+           <Linktag href=''>
+           <div className="flex p-1">
               {right && <Image src={rightArrow} alt={""} className="" />}
               <Text size="sm" style="font-bold p-1">
                 {arrowTitle}
               </Text>
               {left && <Image src={leftArrow} alt={""} className="" />}
             </div>
+           </Linktag>
             <Text size="lg">{blogTitle}</Text>
           </div>
         </div>

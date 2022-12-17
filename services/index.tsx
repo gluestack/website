@@ -43,6 +43,13 @@ export function BlogService() {
                 }
               }
             }
+            blog_categories{
+              data{
+                attributes{
+                  name
+                }
+              }
+            }
           }
         }
       }

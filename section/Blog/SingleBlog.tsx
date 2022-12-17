@@ -1,47 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../../components/Button";
 import Heading from "../../elements/Heading";
-import blog1 from "/public/blog/Rectangle 3467574singleblog.svg";
 import blog2 from "/public/blog/Rectangle 3467567bottomblog.svg";
 import blog3 from "/public/blog/Rectangle 3467568bottom2blog.svg";
 import Text from "../../elements/Text";
 import TermsCondition from "../../components/Terms/TermsCondition";
-import Category from "../../components/Blog/Category";
 import BlogControl from "../../components/Blog/BlogControl";
 import Tags from "../../components/Tags";
+import { formatDate } from "../../Hooks/FormatDate";
 
 function SingleBlog({ blog, author, categories, tags }: any) {
-  let mainImg = blog.coverImg.data.attributes.url;
-  console.log(blog, "+---");
-
-  const blogPoints = [
-    {
-      id: 1,
-      title:
-        "Lorem ipsum dolor sit amet con. Arcu tristique egestas sit pulvinar.",
-      desc: "<p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p> <br/><p>Insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/><p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/><p>Insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p>",
-    },
-    {
-      id: 2,
-      title:
-        "Lorem ipsum dolor sit amet con. Arcu tristique egestas sit pulvinar.",
-      desc: "<p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/><p>Insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p>",
-    },
-    {
-      id: 3,
-      title:
-        "Lorem ipsum dolor sit amet con. Arcu tristique egestas sit pulvinar.",
-      desc: "<p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/><p>Insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/><p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/><p>Insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p>",
-    },
-    {
-      id: 4,
-      title:
-        "Lorem ipsum dolor sit amet con. Arcu tristique egestas sit pulvinar.",
-      desc: "<p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/> <li>Digital design is like painting, except the paint never dries.</li>  <li>Creativity is only as obscure as your reference</li> <li>Whitespace is like air: it is necessary for design to breathe</li> <li>You don’t have to be ‘a creative’ to be creative. </li> <li>The best way to predict the future is to create it</li>",
-    },
-  ];
-
   return (
     <>
       <div className="container mx-auto">
@@ -62,15 +30,22 @@ function SingleBlog({ blog, author, categories, tags }: any) {
             <div className="flex">
               <Text size="sm">{author.name}</Text>
               <span className="px-2">|</span>
-              <Text size="sm">{blog.publish_date}</Text>
+              <Text size="sm">{formatDate(blog.publish_date)}</Text>
             </div>
             {categories.map((ele: any, index: number) => (
-              <Tags isTag key={index} tag={ele.attributes.name} />
+              <Tags isTag key={index}>
+                {ele.attributes.name}
+              </Tags>
             ))}
           </div>
         </div>
         <div className="flex justify-center">
-          <Image src={mainImg} alt="image" width={1000} height={100} />
+          <Image
+            src={blog.coverImg.data.attributes.url}
+            alt="image"
+            width={1000}
+            height={100}
+          />
         </div>
 
         <TermsCondition title={blog.subHeading}>
@@ -92,9 +67,9 @@ function SingleBlog({ blog, author, categories, tags }: any) {
             </Text>
           </div>
 
-          <ul className="flex flex-wrap font-medium text-center">
+          <ul className="flex flex-wrap pt-4 font-medium text-center">
             {tags.map((ele: any, index: number) => (
-              <Tags key={index} tag={ele.attributes.name} />
+              <Tags key={index}>{ele.attributes.name}</Tags>
             ))}
           </ul>
         </div>

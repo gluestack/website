@@ -11,8 +11,7 @@ function Blogs({ blogs }: any) {
             console.log(coverImg);
 
             let autherName = ele.attributes.blog_author.data.attributes.name;
-            let blogTag = ele.attributes.blog_tags.data[0].attributes.name;
-            console.log(blogTag);
+            let caregory= ele.attributes.blog_categories.data[0].attributes.name;
 
             return (
               <Blog
@@ -21,8 +20,9 @@ function Blogs({ blogs }: any) {
                 coverImg={coverImg || ""}
                 publish_date={ele.attributes.publish_date}
                 autherName={autherName}
-                blogTag={blogTag}
+                blogTag={''}
                 slug={ele.attributes.slug}
+                caregory={caregory}
               />
             );
           })}
