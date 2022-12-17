@@ -51,21 +51,12 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@gluestack/docs-layout@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gluestack/docs-layout/-/docs-layout-0.1.0.tgz#6503e5fd98ca17b677e13fa23fbd018694f0ccf3"
-  integrity sha512-+tnjUhNnPX4ZLSd1DpV0k9t7/190QMgiMCJrpKVGHCB02HLejhgPh0jlH34sHm9Vv/wyRk871zisyNKnHRgiKw==
+"@gluestack/docs-layout@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@gluestack/docs-layout/-/docs-layout-1.0.5.tgz#bfdcc6dcdfd68688bc6617ca0c22adb88103f1a7"
+  integrity sha512-f3jHooWSsN9yxhCq3tDGCc4XQRCiQ2fvBjGmZI4eleTc7CFF8CkkTmqs5BQuMPm7AkBkOXXHNSywrZqPp+AnVA==
   dependencies:
-    "@gluestack/docs-layout" "^1.0.4"
     "@tailwindcss/typography" "^0.5.8"
-    react "18.2.0"
-    react-dom "18.2.0"
-
-"@gluestack/docs-layout@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@gluestack/docs-layout/-/docs-layout-1.0.4.tgz#a396ebca9a74e50b873eb5ba9c8d117fc41ba0af"
-  integrity sha512-u1dYKe2k0kIkLG7KiwNeHYMskGLOhK7Yhe9EaeI8yhusSrMfTEx0YMFpRRc9FboPnRVeZnyrdvhLBpwzME5NMQ==
-  dependencies:
     react "18.2.0"
     react-dom "18.2.0"
 
