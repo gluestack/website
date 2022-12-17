@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SingleBlog from "../../section/Blog/SingleBlog";
 
 function Blog() {
   return (
-    <div>[slug]</div>
-  )
+   <>
+   <SingleBlog/>
+   </>
+  );
 }
 
-export default Blog
+export default Blog;

@@ -3,6 +3,7 @@ import React from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import Meta from "../components/Meta/Meta";
+import Cookies from "../components/Cookies";
 
 function Layout({ children }) {
   const router = useRouter();
@@ -12,6 +13,7 @@ function Layout({ children }) {
   return (
     <>
       <Meta title={pageTitle(router.asPath)} ogUrl={`localhost:3000${router.asPath}`}/>
+      <Cookies />
       <Header/>
       {children}
       {/* <Footer /> */}

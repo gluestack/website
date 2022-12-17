@@ -10,6 +10,9 @@ module.exports = {
 
   theme: {
     extend: {
+      fontFamily: {
+        sfPro: ["displayRegular", "cursive"],
+      },
       fontSize: {
         xs: ".75rem", // 12px
         sm: ".875rem", // 14px
@@ -21,7 +24,7 @@ module.exports = {
         "3xl": "2.125rem", // 34px
         "4xl": "2.25rem", // 36px
         "5xl": "3rem", // 48px
-        "6xl": "5.125rem",
+        "6xl": ["5.125rem", '98px'], //82px
       },
 
       colors: {
@@ -40,52 +43,46 @@ module.exports = {
         },
         black: {
           DEFAULT: "#000000",
-          100: "#222020"
+          100: "#222020",
+          200:"#404040",
+        },
+        white:{
+          DEFAULT: "#ffffff",
+          100: "#F5F5F5",
+         
+        },
+        gray:{
+          DEFAULT:"#E6E6E6",
         }
 
       },
      
-      fontWeight: {
-        thin: 200,
-        light: 300,
-        normal: 400,
-        medium: 500,
-        semibold: 600,
-        bold: 700,
-        extrabold: 800,
-        bolder: 900,
-      }
+    
     },
     fontFamily: {
-      body: ['display-Regular', 'sans-serif'],
-      display: ['display-Regular', 'sans-serif'],
-      displayHead: ['display-Bold', 'sans-serif'],
+      body: ['sf-pro-regular', 'sans-serif'],
+      display: ['sf-pro-regular', 'sans-serif'],
+      displayHead: ['sf-pro-bold', 'sans-serif'],
       displaySemibold: [
-        'display-Semibold',
+        'sf-pro-semibold',
         'sans-serif',
       ],
-      displayHeavy: ['display-Heavy', 'sans-serif'],
-      displayLight: ['display-Light', 'sans-serif'],
+      displayHeavy: ['sf-pro-heavy', 'sans-serif'],
+      displayLight: ['sf-pro-light', 'sans-serif'],
       displayItalic: [
         'display-BoldItalic',
         'sans-serif',
       ],
-      displayMedium: ['display-Medium', 'sans-serif'],
-      // pacifico: ['Pacifico', 'cursive'],
-      Lora: ['Lora', 'serif'],
+      displayMedium: ['sf-pro-medium', 'sans-serif'],
     },
     screens: {
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
 
       'md': '998px',
-      // => @media (min-width: 998px) { ... }
 
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
 
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
     },
     container: {
       padding: {

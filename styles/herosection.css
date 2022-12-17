@@ -9,21 +9,3 @@
 } */
 
 
-.herobanner{
-    @apply flex flex-col flex-wrap items-center px-2 md:flex-row
-}
-.heroflex{
-    @apply w-full lg:w-1/2
-}
-.heroHead{
-    @apply py-10  text-start
-}
-.heroImage{
-    @apply justify-end md:w-1/2 lg:block sm:flex
-}
-.herobtn{
-    @apply py-8 lg:relative lg:right-3
-}
-.herotext{
-    @apply pt-4 lg:text-justify  text-start
-}
