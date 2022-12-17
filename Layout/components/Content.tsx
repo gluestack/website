@@ -2,7 +2,7 @@ import React from "react";
 
 export const Content = (props: any) => {
   return (
-    <div className="text-black w-full h-[calc(100%_-_72px)]  p-4 overflow-auto">
+    <div className="content-body text-black px-20 w-full p-4 pb-10 mb-10">
       {props.children}
     </div>
   );

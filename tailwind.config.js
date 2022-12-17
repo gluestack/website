@@ -29,6 +29,7 @@ module.exports = {
 
         primary: {
           DEFAULT: "#8944CE",
+          100: "#BF7EFF",
           600: "#8944CE",
           700:'#8944CE',
         },
@@ -37,7 +38,14 @@ module.exports = {
           DEFAULT: "#222020",
         
         },
+        black: {
+          DEFAULT: "#000000",
+          100: "#222020"
+        }
 
+      },
+      fontFamily: {
+        SFPro: ['SFPro', 'sans-serif'],
       },
       fontWeight: {
         thin: 200,

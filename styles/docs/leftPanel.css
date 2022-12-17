@@ -1,0 +1,24 @@
+.left-panel {
+    @apply bg-white md:left-0 text-sm md:flex-row md:flex-nowrap flex-wrap items-center justify-between relative w-2/6 z-10
+}
+.active {
+    @apply before:absolute before:w-2 before:h-2 before:rounded-2xl before:bg-primary-100 before:top-4 before:left-2 before:mt-0.5 relative
+}
+.content-holder {
+    @apply pr-60
+}
+.layout-theme.fixed {
+    @apply overflow-hidden h-[100vh]
+}
+.layout-theme.fixed .full-doc-content {
+    @apply px-20
+}
+.layout-theme.fixed .content-holder {
+    @apply pr-0
+}
+.layout-theme.fixed .link-list {
+    @apply  md:h-[100vh] md:overflow-y-auto
+}
+.layout-theme.fixed .content-body {
+    @apply h-[calc(100%_-_72px)] overflow-auto
+}

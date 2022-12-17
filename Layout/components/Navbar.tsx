@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export default function Navbar(props: any) {
   const [isOpen, setOpen] = useState(false);
-  console.log(props);
+
   const getVersions = () => {
     let arr = [];
     let versionsInfo = props.versionsData;
