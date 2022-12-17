@@ -59,6 +59,9 @@
       "relation": "manyToMany",
       "target": "api::blog-tag.blog-tag",
       "inversedBy": "blogs"
+    },
+    "subHeading": {
+      "type": "string"
     }
   }
 }

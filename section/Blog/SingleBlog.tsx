@@ -9,8 +9,12 @@ import Text from "../../elements/Text";
 import TermsCondition from "../../components/Terms/TermsCondition";
 import Category from "../../components/Blog/Category";
 import BlogControl from "../../components/Blog/BlogControl";
+import Tags from "../../components/Tags";
 
-function SingleBlog() {
+function SingleBlog({ blog, author, categories, tags }: any) {
+  let mainImg = blog.coverImg.data.attributes.url;
+  console.log(blog, "+---");
+
   const blogPoints = [
     {
       id: 1,
@@ -37,27 +41,12 @@ function SingleBlog() {
       desc: "<p>Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work, our blog is your go-to source for staying informed and engaged. We invite you to explore our latest posts and join the conversation by leaving comments and sharing with your network. Happy reading!</p><br/> <li>Digital design is like painting, except the paint never dries.</li>  <li>Creativity is only as obscure as your reference</li> <li>Whitespace is like air: it is necessary for design to breathe</li> <li>You don’t have to be ‘a creative’ to be creative. </li> <li>The best way to predict the future is to create it</li>",
     },
   ];
-  const Categorys = [
-    {
-      id: 1,
-      category: "Meetup",
-    },
-    {
-      id: 2,
-      category: "HealthCare",
-    },
-    {
-      id: 3,
-      category: "Mobile Apps",
-    },
-  ];
+
   return (
     <>
       <div className="container mx-auto">
         <div className="flex items-center">
-          <Heading priority={1}>
-            Lorem ipsum dolor sit amet con. Arcu tristique egestas sit pulvinar.
-          </Heading>
+          <Heading priority={1}>{blog.title}</Heading>
         </div>
         <div className="flex items-center justify-between pt-4 pb-20">
           <div className="flex items-center space-x-4 ">
@@ -71,27 +60,23 @@ function SingleBlog() {
               alt={""}
             />
             <div className="flex">
-              <Text size="sm">Williams</Text>
+              <Text size="sm">{author.name}</Text>
               <span className="px-2">|</span>
-              <Text size="sm">November 28, 2022</Text>
+              <Text size="sm">{blog.publish_date}</Text>
             </div>
-            <Button isSecondary sm>
-              Community
-            </Button>
+            {categories.map((ele: any, index: number) => (
+              <Tags isTag key={index} tag={ele.attributes.name} />
+            ))}
           </div>
         </div>
         <div className="flex justify-center">
-          <Image src={blog1} alt="image" />
+          <Image src={mainImg} alt="image" width={1000} height={100} />
         </div>
-        {blogPoints.map((ele: any, index: number) => {
-          if (index <= 2) {
-            return (
-              <TermsCondition key={ele.id} title={ele.title}>
-                <div dangerouslySetInnerHTML={{ __html: ele.desc }}></div>
-              </TermsCondition>
-            );
-          }
-        })}
+
+        <TermsCondition title={blog.subHeading}>
+          <div dangerouslySetInnerHTML={{ __html: blog.details }}></div>
+        </TermsCondition>
+
         <div className="flex flex-col justify-around md:flex-row">
           <div className="p-2 lg:p-0">
             <Image src={blog2} alt="" />
@@ -100,15 +85,6 @@ function SingleBlog() {
             <Image src={blog3} alt="" />
           </div>
         </div>
-        {blogPoints.map((ele: any, index: number) => {
-          if (index >= 2) {
-            return (
-              <TermsCondition key={ele.id} title={ele.title}>
-                <div dangerouslySetInnerHTML={{ __html: ele.desc }}></div>
-              </TermsCondition>
-            );
-          }
-        })}
         <div className="items-center md:flex ">
           <div className="p-2">
             <Text size="lg" style="font-bold ">
@@ -117,8 +93,8 @@ function SingleBlog() {
           </div>
 
           <ul className="flex flex-wrap font-medium text-center">
-            {Categorys.map((ele: any, index: number) => (
-              <Category key={index} category={ele.category} />
+            {tags.map((ele: any, index: number) => (
+              <Tags key={index} tag={ele.attributes.name} />
             ))}
           </ul>
         </div>

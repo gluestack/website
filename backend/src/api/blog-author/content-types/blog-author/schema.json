@@ -16,14 +16,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "altText": {
       "type": "string"
@@ -33,6 +34,9 @@
       "relation": "oneToMany",
       "target": "api::blog.blog",
       "mappedBy": "blog_author"
+    },
+    "subHeading": {
+      "type": "string"
     }
   }
 }

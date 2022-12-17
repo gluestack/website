@@ -3,23 +3,23 @@ import Image from "next/image";
 import Button from "../../components/Button";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
-import blog1 from "../../public/blog/blog1.png";
-function Blog() {
+import Linktag from "../../elements/Linktag";
+import Tags from "../Tags";
+function Blog({title,shortDes,coverImg,publish_date,autherName,blogTag,slug}:any) {
   return (
     <>
       <article className="p-6 border border-gray-200 rounded-lg">
         <div className="grid grid-cols-1 gap-3 md:grid-flow-col">
           <div className="col-span-1">
             <div className="py-2 ">
-              <Heading priority={4}>
-                Lorem ipsum dolor sit amet con. Arcu tristique egestas sit
-                pulvinar Arcu tristique egestas .
+             <Linktag href={`blog/${slug}`}>
+             <Heading priority={4}>
+                {title}
               </Heading>
+              </Linktag>
               <div className="py-2">
                 <Text style="text-[16px]">
-                  Lorem ipsum dolor sit amet consectetur. Arcu tristique egestas
-                  sit pulvinar. Amet rhoncus quis dignissim adipiscing
-                  suspendisse. A hendrerit lorem pulvinar nec...
+                 {shortDes}
                 </Text>
               </div>
             </div>
@@ -35,19 +35,19 @@ function Blog() {
                   alt={""}
                 />
                 <div className="flex">
-                <Text size="sm">Williams rocket</Text>
+                <Text size="sm">{autherName}</Text>
                 <span className="px-1">|</span>
-                <Text size="sm">November 28, 2022</Text>   
+                <Text size="sm">{publish_date}</Text>   
                 </div>
-                <Button isSecondary sm>
-                  Community
-                </Button>
+                <Tags></Tags>
               </div>
             </div>
           </div>
+          <Linktag href={`blog/${slug}`}>
           <div className="flex items-center col-span-1">
-            <Image src={blog1} alt="Image" width={300} height={100} />
+            <Image src={coverImg} alt="Image" width={300} height={100} />
           </div>
+          </Linktag>
         </div>
       </article>
     </>
