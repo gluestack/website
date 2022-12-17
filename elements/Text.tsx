@@ -23,7 +23,7 @@ function Text({  size, isLight, color, font, style,children }: any) {
         }
         ${style}
       ${
-        isLight ? "text-white" : `text-${color}` ? `font-${font}` : ``
+        isLight ? "text-white" : `` ? `` : ``
       } `}
       >
         {children}

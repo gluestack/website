@@ -20,7 +20,7 @@ const Heading = ({ isLight, color, priority, children }: any) => {
             ? "text-base font-displaySemibold "
             : "text-lg font-displaySemibold "
         }
-      ${isLight ? "text-white" : `text-${color} `} `}
+      ${isLight ? "text-white" : `${color} `} `}
       >
         {children}
       </DynamicTag>

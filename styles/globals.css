@@ -17,7 +17,7 @@
 
 
 @font-face {
-  font-family: "display-Regular";
+  font-family: "sf-pro-regular";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Regular.woff2")
       format("woff2");
@@ -26,7 +26,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-Light";
+  font-family: "sf-pro-light";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Light.woff2") format("woff2");
   font-weight: 300;
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: "display-Bold";
+  font-family: "sf-pro-bold";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Bold1.woff2") format("woff2");
   font-weight: normal;
@@ -43,7 +43,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-Heavy";
+  font-family: "sf-pro-heavy";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Heavy.woff2") format("woff2");
   font-weight: normal;
@@ -51,7 +51,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-Semibold";
+  font-family: "sf-pro-semibold";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Semibold.woff2")
       format("woff2");
@@ -60,7 +60,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-BoldItalic";
+  font-family: "sf-pro-boldItalic";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-BoldItalic.woff2")
       format("woff2");

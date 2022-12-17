@@ -2,7 +2,7 @@
     @apply border border-primary  focus:outline-none lg:ml-4 lg:inline-flex rounded-lg;
 }
 .btn{
-    @apply  text-sm font-displayHead text-center  uppercase transition-transform transform  ring-1 ring-offset-1 group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1 ring-1  rounded-lg;
+    @apply  text-sm font-display text-center   transition-transform transform  ring-1 ring-offset-1 group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1 ring-1  rounded-lg;
 }
 
 .outline{
