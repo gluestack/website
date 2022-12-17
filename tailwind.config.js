@@ -44,9 +44,7 @@ module.exports = {
         }
 
       },
-      fontFamily: {
-        SFPro: ['SFPro', 'sans-serif'],
-      },
+     
       fontWeight: {
         thin: 200,
         light: 300,
