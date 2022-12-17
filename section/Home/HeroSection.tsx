@@ -13,7 +13,7 @@ function HeroSection() {
     <>
       <Script src="//embed.typeform.com/next/embed.js"></Script>
       <Banner>
-        <div className="grid grid-cols-2 py-16 items-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1 py-16 items-center">
           <div>
             <Heading color="text-black-100" priority={1}>
               One stack for web, mobile, & backend
