@@ -4,8 +4,6 @@ import { BlogService } from "../../services";
 import Layout from "../../Layout/Layout";
 
 function Blog({ blogs }: any) {
-  console.log(blogs, "++");
-
   return (
     <Layout>
       <HeroSection />

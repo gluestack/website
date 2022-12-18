@@ -1,17 +1,18 @@
 import React from "react";
 import { fetchAPI } from "../../lib/api";
 import SingleBlog from "../../section/Blog/SingleBlog";
+import Layout from "../../Layout/Layout";
 
 function Blog({ blogData, author, categories, tags }: any) {
   return (
-    <>
+    <Layout>
       <SingleBlog
         blog={blogData.attributes}
         author={author}
         categories={categories}
         tags={tags}
       />
-    </>
+    </Layout>
   );
 }
 
