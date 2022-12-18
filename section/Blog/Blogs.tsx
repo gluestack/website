@@ -6,9 +6,8 @@ function Blogs({ blogs }: any) {
     <>
       <section className="container mx-auto ">
         <div className="grid gap-8 bg-white lg:grid-cols-1">
-          {blogs.map((ele: any) => {
+          {blogs.map((ele: any, index: any) => {
             let coverImg = ele.attributes.coverImg.data.attributes.url;
-            console.log(coverImg);
 
             let autherName = ele.attributes.blog_author.data.attributes.name;
             let caregory= ele.attributes.blog_categories.data[0].attributes.name;
@@ -23,6 +22,7 @@ function Blogs({ blogs }: any) {
                 blogTag={''}
                 slug={ele.attributes.slug}
                 caregory={caregory}
+                key={index}
               />
             );
           })}
