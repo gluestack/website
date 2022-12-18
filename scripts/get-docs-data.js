@@ -39,6 +39,9 @@ function cloneRepoPages() {
     const repoPath = path.join(tmpPath, repoInfo["repoName"]);
 
     let copyPath = path.join(pagesPath, repoInfo.destinationPath);
+    if (!fs.existsSync(copyPath)) {
+      fs.mkdirSync(copyPath);
+    }
     execSync("git clone " + repoConfig[e].gitUrl, {
       stdio: [0, 1, 2], // we need this so node will print the command output
       cwd: tmpPath, // path to where you want to save the file
@@ -167,24 +170,3 @@ async function changeBranch(repoPath, repoName) {
   }
   return data;
 }
-
-// function changeBranch(repoPath, repoName) {
-//   let scriptPath = path.join(__dirname, "change-branch.sh");
-//   let ls = spawn("sh", [scriptPath, repoPath, repoName]);
-
-//   ls.stdout.on("data", function (data) {
-//     console.log(`Output: ${data}`);
-//   });
-
-//   ls.stderr.on("data", (data) => {
-//     console.log(`stderr: ${data}`);
-//   });
-
-//   ls.on("error", (error) => {
-//     console.log(`error: ${error.message}`);
-//   });
-
-//   ls.on("close", (code) => {
-//     return 1;
-//   });
-// }

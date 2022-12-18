@@ -7,20 +7,20 @@ const Heading = ({ isLight, color, priority,style, children }: any) => {
       <DynamicTag
         className={`${
           priority == 1
-            ? "lg:text-6xl text-4xl leading-normal lg:leading-[98px]"
+            ? "lg:text-6xl text-4xl leading-normal lg:leading-[98px] font-displayHead"
             : priority == 2
-            ? "text-4xl md:text-5xl "
+            ? "text-4xl md:text-5xl font-displaySemibold"
             : priority == 3
-            ? " text-3xl"
+            ? " text-3xl font-displaySemibold"
             : priority == 4
             ? " text-lg"
             : priority == 5
-            ? "lg:text-xl text-lg"
+            ? "lg:text-xl text-lg font-displaySemibold"
             : priority == 6
-            ? "text-base font-light "
-            : "text-lg font-medium "
+            ? "text-base font-displaySemibold "
+            : "text-lg font-displaySemibold "
         }
-      ${isLight ? "text-white" : `text-${color} `} font-bold ${style} `}
+      ${isLight ? "text-white" : `${color} `} `}
       >
         {children}
       </DynamicTag>

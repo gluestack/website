@@ -6,6 +6,8 @@ import Text from "../../elements/Text";
 import Linktag from "../../elements/Linktag";
 import Tags from "../Tags";
 import { formatDate } from "../../Hooks/FormatDate";
+import Author from "../Author";
+
 function Blog({
   title,
   shortDes,
@@ -29,24 +31,22 @@ function Blog({
                 <Text style="text-[16px]">{shortDes}</Text>
               </div>
             </div>
+
             <div className="flex items-center justify-between py-2 ">
               <div className="flex items-center space-x-4 ">
-                <Image
-                  src={
-                    "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                  }
-                  className="rounded-full"
-                  width={40}
-                  height={50}
-                  alt={""}
+                <Author
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                  altText="william"
+                  name={autherName}
                 />
-                <div className="flex">
-                  <Text size="sm">{autherName}</Text>
-                  <span className="px-1">|</span>
-                  <Text size="sm">{formatDate(publish_date)}</Text>
-                </div>
+
+                <span className="px-1">|</span>
+                <Text size="sm">{formatDate(publish_date)}</Text>
                 <Tags isTag>{caregory}</Tags>
+
+             
               </div>
+
             </div>
           </div>
           <Linktag href={`blog/${slug}`}>

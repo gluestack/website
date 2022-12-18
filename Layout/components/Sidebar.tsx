@@ -8,7 +8,7 @@ export default function Sidebar(props: any) {
   return (
     <nav className="md:left-0 md:h-full md:overflow-y-auto md:flex-row md:flex-nowrap shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-96 z-10 ">
       <div className="md:flex-col md:items-stretch overflow-hidden md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full">
-        <div className="pt-4">
+        <div className="pt-4 ">
           <SidebarDocs {...props} linkUrl="/docs" />
         </div>
       </div>
@@ -33,7 +33,7 @@ const SidebarDocs = (props: any) => {
   const linkUrl = props.linkUrl + "/" + mainDocsVersion;
   // console.log(props, "PROPPPPSS");
   return (
-    <div>
+    <div >
       <div className="flex justify-between mx-2 items-center">
         {/* <p className="text-black">{props?.title}</p> */}
         {props?.title ? (
@@ -75,7 +75,7 @@ const RenderSidebar = (props: any) => {
           );
         } else {
           return (
-            <div className="mt-4 ">
+            <div className="mt-4">
               <SidebarItems
                 props={info}
                 version={props.version}
