@@ -68,6 +68,7 @@
   font-style: normal;
   font-display: swap;
   font-display: fallback;
+ 
 
 }
 
@@ -84,6 +85,9 @@
   }
 }
 
+body{
+  letter-spacing: 1px;
+}
 
 
 .filter-primary {
