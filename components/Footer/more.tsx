@@ -3,26 +3,21 @@ import LinkList from "./LinkList";
 import Text from "../../elements/Text";
 import Heading from "../../elements/Heading";
 
-function Resources() {
+function More() {
   return (
     <div>
       <Heading priority="6" style="uppercase text-white pb-2">
-        GENERAL RESOURCES
+        More
       </Heading>
       <ul>
-        <LinkList src="/docs" style="py-2">
+        <LinkList src="/" style="py-2">
           <Text size="sm" style="text-white-200">
-            Docs
+            Contact Sales
           </Text>
         </LinkList>
-        <LinkList src="/showcase" style="py-2">
+        <LinkList src="/" style="py-2">
           <Text size="sm" style="text-white-200">
-            Showcase
-          </Text>
-        </LinkList>
-        <LinkList src="/blog" style="py-2">
-          <Text size="sm" style="text-white-200">
-            Blog
+            Github
           </Text>
         </LinkList>
       </ul>
@@ -30,4 +25,4 @@ function Resources() {
   );
 }
 
-export default Resources;
+export default More;

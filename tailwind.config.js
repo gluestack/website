@@ -113,12 +113,12 @@ module.exports = {
             paddingRight: "15px",
           },
           "@screen lg": {
-            maxWidth: "1260px",
+            maxWidth: "1380px",
             marginLeft: "auto",
             marginRight: "auto",
           },
           "@screen xl": {
-            maxWidth: "1260px",
+            maxWidth: "1380px",
             marginLeft: "auto",
             marginRight: "auto",
           },
