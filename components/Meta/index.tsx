@@ -26,10 +26,10 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           content={description || "gluestack - One stack for web, mobile, & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."}
         />
 
-        <meta key="og:image" property="og:image" content={ogImgUrl || '/ogimage/og-image.png'} />
+        <meta key="og:image" property="og:image" content={ogImgUrl || '//gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z'} />
         <meta
           property="twitter:image"
-          content={ogImgUrl || "/ogimage/og-image.png"}
+          content={ogImgUrl || "//gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z"}
         />
         <meta key="og:url" property="og:url" content={ogUrl} />
       </Head>
