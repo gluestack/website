@@ -7,7 +7,7 @@ import img4 from "/public/images/twitch.png";
 function Sponsors() {
   return (
     <>
-      <div className="container hidden mx-auto lg:block py-28">
+      <div className="container hidden lg:block py-28">
         <div className="flex justify-center gap-x-10 ">
           <div className="">
             <Image

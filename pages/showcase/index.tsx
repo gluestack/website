@@ -4,7 +4,7 @@ import HeroSection from "../../section/Showcase/HeroSection";
 
 function showcase() {
   return (
-    <Layout>
+    <Layout title={"ShowCase"} description={"ShowCase"}>
         <HeroSection />
       <Showcase />
     </Layout>

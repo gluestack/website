@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import Button from "../Button";
 import Menu from "./Menu";
 import Hamburger from "./Hamburger";
-const Modal = dynamic(() => import("../modal/Modal"));
+const Modal = dynamic(() => import("../modal"));
 import SearchBar from "./SearchBar";
 import React from "react";
 

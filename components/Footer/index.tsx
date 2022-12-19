@@ -24,7 +24,7 @@ export const Footer = () => {
     ]
   return (
     <>
-      <div className="container mx-auto py-14">
+      <div className="container py-14">
         <Logo/>
         <div className="footer_grid">
           <div className="para_text">
@@ -108,10 +108,10 @@ export const Footer = () => {
           
         </div>
         <div className="py-6 pt-6 pb-16 border-t border-gray-200 ">
-            <p className="text-xs  ">
+            <p className="text-xs ">
                 Laravel is a Trademark of Taylor Otwell. Copyright © 2011-2022 Laravel LLC.
             </p>
-            <p className="py-4 text-xs  ">
+            <p className="py-4 text-xs ">
                 Code highlighting provided by <a href="https://torchlight.dev">Torchlight</a>
             </p>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../../components/Button";
+import Button from "../Button";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
 import Linktag from "../../elements/Linktag";
@@ -16,8 +16,12 @@ function Blog({
   autherName,
   blogTag,
   caregory,
+  autherImage,
+  altText,
   slug,
 }: any) {
+  console.log(autherImage,"car");
+  
   return (
     <>
       <article className="p-6 border border-gray-200 rounded-lg">
@@ -28,25 +32,22 @@ function Blog({
                 <Heading priority={4}>{title}</Heading>
               </Linktag>
               <div className="py-2">
-                <Text style="text-[16px]">{shortDes}</Text>
+                <Text style="text-base">{shortDes}</Text>
               </div>
             </div>
 
             <div className="flex items-center justify-between py-2 ">
               <div className="flex items-center space-x-4 ">
                 <Author
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                  altText="william"
+                  src={autherImage}
+                  altText={altText || "profileImage"}
                   name={autherName}
                 />
 
                 <span className="px-1">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
                 <Tags isTag>{caregory}</Tags>
-
-             
               </div>
-
             </div>
           </div>
           <Linktag href={`blog/${slug}`}>

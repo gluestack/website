@@ -5,7 +5,7 @@ import Layout from "../Layout/Layout";
 
 function Cookies() {
   return (
-    <Layout>
+    <Layout  title={"Cookies"} description={"Cookies"}>
         <HeroSection/>
         <Details/>
     </Layout>
