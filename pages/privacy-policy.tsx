@@ -210,7 +210,7 @@ function Privacy() {
                     </p>
                     <p className="py-4">
                       This Usage Data may include information such as your
-                      computer's Internet Protocol address (e.g. IP address),
+                      computer&lsquos Internet Protocol address (e.g. IP address),
                       browser type, browser version, the pages of our Service
                       that you visit, the time and date of your visit, the time
                       spent on those pages, unique device identifiers and other
