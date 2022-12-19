@@ -5,7 +5,7 @@ import Layout from "../../Layout/Layout";
 
 function Blog({ blogs }: any) {
   return (
-    <Layout title={'Blog'} description={"Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work,"}>
+    <Layout title={'Blog - gluestack'} description={"Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work,"}>
       <HeroSection />
       <Blogs blogs={blogs} />
     </Layout>

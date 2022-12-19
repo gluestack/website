@@ -47,14 +47,15 @@ export const Footer = () => {
           </div>
           <div>
             <Resources />
-
           </div>
           <div>
             <EcoSystem />
-
           </div>
           <div>
             <More />
+          </div>
+          <div>
+            <Legal />
           </div>
         </div>
       </div>

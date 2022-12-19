@@ -10,17 +10,17 @@ function Legal() {
       Legal
       </Heading>
       <ul>
-        <LinkList src="/cookie-policy" style="py-2">
+        <LinkList link="/cookie-policy" style="py-2">
           <Text size="sm" style="text-white-200">
           Cookie Policy
           </Text>
         </LinkList>
-        <LinkList src="/" style="py-2">
+        <LinkList link="/" style="py-2">
           <Text size="sm" style="text-white-200">
           Privacy Policy
           </Text>
         </LinkList>
-        <LinkList src="/terms" style="py-2">
+        <LinkList link="/terms" style="py-2">
           <Text size="sm" style="text-white-200">
           Terms of Service
           </Text>
