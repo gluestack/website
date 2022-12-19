@@ -4,7 +4,7 @@ import Heading from "../elements/Heading";
 import Button from "./Button";
 import Description from "../elements/Description";
 
-function SubBanner({ heading, desc, src, btntext, isright }: any) {
+function SubBanner({ heading, desc, src, btntext, isright,altText }: any) {
   return (
     <>
       <div className="container mx-auto">
@@ -32,7 +32,7 @@ function SubBanner({ heading, desc, src, btntext, isright }: any) {
               </div>
             </div>
             <div className="lg:w-1/2 ">
-              <Image src={src} alt={"vscode"} />
+              <Image src={src} alt={altText || "Banner"} />
             </div>
           </div>
         </div>

@@ -1,15 +1,15 @@
 import React, { Children, useState } from "react";
 import Link from "next/link";
-import Modal from "../components/modal/Modal";
+import Modal from "../components/modal";
 import DropdownList from "../components/Header/DropdownList";
-const Linktag = ({ href, text, children, isDropdown, style }: any) => {
+const Linktag = ({ href, text, children, isDropdown, style,target }: any) => {
   const [open, setOpen] = useState(false);
   const [showModel, setModel] = useState(true);
   return (
     <>
       {!isDropdown ? (
-        <Link href={href} legacyBehavior>
-          <a className={`hover:text-primary  ${style}`}>
+        <Link href={href} legacyBehavior  >
+          <a className={`hover:text-primary  ${style}`} target={target}>
             {text}
             {children}
           </a>

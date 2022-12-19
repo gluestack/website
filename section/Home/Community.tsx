@@ -8,7 +8,7 @@ function Community() {
   return (
     <div className="relative overflow-hidden ">
          <span className="hidden absolute bg-gradient-to-r from-primary opacity-[.15] pointer-events-none lg:inline-flex left-[-20%] -top-24 w-[640px] h-[640px]"></span>
-    <div className="container relative mx-auto py-14 lg:py-24">
+    <div className="container relative py-14 lg:py-24">
       <div className="grid gap-12 md:pt-24 lg:grid-cols-2 lg:pt-16">
         <div className="flex items-center justify-center lg:justify-start">
           <div className="">

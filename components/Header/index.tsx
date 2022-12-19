@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import Button from "../Button";
 import Menu from "./Menu";
 import Hamburger from "./Hamburger";
-const Modal = dynamic(() => import("../modal/Modal"));
+const Modal = dynamic(() => import("../modal"));
 import SearchBar from "./SearchBar";
 import React from "react";
 
@@ -18,9 +18,7 @@ export const Header = () => {
   }, [expand]);
 
   return (
-    <>
-      <nav className={`py-4`}>
-        <div className="py-4 inner-nav">
+        <div className="container py-6">
           <Logo />
           <div className="flex md:order-2">
             {/* <div
@@ -55,7 +53,5 @@ export const Header = () => {
           </div>
           {/* <Menu expand={expand} /> */}
         </div>
-      </nav>
-    </>
   );
 };
