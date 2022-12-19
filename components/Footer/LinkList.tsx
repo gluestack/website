@@ -1,15 +1,13 @@
 import React from "react";
 import Linktag from "../../elements/Linktag";
 
-function LinkList({title,link}:any) {
+function LinkList({children,link, style}:any) {
   return (
-    <>
-      <li>
+      <li className={`${style}`}>
         <Linktag  size="xs transition-colors" href={`${link ? link : '#'}`}>
-          {title}
+          {children}
         </Linktag>
       </li>
-    </>
   );
 }
 
