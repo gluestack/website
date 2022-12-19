@@ -11,7 +11,7 @@ function Layout({ children,title,description, ogImgUrl, ogUrl }: any) {
       <Cookies />
       <Header/>
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

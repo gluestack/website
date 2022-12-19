@@ -10,17 +10,17 @@ function Resources() {
         GENERAL RESOURCES
       </Heading>
       <ul>
-        <LinkList src="/docs" style="py-2">
+        <LinkList link="/docs" style="py-2">
           <Text size="sm" style="text-white-200">
             Docs
           </Text>
         </LinkList>
-        <LinkList src="/showcase" style="py-2">
+        <LinkList link="/showcase" style="py-2">
           <Text size="sm" style="text-white-200">
             Showcase
           </Text>
         </LinkList>
-        <LinkList src="/blog" style="py-2">
+        <LinkList link="/blog" style="py-2">
           <Text size="sm" style="text-white-200">
             Blog
           </Text>
