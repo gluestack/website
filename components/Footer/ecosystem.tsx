@@ -3,31 +3,27 @@ import LinkList from "./LinkList";
 import Text from "../../elements/Text";
 import Heading from "../../elements/Heading";
 
-function Resources() {
+function EcoSystem() {
   return (
     <div>
       <Heading priority="6" style="uppercase text-white pb-2">
-        GENERAL RESOURCES
+      EcoSystem
       </Heading>
       <ul>
-        <LinkList src="/docs" style="py-2">
+        <LinkList src="/" style="py-2">
           <Text size="sm" style="text-white-200">
-            Docs
+            Seal
           </Text>
         </LinkList>
         <LinkList src="/showcase" style="py-2">
           <Text size="sm" style="text-white-200">
-            Showcase
+            Design System
           </Text>
         </LinkList>
-        <LinkList src="/blog" style="py-2">
-          <Text size="sm" style="text-white-200">
-            Blog
-          </Text>
-        </LinkList>
+       
       </ul>
     </div>
   );
 }
 
-export default Resources;
+export default EcoSystem;

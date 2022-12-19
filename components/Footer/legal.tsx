@@ -3,26 +3,26 @@ import LinkList from "./LinkList";
 import Text from "../../elements/Text";
 import Heading from "../../elements/Heading";
 
-function Resources() {
+function Legal() {
   return (
     <div>
       <Heading priority="6" style="uppercase text-white pb-2">
-        GENERAL RESOURCES
+      Legal
       </Heading>
       <ul>
-        <LinkList src="/docs" style="py-2">
+        <LinkList src="/cookie-policy" style="py-2">
           <Text size="sm" style="text-white-200">
-            Docs
+          Cookie Policy
           </Text>
         </LinkList>
-        <LinkList src="/showcase" style="py-2">
+        <LinkList src="/" style="py-2">
           <Text size="sm" style="text-white-200">
-            Showcase
+          Privacy Policy
           </Text>
         </LinkList>
-        <LinkList src="/blog" style="py-2">
+        <LinkList src="/terms" style="py-2">
           <Text size="sm" style="text-white-200">
-            Blog
+          Terms of Service
           </Text>
         </LinkList>
       </ul>
@@ -30,4 +30,4 @@ function Resources() {
   );
 }
 
-export default Resources;
+export default Legal;
