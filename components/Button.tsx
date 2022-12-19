@@ -1,7 +1,7 @@
 import React, { Children } from "react";
 import Link from "next/link";
 
-function Button({ isSecondary, sm, lg, xl, xxl, link, children, dataId }: any) {
+function Button({ isSecondary,tertiary, sm, lg, xl, xxl, link, children, dataId }: any) {
   return (
     <>
       {link ? (
@@ -35,6 +35,8 @@ function Button({ isSecondary, sm, lg, xl, xxl, link, children, dataId }: any) {
             className={`btn ${
               isSecondary
                 ? "text-white  bg-primary  ring-primary  ring-offset-primary  "
+                : tertiary 
+                  ? "text-white  bg-skyBlue  ring-skyBlue  ring-offset-skyBlue "
                 : "text-white  bg-white ring-primary "
             } ${
               sm
