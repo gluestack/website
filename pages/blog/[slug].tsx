@@ -17,7 +17,7 @@ function Blog({
     return str.charAt(1).toUpperCase() + str.slice(2);
   };
   return (
-    <Layout title={pageTitle(router.asPath)} description={"test"}>
+    <Layout ogUrl={router.asPath} title={blogData.attributes.title} description={blogData.attributes.shortDes} ogImgUrl={blogData.attributes.coverImg.data.attributes.url}>
       <SingleBlog
         blog={blogData.attributes}
         author={author}

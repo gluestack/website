@@ -5,7 +5,12 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.86, user-scalable=no"
+        />
+        <title>{title || "Gluestack"}</title>
         <link
           rel="icon"
           type="image/svg"
@@ -60,10 +65,13 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
             "https://gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z"
           }
         ></meta>
-        <meta property="og:url" content={ogUrl || "https://gluestack.io"} />
+        <meta
+          property="og:url"
+          content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
+        />
         <meta
           property="twitter:url"
-          content={ogUrl || "https://gluestack.io"}
+          content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
         />
       </Head>
     </>
