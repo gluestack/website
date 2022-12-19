@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import Meta from "../components/Meta";
 import Cookies from "../components/Cookies";
 
-function Layout({ children,title,description }) {
+function Layout({ children,title,description }: any) {
   return (
     <>
       <Meta title={title} description={description} />
