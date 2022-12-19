@@ -6,10 +6,10 @@ import React from "react";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 
-function List({ src, title,children}: any) {
+function List({ src, title,altText,children}: any) {
   return (
     <div>
-    <Image src={src} alt={"Database"} className="filter-primary" />
+    <Image src={src} alt={altText || "Image"} className="filter-primary" />
     <div className="py-4">
       <Heading
         isLight={undefined}

@@ -1,18 +1,13 @@
-import { useRouter } from "next/router";
 import React from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import Meta from "../components/Meta/Meta";
+import Meta from "../components/Meta";
 import Cookies from "../components/Cookies";
 
-function Layout({ children }) {
-  const router = useRouter();
-  const pageTitle = (str) => {
-    return str.charAt(1).toUpperCase() + str.slice(2);
-  };
+function Layout({ children,title,description }) {
   return (
     <>
-      <Meta title={pageTitle(router.asPath)} ogUrl={`localhost:3000${router.asPath}`}/>
+      <Meta title={title} description={description} />
       <Cookies />
       <Header/>
       {children}

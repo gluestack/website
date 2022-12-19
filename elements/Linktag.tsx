@@ -1,6 +1,6 @@
 import React, { Children, useState } from "react";
 import Link from "next/link";
-import Modal from "../components/modal/Modal";
+import Modal from "../components/modal";
 import DropdownList from "../components/Header/DropdownList";
 const Linktag = ({ href, text, children, isDropdown, style }: any) => {
   const [open, setOpen] = useState(false);

@@ -5,7 +5,7 @@ import Layout from "../Layout/Layout";
 
 function term() {
   return (
-    <Layout>
+    <Layout  title={"Terms & Condition"} description={"terms"}>
         <HeroSection/>
         <Details/>
     </Layout>

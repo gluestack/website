@@ -1,5 +1,5 @@
 import React from "react";
-import TermsCondition from "../../components/Terms/TermsCondition";
+import TermsCondition from "../../components/Terms";
 
 function Details() {
 

@@ -4,28 +4,37 @@ import Heading from "../../elements/Heading";
 import blog2 from "/public/blog/Rectangle 3467567bottomblog.svg";
 import blog3 from "/public/blog/Rectangle 3467568bottom2blog.svg";
 import Text from "../../elements/Text";
-import TermsCondition from "../../components/Terms/TermsCondition";
+import TermsCondition from "../../components/Terms";
 import BlogControl from "../../components/Blog/BlogControl";
 import Tags from "../../components/Tags";
 import { formatDate } from "../../Hooks/FormatDate";
 
-function SingleBlog({ blog, author, categories, tags }: any) {
+function SingleBlog({
+  blog,
+  author,
+  categories,
+  tags,
+  nextblog,
+  previousblog,
+  altText,
+  autherImage
+}: any) {
+  console.log(author,"author");
+  
   return (
     <>
       <div className="container mx-auto">
         <div className="flex items-center">
-          <Heading priority={1}>{blog.title}</Heading>
+          <Heading priority={1}>{blog.title || 'null'}</Heading>
         </div>
         <div className="flex items-center justify-between pt-4 pb-20">
           <div className="flex items-center space-x-4 ">
             <Image
-              src={
-                "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-              }
+              src={autherImage}
               className="rounded-full"
               width={40}
               height={50}
-              alt={""}
+              alt={author.altText || 'Profile Image'}
             />
             <div className="flex">
               <Text size="sm">{author.name}</Text>
@@ -42,7 +51,7 @@ function SingleBlog({ blog, author, categories, tags }: any) {
         <div className="flex justify-center">
           <Image
             src={blog.coverImg.data.attributes.url}
-            alt="image"
+            alt={altText || 'Cover Image'}
             width={1000}
             height={100}
           />
@@ -54,10 +63,10 @@ function SingleBlog({ blog, author, categories, tags }: any) {
 
         <div className="flex flex-col justify-around md:flex-row">
           <div className="p-2 lg:p-0">
-            <Image src={blog2} alt="" />
+            <Image src={blog2} alt={altText || 'subImage'}/>
           </div>
           <div className="p-2 lg:p-0">
-            <Image src={blog3} alt="" />
+            <Image src={blog3} alt={altText || 'subImage'} />
           </div>
         </div>
         <div className="items-center md:flex ">
@@ -67,7 +76,7 @@ function SingleBlog({ blog, author, categories, tags }: any) {
             </Text>
           </div>
 
-          <ul className="flex flex-wrap pt-4 font-medium text-center">
+          <ul className="flex flex-wrap pt-4 text-center">
             {tags.map((ele: any, index: number) => (
               <Tags key={index}>{ele.attributes.name}</Tags>
             ))}
@@ -77,12 +86,14 @@ function SingleBlog({ blog, author, categories, tags }: any) {
           <BlogControl
             right
             arrowTitle="Previous Post"
-            blogTitle="Lorem ipsum dolor sit amet con Arcu tristique"
+            blogTitle={previousblog.title|| "X"}
+            href={previousblog.slug || "null"}
           />
           <BlogControl
             left
             arrowTitle="Next Post"
-            blogTitle="Lorem ipsum dolor sit amet con Arcu tristique"
+            blogTitle={nextblog.title || "No Blogs"}
+            href={nextblog.slug || "null"}
           />
         </div>
       </div>
