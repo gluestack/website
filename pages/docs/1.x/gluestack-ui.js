@@ -6,7 +6,7 @@ export default function gluestackIFrame() {
       className=""
       width="100%"
       height="100%"
-      src="https://storybook.gluestack.io"
+      src="https://storybook.gluestack.io?path=/docs/"
     ></iframe>
   );
 }
