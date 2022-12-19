@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+  important: true,
+
+  purge: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./elements/**/*.{js,ts,jsx,tsx}",
-    "./layout/**/*.{js.ts,jsx,tsx}",
+    "./Layout/**/*.{js.ts,jsx,tsx}",
     "./section/**/*.{js.ts,jsx,tsx}",
+    "./Layout/*.{js.ts,jsx,tsx}",
   ],
 
   theme: {
@@ -24,77 +27,63 @@ module.exports = {
         "3xl": "2.125rem", // 34px
         "4xl": "2.25rem", // 36px
         "5xl": "3rem", // 48px
-        "6xl": ["5.125rem", '98px'], //82px
+        "6xl": ["5.125rem", "98px"], //82px
       },
 
       colors: {
-
-
         primary: {
           DEFAULT: "#8944CE",
           100: "#BF7EFF",
           600: "#8944CE",
-          700:'#8944CE',
+          700: "#8944CE",
         },
         secondary: {
           400: "#404040",
           DEFAULT: "#222020",
-        
         },
         black: {
           DEFAULT: "#000000",
           100: "#222020",
-          200:"#404040",
+          200: "#404040",
         },
-        white:{
+        white: {
           DEFAULT: "#ffffff",
           100: "#F5F5F5",
-          200:"#F6FAF9",
-
-         
+          200: "#F6FAF9",
         },
-        gray:{
-          DEFAULT:"#E6E6E6",
-          100:"#AEAEAE",
+        gray: {
+          DEFAULT: "#E6E6E6",
+          100: "#AEAEAE",
         },
-        skyBlue:"#4A99E9"
-
+        skyBlue: "#4A99E9",
       },
-     
-    
     },
     fontFamily: {
-      body: ['sf-pro-regular', 'sans-serif'],
-      display: ['sf-pro-regular', 'sans-serif'],
-      displayHead: ['sf-pro-bold', 'sans-serif'],
-      displaySemibold: [
-        'sf-pro-semibold',
-        'sans-serif',
-      ],
-      displayHeavy: ['sf-pro-heavy', 'sans-serif'],
-      displayLight: ['sf-pro-light', 'sans-serif'],
-      displayItalic: [
-        'display-BoldItalic',
-        'sans-serif',
-      ],
-      displayMedium: ['sf-pro-medium', 'sans-serif'],
+      body: ["sf-pro-regular", "sans-serif"],
+      display: ["sf-pro-regular", "sans-serif"],
+      displayHead: ["sf-pro-bold", "sans-serif"],
+      displaySemibold: ["sf-pro-semibold", "sans-serif"],
+      displayHeavy: ["sf-pro-heavy", "sans-serif"],
+      displayLight: ["sf-pro-light", "sans-serif"],
+      displayItalic: ["display-BoldItalic", "sans-serif"],
+      displayMedium: ["sf-pro-medium", "sans-serif"],
     },
     screens: {
-      'sm': '640px',
+      sm: "640px",
 
-      'md': '998px',
+      md: "998px",
 
-      'lg': '1024px',
+      lg: "1024px",
 
-      'xl': '1280px',
+      xl: "1280px",
     },
     container: {
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
     },
   },
@@ -126,5 +115,7 @@ module.exports = {
         },
       });
     },
+
+    require("@tailwindcss/typography"),
   ],
 };

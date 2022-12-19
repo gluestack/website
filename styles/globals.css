@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import './button.css';
-@import './modal.css';
-@import './header.css';
-@import './herosection.css';
-@import './card.css';
-@import './search.css';
-@import './testimonial.css';
-@import './footer.css';
-@import './team/team.css';
-@import './docs/leftPanel.css';
-
+@import "./button.css";
+@import "./modal.css";
+@import "./header.css";
+@import "./herosection.css";
+@import "./card.css";
+@import "./search.css";
+@import "./testimonial.css";
+@import "./footer.css";
+@import "./team/team.css";
+@import "./docs/leftPanel.css";
 
 @font-face {
   font-family: "sf-pro-regular";
@@ -68,8 +67,6 @@
   font-style: normal;
   font-display: swap;
   font-display: fallback;
- 
-
 }
 
 * {
@@ -78,22 +75,25 @@
   margin: 0;
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
 @layer base {
   html {
-  
-  
   }
 }
 
-body{
+body {
   letter-spacing: 1px;
 }
 
-
 .filter-primary {
-  filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg) brightness(104%) contrast(101%);
+  filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
+    brightness(104%) contrast(101%);
 }
 
-.twitter>div {
+.twitter > div {
   @apply grid grid-cols-3 gap-6 py-6;
 }
