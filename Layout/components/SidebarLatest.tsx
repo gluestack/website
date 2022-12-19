@@ -7,7 +7,7 @@ import { link, linkSync } from "fs";
 
 export default function SidebarLatest(props: any) {
   return (
-    <nav className=" font-displaySemibold bg-gray">
+    <nav className=" font-displaySemibold bg-[#F0EAFB]">
       <div className="px-12 pt-16">
         <SidebarHeader />
       </div>

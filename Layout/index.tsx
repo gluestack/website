@@ -7,6 +7,7 @@ import { versions } from "../versions.json";
 import SidebarLatest from "./components/SidebarLatest";
 import ContentHeader from "./components/ContentHeader";
 import { useRouter } from "next/router";
+import { IFrameContent } from "./components/IFrameContent";
 
 function PagesLayout(props: any) {
   const router = useRouter();
@@ -29,7 +30,7 @@ function PagesLayout(props: any) {
         /> */}
 
         {router.route == "/docs/1.x/gluestack-ui" ? (
-          <Content {...props} />
+          <IFrameContent {...props} />
         ) : (
           <div className="content-holder flex flex-1 flex-col">
             <ContentHeader />
