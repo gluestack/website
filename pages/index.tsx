@@ -11,7 +11,7 @@ import Hook from "../components/Animation";
 import Layout from "../Layout/Layout";
 export default function Home() {
   return (
-    <Layout title={"home"} description={""}>
+    <Layout >
       <HeroSection />
      
       <DeveloperPreview/>
