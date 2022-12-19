@@ -56,7 +56,8 @@ module.exports = {
         gray:{
           DEFAULT:"#E6E6E6",
           100:"#AEAEAE",
-        }
+        },
+        skyBlue:"#4A99E9"
 
       },
      
