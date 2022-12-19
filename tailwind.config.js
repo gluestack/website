@@ -2,11 +2,11 @@
 module.exports = {
   important: true,
 
-  content: [
+  purge: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./elements/**/*.{js,ts,jsx,tsx}",
-    "./layout/**/*.{js.ts,jsx,tsx}",
+    "./Layout/**/*.{js.ts,jsx,tsx}",
     "./section/**/*.{js.ts,jsx,tsx}",
     "./Layout/*.{js.ts,jsx,tsx}",
   ],

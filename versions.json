@@ -9,7 +9,8 @@
             "pages": [
               { "id": "getting-started", "title": "Getting Started" },
               { "id": "plugins", "title": "Plugins" },
-              { "id": "builiding-an-plugin", "title": "Building an Plugin" }
+              { "id": "builiding-an-plugin", "title": "Building an Plugin" },
+              { "id": "gluestack-ui", "title": "gluestack UI" }
             ]
           }
         ]

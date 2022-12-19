@@ -9,25 +9,22 @@ import ContentHeader from "./components/ContentHeader";
 
 function PagesLayout(props: any) {
   return (
-    <div className="relative layout-theme ">
+    <div className="flex flex-1 min-h-screen relative layout-theme">
       {/* Add 'fixed' class beside 'layout-theme' to have fixed layout */}
-
       {/* <Navbar
         setVersion={props.setVersion}
         version={props.version}
         versionsData={props.versionsData}
       /> */}
       {/* <Header /> */}
-      <div className="flex h-full row full-doc-content">
+      <div className="flex w-full min-h-full full-doc-content">
         <SidebarLatest versions={versions} />
-        {/* <Sidebar
-          versions={versions}
-          // {...props.versionInfo[props.version]}
-          // version={props.version}
-        /> */}
+
         <div className="content-holder w-[100vw]">
           <ContentHeader />
-          <Content {...props} />
+          <div className="prose lg:prose-xl">
+            <Content {...props} />
+          </div>
         </div>
       </div>
     </div>
