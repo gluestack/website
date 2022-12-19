@@ -7,11 +7,11 @@ import { link, linkSync } from "fs";
 
 export default function SidebarLatest(props: any) {
   return (
-    <nav className="left-panel font-displaySemibold">
-      <div className="xmx-auto px-12 pt-16">
+    <nav className=" font-displaySemibold bg-gray">
+      <div className="px-12 pt-16">
         <SidebarHeader />
       </div>
-      <div className="md:flex-col px-6 md:items-stretch md:min-h-full md:flex-nowrap flex flex-wrap items-center justify-between w-full pt-8  ">
+      <div className="md:flex-col px-6 md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full pt-8">
         <div className="link-list">
           <SidebarDocs {...props} linkUrl="/docs" />
         </div>

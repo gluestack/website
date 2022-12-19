@@ -18,7 +18,7 @@ function Details({team}:any) {
   return (
     <>
     
-      <div className="container mx-auto bg-white">
+      <div className="container bg-white">
         {/* <div className="text-center">
           <Heading
             title={undefined}

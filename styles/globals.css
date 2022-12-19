@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import './button.css';
-@import './modal.css';
-@import './header.css';
-@import './herosection.css';
-@import './card.css';
-@import './search.css';
-@import './testimonial.css';
-@import './footer.css';
-@import './team/team.css';
-@import './docs/leftPanel.css';
-
+@import "./button.css";
+@import "./modal.css";
+@import "./header.css";
+@import "./herosection.css";
+@import "./card.css";
+@import "./search.css";
+@import "./testimonial.css";
+@import "./footer.css";
+@import "./team/team.css";
+@import "./docs/leftPanel.css";
 
 @font-face {
-  font-family: "display-Regular";
+  font-family: "sf-pro-regular";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Regular.woff2")
       format("woff2");
@@ -26,7 +25,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-Light";
+  font-family: "sf-pro-light";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Light.woff2") format("woff2");
   font-weight: 300;
@@ -35,7 +34,7 @@
 }
 
 @font-face {
-  font-family: "display-Bold";
+  font-family: "sf-pro-bold";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Bold1.woff2") format("woff2");
   font-weight: normal;
@@ -43,7 +42,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-Heavy";
+  font-family: "sf-pro-heavy";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Heavy.woff2") format("woff2");
   font-weight: normal;
@@ -51,7 +50,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-Semibold";
+  font-family: "sf-pro-semibold";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-Semibold.woff2")
       format("woff2");
@@ -60,7 +59,7 @@
   font-display: fallback;
 }
 @font-face {
-  font-family: "display-BoldItalic";
+  font-family: "sf-pro-boldItalic";
   src: local("â˜º"),
     url("/fonts/sf-pro/FontsFree-Net-SFProDisplay-BoldItalic.woff2")
       format("woff2");
@@ -68,7 +67,6 @@
   font-style: normal;
   font-display: swap;
   font-display: fallback;
-
 }
 
 * {
@@ -77,19 +75,25 @@
   margin: 0;
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
 @layer base {
   html {
-    @appy font-display;
-    background-color: rgb(255, 252, 252);
   }
 }
 
-
-
-.filter-primary {
-  filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg) brightness(104%) contrast(101%);
+body {
+  letter-spacing: 1px;
 }
 
-.twitter>div {
+.filter-primary {
+  filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
+    brightness(104%) contrast(101%);
+}
+
+.twitter > div {
   @apply grid grid-cols-3 gap-6 py-6;
 }

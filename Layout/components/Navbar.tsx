@@ -30,8 +30,8 @@ export default function Navbar(props: any) {
     <>
       {/* Navbar */}
       <nav className=" top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center border-b-2">
-        <div className=" mx-auto w-full py-4 bg-white">
-          <div className=" mx-auto px-5 flex items-center justify-between">
+        <div className=" w-full py-4 bg-white">
+          <div className=" px-5 flex items-center justify-between">
             <div className="">
               <Link href="/" passHref legacyBehavior>
                 <a className="inline-flex items-center">
