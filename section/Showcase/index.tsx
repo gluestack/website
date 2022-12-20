@@ -1,13 +1,17 @@
 import React from "react";
 import Card from "../../components/Card";
 
-function Showcase() {
+function Showcase({showcase}:any) {
   return (
     <>
-      <section className="container ">
-        <div className="grid gap-8 grid-cols-3">
-         <Card src="/blog/Rectangle 3467571next.svg" title="text"  description="text"/>
-        
+      <section className="container py-20">
+        <div className="grid gap-8 grid-col-1 lg:grid-cols-3">
+         {
+            showcase.map((ele:any,index:number)=>{
+              return  <Card src={ele.attributes.coverImg.data.attributes.url} title={ele.attributes.title} href={`showcase/${ele.attributes.slug}`} description={ele.attributes.description} key={index} />
+          
+            })
+          }
         </div>
       </section>
     </>

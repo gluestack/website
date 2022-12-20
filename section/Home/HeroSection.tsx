@@ -3,7 +3,8 @@ import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
 import Banner from "../../components/Banner";
 import Button from "../../components/Button";
-import gifSteps from "../../public/animation/animation.gif";
+// import gifSteps from "../../public/animation/animation.gif";
+import light from "../../public/images/light.gif";
 import Image from "next/image";
 import Script from "next/script";
 import { FaGithub } from "react-icons/fa";
@@ -13,7 +14,7 @@ function HeroSection() {
     <>
       <Script src="//embed.typeform.com/next/embed.js"></Script>
       <Banner>
-        <div className="grid lg:grid-cols-2 grid-cols-1 items-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1  items-center">
           <div>
             <Heading color="text-black-100" priority={1}>
               One stack for web, mobile, & backend
@@ -39,7 +40,7 @@ function HeroSection() {
           </div>
 
           <div>
-            <Image src={gifSteps} alt="image" />
+            <Image src={light} alt="image" />
             {/* <Animation data={animationData} /> */}
           </div>
         </div>

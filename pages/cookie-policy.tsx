@@ -2,16 +2,17 @@ import React, { Children } from "react";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import Layout from "../Layout/Layout";
+import InerBanner from "../components/InerBanner";
 
 function Cookies() {
   return (
     <Layout title={"Cookie-policy - gluestack"}>
+      <InerBanner title="Cookie" last=" Policy" /> 
       <div className="container py-14">
-        <Heading priority={1}>Cookie Policy </Heading>
-        <div className="py-16">
-          <ol className="list-decimal list-outside	">
+        <div className="">
+          <ol className="list-none list-outside	">
             <li>
-              <span className="text-md font-displaySemibold">Introduction</span>
+              <Heading priority="4" style="text-md font-displaySemibold">1. Introduction</Heading>
               <Text style="py-4">
                 <p>
                   Welcome to{" "}
@@ -40,9 +41,9 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                What are Cookies and Other Tracking Technologies?
-              </span>
+            <Heading priority="4" style="text-md font-displaySemibold">2. What are Cookies and Other Tracking Technologies?</Heading>
+
+             
               <Text style="py-4">
                 <p>
                   Cookies are files with a small amount of data which may
@@ -59,8 +60,9 @@ function Cookies() {
             </li>
 
             <li>
+            <Heading priority="4" style="text-md font-displaySemibold">3. How do our Sites use Cookies and Other Tracking Technologies?</Heading>
+
               <span className="text-md font-displaySemibold">
-                How do our Sites use Cookies and Other Tracking Technologies?
               </span>
               <Text style="py-4">
                 <p>
@@ -143,6 +145,8 @@ function Cookies() {
             </li>
 
             <li>
+            <Heading priority="4" style="text-md font-displaySemibold">4. Your Choices</Heading>
+
               <span className="text-md font-displaySemibold">Your Choices</span>
               <Text style="py-4">
                 <p>
