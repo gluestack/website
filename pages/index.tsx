@@ -6,14 +6,16 @@ import SubSection from "../section/Home/SubSection";
 import Solution from "../section/Home/Solution";
 import Testimonial from "../section/Home/Testimonial";
 import Community from "../section/Home/Community";
-import DeveloperPreview from "../components/DeveloperPreview";
 import Hook from "../components/Animation";
 import Layout from "../Layout/Layout";
+import DeveloperPreview from "../components/DeveloperPreview";
+
 export default function Home() {
   return (
     <Layout >
-      <HeroSection />
-     
+      <div className="grid fixed-layout">
+        <HeroSection />
+      </div>
       <DeveloperPreview/>
     </Layout>
   );
