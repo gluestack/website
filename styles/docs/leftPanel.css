@@ -2,23 +2,36 @@
     @apply bg-white md:left-0 text-sm md:flex-row md:flex-nowrap flex-wrap items-center justify-between relative w-2/6 z-10
 }
 .active {
-    @apply before:absolute before:w-2 before:h-2 before:rounded-2xl before:bg-primary-100 before:top-4 before:left-2 before:mt-0.5 relative
+    @apply before:absolute before:w-2 before:h-2 before:rounded-2xl before:bg-primary-100 before:top-[18px] before:left-5 before:mt-0.5 relative
 }
 .content-holder {
-    @apply pr-60
+    @apply md:pr-20
 }
-.layout-theme.fixed {
-    @apply overflow-hidden h-[100vh]
-}
-.layout-theme.fixed .full-doc-content {
-    @apply px-20
-}
+
 .layout-theme.fixed .content-holder {
     @apply pr-0
 }
-.layout-theme.fixed .link-list {
-    @apply  md:h-[100vh] md:overflow-y-auto
+.content-body {
+    @apply px-10 md:px-0 break-words
 }
-.layout-theme.fixed .content-body {
-    @apply h-[calc(100%_-_72px)] overflow-auto
+.layout-theme.fixed .link-list {
+    @apply md:overflow-y-auto md:max-h-[calc(100vh_-_150px)]
+}
+.mobile-header {
+    @apply py-10 px-10  w-full flex-row z-30
+}
+.layout-theme {
+    @apply flex-col md:flex-row
+}
+.layout-theme .content {
+    @apply max-w-[100vw] md:max-w-none md:pr-40
+}
+.layout-theme .sidebarNav {
+    @apply hidden md:block md:min-h-full bg-white-200 ease-in-out
+}
+.sidebarNav.showNav {
+    @apply block md:block w-full ease-in-out duration-150 absolute top-[106px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 
+}
+.sidebarNav.hideNav {
+    @apply hidden md:block
 }

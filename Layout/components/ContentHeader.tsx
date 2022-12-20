@@ -6,8 +6,8 @@ export default function ContentHeader(props: any) {
   return (
     <>
       {/* Navbar */}
-      <nav className="top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center">
-        <div className="px-20 w-full pt-12">
+      <nav className="top-0 md:top-[100px] left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center">
+        <div className="px-10 md:px-20 w-full pt-2 md:pt-12">
           <div className="flex row ">
             <SearchInput />
             <Dropdown />
@@ -61,17 +61,17 @@ function Dropdown() {
         <div className="mt-[1.5px]">
           <button
             type="button"
-            className="inline-flex px-10 pb-2 w-full border-b block justify-center px-4 text-xs font-medium text-gray-700 "
+            className="cursor-default inline-flex px-10 pb-2 w-full border-b justify-center text-xs font-medium text-gray-700 "
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
-            onClick={handleDropDown}
+            // onClick={handleDropDown}
           >
             <div>
               <div className=" text-gray-400 text-xs mb-2">VERSIONS</div>
               <div className="flex text-sm">
                 1.x
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="20"
                   viewBox="0 0 48 48"
@@ -80,7 +80,7 @@ function Dropdown() {
                 >
                   <path d="M14 20l10 10 10-10z" />
                   <path d="M0 0h48v48h-48z" fill="none" />
-                </svg>
+                </svg> */}
               </div>
             </div>
           </button>
@@ -146,7 +146,7 @@ function SearchInput() {
       </span>
       <input
         type="text"
-        placeholder="Placeholder"
+        placeholder=""
         className="px-3 py-3 relative text-sm border-b  w-full pl-10 text-sm placeholder-gray-700 text-gray-700 block w-full p-2.5 focus:ring-0 focus:ring-offset-0 focus:outline-none focus:ring-0 focus:border-b"
       />
     </div>
