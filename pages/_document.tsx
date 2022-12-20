@@ -14,6 +14,10 @@ export default class CustomDocument extends Document {
       })(window,document,'script','dataLayer','GTM-WFW8FKC');`,
             }}
           />
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
+          ></link>
         </Head>
         <body>
           <noscript>
