@@ -7,7 +7,7 @@ import { link, linkSync } from "fs";
 
 export default function SidebarLatest(props: any) {
   return (
-    <nav className=" font-displaySemibold bg-[#FAF5FF]">
+    <nav className="font-displaySemibold">
       <div className="px-12 pt-16">
         <SidebarHeader />
       </div>
@@ -58,7 +58,9 @@ const SidebarDocs = (props: any) => {
         )}
       </div>
       <div className="my-6"></div>
-      <RenderSidebar sidebarData={mainDocsVersionData} linkUrl={linkUrl} />
+      <div className="link-list">
+          <RenderSidebar sidebarData={mainDocsVersionData} linkUrl={linkUrl} />
+      </div>
     </div>
   );
 };
@@ -83,7 +85,7 @@ const RenderSidebar = (props: any) => {
           );
         } else {
           return (
-            <div className="mt-4 ">
+            <div>
               <SidebarItems
                 props={info}
                 version={props.version}

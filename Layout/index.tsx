@@ -13,7 +13,7 @@ function PagesLayout(props: any) {
   const router = useRouter();
   console.log(router.route);
   return (
-    <div className="flex flex-1 min-h-screen relative layout-theme">
+    <div className={"flex flex-1 min-h-screen relative layout-theme " + (router.route == '/docs/1.x/gluestack-ui' ? 'fixed' : '')}>
       {/* Add 'fixed' class beside 'layout-theme' to have fixed layout */}
       {/* <Navbar
         setVersion={props.setVersion}
