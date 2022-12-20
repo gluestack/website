@@ -21,7 +21,6 @@ export default function Navbar(props: any) {
   };
 
   const handleClick = (version: any) => {
-    console.log(version);
     props.setVersion(version);
     setOpen(false);
     router.push("/" + version);

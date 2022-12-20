@@ -6,8 +6,8 @@ export default function ContentHeader(props: any) {
   return (
     <>
       {/* Navbar */}
-      <nav className="top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center">
-        <div className="px-20 w-full pt-12">
+      <nav className="top-0 md:top-[100px] left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center">
+        <div className="px-10 md:px-20 w-full pt-2 md:pt-12">
           <div className="flex row ">
             <SearchInput />
             <Dropdown />

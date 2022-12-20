@@ -49,8 +49,6 @@ function MyApp({ Component, pageProps }: any) {
       versionData = plugins[key].versions;
       showBackButton = true;
     }
-
-    console.log(versionData, versions, "MADHAV");
   });
 
   // plugins.forEach((plugin) => {
