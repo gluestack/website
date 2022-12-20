@@ -26,7 +26,7 @@ export const Footer = () => {
   return (
     <div className="bg-black-100">
       <div className="container py-12">
-        <Logo dark />
+        <Logo darkLogo />
 
         <div className="grid lg:grid-cols-6  grid-cols-1 lg:gap-12 gap-4 pt-2">
           <div className="lg:col-span-2 col-span-1">
