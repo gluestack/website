@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../components/Header/Logo";
+import { FaCaretDown, FaCaretUp } from "react-icons/fa";
+
 
 export default function SidebarCustom(props: any) {
   const router = useRouter();
@@ -53,16 +55,17 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
               />
             ) : (
               <>
-                <h2 className="font-medium leading-tight text-lg mt-0 mb-2 text-gray-800 px-10 ">
+                <h2 className="font-displayMedium leading-tight text-lg mt-0 mb-2 text-gray-800 dark:text-white px-10 ">
                   {props.title}
                 </h2>
-                {props?.pages.map((pageInfo: any) => {
+                {props?.pages.map((pageInfo: any, index:any) => {
                   if (pageInfo.type == "heading") {
                     return (
                       <SidebarItems
                         props={pageInfo}
                         version={version}
                         linkUrl={linkUrl}
+                        key={index}
                       />
                     );
                   }
@@ -70,7 +73,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                     <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
                       <div
                         className={
-                          " py-3 hover:cursor-pointer px-10 " +
+                          " py-3 hover:cursor-pointer px-10 dark:text-white " +
                           (router.route.includes(pageInfo.id)
                             ? "active"
                             : "")
@@ -99,15 +102,16 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
       <div className="accordion-item bg-white">
         <h2 className="accordion-header font-displaySemibold" id="headingOne">
           <button
-            className="flex items-center w-full justify-between bg-white-200"
+            className="flex items-center w-full justify-between bg-white-200 dark:bg-black"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="py-3 hover:cursor-pointer pl-10">
+            <div className="py-3 hover:cursor-pointer pl-10 dark:text-white">
               {props.title}
             </div>
             {isOpen ? (
-              <div className="pr-6">
-                <svg
+              <div className="pr-6 text-black dark:text-white">
+                <FaCaretUp />
+                {/* <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
@@ -121,11 +125,12 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
                     fill="currentColor"
                     d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"
                   ></path>
-                </svg>
+                </svg> */}
               </div>
             ) : (
-              <div className="pr-10">
-                <svg
+              <div className="pr-10 text-black dark:text-white">
+                <FaCaretDown />
+                {/* <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
@@ -139,7 +144,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
                     fill="currentColor"
                     d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
                   ></path>
-                </svg>
+                </svg> */}
               </div>
             )}
           </button>
@@ -147,7 +152,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
         <div
           id="collapseOne"
           className={`${
-            isOpen ? "bg-white-200" : "hidden"
+            isOpen ? "bg-white-200 dark:bg-black" : "hidden"
           }  accordion-collapse show `}
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
@@ -166,10 +171,10 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
             return (
               <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
                 <div
-                  className={
-                    router.route.includes(pageInfo.id)
-                      ? "active py-3 hover:cursor-pointer pl-10"
-                      : "py-3 hover:cursor-pointer pl-10"
+                  className={`py-3 hover:cursor-pointer pl-10 dark:text-white
+                    ${router.route.includes(pageInfo.id)
+                      ? "active"
+                      : ""}`
                   }
                 >
                   {pageInfo.title}
