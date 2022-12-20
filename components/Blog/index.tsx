@@ -26,35 +26,38 @@ function Blog({
     <>
       <article className="p-6 border border-gray-200 rounded-lg">
         <div className="grid grid-cols-1 gap-3 md:grid-flow-col">
-          <div className="col-span-1">
+          <div className="col-span-1 lg:order-1 order-2">
             <div className="py-2 ">
               <Linktag href={`blog/${slug}`}>
-                <Heading priority={4}>{title}</Heading>
+
+                <Heading priority={4} style="text-black-200 font-displayHead hover:text-primary">{title}</Heading>
               </Linktag>
               <div className="py-2">
-                <Text style="text-base">{shortDes}</Text>
+                <Text style="text-base text-black-100">{shortDes}</Text>
               </div>
             </div>
 
-            <div className="flex items-center justify-between py-2 ">
-              <div className="flex items-center space-x-4 ">
+              <div className="flex lg:items-center items-start  lg:space-x-1 lg:space-y-0 space-y-2 space-x-0 lg:flex-row	 flex-col ">
                 <Author
                   src={autherImage}
                   altText={altText || "profileImage"}
                   name={autherName}
                 />
 
-                <span className="px-1">|</span>
+                <span className="px-1 lg:block hidden">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
-                <Tags isTag>{caregory}</Tags>
+                <div className="lg:pl-4 pl-0">
+                <Tags solid>{caregory}</Tags>
+                </div>
               </div>
-            </div>
           </div>
+          <div className="lg:order-2 order-1">
           <Linktag href={`blog/${slug}`}>
             <div className="flex items-center col-span-1">
               <Image src={coverImg} alt="Image" width={300} height={100} />
             </div>
           </Linktag>
+          </div>
         </div>
       </article>
     </>

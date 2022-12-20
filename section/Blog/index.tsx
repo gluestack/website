@@ -12,6 +12,7 @@ function Blogs({ blogs }: any) {
             let autherImage=ele.attributes.blog_author.data?.attributes.image.data.attributes.url
             let caregory= ele.attributes.blog_categories.data[0]?.attributes.name;
             return (
+              <>
               <Blog
                 title={ele.attributes.title}
                 shortDes={ele.attributes.shortDes}
@@ -24,6 +25,7 @@ function Blogs({ blogs }: any) {
                 caregory={caregory}
                 key={index}
               />
+              </>
             );
           })}
         </div>

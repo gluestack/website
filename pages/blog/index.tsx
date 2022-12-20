@@ -7,7 +7,10 @@ function Blog({ blogs }: any) {
   return (
     <Layout title={'Blog - gluestack'} description={"Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work,"}>
       <HeroSection />
+      <div className="sm-container pb-32">
+
       <Blogs blogs={blogs} />
+      </div>
     </Layout>
   );
 }

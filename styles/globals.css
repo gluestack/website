@@ -97,3 +97,8 @@ body {
 .twitter > div {
   @apply grid grid-cols-3 gap-6 py-6;
 }
+.sm-container{
+  @apply max-w-[1030px] mx-auto;
+}
+
+

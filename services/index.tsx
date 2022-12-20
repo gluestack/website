@@ -57,3 +57,28 @@ export function BlogService() {
     `,
   });
 }
+
+export function ShowCaseService() {
+  return client.query({
+    query: gql`
+    query{
+      events{
+        data{
+          attributes{
+            title
+            description
+            slug
+            coverImg{
+              data{
+                attributes{
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    `,
+  });
+}
