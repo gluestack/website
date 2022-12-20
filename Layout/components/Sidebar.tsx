@@ -48,7 +48,7 @@ const SidebarDocs = (props: any) => {
           </>
         ) : (
           <></>
-          // <h2 className="font-medium leading-tight bold text-md mt-0 mb-2 text-gray-600 px-6 ">
+          // <h2 className="font-medium leading-tight bold text-md mt-0 mb-2 text-gray-600 px-10 ">
           //   Website Versions
           // </h2>
         )}
@@ -100,7 +100,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
             ) : (
               // <div className="text-black">hihihi</div>
               <>
-                <h2 className="font-medium leading-tight text-md mt-0 mb-2 text-gray-400 px-6 ">
+                <h2 className="font-medium leading-tight text-md mt-0 mb-2 text-gray-400 px-10 ">
                   {props.title}
                 </h2>
                 {props?.pages.map((pageInfo: any) => {
@@ -110,7 +110,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
 
                   return (
                     <Link href={linkUrl + "/" + pageInfo.id}>
-                      <div className="text-gray-800 py-3 hover:bg-gray-100 hover:cursor-pointer px-6 ">
+                      <div className="text-gray-800 py-3 hover:bg-gray-100 hover:cursor-pointer px-10 ">
                         {pageInfo.title}
                       </div>
                     </Link>
@@ -131,9 +131,9 @@ const HeadingDropdown = ({ props, version }: any) => {
   return (
     <div className="accordion" id="accordionExample">
       <div className="accordion-item bg-white">
-        <h2 className="accordion-header " id="headingOne">
+        <h2 className="accordion-header font-displaySemibold" id="headingOne">
           <button
-            className="relative flex items-center w-full text-gray-800 justify-between flex px-6 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-6  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
+            className="relative flex items-center w-full text-gray-800 justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
@@ -201,7 +201,7 @@ const HeadingDropdown = ({ props, version }: any) => {
                 href={"/" + version + "/" + pageInfo.id}
                 // onClick={() => handleItemClick(pageInfo)}
               >
-                <div className="text-gray-800 pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-6">
+                <div className="text-gray-800 pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10">
                   {pageInfo.title}
                 </div>
               </Link>
@@ -219,9 +219,9 @@ function CategoryDropdown(props: any) {
   return (
     <div className="accordion" id="accordionExample">
       <div className="accordion-item bg-white">
-        <h2 className="accordion-header " id="headingOne">
+        <h2 className="accordion-header font-displaySemibold" id="headingOne">
           <button
-            className="relative flex items-center w-full text-gray-800 justify-between flex px-6 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-6  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
+            className="relative flex items-center w-full text-gray-800 justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
@@ -291,7 +291,7 @@ function CategoryDropdown(props: any) {
                 href={"/" + version + "/" + pageInfo.id}
                 // onClick={() => handleItemClick(pageInfo)}
               >
-                <div className="text-gray-800 pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-6">
+                <div className="text-gray-800 pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10">
                   {pageInfo.title}
                 </div>
               </Link>

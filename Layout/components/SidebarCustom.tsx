@@ -7,17 +7,18 @@ import Logo from "../../components/Header/Logo";
 export default function SidebarCustom(props: any) {
   const router = useRouter();
   return (
-    <nav className="font-displaySemibold bg-[#FAF5FF] pb-16">
-      <div className="px-12 pt-16">
+    <nav className="pb-16">
+      {/* font-displaySemibold */}
+      <div className="px-10 pt-16 hidden md:block">
         <Logo />
       </div>
-      <div className="md:flex-col  md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full pt-8">
-        <div className="pt-4">
+      <div className="md:flex-col  md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full md:pt-4 md:px-5">
+        <div className="pt-4 w-full">
           {props.sidebar.map((sidebarItem: any) => {
             return (
               <div className="mt-4 ">
                 {props.showBackButton ? (
-                  <Link className="px-6" href={"/docs"}>
+                  <Link className="px-10" href={"/docs"}>
                     {"<-"}
                   </Link>
                 ) : (
@@ -52,7 +53,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
               />
             ) : (
               <>
-                <h2 className="font-medium leading-tight text-lg mt-0 mb-2 text-gray-800 px-6 ">
+                <h2 className="font-medium leading-tight text-lg mt-0 mb-2 text-gray-800 px-10 ">
                   {props.title}
                 </h2>
                 {props?.pages.map((pageInfo: any) => {
@@ -69,10 +70,10 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                     <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
                       <div
                         className={
-                          " py-3 hover:cursor-pointer px-6 " +
+                          " py-3 hover:cursor-pointer px-10 " +
                           (router.route.includes(pageInfo.id)
-                            ? "bg-purple-400 text-white"
-                            : "text-gray-600")
+                            ? "active"
+                            : "")
                         }
                       >
                         {pageInfo.title}
@@ -96,12 +97,12 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
   return (
     <div className="accordion" id="accordionExample">
       <div className="accordion-item bg-white">
-        <h2 className="accordion-header " id="headingOne">
+        <h2 className="accordion-header font-displaySemibold" id="headingOne">
           <button
-            className="flex items-center w-full justify-between bg-[#FAF5FF]"
+            className="flex items-center w-full justify-between bg-white-200"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="text-gray-600 py-3 hover:cursor-pointer pl-6">
+            <div className="py-3 hover:cursor-pointer pl-10">
               {props.title}
             </div>
             {isOpen ? (
@@ -123,7 +124,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
                 </svg>
               </div>
             ) : (
-              <div className="pr-6">
+              <div className="pr-10">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -146,7 +147,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
         <div
           id="collapseOne"
           className={`${
-            isOpen ? "bg-[#FAF5FF]" : "hidden"
+            isOpen ? "bg-white-200" : "hidden"
           }  accordion-collapse show `}
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
@@ -167,8 +168,8 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
                 <div
                   className={
                     router.route.includes(pageInfo.id)
-                      ? "bg-purple-400 text-white py-3 hover:cursor-pointer pl-10"
-                      : "text-gray-600 py-3 hover:cursor-pointer pl-10"
+                      ? "active py-3 hover:cursor-pointer pl-10"
+                      : "py-3 hover:cursor-pointer pl-10"
                   }
                 >
                   {pageInfo.title}

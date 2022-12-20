@@ -11,6 +11,7 @@ import SidebarCustom from "./components/SidebarCustom";
 function PagesLayout(props: any) {
   const [sideBarOpen, setSideBar] = useState(false);
   const hamburgerClick = () => setSideBar(!sideBarOpen);
+  
   const router = useRouter();
   return (
     <div
@@ -19,7 +20,7 @@ function PagesLayout(props: any) {
         (router.route == "/docs/1.x/gluestack-ui" ? "fixed" : "")
       }
     >
-      <div className="flex w-full min-h-full">
+      <div className="flex w-full min-h-full flex-col">
         <div
           className={
             "md:hidden mobile-header flex flex-row justify-between" +
