@@ -9,7 +9,7 @@ function HeroSection() {
       <Banner>
         <div className="py-16 text-center">
         <Heading priority={1}>Join the latest <span className="text-primary">conversation</span></Heading>
-        <div className="pt-6 text-center lg:px-36">
+        <div className="pt-6 text-start lg:px-36">
        <Text size='md'>
           Welcome to our blog, where we share our thoughts, insights, and expert
           knowledge on a variety of topics. From industry news and trends to

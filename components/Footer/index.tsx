@@ -28,7 +28,7 @@ export const Footer = () => {
       <div className="container py-12">
         <Logo dark />
 
-        <div className="grid grid-cols-6 gap-12 pt-2">
+        <div className="grid gap-12 pt-2 lg:grid-cols-6 grid-col-2">
           <div className="col-span-2">
             <div className="py-4">
               <Text size="md" style="font-displayLight text-white-200">

@@ -42,7 +42,7 @@ function SingleBlog({
               <Text size="sm">{formatDate(blog.publish_date)}</Text>
             </div>
             {categories.map((ele: any, index: number) => (
-              <Tags isTag key={index}>
+              <Tags solid key={index}>
                 {ele.attributes.name}
               </Tags>
             ))}

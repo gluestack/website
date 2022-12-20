@@ -46,7 +46,7 @@ function Blog({
 
                 <span className="px-1">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
-                <Tags isTag>{caregory}</Tags>
+                <Tags solid>{caregory}</Tags>
               </div>
             </div>
           </div>
