@@ -97,6 +97,10 @@ body {
 .twitter > div {
   @apply grid grid-cols-3 gap-6 py-6;
 }
+
+.fixed-layout {
+  min-height: calc(100vh - 168px);
+}
 .sm-container{
   @apply max-w-[1030px] mx-auto;
 }

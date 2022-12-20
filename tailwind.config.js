@@ -27,7 +27,7 @@ module.exports = {
         "3xl": "2.125rem", // 34px
         "4xl": "2.25rem", // 36px
         "5xl": "3rem", // 48px
-        "6xl": ["5.125rem", "98px"], //82px
+        "6xl": ["4.8rem", "80px"], //82px
       },
 
       colors: {
@@ -100,11 +100,11 @@ module.exports = {
           },
           "@screen md": {
             maxWidth: "768px",
-            paddingLeft: "15px",
-            paddingRight: "15px",
+            paddingLeft: "30px",
+            paddingRight: "30px",
           },
           "@screen lg": {
-            maxWidth: "1380px",
+            maxWidth: "1240px",
             marginLeft: "auto",
             marginRight: "auto",
           },

@@ -1,10 +1,10 @@
 .btn_outline{
-    @apply inline-flex border rounded-lg border-primary focus:outline-none lg:ml-4;
+    @apply border border-primary  focus:outline-none inline-flex rounded-lg;
 }
 .btn{
     @apply   text-center transition-transform transform rounded-lg font-display ring-offset-1 group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1 ring-1;
 }
 
 .outline{
-    @apply border border-primary  focus:outline-none lg:ml-4 lg:inline-flex
+    @apply border border-primary  focus:outline-none lg:inline-flex
 }
