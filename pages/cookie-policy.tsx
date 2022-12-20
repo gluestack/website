@@ -2,16 +2,19 @@ import React, { Children } from "react";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import Layout from "../Layout/Layout";
+import InerBanner from "../components/InerBanner";
 
 function Cookies() {
   return (
-    <Layout title={"Cookie-policy - gluestack"}>
-      <div className="container py-14">
-        <Heading priority={1}>Cookie Policy </Heading>
-        <div className="py-16">
-          <ol className="list-decimal list-outside	">
+    <Layout title={"Cookie Policy - gluestack"}>
+      <InerBanner title="Cookie" last=" Policy" />
+      <div className="container pb-14">
+        <div className="">
+          <ol className="list-none list-outside	">
             <li>
-              <span className="text-md font-displaySemibold">Introduction</span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                1. Introduction
+              </Heading>
               <Text style="py-4">
                 <p>
                   Welcome to{" "}
@@ -40,9 +43,10 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                What are Cookies and Other Tracking Technologies?
-              </span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                2. What are Cookies and Other Tracking Technologies?
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   Cookies are files with a small amount of data which may
@@ -59,9 +63,11 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                How do our Sites use Cookies and Other Tracking Technologies?
-              </span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                3. How do our Sites use Cookies and Other Tracking Technologies?
+              </Heading>
+
+              <span className="text-md font-displaySemibold"></span>
               <Text style="py-4">
                 <p>
                   We use Cookies and Other Tracking Technologies to identify you
@@ -92,7 +98,7 @@ function Cookies() {
                 <p className="py-4">
                   The following are some examples of Cookies we use:
                 </p>
-                <ul className="list-disc list-outside">
+                <ul className="list-disc list-outside ml-8">
                   <li>
                     <span className="font-displaySemibold">
                       Session Cookies:
@@ -143,7 +149,10 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">Your Choices</span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                4. Your Choices
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   If you&lsquo;d like to remove or disable cookies via your
@@ -163,9 +172,10 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                Our Customers
-              </span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                5. Our Customers
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   Customers who separately use cookies or similar technologies
@@ -179,9 +189,10 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                Changes to this Cookie Policy
-              </span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                6. Changes to this Cookie Policy
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   We may update our Cookie Policy from time to time without
@@ -200,7 +211,10 @@ function Cookies() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">Contact Us</span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                7. Contact Us
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   If you have any questions about this Cookie Policy, please
@@ -208,7 +222,10 @@ function Cookies() {
                 </p>
                 <p className="py-4">
                   By email:{" "}
-                  <a href="mailto:hello@gluestack.io" className="text-primary">hello@gluestack.io</a>.{" "}
+                  <a href="mailto:hello@gluestack.io" className="text-primary">
+                    hello@gluestack.io
+                  </a>
+                  .{" "}
                 </p>
               </Text>
             </li>

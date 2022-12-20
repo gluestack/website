@@ -34,7 +34,7 @@ function BlogControl({ right, left, arrowTitle, blogTitle, href,altText }: any) 
         </div>
       </div> */}
 
-      <div className="flex flex-col items-center p-5 bg-gray-100 border rounded-lg shadow-md md:flex-row">
+      <div className="flex flex-col items-center p-5 bg-gray-200 border rounded-lg shadow-md md:flex-row">
         <Image
           src={blognext}
           alt={altText || "profileImage"}

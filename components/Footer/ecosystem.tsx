@@ -16,8 +16,15 @@ function EcoSystem() {
           </Text>
         </LinkList>
         <LinkList src="/showcase" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" style="text-white-200 ">
+            <span className="relative">
             Design System
+            <div className="absolute rounded bg-secondary-400 px-1 py-1 text-[8px] -right-[55px] -top-2">
+              Upcoming
+
+            </div>
+            </span>
+
           </Text>
         </LinkList>
        

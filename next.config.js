@@ -18,6 +18,9 @@ const nextConfig = {
   images: {
     domains: ["localhost", `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}`,'flowbite.s3.amazonaws.com','gluestack-strapi.sfo3.digitaloceanspaces.com'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+},
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 };
 
