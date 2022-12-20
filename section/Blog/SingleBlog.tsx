@@ -61,14 +61,14 @@ function SingleBlog({
           <div dangerouslySetInnerHTML={{ __html: blog.details }}></div>
         </TermsCondition>
 
-        <div className="flex flex-col justify-around md:flex-row">
+        {/* <div className="flex flex-col justify-around md:flex-row">
           <div className="p-2 lg:p-0">
             <Image src={blog2} alt={altText || 'subImage'}/>
           </div>
           <div className="p-2 lg:p-0">
             <Image src={blog3} alt={altText || 'subImage'} />
           </div>
-        </div>
+        </div> */}
         <div className="items-center md:flex ">
           <div className="p-2">
             <Text size="lg" style="font-bold ">
