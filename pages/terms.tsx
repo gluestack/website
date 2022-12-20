@@ -1,12 +1,13 @@
 import React from 'react'
 import Details from '../section/Terms/Details'
-import HeroSection from '../section/Terms/HeroSection'
 import Layout from "../Layout/Layout";
+import InerBanner from '../components/InerBanner';
 
 function term() {
   return (
     <Layout  title={"Terms & Condition"} description={"terms"}>
-        <HeroSection/>
+            <InerBanner title="Terms and " last="Conditions" />
+
         <Details/>
     </Layout>
   )
