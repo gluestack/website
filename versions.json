@@ -221,12 +221,110 @@
         }
       ]
     },
-    "auth": {},
-    "graphql": {},
-    "functions": {},
-    "jobs": {},
-    "cron": {},
-    "language-and-i18n": {},
-    "environment-variables": {}
+    "auth": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "Auth",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "graphql": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "GraphQL",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "functions": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "Functions",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "jobs": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "Jobs",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "cron": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "CRON",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "language-and-i18n": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "Language & i18n",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "environment-variables": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "Environment Varaibles",
+                "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    }
   }
 }
