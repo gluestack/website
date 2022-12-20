@@ -21,13 +21,13 @@
     @apply py-10 px-10  w-full flex-row z-30
 }
 .layout-theme {
-    @apply flex-col md:flex-row
+    @apply flex-col md:flex-row dark:bg-black-300
 }
 .layout-theme .content {
     @apply max-w-[100vw] md:max-w-none md:pr-40
 }
 .layout-theme .sidebarNav {
-    @apply hidden md:block md:min-h-full bg-white-200 ease-in-out
+    @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black ease-in-out
 }
 .sidebarNav.showNav {
     @apply block md:block w-full ease-in-out duration-150 absolute top-[106px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 

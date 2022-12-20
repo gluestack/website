@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { Content } from "./components/Content";
-import ContentHeader from "./components/ContentHeader";
+import { Content } from '../components/docs/Content'
+import ContentHeader from "../components/docs/ContentHeader";
 import { useRouter } from "next/router";
-import { IFrameContent } from "./components/IFrameContent";
+import { IFrameContent } from "../components/docs/IFrameContent";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Logo from "../components/Header/Logo";
-import SidebarCustom from "./components/SidebarCustom";
+import SidebarCustom from "../components/docs/SidebarCustom";
+import Meta from "../components/Meta";
+
 
 function PagesLayout(props: any) {
   const [sideBarOpen, setSideBar] = useState(false);
@@ -14,6 +16,9 @@ function PagesLayout(props: any) {
   
   const router = useRouter();
   return (
+    <>
+          <Meta title="gluestack - docs" description={props.description} ogImgUrl={props.ogImgUrl} ogUrl={props.ogUrl} />
+
     <div
       className={
         "flex flex-1 min-h-screen relative layout-theme " +
@@ -57,7 +62,7 @@ function PagesLayout(props: any) {
           ) : (
             <div className="content-holder flex flex-1 flex-col">
               <ContentHeader />
-              <div className="content flex-1 h-full prose">
+              <div className="content flex-1 h-full prose dark:text-white docs-layout">
                 <Content {...props} />
               </div>
             </div>
@@ -66,6 +71,7 @@ function PagesLayout(props: any) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

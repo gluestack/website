@@ -33,7 +33,7 @@ import GTMPageView from "../helper/gtm";
 import React, { useEffect, useState } from "react";
 // import { Router } from "next/router";
 import "../styles/globals.css";
-import PagesLayout from "../Layout";
+import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
 
