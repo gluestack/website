@@ -6,9 +6,9 @@ import Layout from "../../Layout/Layout";
 function Blog({ blogs }: any) {
   return (
     <Layout
-      title={"Blog - gluestack"}
+      title={"Articles and Insights - gluestack"}
       description={
-        "Welcome to our blog, where we share our thoughts, insights, and expert knowledge on a variety of topics. From industry news and trends to company updates and behind-the-scenes looks at our work,"
+        "Curated ideas, experiments, and the latest developments in gluestack."
       }
     >
       <HeroSection />

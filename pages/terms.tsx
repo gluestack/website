@@ -5,9 +5,8 @@ import InerBanner from '../components/InerBanner';
 
 function term() {
   return (
-    <Layout  title={"Terms & Condition"} description={"terms"}>
-            <InerBanner title="Terms and " last="Conditions" />
-
+    <Layout  title={"Terms & Condition - gluestack"}>
+        <InerBanner title="Terms & " last="Conditions" />
         <Details/>
     </Layout>
   )

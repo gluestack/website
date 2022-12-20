@@ -6,10 +6,9 @@ import InerBanner from "../components/InerBanner";
 
 function Privacy() {
   return (
-    <Layout title={"Cookie-policy - gluestack"}>
+    <Layout title={"Privacy Policy - gluestack"}>
       <InerBanner title="Privacy" last=" Policy" />
-
-      <div className="container py-14">
+      <div className="container pb-14">
         <div className="">
           <ol className="list-nonel list-outside	">
             <li>
