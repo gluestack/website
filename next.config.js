@@ -23,6 +23,9 @@ const nextConfig = {
       "gluestack-strapi.sfo3.digitaloceanspaces.com",
     ],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+},
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 };
 

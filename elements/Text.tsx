@@ -4,7 +4,7 @@ function Text({  size, isLight, color, font, style,children }: any) {
   return (
     <>
       <div
-        className={`font-display ${
+        className={`font-display text-black-200 dark:text-white ${
           size == "xxl"
             ? `lg:text-xxl text-lg`
             : size == "md"

@@ -16,16 +16,20 @@ function Blog({
   const pageTitle = (str: string) => {
     return str.charAt(1).toUpperCase() + str.slice(2);
   };
+
+
   return (
     <Layout ogUrl={router.asPath} title={blogData.attributes.title} description={blogData.attributes.shortDes} ogImgUrl={blogData.attributes.coverImg.data.attributes.url}>
       <SingleBlog
         blog={blogData.attributes}
-        author={author}
+        author={author.attributes}
         categories={categories}
         tags={tags}
         nextblog={nextblog}
         previousblog={previousblog}
       />
+ 
+
     </Layout>
   );
 }
@@ -34,13 +38,12 @@ export default Blog;
 export async function getServerSideProps(context: any) {
   let param = context.params;
 
-  let author, categories, tags, nextblog, id, blogsData, previousblog;
+  let author, categories, tags, nextblog, id, blogsData, previousblog, authorImag;
   try {
     const data = await fetchAPI("blogs?filters[slug][$eq]", param);
     const content = data.data[0];
     blogsData = content;
     author = content.attributes.blog_author.data;
-    console.log(author,"++");
     
     categories = content.attributes.blog_categories.data;
     tags = content.attributes.blog_tags.data;

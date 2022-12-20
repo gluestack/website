@@ -2,16 +2,19 @@ import React, { Children } from "react";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import Layout from "../Layout/Layout";
+import InerBanner from "../components/InerBanner";
 
 function Privacy() {
   return (
-    <Layout title={"Cookie-policy - gluestack"}>
-      <div className="container py-14">
-        <Heading priority={1}>Privacy Policy </Heading>
-        <div className="py-16">
-          <ol className="list-decimal list-outside	">
+    <Layout title={"Privacy Policy - gluestack"}>
+      <InerBanner title="Privacy" last=" Policy" />
+      <div className="container pb-14">
+        <div className="">
+          <ol className="list-nonel list-outside	">
             <li>
-              <span className="text-md font-displaySemibold">Introduction</span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                1. Introduction
+              </Heading>{" "}
               <Text style="py-4">
                 <p>
                   Welcome to{" "}
@@ -61,7 +64,10 @@ function Privacy() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">Definitions</span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                2. Definitions
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   <span className="font-displaySemibold">SERVICE</span> means{" "}
@@ -153,9 +159,10 @@ function Privacy() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                Information Collection and Use
-              </span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                3. Information Collection and Use
+              </Heading>
+
               <Text style="py-4">
                 <p>
                   When you use our Services, we collect several different types
@@ -166,11 +173,12 @@ function Privacy() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">
-                Types of Data Collected
-              </span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                4. Types of Data Collected
+              </Heading>
+
               <Text style="py-4">
-                <ul className="list-disc list-outside">
+                <ul className="list-disc list-outside ml-8">
                   <li>
                     <span className="font-displaySemibold">Personal Data</span>
                     <p className="py-4">
@@ -210,11 +218,11 @@ function Privacy() {
                     </p>
                     <p className="py-4">
                       This Usage Data may include information such as your
-                      computer&lsquos Internet Protocol address (e.g. IP address),
-                      browser type, browser version, the pages of our Service
-                      that you visit, the time and date of your visit, the time
-                      spent on those pages, unique device identifiers and other
-                      diagnostic data.
+                      computer&lsquos Internet Protocol address (e.g. IP
+                      address), browser type, browser version, the pages of our
+                      Service that you visit, the time and date of your visit,
+                      the time spent on those pages, unique device identifiers
+                      and other diagnostic data.
                     </p>
                     <p className="py-4">
                       When you access Service with a mobile device, this Usage
@@ -301,7 +309,10 @@ function Privacy() {
             </li>
 
             <li>
-              <span className="text-md font-displaySemibold">Use of Data</span>
+              <Heading priority="4" style="text-md font-displaySemibold">
+                5. Use of Data
+              </Heading>
+
               <Text style="py-4"></Text>
             </li>
           </ol>

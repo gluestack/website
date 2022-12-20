@@ -73,6 +73,7 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           property="twitter:url"
           content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
         />
+      
       </Head>
     </>
   );
