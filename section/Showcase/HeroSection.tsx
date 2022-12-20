@@ -8,7 +8,7 @@ function HeroSection() {
     company updates and behind-the-scenes looks at our work, our blog is
     your go-to source for staying informed and engaged. We invite you to
     explore our latest posts and join the conversation by leaving comments
-    and sharing with your network. Happy reading!" style="text-center" />
+    and sharing with your network. Happy reading!" />
      
   );
 }

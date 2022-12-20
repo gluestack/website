@@ -15,7 +15,7 @@ function InerBanner({ title, description, last, style, paddingBottom }: any) {
         {description && (
           <Text
             size="md"
-            style="text-secondary font-displayLight text-center py-6 lg:w-8/12 w-full m-auto"
+            style="text-secondary font-displayLight py-6  w-full "
           >
             {description}
           </Text>

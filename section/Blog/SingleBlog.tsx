@@ -97,12 +97,14 @@ function SingleBlog({
             blogTitle={previousblog.title|| "X"}
             href={previousblog.slug || "null"}
           />
+          {nextblog.title &&
           <BlogControl
             left
             arrowTitle="Next Post"
             blogTitle={nextblog.title || "No Blogs"}
             href={nextblog.slug || "null"}
           />
+}
         </div>
       </div>
     </>
