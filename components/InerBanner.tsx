@@ -5,7 +5,7 @@ import Text from "../elements/Text";
 
 function InerBanner({ title, description, last, style, paddingBottom }: any) {
   return (
-    <>
+    <div className="mt-8">
       <Banner paddingBottom={paddingBottom}>
         <Heading priority={1} style={`text-secondary ${style}`}>
           {" "}
@@ -21,7 +21,7 @@ function InerBanner({ title, description, last, style, paddingBottom }: any) {
           </Text>
         )}
       </Banner>
-    </>
+    </div>
   );
 }
 
