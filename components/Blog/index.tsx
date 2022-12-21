@@ -24,7 +24,7 @@ function Blog({
   
   return (
     <>
-      <article className="p-6 border border-gray rounded-lg bg-white">
+      <article className="p-6 border border-gray rounded-lg bg-white dark:bg-black-200">
         <div className="grid grid-cols-1 lg:gap-16 gap-6 md:grid-flow-col items-center">
           <div className="col-span-1 lg:order-1 order-2">
             <div className="py-2 ">
@@ -44,7 +44,7 @@ function Blog({
                   name={autherName}
                 />
 
-                <span className="px-1 lg:block hidden">|</span>
+                <span className="px-1 lg:block hidden dark:text-white">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
                 <div className="lg:pl-4 pl-0">
                 <Tags solid>{caregory}</Tags>
