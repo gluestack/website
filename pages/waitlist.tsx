@@ -12,8 +12,8 @@ function earlyAccess() {
   return (
     <div className="flex items-center h-screen p-20 bg-white">
       <Meta
-        title={"Early Access - gluestack"}
-        ogImgUrl="https://gluestack-strapi.sfo3.digitaloceanspaces.com/2a2f3f2203e30184ed5e08c98f6b6024.png?updated_at=2022-12-19T11:05:50.987Z"
+        title={"Waitlist - gluestack"}
+        ogImgUrl="https://gluestack-strapi.sfo3.digitaloceanspaces.com/3e8fa1ca95e0c2a8685486ed82785fd2.png?updated_at=2022-12-21T14:56:07.967Z"
       />
       <div className="max-w-[1400px]  m-auto">
         <div className="grid items-center gap-4 grid-col-1 lg:grid-cols-12">
