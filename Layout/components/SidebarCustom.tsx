@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../components/Header/Logo";
 
-export default function SidebarCustom(props: any) {
+export default function app(props: any) {
   const router = useRouter();
   return (
     <nav className="pb-16">
@@ -70,10 +70,9 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                     <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
                       <div
                         className={
-                          " py-3 hover:cursor-pointer px-10 " +
-                          (router.route.includes(pageInfo.id)
-                            ? "active"
-                            : "")
+                          router.route.includes(pageInfo.id)
+                            ? "py-3 hover:cursor-pointer px-10 active"
+                            : "py-3 hover:cursor-pointer px-10"
                         }
                       >
                         {pageInfo.title}
@@ -91,7 +90,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
 };
 
 const HeadingDropdown = ({ props, version, linkUrl }: any) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(props.default ?? false);
   const router = useRouter();
 
   return (
@@ -102,9 +101,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
             className="flex items-center w-full justify-between bg-white-200"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="py-3 hover:cursor-pointer pl-10">
-              {props.title}
-            </div>
+            <div className="py-3 hover:cursor-pointer pl-10">{props.title}</div>
             {isOpen ? (
               <div className="pr-6">
                 <svg
