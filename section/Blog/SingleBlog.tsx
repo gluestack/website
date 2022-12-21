@@ -18,19 +18,19 @@ function SingleBlog({
   autherImage,
   autherName
 }: any) {
-  console.log(author,"authorName");
+  console.log(author.image.data,"authorName");
   
   return (
     <>
       <div className="mt-16">
-        <InerBanner title={blog.title || 'null'} paddingBottom />
+        <InerBanner title={blog.title || 'null'} paddingBottom single={true}  style="test"/>
       </div>
       <div className="container mx-auto">
        <div className="sm-container">
         <div className="flex items-center justify-between pt-4 pb-20">
           <div className="flex items-center space-x-4 ">
           <Author
-                  src= {author.image?.data?.attributes.ur}
+                  src= {author.image.data?.attributes.url}
                   altText={author.altText}
                   name={author.name}
                 />
@@ -46,8 +46,8 @@ function SingleBlog({
              layout="fill"
               alt={author.altText || 'Profile Image'}
             /> */}
-            <div className="flex">
               <span className="px-2">|</span>
+            <div className="flex">
               <Text size="sm">{formatDate(blog.publish_date)}</Text>
             </div>
             {categories.map((data: any, index: number) => (
@@ -67,7 +67,7 @@ function SingleBlog({
           />
         </div>
 
-        <div className="sm-container py-16">
+        <div className="py-16 sm-container">
           <div dangerouslySetInnerHTML={{ __html: blog.details }}></div>
         </div>
 
@@ -86,19 +86,20 @@ function SingleBlog({
             </Text>
           </div>
 
-          <ul className="flex flex-wrap  text-center">
+          <ul className="flex flex-wrap text-center">
             {tags.map((data: any, index: number) => (
               <Tags key={index} outline>{data.attributes.name}</Tags>
             ))}
           </ul>
         </div>
         <div className="grid items-center justify-start grid-cols-1 gap-8 py-20 md:grid-cols-2">
+         { previousblog.title && 
           <BlogControl
             right
             arrowTitle="Previous Post"
             blogTitle={previousblog.title|| "X"}
             href={previousblog.slug || "null"}
-          />
+          />}
           {nextblog.title &&
           <BlogControl
             left

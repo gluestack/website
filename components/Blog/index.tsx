@@ -24,16 +24,16 @@ function Blog({
   
   return (
     <>
-      <article className="p-6 border border-gray rounded-lg bg-white">
-        <div className="grid grid-cols-1 gap-3 md:grid-flow-col">
+      <article className="p-6 border border-gray rounded-lg bg-white dark:bg-black-200">
+        <div className="grid grid-cols-1 lg:gap-16 gap-6 md:grid-flow-col items-center">
           <div className="col-span-1 lg:order-1 order-2">
             <div className="py-2 ">
               <Linktag href={`blog/${slug}`}>
 
-                <Heading priority={4} style="text-black-200 font-displayHead hover:text-primary">{title}</Heading>
+                <Heading priority={4} style="text-black-200 dark:text-white font-displayHead hover:text-primary">{title}</Heading>
               </Linktag>
               <div className="py-2">
-                <Text style="text-base text-black-100">{shortDes}</Text>
+                <Text style="text-base text-black-100 line-clamp-2">{shortDes}</Text>
               </div>
             </div>
 
@@ -44,7 +44,7 @@ function Blog({
                   name={autherName}
                 />
 
-                <span className="px-1 lg:block hidden">|</span>
+                <span className="px-1 lg:block hidden dark:text-white">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
                 <div className="lg:pl-4 pl-0">
                 <Tags solid>{caregory}</Tags>
@@ -53,8 +53,8 @@ function Blog({
           </div>
           <div className="lg:order-2 order-1">
           <Linktag href={`blog/${slug}`}>
-            <div className="flex items-center col-span-1">
-              <Image src={coverImg} alt="Image" width={300} height={100} />
+            <div className=" col-span-1 h-40 relative w-80">
+              <Image src={coverImg} alt="Image"  className="rounded-lg" layout="fill" objectFit="cover"/>
             </div>
           </Linktag>
           </div>
