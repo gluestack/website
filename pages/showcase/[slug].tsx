@@ -16,7 +16,6 @@ import { useRouter } from "next/router";
 import InerBanner from "../../components/InerBanner";
 
 function showcase({ events, categories, tags }: any) {
-  console.log(categories,"categories");
   
   const router = useRouter();
   return (
@@ -107,7 +106,6 @@ export async function getServerSideProps(context: any) {
     const content = data.data[0];
     events = content.attributes;
     categories = content.attributes.event_categories.data;
-    console.log(data,"++=");
     
     tags = content.attributes.event_tags.data;
   } catch (error) {}

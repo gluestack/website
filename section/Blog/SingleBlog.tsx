@@ -57,7 +57,7 @@ function SingleBlog({
             />
           </div>
 
-          <div className="py-16 prose sm-container dark:text-white">
+          <div className="py-16 prose lg:prose-xl sm-container  dark:prose-invert ">
             {/* <div dangerouslySetInnerHTML={{ __html: blog.details }}></div> */}
             <ReactMarkdown children={blog.details}></ReactMarkdown>
           </div>
