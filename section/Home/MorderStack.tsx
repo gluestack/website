@@ -1,7 +1,7 @@
 import React from "react";
 import Details from "../../components/Details";
-import DarkBg from "../../public/images/code.png";
-import Module from "../../public/images/module.png";
+import DarkBg from "../../public/images/code.gif";
+import Module from "../../public/images/module.gif";
 import Gradient from "../../public/images/gradient-pink.png";
 import CustomImage from "../../components/CustomImage";
 
@@ -23,8 +23,8 @@ function MordenStack() {
           title="Building beautiful apps with "
           last="modern stacks."
           description="Making the right tech choices pulling you away from solving the business problem? gluestack helps you solve most of the engineering challenges by recommending the cutting-edge tech. With the proven power of Next.js, Storybook, TypeScript, GraphQL, Hasura & Dapr, now focus on building the real solution."
-          link="/"
-          btnText="START LEARNING"
+          // link="/"
+          // btnText="START LEARNING"
         />
         </div>
       </div>
@@ -36,8 +36,8 @@ function MordenStack() {
           title="Simple. Modular. "
           last="Complete."
           description="gluestack balances the power of standardization and flexibility . Our language-independent core helps ‘glue’ together swappable modules. Choose from the list of recommended plugins or build your own. Install in a jiffy and get started in no-time. Don’t build things from scratch over and over again!"
-          link="/"
-          btnText="STARTER KITS"
+          // link="/"
+          // btnText="STARTER KITS"
         />
         </div>
         <CustomImage  src={Module}  alt="image" style="rounded-lg" />

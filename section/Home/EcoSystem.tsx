@@ -11,7 +11,7 @@ import Image from "next/image";
 
 function EcoSystem() {
   return (
-    <div className="gradient-dark relative w-full">
+    <div className="relative w-full">
       <div className="absolute bottom-0 right-0 -z-10">
         <Image src={Gradient} alt="image" objectFit="contain" />
       </div>

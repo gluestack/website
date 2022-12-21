@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Layout from "../Layout/Layout";
 import { FaTwitter } from "react-icons/fa";
 import Banner from "../components/Banner";
 import Button from "../components/Button";
@@ -7,25 +8,28 @@ import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import earlycard from "../public/earlyaccess/access.svg";
 import Meta from "../components/Meta";
+import bannerImg from "../public/images/gradient.png"
+import Gradient from "../public/images/gradient-pink.png";
 import { TwitterShareButton } from "next-share";
+
 function earlyAccess() {
   return (
-    <div className="flex items-center h-screen p-20 bg-white">
+    <Layout >
       <Meta
         title={"Waitlist - gluestack"}
         ogImgUrl="https://gluestack-strapi.sfo3.digitaloceanspaces.com/3e8fa1ca95e0c2a8685486ed82785fd2.png?updated_at=2022-12-21T14:56:07.967Z"
       />
-      <div className="max-w-[1400px]  m-auto">
+      <div className="max-w-[1024px] bg-white lg:m-auto lg:mt-20 m-10 mb-4 shadow-xl rounded-lg">
         <div className="grid items-center gap-4 grid-col-1 lg:grid-cols-12">
-          <div className="col-span-12 px-20 py-32 lg:col-span-6">
-            <h3 className="text-[56px] leading-[67.2px] font-bold">
-              Thanks for signing up.
-            </h3>
-            <p className="mt-10 text-2xl text-black-200">
+          <div className="col-span-12 lg:px-20 lg:py-20 px-10 py-10 lg:col-span-6">
+          <Heading  priority={2}>
+            Thanks for signing up.
+          </Heading>
+            <p className="mt-10 text-md text-black-200">
               You’re in the waitlist and will be notified as soon as a spot
               becomes available.
             </p>
-            <div className="mt-6">
+            <div className="mt-10">
               <TwitterShareButton
                 style={{ width: "100%" }}
                 url={"https://gluestack.io"}
@@ -52,7 +56,10 @@ function earlyAccess() {
           </div>
         </div>
       </div>
-    </div>
+      <div className="absolute top-16 right-0 -z-10">
+        <Image src={Gradient} alt="image" objectFit="contain"  />
+      </div>
+    </Layout>
   );
 }
 
