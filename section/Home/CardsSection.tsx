@@ -9,7 +9,7 @@ import Text from "../../elements/Text";
 
 function CardsSection() {
   return (
-    <div className="relative w-full pt-40 pb-40">
+    <div className="relative w-full pt-40 pb-80">
          {/* <div className="absolute top-16 right-0 -z-10">
             <Image src={bannerIng} alt="image" objectFit="contain"  />
         </div> */}
