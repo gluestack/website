@@ -21,7 +21,6 @@ export async function getServerSideProps() {
     const { data } = await ShowCaseService();
     const content = data.events.data;
     showcase = content;
-    console.log(content,"++");
     
   } catch (error) {}
 

@@ -67,7 +67,7 @@ function PagesLayout(props: any) {
             ) : (
               <div className="content-holder flex flex-1 flex-col">
                 <ContentHeader />
-                <div className="content flex-1 h-full prose dark:text-white docs-layout">
+                <div className="content flex-1 h-full prose lg:prose-xl  dark:prose-invert docs-layout">
                   <Content {...props} />
                 </div>
               </div>
