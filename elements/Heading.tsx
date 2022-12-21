@@ -13,11 +13,11 @@ const Heading = ({ isLight, color, priority, children,style, single }: any) => {
             : priority == 3
             ? "lg:text-3xl text-2xl font-displaySemibold"
             : priority == 4
-            ? " text-lg"
+            ? " lg:text-xxl text-xl"
             : priority == 5
-            ? "lg:text-xl text-lg font-displaySemibold"
+            ? "lg:text-xl text-lg font-displayHead text-secondary dark:text-white leading-normal"
             : priority == 6
-            ? "text-base font-displaySemibold "
+            ? "lg:text-lg text-md font-displayHead text-secondary dark:text-white leading-normal "
             : "text-lg font-displaySemibold "
         }
         ${style}

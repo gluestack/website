@@ -129,3 +129,17 @@
     position: relative !important;
     height: unset !important;
   }
+
+
+  .gradient-dark{
+    background: linear-gradient(89.93deg, rgba(249, 249, 249, 0) 0.06%, #F9F9F9 47.82%, rgba(249, 249, 249, 0) 99.95%);
+  }
+  .horizental-line:after{
+    content:'';
+    @apply bg-gray w-[4px] absolute top-0 bottom-0 left-0 lg:block hidden;
+  }
+  .dot:after{
+    content:'';
+    @apply absolute w-[18px] h-[18px] bg-gray -left-[135px] top-2 rounded-sm lg:block hidden;
+
+  }
