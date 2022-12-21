@@ -6,7 +6,7 @@ import InnerHeadding from "../elements/InnerHeading";
 
 function Details({ title, last, description, btnText, link, first }: any) {
   return (
-    <div>
+    <div className="text-center lg:text-left">
       <InnerHeadding priority={2} title={title} last={last} first={first} />
       <Text size="md" style="py-4">
         {description}

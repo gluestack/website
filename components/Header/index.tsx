@@ -25,9 +25,11 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             <Logo />
             <div className="flex items-center gap-6">
+              <div className="lg:block hidden">
               <Button isSecondary dataId="QWcoG0YF">
                 Get early access{" "}
               </Button>
+              </div>
               <Toggle/>
             </div>
           </div>

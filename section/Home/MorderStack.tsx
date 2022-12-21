@@ -13,7 +13,7 @@ function MordenStack() {
          <div className="absolute top-16 right-0 -z-10">
         <Image src={Gradient} alt="image" objectFit="contain"  />
       </div>
-    <div className="container pt-32 pb-12 relative">
+    <div className="container lg:pt-32 pt-12 pb-12 relative">
         
       <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
         <CustomImage  src={DarkBg}  alt="image" style="rounded-lg" />
@@ -29,7 +29,7 @@ function MordenStack() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4  pt-40 items-center">
+      <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4  lg:pt-40 pt-20 items-center">
       <div className="lg:pr-12 pr-0">
 
         <Details
