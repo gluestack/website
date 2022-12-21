@@ -9,7 +9,7 @@ function Blogs({ blogs }: any) {
             let coverImg = ele.attributes.coverImg.data?.attributes.url;
             let autherName = ele.attributes.blog_author.data?.attributes.name;
             let autherImage=ele.attributes.blog_author.data?.attributes.image.data.attributes.url
-            let caregory= ele.attributes.blog_categories.data[0]?.attributes.name;
+            let category= ele.attributes.blog_categories.data[0]?.attributes.name;
             return (
               <>
               <Blog
@@ -21,7 +21,7 @@ function Blogs({ blogs }: any) {
                 autherImage={autherImage}
                 blogTag={''}
                 slug={ele.attributes.slug}
-                caregory={caregory}
+                category={category}
                 key={index}
               />
               </>

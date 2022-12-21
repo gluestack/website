@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @import "./button.css";
+@import "./tags.css";
 @import "./modal.css";
 @import "./header.css";
 @import "./herosection.css";
@@ -85,9 +86,7 @@
   }
 }
 
-body {
-  letter-spacing: 1px;
-}
+
 
 .filter-primary {
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
@@ -113,3 +112,20 @@ body {
   @apply dark:text-primary;
 }
 
+
+
+.image-container {
+
+  width: 100%;
+}
+
+.image-container > div {
+    position: unset !important;
+  }
+
+  .image-container .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }

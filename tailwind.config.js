@@ -60,6 +60,26 @@ module.exports = {
           200:"#F8F8F8",
         },
         skyBlue: "#4A99E9",
+        purple: {
+          DEFAULT: "#8B6CB2",
+          100: "#F2E4FF",
+        },
+        beige: {
+          DEFAULT: "#C77E35",
+          100: "#FFEFDC",
+        },
+        blue: {
+          DEFAULT: "#4D7EC0",
+          100: "#DEECFF",
+        },
+        pink: {
+          DEFAULT: "#E769AB",
+          100: "#F8D8E9",
+        },
+        cyan: {
+          DEFAULT: "#1EB4D4",
+          100: "#E7FAFF",
+        },
       },
     },
     fontFamily: {
@@ -99,12 +119,12 @@ module.exports = {
         ".container": {
           maxWidth: "100%",
           "@screen sm": {
-            maxWidth: "640px",
+            maxWidth: "100%",
             paddingLeft: "20px",
             paddingRight: "20px",
           },
           "@screen md": {
-            maxWidth: "768px",
+            maxWidth: "100%",
             paddingLeft: "30px",
             paddingRight: "30px",
           },
