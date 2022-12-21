@@ -45,8 +45,8 @@ function Blog({
                 />
 
                 <span className="hidden px-1 lg:block dark:text-white">|</span>
-                <Text size="sm">{formatDate(publish_date)}</Text>
-                <div className="lg:pl-4 pl-0">
+                <div className="w-full text-center md:w-auto"><Text size="sm">{formatDate(publish_date)}</Text></div>
+                <div className="w-full pl-0 text-center md:w-auto lg:pl-4">
                     <Tags>{category}</Tags>
                 </div>
               </div>
