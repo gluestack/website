@@ -8,7 +8,7 @@ function Banner({ cover, altText, children,paddingBottom }: any) {
       <div className="absolute -bottom-4 m-auto top-auto flex w-full -z-10 opacity-40">
         <Image src={bannerIng} alt={altText} objectFit="contain"  />
       </div> 
-      <div className={`container  ${paddingBottom ? '' : 'lg:pb-16 py-8'}`}>
+      <div className={`container  ${paddingBottom ? '' : 'py-8'}`}>
         <section className="">{children}</section>
       </div>
     </div>

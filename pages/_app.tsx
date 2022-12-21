@@ -1,10 +1,10 @@
 import GTMPageView from "../helper/gtm";
 import React, { useEffect, useState } from "react";
 import "../styles/globals.css";
-import PagesLayout from "../Layout";
+import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
-import { PrevNextButtons } from "../Layout/components/PrevNextButtons";
+import { PrevNextButtons } from "../components/docs/PrevNextButtons";
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();

@@ -51,8 +51,8 @@ function earlyAccess() {
               </TwitterShareButton>
             </div>
           </div>
-          <div className="relative  lg:static bg-primary h-full">
-            <div className="absolute top-[30%] right-[20%] -rotate-12">
+          <div className="relative  bg-primary h-full">
+            <div className="absolute top-[30%] -rotate-12">
               <Image src={earlycard} alt="" width={600} />
             </div>
           </div>

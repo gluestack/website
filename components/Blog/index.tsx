@@ -24,7 +24,7 @@ function Blog({
   
   return (
     <>
-      <article className="p-6 border border-gray-200 rounded-lg">
+      <article className="p-6 border border-gray rounded-lg bg-white">
         <div className="grid grid-cols-1 gap-3 md:grid-flow-col">
           <div className="col-span-1 lg:order-1 order-2">
             <div className="py-2 ">
