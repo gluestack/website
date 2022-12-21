@@ -102,9 +102,8 @@ body {
   min-height: calc(100vh - 168px);
 }
 .sm-container{
-  @apply max-w-[1030px];
+  @apply max-w-[1120px];
 }
-
 
 .docs-layout h2,.docs-layout h1, .docs-layout p, .docs-layout h3, .docs-layout h4, .docs-layout h5, .docs-layout h6, .docs-layout li,
 .docs-layout strong{

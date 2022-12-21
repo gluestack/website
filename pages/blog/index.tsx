@@ -11,7 +11,9 @@ function Blog({ blogs }: any) {
         "Curated ideas, experiments, and the latest developments in gluestack."
       }
     >
-      <HeroSection />
+      <div className="mt-8">
+        <HeroSection />
+        </div>
       <div className="container">
         <div className="sm-container pb-32">
           <Blogs blogs={blogs} />

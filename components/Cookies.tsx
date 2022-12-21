@@ -1,5 +1,6 @@
 import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
+
 function Cookies() {
   return (
     <CookieConsent

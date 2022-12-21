@@ -22,9 +22,11 @@ function SingleBlog({
   
   return (
     <>
-    <InerBanner title={blog.title || 'null'} paddingBottom />
+      <div className="mt-16">
+        <InerBanner title={blog.title || 'null'} paddingBottom />
+      </div>
       <div className="container mx-auto">
-       
+       <div className="sm-container">
         <div className="flex items-center justify-between pt-4 pb-20">
           <div className="flex items-center space-x-4 ">
           <Author
@@ -65,9 +67,9 @@ function SingleBlog({
           />
         </div>
 
-        <TermsCondition title={blog.subHeading}>
+        <div className="sm-container py-16">
           <div dangerouslySetInnerHTML={{ __html: blog.details }}></div>
-        </TermsCondition>
+        </div>
 
         {/* <div className="flex flex-col justify-around md:flex-row">
           <div className="p-2 lg:p-0">
@@ -106,6 +108,7 @@ function SingleBlog({
           />
 }
         </div>
+      </div>
       </div>
     </>
   );
