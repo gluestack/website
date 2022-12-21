@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @import "./button.css";
+@import "./tags.css";
 @import "./modal.css";
 @import "./header.css";
 @import "./herosection.css";

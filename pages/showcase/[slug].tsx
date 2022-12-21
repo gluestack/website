@@ -51,7 +51,7 @@ function showcase({ events, categories, tags }: any) {
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-4 lg:mt-0">
               <div className="p-2 rounded-lg bg-gray">
                 <Text size="md">
-                  Category:
+                  Category: 
                   {categories.map((ele: any, index: number) => (
                     <Tags key={index}>{ele.attributes.name}</Tags>
                   ))}
@@ -59,7 +59,7 @@ function showcase({ events, categories, tags }: any) {
                 <Text size="md">
                   Tags:{" "}
                   {tags.map((ele: any, index: number) => (
-                    <Tags key={index} fontbold>
+                    <Tags key={index}>
                       #{ele.attributes.name}
                     </Tags>
                   ))}

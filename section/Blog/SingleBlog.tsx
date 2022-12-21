@@ -51,7 +51,7 @@ function SingleBlog({
               <Text size="sm">{formatDate(blog.publish_date)}</Text>
             </div>
             {categories.map((data: any, index: number) => (
-              <Tags solid key={index}>
+              <Tags key={index}>
                 {data.attributes.name}
               </Tags>
             ))}
@@ -88,7 +88,7 @@ function SingleBlog({
 
           <ul className="flex flex-wrap text-center">
             {tags.map((data: any, index: number) => (
-              <Tags key={index} outline>{data.attributes.name}</Tags>
+              <Tags key={index}>{data.attributes.name}</Tags>
             ))}
           </ul>
         </div>

@@ -15,7 +15,7 @@ function Blog({
   publish_date,
   autherName,
   blogTag,
-  caregory,
+  category,
   autherImage,
   altText,
   slug,
@@ -47,7 +47,7 @@ function Blog({
                 <span className="px-1 lg:block hidden dark:text-white">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
                 <div className="lg:pl-4 pl-0">
-                <Tags solid>{caregory}</Tags>
+                    <Tags>{category}</Tags>
                 </div>
               </div>
           </div>
