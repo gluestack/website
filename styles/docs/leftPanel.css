@@ -18,7 +18,7 @@
     @apply md:overflow-y-auto md:max-h-[calc(100vh_-_150px)]
 }
 .mobile-header {
-    @apply py-10 px-10  w-full flex-row z-30
+    @apply py-7 px-10  w-full flex-row z-30
 }
 .layout-theme {
     @apply flex-col md:flex-row dark:bg-black-300
@@ -30,7 +30,7 @@
     @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black ease-in-out
 }
 .sidebarNav.showNav {
-    @apply block md:block w-full ease-in-out duration-150 absolute top-[106px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 
+    @apply block md:block w-full ease-in-out duration-150 absolute top-[85px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 
 }
 .sidebarNav.hideNav {
     @apply hidden md:block
