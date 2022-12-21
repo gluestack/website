@@ -11,7 +11,7 @@ const tmpPath = path.join(__dirname, "tmp");
 let sidebarTemplate = {
   versions: [
     {
-      "1.x": {
+      "0.1.x": {
         sidebar: [],
       },
     },
@@ -62,7 +62,7 @@ function cloneRepoPages() {
 
           if (repoInfo.rootDocs) {
             sidebarData.map((data) => {
-              sidebarTemplate.versions[0]["1.x"].sidebar.push(data);
+              sidebarTemplate.versions[0]["0.1.x"].sidebar.push(data);
             });
           } else {
             let obj = {
@@ -73,7 +73,7 @@ function cloneRepoPages() {
             sidebarData.map((data) => {
               obj.pages.push(data);
             });
-            sidebarTemplate.versions[0]["1.x"].sidebar.push(obj);
+            sidebarTemplate.versions[0]["0.1.x"].sidebar.push(obj);
           }
 
           if (!fs.existsSync(path.join(copyPath))) {

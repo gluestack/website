@@ -26,7 +26,7 @@ function PagesLayout(props: any) {
       <div
         className={
           "flex flex-1 min-h-screen relative layout-theme " +
-          (router.route == "/docs/1.x/gluestack-ui" ? "fixed" : "")
+          (router.route == "/docs/0.1.x/gluestack-ui" ? "fixed" : "")
         }
       >
         <div className="flex w-full min-h-full flex-col">

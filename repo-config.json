@@ -6,6 +6,6 @@
     "repoName": "framework",
     "rootDocs": true,
     "ignoredfolders": [],
-    "destinationPath": "/docs/1.x"
+    "destinationPath": "/docs/0.1.x"
   }
 }
