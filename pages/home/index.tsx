@@ -5,6 +5,7 @@ import DeveloperPreview from "../../components/DeveloperPreview";
 import MordenStack from "../../section/Home/MorderStack";
 import EcoSystem from "../../section/Home/EcoSystem";
 import CardsSection from "../../section/Home/CardsSection";
+import { Footer } from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
         <CardsSection />
         <EcoSystem />
       </div>
-      <DeveloperPreview/>
+      {/* <DeveloperPreview/> */}
+      {/* <Footer /> */}
+
     </Layout>
   );
 }
