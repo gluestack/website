@@ -1,0 +1,37 @@
+# Goals and non-goals
+
+We have two distinct parts of gluestack: the core framework and the plugins. We have different goals for each one of them.
+
+# The core framework
+
+### Goals (the core framework):
+
+- Initialize a project with a CLI
+- Provide a local CLI inside every project
+- Don’t ship anything functional with the initial bootstrap
+- Enable full-stack developers to
+  - Install plugins
+  - Run the local dev environment
+- Enable plugin developers to
+  - Initialize, develop & publish plugins
+  - Provide them with a persistent store where they can store meta information
+- While the plugins are written in TypeScript / JavaScript, the templates of plugins aren’t limited to TypeScript / JavaScript. For eg: We have a plugin for Flutter.
+
+### Non-goals (the core framework):
+
+- The core has no opinion about what the plugin developers build, what language they use and what they add to the user’s project.
+- …
+
+---
+
+## Plugins
+
+A suite of plugins (opinions) to build web & mobile apps with an API backend
+
+### Goals (core plugins):
+
+- Every plugin brings in its own set of opinions.
+
+### Non-goals (core plugins):
+
+-
