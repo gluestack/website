@@ -5,7 +5,7 @@ import Heading from "../../elements/Heading";
 import Linktag from "../../elements/Linktag";
 function Card({ src, altText, title, description,href }: any) {
   return (
-    <div className="bg-white border rounded-lg border-gray">
+    <div className="bg-white border rounded-lg border-gray dark:bg-black-200">
        <Linktag href={`${href}`}>
       <div className="relative w-full h-[250px]">
         <Image src={src} alt={altText || "banner"} layout="fill" objectFit="cover"  className="rounded-tl-lg rounded-tr-lg" />
