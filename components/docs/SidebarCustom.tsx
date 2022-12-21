@@ -73,8 +73,8 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                       <div
                         className={
                           router.route.includes(pageInfo.id)
-                            ? "py-3 hover:cursor-pointer px-10 active"
-                            : "py-3 hover:cursor-pointer px-10"
+                            ? "py-3 hover:cursor-pointer px-10 active dark:text-white"
+                            : "py-3 hover:cursor-pointer px-10 dark:text-white"
                         }
                       >
                         {pageInfo.title}

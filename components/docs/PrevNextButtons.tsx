@@ -13,14 +13,14 @@ export const PrevNextButtons = (props: any) => {
     <div className="flex items-center w-full justify-between">
       {prevNextPage.prev ? (
         <Link href={"/docs/0.1.x/" + prevNextPage.prev}>
-          <div className="py-12">Previous</div>
+          <div className="py-12 dark:text-white">Previous</div>
         </Link>
       ) : (
         <p></p>
       )}
       {prevNextPage.next ? (
         <Link href={"/docs/0.1.x/" + prevNextPage.next}>
-          <div className="py-12">Next</div>
+          <div className="py-12 dark:text-white">Next</div>
         </Link>
       ) : (
         <p></p>
