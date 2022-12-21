@@ -5,6 +5,7 @@ import seal from "../../public/images/seal.png";
 import CustomImage from "../../components/CustomImage";
 import Text from "../../elements/Text";
 import ecoSystem from "../../public/images/ecosystem.png";
+import InnerHeadding from "../../elements/InnerHeading";
 
 import Image from "next/image";
 
@@ -15,11 +16,11 @@ function EcoSystem() {
         <Image src={Gradient} alt="image" objectFit="contain" />
       </div>
       <div className="container py-32 relative">
-        <Heading priority="2" style="text-center">
-          <span className="text-primary"> Our Ecosystem. </span>
-          One-stop shop
-          <br /> to build that product.
-        </Heading>
+        <div className="text-center lg:w-2/4	mx-auto w-full">
+        <InnerHeadding first="Our Ecosystem." title="One-stop shop to build that product." priority="2" />
+        </div>
+
+      
         <div className="pt-32">
           <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
             <div className="lg:pl-32 pl-0 horizental-line relative py-8">

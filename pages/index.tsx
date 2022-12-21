@@ -2,14 +2,27 @@ import React from "react";
 import HeroSection from "../section/Home/HeroSection";
 import Layout from "../Layout/Layout";
 import DeveloperPreview from "../components/DeveloperPreview";
+import MordenStack from "../section/Home/MorderStack";
+import EcoSystem from "../section/Home/EcoSystem";
+import CardsSection from "../section/Home/CardsSection";
+import SignupFooter from "../section/Home/SignupFooter";
+import { Footer } from "../components/Footer";
+// import People from "../section/Home/people";
 
 export default function Home() {
   return (
     <Layout >
       <div className="grid fixed-layout">
+        <DeveloperPreview/>
         <HeroSection />
+        <MordenStack />
+        <CardsSection />
+        <EcoSystem />
+        {/* <People /> */}
+        <SignupFooter />
       </div>
-      <DeveloperPreview/>
+      {/* <Footer /> */}
+
     </Layout>
   );
 }

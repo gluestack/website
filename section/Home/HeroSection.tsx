@@ -32,9 +32,6 @@ function HeroSection() {
             <div className="mt-12">
               <Button xxl isSecondary dataId="QWcoG0YF">
                 <div className="flex items-center">
-                  <div className="pr-4">
-                    <FaGithub />
-                  </div>
                   Signup for early access{" "}
                 </div>
               </Button>
