@@ -23,7 +23,7 @@ function SingleBlog({
   return (
     <>
       <div className="mt-16">
-        <InerBanner title={blog.title || 'null'} paddingBottom />
+        <InerBanner title={blog.title || 'null'} paddingBottom single={true}  style="test"/>
       </div>
       <div className="container mx-auto">
        <div className="sm-container">

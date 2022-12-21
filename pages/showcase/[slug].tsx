@@ -19,8 +19,17 @@ function showcase({ events, categories, tags }: any) {
   const router = useRouter();
   return (
     <>
-      <Layout ogUrl={router.asPath} title={events.title} description={events.shortDes} ogImgUrl={events.coverImg.data.attributes.url}>
-      <InerBanner title={events.title} paddingBottom />
+      <Layout
+        ogUrl={router.asPath}
+        title={events.title}
+        description={events.shortDes}
+        ogImgUrl={events.coverImg.data.attributes.url}
+      >
+        <InerBanner
+          title={events.title}
+          paddingBottom
+          single
+        />
 
         <div className="container py-4">
           <div className="flex items-center py-4 lg:py-1">
@@ -86,14 +95,13 @@ export async function getServerSideProps(context: any) {
   let param = context.params;
 
   let events, categories, tags, nextblog, id, blogsData, previousblog;
-  let option={
-    author:"",
-    categories:"",
-    tags:"",
-
-  }
+  let option = {
+    author: "",
+    categories: "",
+    tags: "",
+  };
   try {
-    const data = await fetchAPI("events?filters[slug][$eq]", param,option);
+    const data = await fetchAPI("events?filters[slug][$eq]", param, option);
     const content = data.data[0];
     events = content.attributes;
     categories = content.attributes.event_categories.data;
