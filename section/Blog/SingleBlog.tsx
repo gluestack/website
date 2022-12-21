@@ -7,6 +7,7 @@ import Tags from "../../components/Tags";
 import { formatDate } from "../../Hooks/FormatDate";
 import InerBanner from "../../components/InerBanner";
 import Author from "../../components/Author";
+import ReactMarkdown from "react-markdown";
 function SingleBlog({
   blog,
   author,
@@ -18,7 +19,7 @@ function SingleBlog({
   autherImage,
   autherName
 }: any) {
-  console.log(author.image.data,"authorName");
+  console.log(blog.details,"authorName");
   
   return (
     <>
@@ -67,18 +68,11 @@ function SingleBlog({
           />
         </div>
 
-        <div className="py-16 sm-container">
-          <div dangerouslySetInnerHTML={{ __html: blog.details }}></div>
+        <div className="py-16 prose sm-container ">
+          {/* <div dangerouslySetInnerHTML={{ __html: blog.details }}></div> */}
+          <ReactMarkdown children={blog.details}></ReactMarkdown>
         </div>
 
-        {/* <div className="flex flex-col justify-around md:flex-row">
-          <div className="p-2 lg:p-0">
-            <Image src={blog2} alt={altText || 'subImage'}/>
-          </div>
-          <div className="p-2 lg:p-0">
-            <Image src={blog3} alt={altText || 'subImage'} />
-          </div>
-        </div> */}
         <div className="items-center md:flex ">
           <div className="p-2">
             <Text size="lg" style="font-bold ">
