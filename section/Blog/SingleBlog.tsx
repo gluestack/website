@@ -69,15 +69,13 @@ function SingleBlog({
               </Text>
             </div>
 
-            <ul className="flex flex-wrap text-center">
+            <div className="flex flex-wrap text-center">
               {tags.map((data: any, index: number) => (
-               <li key={index} className="p-1">
-                 <Tags  outline>
+                 <Tags key={index}>
                   {data.attributes.name}
                 </Tags>
-               </li>
               ))}
-            </ul>
+            </div>
           </div>
           <div className="grid items-center justify-start grid-cols-1 gap-8 py-20 md:grid-cols-2">
             {previousblog.title && (

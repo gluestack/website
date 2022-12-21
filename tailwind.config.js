@@ -34,7 +34,9 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#8944CE",
+          50: "#FAF5FF",
           100: "#BF7EFF",
+          200: "#853ECC",
           600: "#8944CE",
           700: "#8944CE",
         },
@@ -129,12 +131,12 @@ module.exports = {
             paddingRight: "30px",
           },
           "@screen lg": {
-            maxWidth: "1240px",
+            maxWidth: "1024px",
             marginLeft: "auto",
             marginRight: "auto",
           },
           "@screen xl": {
-            maxWidth: "1380px",
+            maxWidth: "1280px",
             marginLeft: "auto",
             marginRight: "auto",
           },
