@@ -32,7 +32,7 @@ function showcase({ events, categories, tags }: any) {
               <FaGithub />
             </span>
           </div>
-          <div className="flex flex-col pb-12 lg:flex-row mt-4">
+          <div className="flex flex-col pb-12 mt-4 lg:flex-row">
             <Image
               src={events.coverImg.data.attributes.url}
               width={800}
@@ -86,8 +86,14 @@ export async function getServerSideProps(context: any) {
   let param = context.params;
 
   let events, categories, tags, nextblog, id, blogsData, previousblog;
+  let option={
+    author:"",
+    categories:"",
+    tags:"",
+
+  }
   try {
-    const data = await fetchAPI("events?filters[slug][$eq]", param);
+    const data = await fetchAPI("events?filters[slug][$eq]", param,option);
     const content = data.data[0];
     events = content.attributes;
     categories = content.attributes.event_categories.data;

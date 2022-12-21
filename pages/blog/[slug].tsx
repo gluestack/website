@@ -37,13 +37,20 @@ function Blog({
 export default Blog;
 export async function getServerSideProps(context: any) {
   let param = context.params;
+  let option={
+    author:"blog_author",
+    categories:"blog_categories",
+    tags:"blog_tags",
 
+  }
   let author, categories, tags, nextblog, id, blogsData, previousblog, authorImag;
   try {
-    const data = await fetchAPI("blogs?filters[slug][$eq]", param);
+    const data = await fetchAPI("blogs?filters[slug][$eq]", param,option);
     const content = data.data[0];
     blogsData = content;
+    
     author = content.attributes.blog_author.data;
+    console.log(author,"blogsData");
     
     categories = content.attributes.blog_categories.data;
     tags = content.attributes.blog_tags.data;
@@ -53,7 +60,7 @@ export async function getServerSideProps(context: any) {
   let nextId = { slug: id };
 
   try {
-    const nextPost = await fetchAPI("blogs?filters[id][$eq]", nextId);
+    const nextPost = await fetchAPI("blogs?filters[id][$eq]", nextId,option);
     const content = nextPost.data[0]?.attributes;
     nextblog = content;
   } catch (error) {}
@@ -62,7 +69,7 @@ export async function getServerSideProps(context: any) {
 
   try {
     if (id >= 2) {
-      const previous = await fetchAPI("blogs?filters[id][$eq]", prevId);
+      const previous = await fetchAPI("blogs?filters[id][$eq]", prevId,option);
       const content = previous.data[0]?.attributes;
       previousblog = content;
     }

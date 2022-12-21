@@ -3,7 +3,12 @@ export function getStrapiURL(path = "") {
     process.env.NEXT_PUBLIC_STRAPI_API_URL || "https://strapi.gluestack.io"
   }${path}`;
 }
-export async function fetchAPI(path: any, urlParamsObject: any, options = {}) {
+interface OptinType{
+  author:string,
+  categories:string,
+  tags:string,
+}
+export async function fetchAPI(path: any, urlParamsObject: any, options:OptinType) {
   const mergedOptions = {
     headers: {
       "Content-Type": "application/json",
@@ -15,7 +20,7 @@ export async function fetchAPI(path: any, urlParamsObject: any, options = {}) {
   console.log(queryString, "queryString");
 
   const requestUrl = `${getStrapiURL(
-    `/api/${path}${queryString ? `=${queryString}` : ""}&populate=*`
+    `/api/${path}${queryString ? `=${queryString}` : ""}&&populate=${options.author}.image&populate=coverImg.image&populate=${options.categories}&populate=${options.tags}`
   )}`;
   console.log(requestUrl);
   try {
