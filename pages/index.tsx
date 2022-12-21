@@ -6,8 +6,6 @@ import MordenStack from "../section/Home/MorderStack";
 import EcoSystem from "../section/Home/EcoSystem";
 import CardsSection from "../section/Home/CardsSection";
 import SignupFooter from "../section/Home/SignupFooter";
-import { Footer } from "../components/Footer";
-// import People from "../section/Home/people";
 
 export default function Home() {
   return (
@@ -18,7 +16,6 @@ export default function Home() {
         <MordenStack />
         <CardsSection />
         <EcoSystem />
-        {/* <People /> */}
         <SignupFooter />
       </div>
       {/* <Footer /> */}

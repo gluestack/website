@@ -9,14 +9,14 @@ function SignupFooter() {
   return (
     <div className="relative w-full bg-black py-16 ">
         <div className="container items-center justify-center flex flex-col flex-1">
-          <div className="w-[300px]  text-center">
+          <div className="lg:w-[300px] w-[200px]  text-center">
                 <CustomImage src={logodark} alt="image" />
             </div>
             <div className="flex flex-row items-center mt-2">
-            <div className="w-[100px]  text-center">
+            <div className="lg:w-[100px]  w-[70px] text-center">
                 <CustomImage src={line} alt="image" />
                 </div>
-                <Text style="text-white ml-2" size="sm">Now build scalable full-stack apps faster</Text>
+                <Text style="text-white ml-2 lg:text-sm text-xs" >Now build scalable full-stack apps faster</Text>
             </div>
         </div>
     </div>
