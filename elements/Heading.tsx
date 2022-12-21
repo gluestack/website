@@ -5,7 +5,7 @@ const Heading = ({ isLight, color, priority, children,style, single }: any) => {
   return (
     <div>
       <DynamicTag
-        className={`${
+        className={`tracking-wide	${
           priority == 1
             ? `${single ? "lg:text-5xl text-4xl leading-normal font-displayHead test"  : "lg:text-6xl text-4xl leading-normal font-displayHead"}`
             : priority == 2
