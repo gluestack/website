@@ -61,7 +61,7 @@ function Toggle(): JSX.Element {
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10 text-indigo-200"
           fill="none"
-          viewBox="0 0 20"
+          viewBox="0 0 24 24"
           stroke="currentColor"
         >
           <path
@@ -77,7 +77,7 @@ function Toggle(): JSX.Element {
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10 text-gray-900"
           fill="none"
-          viewBox="0 0 20"
+          viewBox="0 0 24 24"
           stroke="currentColor"
         >
           <path

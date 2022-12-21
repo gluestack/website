@@ -13,9 +13,9 @@ function Details({ title, last, description, btnText, link }: any) {
       <Text size="md" style="py-4">
         {description}
       </Text>
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <Button link={link}>{btnText}</Button>
-      </div>
+      </div> */}
     </div>
   );
 }
