@@ -18,9 +18,13 @@ export const PrevNextButtons = (props: any) => {
       ) : (
         <p></p>
       )}
-      <Link href={"/docs/0.1.x/" + prevNextPage.next}>
-        <div className="py-12">Next</div>
-      </Link>
+      {prevNextPage.next ? (
+        <Link href={"/docs/0.1.x/" + prevNextPage.next}>
+          <div className="py-12">Next</div>
+        </Link>
+      ) : (
+        <p></p>
+      )}
     </div>
     // </div>
   );
