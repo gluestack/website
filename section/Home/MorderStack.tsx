@@ -2,7 +2,8 @@ import React from "react";
 import Details from "../../components/Details";
 import DarkBg from "../../public/images/code.png";
 import Module from "../../public/images/module.png";
-import Gradient from "../../public/images/gradient-pink.png"
+import Gradient from "../../public/images/gradient-pink.png";
+import CustomImage from "../../components/CustomImage";
 
 import Image from "next/image";
 
@@ -15,16 +16,8 @@ function MordenStack() {
     <div className="container pt-32 pb-12 relative">
         
       <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
-        <div className="relative ">
-          <Image
-            src={DarkBg}
-            width={592}
-            height={342}
-            className="rounded-lg"
-            objectFit="contain"
-            alt="image"
-          />
-        </div>
+        <CustomImage  src={DarkBg}  alt="image" style="rounded-lg" />
+       
         <div className="lg:pl-12 pl-0">
         <Details
           title="Building beautiful apps with "
@@ -47,16 +40,9 @@ function MordenStack() {
           btnText="STARTER KITS"
         />
         </div>
-        <div className="relative">
-          <Image
-            src={Module}
-            className="rounded-lg"
-            objectFit="contain"
-            alt="image"
-            width={722}
-            height={524}
-          />
-        </div>
+        <CustomImage  src={Module}  alt="image" style="rounded-lg" />
+
+       
       </div>
     </div>
     </div>
