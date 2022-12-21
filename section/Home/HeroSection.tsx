@@ -17,7 +17,7 @@ function HeroSection() {
       <Script src="//embed.typeform.com/next/embed.js"></Script>
       <Banner>
         <div className="grid lg:grid-cols-2 grid-cols-1  items-center">
-          <div>
+          <div className="sm:px-[148px] lg:px-0">
             <Heading  priority={1}>
               One stack for web, mobile, & backend
             </Heading>
@@ -41,11 +41,11 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="dark:hidden block">
+          <div className="dark:hidden block sm:mt-10 lg:mt-0">
             <Image src={light} alt="image" />
             {/* <Animation data={animationData} /> */}
           </div>
-          <div className="dark:block hidden">
+          <div className="dark:block hidden sm:mt-10 lg:mt-0">
             <Image src={dark} alt="image" />
             {/* <Animation data={animationData} /> */}
           </div>

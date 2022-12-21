@@ -85,9 +85,7 @@
   }
 }
 
-body {
-  letter-spacing: 1px;
-}
+
 
 .filter-primary {
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
