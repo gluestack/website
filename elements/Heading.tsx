@@ -9,7 +9,7 @@ const Heading = ({ isLight, color, priority, children,style, single }: any) => {
           priority == 1
             ? `${single ? "lg:text-5xl text-4xl leading-normal font-displayHead test"  : "lg:text-6xl text-4xl leading-normal font-displayHead"}`
             : priority == 2
-            ? "lg:text-5xl text-4xl font-displaySemibold"
+            ? "lg:text-5xl text-4xl font-displayHead text-secondary dark:text-white leading-normal"
             : priority == 3
             ? "lg:text-3xl text-2xl font-displaySemibold"
             : priority == 4
