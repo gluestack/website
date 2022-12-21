@@ -1,0 +1,15 @@
+.tagsButton {
+    @apply text-[11px] rounded-[2px] bg-purple-100 text-purple mr-2 my-1 px-[5px] py-[3.5px] font-displayHead
+}
+.tagsButton:nth-child(2n) {
+    @apply bg-beige-100 text-beige
+}
+.tagsButton:nth-child(3n) {
+    @apply bg-blue-100 text-blue
+}
+.tagsButton:nth-child(4n) {
+    @apply bg-pink-100 text-pink
+}
+.tagsButton:nth-child(5n) {
+    @apply bg-cyan-100 text-cyan
+}
