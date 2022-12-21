@@ -29,13 +29,13 @@ function PagesLayout(props: any) {
         <div
           className={
             "md:hidden mobile-header flex flex-row justify-between" +
-            (sideBarOpen ? " shadow-md" : "")
+            (sideBarOpen ? " shadow-xl shadow-slate-200" : "")
           }
         >
           <div className="w-[110px]">
             <Logo />
           </div>
-          <div onClick={hamburgerClick} className="ease-in-out transition-2">
+          <div onClick={hamburgerClick} className="ease-in-out transition-2 dark:text-white">
             {sideBarOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
           </div>
         </div>
