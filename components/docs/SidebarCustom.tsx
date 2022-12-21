@@ -5,8 +5,7 @@ import { useRouter } from "next/router";
 import Logo from "../../components/Header/Logo";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
-
-export default function SidebarCustom(props: any) {
+export default function app(props: any) {
   const router = useRouter();
   return (
     <nav className="pb-16">
@@ -58,7 +57,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                 <h2 className="font-displayMedium leading-tight text-lg mt-0 mb-2 text-gray-800 dark:text-white px-10 ">
                   {props.title}
                 </h2>
-                {props?.pages.map((pageInfo: any, index:any) => {
+                {props?.pages.map((pageInfo: any, index: any) => {
                   if (pageInfo.type == "heading") {
                     return (
                       <SidebarItems
@@ -73,10 +72,9 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                     <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
                       <div
                         className={
-                          " py-3 hover:cursor-pointer px-10 dark:text-white " +
-                          (router.route.includes(pageInfo.id)
-                            ? "active"
-                            : "")
+                          router.route.includes(pageInfo.id)
+                            ? "py-3 hover:cursor-pointer px-10 active"
+                            : "py-3 hover:cursor-pointer px-10"
                         }
                       >
                         {pageInfo.title}
@@ -94,7 +92,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
 };
 
 const HeadingDropdown = ({ props, version, linkUrl }: any) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(props.default ?? false);
   const router = useRouter();
 
   return (
@@ -172,10 +170,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
               <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
                 <div
                   className={`py-3 hover:cursor-pointer pl-10 dark:text-white
-                    ${router.route.includes(pageInfo.id)
-                      ? "active"
-                      : ""}`
-                  }
+                    ${router.route.includes(pageInfo.id) ? "active" : ""}`}
                 >
                   {pageInfo.title}
                 </div>
