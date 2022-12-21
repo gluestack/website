@@ -24,9 +24,9 @@ function Blog({
   
   return (
     <>
-      <article className="p-6 border border-gray rounded-lg bg-white dark:bg-black-200">
-        <div className="grid grid-cols-1 lg:gap-16 gap-6 md:grid-flow-col items-center">
-          <div className="col-span-1 lg:order-1 order-2">
+      <article className="p-6 bg-white border rounded-lg border-gray dark:bg-black-200">
+        <div className="grid items-center grid-cols-1 gap-6 lg:gap-16 md:grid-flow-col">
+          <div className="order-2 col-span-1 lg:order-1">
             <div className="py-2 ">
               <Linktag href={`blog/${slug}`}>
 
@@ -37,23 +37,23 @@ function Blog({
               </div>
             </div>
 
-              <div className="flex lg:items-center items-start  lg:space-x-1 lg:space-y-0 space-y-2 space-x-0 lg:flex-row	 flex-col ">
+              <div className="flex flex-col items-start space-x-0 space-y-2 lg:items-center lg:space-x-1 lg:space-y-0 lg:flex-row ">
                 <Author
                   src={autherImage}
                   altText={altText || "profileImage"}
                   name={autherName}
                 />
 
-                <span className="px-1 lg:block hidden dark:text-white">|</span>
+                <span className="hidden px-1 lg:block dark:text-white">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
-                <div className="lg:pl-4 pl-0">
+                <div className="pl-0 lg:pl-4">
                 <Tags solid>{caregory}</Tags>
                 </div>
               </div>
           </div>
-          <div className="lg:order-2 order-1">
+          <div className="order-1 lg:order-2">
           <Linktag href={`blog/${slug}`}>
-            <div className=" col-span-1 h-40 relative w-80">
+            <div className="relative h-40 col-span-1 w-50 lg:w-80">
               <Image src={coverImg} alt="Image"  className="rounded-lg" layout="fill" objectFit="cover"/>
             </div>
           </Linktag>

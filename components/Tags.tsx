@@ -4,12 +4,12 @@ function Tags({ solid,outline, fontbold, children }: any) {
   return (
     <>
       <button
-        className={`text-sm font-display ${
+        className={`font-display ${
           solid
-            ? "px-4 py-2 text-black bg-gray-200 rounded-full "
+            ? "px-4 py-2 text-black bg-gray-200 rounded-full  dark:text-black-300 text-sm "
             : outline
-            ? "inline-block px-4 py-2 text-black border rounded-lg "
-            : ` text-primary ${fontbold ? "font-displaySemibold " : "" } p-1`
+            ? "inline-block px-4 py-2 text-black border rounded-lg  dark:text-white text-sm "
+            : ` text-primary ${fontbold ? "font-displaySemibold " : "" } p-1 text-md`
         }`}
       >
         {children}

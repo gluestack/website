@@ -63,6 +63,8 @@ export async function getServerSideProps(context: any) {
     const nextPost = await fetchAPI("blogs?filters[id][$eq]", nextId,option);
     const content = nextPost.data[0]?.attributes;
     nextblog = content;
+    console.log(nextblog,"nextblog");
+    
   } catch (error) {}
 
   let prevId = { slug: id - 2 };
