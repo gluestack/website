@@ -11,7 +11,7 @@ export default function SidebarCustom(props: any) {
   return (
     <nav className="pb-16">
       {/* font-displaySemibold */}
-      <div className="px-10 pt-16 hidden md:block">
+      <div className="px-10 pt-14 hidden md:block">
         <Logo />
       </div>
       <div className="md:flex-col  md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full md:pt-4 md:px-5">

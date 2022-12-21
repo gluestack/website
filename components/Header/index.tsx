@@ -27,7 +27,7 @@ export const Header = () => {
       <Toggle/>
       </div>
       <div className="flex md:order-2">
-       
+        
         <Modal
           height="3/6"
           isVisible={showModel}
