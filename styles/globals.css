@@ -102,7 +102,5 @@ body {
   min-height: calc(100vh - 168px);
 }
 .sm-container{
-  @apply max-w-[1030px];
+  @apply max-w-[1120px];
 }
-
-
