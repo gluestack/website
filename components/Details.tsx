@@ -2,14 +2,12 @@ import React from "react";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
 import Button from "./Button";
+import InnerHeadding from "../elements/InnerHeading";
 
-function Details({ title, last, description, btnText, link }: any) {
+function Details({ title, last, description, btnText, link, first }: any) {
   return (
-    <div >
-      <Heading priority={2}>
-        {title} <span className="text-primary">{last}</span>
-      </Heading>
-
+    <div>
+      <InnerHeadding priority={2} title={title} last={last} first={first} />
       <Text size="md" style="py-4">
         {description}
       </Text>
