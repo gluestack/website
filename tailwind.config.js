@@ -99,12 +99,12 @@ module.exports = {
         ".container": {
           maxWidth: "100%",
           "@screen sm": {
-            maxWidth: "640px",
+            maxWidth: "100%",
             paddingLeft: "20px",
             paddingRight: "20px",
           },
           "@screen md": {
-            maxWidth: "768px",
+            maxWidth: "100%",
             paddingLeft: "30px",
             paddingRight: "30px",
           },
