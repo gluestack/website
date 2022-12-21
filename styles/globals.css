@@ -104,3 +104,12 @@ body {
 .sm-container{
   @apply max-w-[1120px];
 }
+
+.docs-layout h2,.docs-layout h1, .docs-layout p, .docs-layout h3, .docs-layout h4, .docs-layout h5, .docs-layout h6, .docs-layout li,
+.docs-layout strong{
+  @apply dark:text-white;
+}
+.docs-layout code{
+  @apply dark:text-primary;
+}
+
