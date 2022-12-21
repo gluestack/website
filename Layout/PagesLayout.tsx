@@ -42,6 +42,7 @@ function PagesLayout(props: any) {
             <div onClick={hamburgerClick} className="ease-in-out transition-2 dark:text-white">
               {sideBarOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
             </div>
+            
           </div>
           {/* <div className="w-1/5"> */}
 
