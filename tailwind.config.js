@@ -22,13 +22,13 @@ module.exports = {
         sm: ".875rem", // 14px
         base: "1rem", // 16px
         md: "20px", // 18px
-        lg: "1.5rem", // 24px
+        lg: "1.3rem", // 24px
         xl: ["2.5rem", "4rem"], //40
         xxl: "1.625rem", // 26px
         "3xl": "2.125rem", // 34px
         "4xl": "2.25rem", // 36px
         "5xl": "3rem", // 48px
-        "6xl": ["4.8rem", "80px"], //82px
+        "6xl": ["4.4rem", "78px"], //82px
       },
 
       colors: {
