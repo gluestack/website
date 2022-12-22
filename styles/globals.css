@@ -140,6 +140,6 @@
   }
   .dot:after{
     content:'';
-    @apply absolute w-[18px] h-[18px] bg-gray -left-[135px] top-2 rounded-sm lg:block hidden;
+    @apply absolute w-[18px] h-[18px] bg-gray -left-[105px] top-2 rounded-sm lg:block hidden;
 
   }
