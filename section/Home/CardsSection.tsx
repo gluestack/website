@@ -40,11 +40,11 @@ function CardsSection() {
       </div>
       <div className="bg-primary-200 pt-10 max-h-[500px] sm:max-h-[400px] lg:max-h-[450px] xl:max-h-[500px]">
         <div className="container pt-10 pb-12 relative ">
-          <div className="sm:max-w-[620px] m-auto">
-            <Heading priority={3} style="text-white text-center mb-10">
-              Adopting the best, but with no lock-in.
+          <div className="sm:max-w-[900px] m-auto">
+            <Heading priority={2} style=" text-center mb-10">
+            <span className="text-white">Core Plugins to get you off the ground</span>
             </Heading>
-            <Text white>
+            <Text white size="md">
               <div className="text-center">
                 gluestack makes app development faster by recommending the best
                 stacks (yes, these are our opinions) while being configurable
