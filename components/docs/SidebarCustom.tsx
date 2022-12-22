@@ -4,24 +4,27 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Logo from "../../components/Header/Logo";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
+import { BiArrowBack } from "react-icons/bi";
 
 export default function app(props: any) {
   const router = useRouter();
   return (
-    <nav className="pb-16">
+    <nav className="pb-16 xl:w-80 xl:ml-auto">
       {/* font-displaySemibold */}
       <div className="px-10 pt-14 hidden md:block">
         <Logo />
       </div>
-      <div className="md:flex-col  md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full md:pt-4 md:px-5">
+      <div className="md:flex-col  md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full md:pt-4 md:pl-5">
         <div className="pt-4 w-full">
           {props.sidebar.map((sidebarItem: any) => {
             return (
-              <div className="mt-4 ">
+              <div className="mt-4">
                 {props.showBackButton ? (
-                  <Link className="px-10" href={"/docs"}>
-                    {"<-"}
-                  </Link>
+                  <div  className="mx-10 dark:text-white" >
+                    <Link href={"/docs"} className="inline-block px-4 py-2 rounded-sm border border-gray-300">
+                      <BiArrowBack />
+                    </Link>
+                  </div>
                 ) : (
                   ""
                 )}
@@ -54,9 +57,9 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
               />
             ) : (
               <>
-                <h2 className="font-displayMedium leading-tight text-lg mt-0 mb-2 text-gray-800 dark:text-white px-10 ">
+                <div className="uppercase font-displayMedium leading-tight text-base font-bold mt-6 mb-2 text-gray-300 dark:text-gray-400 px-10 ">
                   {props.title}
-                </h2>
+                </div>
                 {props?.pages.map((pageInfo: any, index: any) => {
                   if (pageInfo.type == "heading") {
                     return (
@@ -69,17 +72,16 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                     );
                   }
                   return (
-                    <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
-                      <div
-                        className={
+                      <div className="leftLinks">
+                        <Link href={linkUrl + "/" + version + "/" + pageInfo.id} className={
                           router.route.includes(pageInfo.id)
-                            ? "py-3 hover:cursor-pointer px-10 active dark:text-white"
-                            : "py-3 hover:cursor-pointer px-10 dark:text-white"
-                        }
-                      >
-                        {pageInfo.title}
+                            ? "active leftAnchors"
+                            : "leftAnchors"
+                        }>
+                          {pageInfo.title}
+                        </Link>
+
                       </div>
-                    </Link>
                   );
                 })}
               </>
@@ -97,61 +99,27 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
 
   return (
     <div className="accordion" id="accordionExample">
-      <div className="accordion-item bg-white">
-        <h2 className="accordion-header font-displaySemibold" id="headingOne">
+      <div className="accordion-item">
+        <div className="accordion-header " id="headingOne">
           <button
-            className="flex items-center w-full justify-between bg-white-200 dark:bg-black"
+            className="flex items-center w-full justify-between"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="py-3 hover:cursor-pointer pl-10 dark:text-white">
+            <div className="py-2 pl-10 leftLinks cursor-default">
               {props.title}
             </div>
-            {isOpen ? (
-              <div className="pr-6 text-black dark:text-white">
-                <FaCaretUp />
-                {/* <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="caret-up"
-                  className="w-2 ml-2"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"
-                  ></path>
-                </svg> */}
+              <div className={`${
+                    isOpen ? "rotate-180" : ""
+                  }  text-black-400 dark:text-white px-2 transition-all duration-50 `}>
+                    <FaCaretDown />
               </div>
-            ) : (
-              <div className="pr-10 text-black dark:text-white">
-                <FaCaretDown />
-                {/* <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="caret-down"
-                  className="w-2 ml-2"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-                  ></path>
-                </svg> */}
-              </div>
-            )}
           </button>
-        </h2>
+        </div>
         <div
           id="collapseOne"
           className={`${
-            isOpen ? "bg-white-200 dark:bg-black" : "hidden"
-          }  accordion-collapse show `}
+            isOpen ? "" : "hidden"
+          }  accordion-collapse show`}
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
@@ -167,14 +135,12 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
             }
 
             return (
-              <Link href={linkUrl + "/" + version + "/" + pageInfo.id}>
-                <div
-                  className={`py-3 hover:cursor-pointer pl-10 dark:text-white
-                    ${router.route.includes(pageInfo.id) ? "active" : ""}`}
-                >
-                  {pageInfo.title}
+                <div className="leftLinks accordionLinks cursor-default">
+                  <Link href={linkUrl + "/" + version + "/" + pageInfo.id} className={`leftAnchors  
+                    ${router.route.includes(pageInfo.id) ? "active" : ""}`} >
+                      {pageInfo.title}
+                  </Link>
                 </div>
-              </Link>
             );
           })}
         </div>

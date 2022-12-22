@@ -7,6 +7,9 @@ import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
 import { SessionProvider } from "next-auth/react";
 import AuthContextProvider from "../auth-context";
+import useDarkMode from "use-dark-mode";
+
+export const AppContext = React.createContext(null);
 
 function MyApp({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -41,22 +44,40 @@ function MyApp({ children }: { children: React.ReactNode }) {
       }
     }
   }
+  const darkMode = useDarkMode(false, {
+    onChange: (state: any) => {
+      const htmlElement = document.documentElement;
+      if (state) {
+        htmlElement.classList.add("dark");
+        htmlElement.classList.remove("light");
+      } else {
+        htmlElement.classList.add("light");
+        htmlElement.classList.remove("dark");
+      }
+    },
+  });
 
   if (router.pathname.includes("/docs")) {
     return (
-      <PagesLayout
-        version={version}
-        versionInfo={getSidebarJsonData()}
-        setVersion={setVersion}
-        versionsData={versions}
-        showBackButton={showBackButton}
-      >
-        {children}
-        <PrevNextButtons />
-      </PagesLayout>
+      //@ts-ignore
+      <AppContext.Provider value={darkMode}>
+        <PagesLayout
+          version={version}
+          versionInfo={getSidebarJsonData()}
+          setVersion={setVersion}
+          versionsData={versions}
+          showBackButton={showBackButton}
+        >
+          {children}
+          <PrevNextButtons />
+        </PagesLayout>
+      </AppContext.Provider>
     );
   } else {
-    return <>{children}</>;
+    return (
+      //@ts-ignore
+      <AppContext.Provider value={{ darkMode }}>{children}</AppContext.Provider>
+    );
   }
 }
 

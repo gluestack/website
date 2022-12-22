@@ -11,12 +11,12 @@ function EcoSystem() {
       </Heading>
       <ul>
         <LinkList src="/" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" white>
             Seal
           </Text>
         </LinkList>
         <LinkList src="/showcase" style="py-2">
-          <Text size="sm" style="text-white-200 ">
+          <Text size="sm" white>
             <span className="relative">
             Design System
             <div className="absolute rounded bg-secondary-400 px-1 py-1 text-[8px] -right-[55px] -top-2">

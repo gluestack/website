@@ -12,7 +12,7 @@ export default function Home() {
   const [user, isLoading] = useAuthHook();
 
   return (
-    <Layout>
+    <Layout title={"Home - gluestack"}>
       <div className="grid fixed-layout">
         <DeveloperPreview />
         <HeroSection />

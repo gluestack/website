@@ -14,7 +14,7 @@
 @import "./testimonial.css";
 @import "./footer.css";
 @import "./team/team.css";
-@import "./docs/leftPanel.css";
+@import "./docs.css";
 
 @font-face {
   font-family: "sf-pro-regular";
@@ -92,6 +92,11 @@
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
     brightness(104%) contrast(101%);
 }
+.filter-white{
+  filter: invert(98%) sepia(11%) saturate(198%) hue-rotate(61deg) brightness(121%) contrast(100%);
+
+
+}
 
 .twitter > div {
   @apply grid grid-cols-3 gap-6 py-6;
@@ -140,6 +145,33 @@
   }
   .dot:after{
     content:'';
-    @apply absolute w-[18px] h-[18px] bg-gray -left-[135px] top-2 rounded-sm lg:block hidden;
+    @apply absolute w-[18px] h-[18px] bg-gray -left-[104px] top-2 rounded-sm lg:block hidden;
 
+  }
+  .dark-gradient{
+    background:linear-gradient(89.93deg, #232323 0.06%, #323131 47.82%, #232323 99.95%);
+  }
+
+
+  body #c-bns button:first-child, body #s-bns button:first-child, body .cc_div .b-tg .c-tg{
+    @apply bg-primary hover:bg-primary;
+
+  }
+  body #c-bns button+button, body #s-c-bn, body #s-cnt button+button, body #s-bl .c-bl.b-ex, body .b-tl.exp{
+    @apply bg-gray hover:bg-gray;
+  }
+  #cc_div #cm{
+    @apply w-full max-w-full left-0 right-0 bottom-0 dark:bg-black dark:text-white py-2;
+  }
+  body #cc_div #cm h3{
+    @apply dark:text-white;
+  }
+  #cm #c-inr{
+    @apply flex justify-between items-center;
+  }
+  body .cc_div #c-bns{
+    @apply m-0  ml-8;
+  }
+  body .cc_div .c-bn{
+    @apply flex-none px-3 py-2;
   }

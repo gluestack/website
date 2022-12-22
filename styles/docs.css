@@ -1,0 +1,55 @@
+.left-panel {
+    @apply bg-white md:left-0 text-sm md:flex-row md:flex-nowrap flex-wrap items-center justify-between relative w-2/6 z-10
+}
+.active {
+    @apply before:absolute before:w-2 before:h-2 before:rounded-2xl before:bg-primary-100 before:top-[9px] before:left-5 before:mt-0.5 relative
+}
+.content-holder {
+    @apply md:pr-20
+}
+
+.layout-theme.fixed .content-holder {
+    @apply pr-0
+}
+.content-body {
+    @apply px-10 md:px-0 break-words
+}
+.layout-theme.fixed .fixed-layout {
+    @apply xl:max-h-[100vh] xl:overflow-y-auto xl:pb-10
+}
+.layout-theme.fixed .sidebarNav {
+    @apply xl:max-w-[20rem]
+}
+.layout-theme.fixed .sidebarNav {
+    @apply xl:overflow-y-auto xl:max-h-[100vh]
+}
+.mobile-header {
+    @apply py-7 px-10  w-full flex-row z-30
+}
+.layout-theme {
+    @apply flex-col md:flex-row dark:bg-black-200
+}
+.layout-theme .content {
+    @apply xl:max-w-[50vw] max-w-none
+}
+.layout-theme .sidebarNav {
+    @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black-100 ease-in-out xl:w-[100%] xl:max-w-[30vw] md:px-10 px-5
+}
+.sidebarNav.showNav {
+    @apply block md:block w-full ease-in-out duration-150 absolute top-[85px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 
+}
+.sidebarNav.hideNav {
+    @apply hidden md:block
+}
+.leftLinks {
+    @apply text-black-100 dark:text-white text-sm font-bold py-1  hover:translate-x-1 ease-in-out duration-300
+}
+.accordionLinks.leftLinks  {
+    @apply font-normal px-[20px]
+}
+.leftLinks .leftAnchors {
+    @apply block py-1 px-10
+}
+a.leftRightBtn {
+    @apply rounded-md border border-gray-400 px-5 py-2 no-underline text-sm text-gray-500 dark:text-white
+}

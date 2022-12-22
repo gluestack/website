@@ -22,7 +22,7 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           name="description"
           content={
             description ||
-            "gluestack - One stack for web, mobile, & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."
+            "gluestack - One stack for web, mobile & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."
           }
         />
         <meta key="og:type" property="og:type" content="website" />
@@ -38,14 +38,14 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           property="og:description"
           content={
             description ||
-            "gluestack - One stack for web, mobile, & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."
+            "gluestack - One stack for web, mobile & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."
           }
         />
         <meta
           property="twitter:description"
           content={
             description ||
-            "gluestack - One stack for web, mobile, & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."
+            "gluestack - One stack for web, mobile & backend. 100% open source full-stack framework that takes away the complexities of building modern web & mobile apps."
           }
         />
 
@@ -73,8 +73,10 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           property="twitter:url"
           content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
         />
+
       
       </Head>
+
     </>
   );
 }

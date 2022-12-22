@@ -34,7 +34,7 @@ function Menu({ expand }: any) {
           </li>
           <li  className={`${expand ? "block" : "hidden"} item-btn`}>
             <div>
-              <Button xl>DOCUMENTATION</Button>
+              <Button size="xl">DOCUMENTATION</Button>
             </div>
           </li>
         </ul>

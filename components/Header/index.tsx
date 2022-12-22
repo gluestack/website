@@ -19,15 +19,15 @@ export const Header = () => {
   }, [expand]);
 
   return (
-    <nav className="bg-white fixed w-full z-10 top-0">
+    <nav className="bg-white fixed w-full z-20 top-0">
       <div className=" dark:bg-black py-6">
         <div className="container ">
           <div className="flex items-center justify-between">
             <Logo />
             <div className="flex items-center gap-6">
               <div className="lg:block hidden">
-              <Button isSecondary dataId="QWcoG0YF">
-                Get early access{" "}
+              <Button type="primary" dataId="QWcoG0YF">
+                Get early access
               </Button>
               </div>
               <Toggle/>

@@ -8,14 +8,15 @@ function Cookies() {
   return (
     <Layout title={"Cookie Policy - gluestack"}>
       <InerBanner title="Cookie" last=" Policy" />
-      <div className="container pb-14">
+      <div className="container pb-14 relative z-10">
         <div className="">
           <ol className="list-none list-outside	">
             <li>
               <Heading priority="4" style="text-md font-displaySemibold">
                 1. Introduction
               </Heading>
-              <Text style="py-4">
+              <div className="py-4">
+              <Text >
                 <p>
                   Welcome to{" "}
                   <span className="font-displaySemibold">GeekyAnts Inc.</span>{" "}
@@ -40,14 +41,17 @@ function Cookies() {
                   described in this Cookie Policy.
                 </p>
               </Text>
+              </div>
+
             </li>
 
             <li>
               <Heading priority="4" style="text-md font-displaySemibold">
                 2. What are Cookies and Other Tracking Technologies?
               </Heading>
+              <div className="py-4">
 
-              <Text style="py-4">
+              <Text >
                 <p>
                   Cookies are files with a small amount of data which may
                   include an anonymous unique identifier. Cookies are sent to
@@ -60,6 +64,7 @@ function Cookies() {
                   Service and its features more relevant and useful to you.{" "}
                 </p>
               </Text>
+              </div>
             </li>
 
             <li>
@@ -68,7 +73,9 @@ function Cookies() {
               </Heading>
 
               <span className="text-md font-displaySemibold"></span>
-              <Text style="py-4">
+              <div className="py-4">
+
+              <Text >
                 <p>
                   We use Cookies and Other Tracking Technologies to identify you
                   and your interests, to remember your preferences, and to track
@@ -146,14 +153,17 @@ function Cookies() {
                   </li>
                 </ul>
               </Text>
+              </div>
             </li>
 
             <li>
               <Heading priority="4" style="text-md font-displaySemibold">
                 4. Your Choices
               </Heading>
+              <div className="py-4">
+                <Text>
 
-              <Text style="py-4">
+
                 <p>
                   If you&lsquo;d like to remove or disable cookies via your
                   browser, please refer to your browser&lsquo;s configuration
@@ -169,14 +179,17 @@ function Cookies() {
                   setting as described above.
                 </p>
               </Text>
+              </div>
             </li>
 
             <li>
               <Heading priority="4" style="text-md font-displaySemibold">
                 5. Our Customers
               </Heading>
+              <div className="py-4">
 
-              <Text style="py-4">
+
+              <Text >
                 <p>
                   Customers who separately use cookies or similar technologies
                   on their website hosted by us are independently and solely
@@ -186,14 +199,16 @@ function Cookies() {
                   laws.
                 </p>
               </Text>
+              </div>
             </li>
 
             <li>
               <Heading priority="4" style="text-md font-displaySemibold">
                 6. Changes to this Cookie Policy
               </Heading>
+              <div className="py-4">
 
-              <Text style="py-4">
+              <Text >
                 <p>
                   We may update our Cookie Policy from time to time without
                   prior notice, at our sole discretion. We will notify you of
@@ -208,14 +223,17 @@ function Cookies() {
                   Cookie Policy.
                 </p>
               </Text>
+              </div>
             </li>
 
             <li>
               <Heading priority="4" style="text-md font-displaySemibold">
                 7. Contact Us
               </Heading>
+              <div className="py-4">
 
-              <Text style="py-4">
+
+              <Text >
                 <p>
                   If you have any questions about this Cookie Policy, please
                   contact us:{" "}
@@ -228,6 +246,7 @@ function Cookies() {
                   .{" "}
                 </p>
               </Text>
+              </div>
             </li>
           </ol>
         </div>
