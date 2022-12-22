@@ -125,7 +125,7 @@ function SearchInput() {
       <input
         type="text"
         placeholder=""
-        className="px-3 py-3 relative text-sm border-b border-gray-100  w-full pl-10 text-sm placeholder-gray-700 text-gray-700 block w-full p-2.5 focus:ring-0 focus:ring-offset-0 focus:outline-none focus:ring-0 focus:border-b dark:bg-black-300 dark:text-white"
+        className="px-3 py-3 relative text-sm border-b border-gray-100  w-full pl-10 text-sm placeholder-gray-700 text-gray-700 block w-full p-2.5 focus:ring-0 focus:ring-offset-0 focus:outline-none focus:ring-0 focus:border-b dark:bg-black-200 dark:text-white"
       />
     </div>
   );

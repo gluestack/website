@@ -21,7 +21,7 @@
     @apply py-7 px-10  w-full flex-row z-30
 }
 .layout-theme {
-    @apply flex-col md:flex-row dark:bg-black-300
+    @apply flex-col md:flex-row dark:bg-black-200
 }
 .layout-theme .content {
     @apply max-w-[100vw] md:max-w-none md:pr-40
