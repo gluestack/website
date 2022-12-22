@@ -5,8 +5,9 @@ import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
+import { SessionProvider } from "next-auth/react";
 
-function MyApp({ Component, pageProps }: any) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
   const router = useRouter();
 
   let versionData = versions;
@@ -42,19 +43,27 @@ function MyApp({ Component, pageProps }: any) {
 
   if (router.pathname.includes("/docs")) {
     return (
-      <PagesLayout
-        version={version}
-        versionInfo={getSidebarJsonData()}
-        setVersion={setVersion}
-        versionsData={versions}
-        showBackButton={showBackButton}
-      >
-        <Component {...pageProps} />
-        <PrevNextButtons />
-      </PagesLayout>
+      <SessionProvider session={session}>
+        <PagesLayout
+          version={version}
+          versionInfo={getSidebarJsonData()}
+          setVersion={setVersion}
+          versionsData={versions}
+          showBackButton={showBackButton}
+        >
+          <Component {...pageProps} />
+          <PrevNextButtons />
+        </PagesLayout>
+      </SessionProvider>
     );
   } else {
-    return <Component {...pageProps} />;
+    return (
+      <>
+        <SessionProvider session={session}>
+          <Component {...pageProps} />;
+        </SessionProvider>
+      </>
+    );
   }
 }
 
