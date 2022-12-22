@@ -7,7 +7,7 @@ function TermsCondition({title,children}:any) {
     <div className="container py-14">
     <Heading priority={4} style="text-md font-displaySemibold">{title}</Heading>
     <div className="container pb-14">
-     <Text size="md" style="font-normal text-justify">
+     <Text size="md" >
        {children}
       </Text>
      </div>

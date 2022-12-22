@@ -1,14 +1,14 @@
 import React from "react";
 
-function Text({  size, isLight, color, font, style,children }: any) {
+function Text({  size, isLight,children, primary, primaryLight,white,light,bold }: any) {
   return (
     <>
       <div
-        className={`font-display text-black-200 dark:text-white-100 tracking-wide		${
+        className={`${light ? "font-displayLight" : bold ? "displayHead" : "font-display"} ${primary ? "text-primary" : primaryLight ? "text-primary-700" : white ? "text-white dark:text-white-100" : "text-black-200 dark:text-white-100"} tracking-wide		${
           size == "xxl"
             ? `lg:text-xxl text-lg`
             : size == "md"
-            ? "text-md"
+            ? "lg:text-md text-sm"
             : size == "xl"
             ? "  text-xl "
             : size == "xs"
@@ -21,7 +21,6 @@ function Text({  size, isLight, color, font, style,children }: any) {
             ? "md:text-lg text-md"
             : "text-base "
         }
-        ${style}
       ${
         isLight ? "text-white" : `` ? `` : ``
       } `}

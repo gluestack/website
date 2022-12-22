@@ -11,17 +11,17 @@ function Resources() {
       </Heading>
       <ul>
         <LinkList link="/docs" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" white>
             Docs
           </Text>
         </LinkList>
         <LinkList link="/showcase" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" white>
             Showcase
           </Text>
         </LinkList>
         <LinkList link="/blog" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" white>
             Blog
           </Text>
         </LinkList>

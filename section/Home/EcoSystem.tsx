@@ -45,22 +45,26 @@ function EcoSystem() {
                   </div>
                   <Heading priority="6" style="">seal</Heading>
                 </div>
+                <div className="pt-4 text-center lg:text-left">
 
-                <Text size="md" style="pt-4 text-center lg:text-left">
+                <Text size="md" >
                   We have an optional plugin that makes it easy to deploy any
                   gluestack app to the seal platform. seal is a hosting service
                   optimized and built for gluestack apps by the creators of
                   gluestack.
                 </Text>
+                </div>
               </div>
               <div className="pt-16">
                 <div className="dot relative text-center lg:text-left">
                   <Heading priority="6">Design System <button className="tagsButton relative -top-2">Upcoming</button></Heading>
                 </div>
+                <div className="pt-4 text-center lg:text-left">
 
-                <Text size="md" style="pt-4 text-center lg:text-left">
+                <Text size="md" >
                 Create your Design System using our platform designed to create UI standards and components. Coming soon.
                 </Text>
+                </div>
               </div>
             </div>
             <div className="dark:hidden block">

@@ -16,7 +16,7 @@ function SignupFooter() {
             <div className="lg:w-[100px]  w-[70px] text-center">
                 <CustomImage src={line} alt="image" />
                 </div>
-                <Text style="text-white ml-2 lg:text-sm text-xs" >Now build scalable full-stack apps faster</Text>
+                <Text size="sm" white >Now build scalable full-stack apps faster</Text>
             </div>
         </div>
     </div>
