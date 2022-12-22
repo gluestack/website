@@ -9,9 +9,9 @@ import SignupFooter from "../section/Home/SignupFooter";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title={"Home - gluestack"}>
       <div className="grid fixed-layout">
-        <DeveloperPreview/>
+        <DeveloperPreview />
         <HeroSection />
         <MordenStack />
         <CardsSection />
@@ -19,7 +19,6 @@ export default function Home() {
         <SignupFooter />
       </div>
       {/* <Footer /> */}
-
     </Layout>
   );
 }

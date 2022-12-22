@@ -92,6 +92,11 @@
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
     brightness(104%) contrast(101%);
 }
+.filter-white{
+  filter: invert(98%) sepia(11%) saturate(198%) hue-rotate(61deg) brightness(121%) contrast(100%);
+
+
+}
 
 .twitter > div {
   @apply grid grid-cols-3 gap-6 py-6;
@@ -140,6 +145,9 @@
   }
   .dot:after{
     content:'';
-    @apply absolute w-[18px] h-[18px] bg-gray -left-[135px] top-2 rounded-sm lg:block hidden;
+    @apply absolute w-[18px] h-[18px] bg-gray -left-[104px] top-2 rounded-sm lg:block hidden;
 
+  }
+  .dark-gradient{
+    background:linear-gradient(89.93deg, #232323 0.06%, #323131 47.82%, #232323 99.95%);
   }

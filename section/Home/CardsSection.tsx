@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import CustomImage from "../../components/CustomImage";
-import CardImg from "../../public/images/cardImg.png";
+import architecture from "../../public/images/architecture.svg";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
 import Card from "../../components/Card";
@@ -19,12 +19,17 @@ import StorageIcon from "../../public/images/cardIcons/storage.svg";
 import StoryBookIcon from "../../public/images/cardIcons/storybook.svg";
 
 import GradientImg from "../../public/images/gradient.png";
+import bannerDark from "../../public/images/gradient-dark.png"
+
 
 function CardsSection() {
   return (
     <div className="relative w-full pt-20 sm:pt-40">
-         <div className="absolute top-[600px] left-0 w-full -z-10 h-full">
-            <Image src={GradientImg} alt="image" objectFit="contain"  />
+         <div className="absolute top-[660px] left-0 w-full h-full">
+            <Image src={GradientImg} alt="image" objectFit="contain" className="dark:hidden block"  />
+            <Image src={bannerDark} alt="image" objectFit="contain" className="dark:block hidden"  />
+
+            
         </div>
         <div className="bg-primary-200 pt-10 max-h-[500px] sm:max-h-[400px] lg:max-h-[450px] xl:max-h-[500px]">
           <div className="container pt-10 pb-12 relative ">
@@ -37,7 +42,7 @@ function CardsSection() {
                 </Text>
             </div>
             <div className="grid bg-white shadow-md py-5 px-20 mt-10 rounded-md">
-                <CustomImage  src={CardImg}  alt="image"  />
+                <CustomImage  src={architecture}  alt="image"  />
             </div> 
           </div>
         </div>
