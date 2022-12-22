@@ -3,6 +3,8 @@ import HeroSection from "../../section/Blog/HeroSection";
 import { BlogService } from "../../services";
 import Layout from "../../Layout/Layout";
 
+import React from "react";
+
 function Blog({ blogs }: any) {
   return (
     <Layout
@@ -11,7 +13,7 @@ function Blog({ blogs }: any) {
         "Curated ideas, experiments, and the latest developments in gluestack."
       }
     >
-        <HeroSection />
+      <HeroSection />
       <div className="container">
         <div className="sm-container pb-32">
           <Blogs blogs={blogs} />
