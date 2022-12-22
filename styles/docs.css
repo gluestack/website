@@ -30,10 +30,10 @@
     @apply flex-col md:flex-row dark:bg-black-200
 }
 .layout-theme .content {
-    @apply max-w-[100vw] md:max-w-none md:pr-40
+    @apply xl:max-w-[50vw] max-w-none
 }
 .layout-theme .sidebarNav {
-    @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black-100 ease-in-out xl:w-[100%] xl:max-w-[32rem] md:px-10 px-5
+    @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black-100 ease-in-out xl:w-[100%] xl:max-w-[30vw] md:px-10 px-5
 }
 .sidebarNav.showNav {
     @apply block md:block w-full ease-in-out duration-150 absolute top-[85px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 
