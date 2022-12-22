@@ -47,16 +47,23 @@
 // export default Toggle;
 
 import React, { useContext } from "react";
-import useDarkMode from "use-dark-mode";
 import { AppContext } from "../../pages/_app";
 
-function Toggle(): JSX.Element {
+function Toggle(): JSX.Element | null {
   //@ts-ignore
   const { darkMode } = useContext(AppContext);
   const value = darkMode?.value ?? "light";
+  const [isMounted, setIsMounted] = React.useState(false);
+  console.log({ value });
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
   return (
     <>
-      <div className="hidden">{JSON.stringify(value)}</div>
       {value ? (
         <button onClick={() => darkMode.toggle()}>
           <svg

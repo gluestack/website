@@ -7,12 +7,7 @@ import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
 import useDarkMode from "use-dark-mode";
 
-export const AppContext = React.createContext({
-  darkMode: {
-    value: "light",
-    toggle: () => {}
-  }
-});
+export const AppContext = React.createContext(null);
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
