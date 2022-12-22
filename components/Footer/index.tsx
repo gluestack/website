@@ -31,7 +31,7 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-6  grid-cols-1 lg:gap-12 gap-4 pt-2">
           <div className="lg:col-span-2 col-span-1">
             <div className="py-4">
-              <Text size="md" style="font-displayLight text-white-200">
+              <Text size="md" >
                 An extensible full-stack framework that takes away the
                 complexities of building modern web & mobile apps.
               </Text>
@@ -40,7 +40,7 @@ export const Footer = () => {
               <Social />
             </div>
             <div className="mt-6 lg:block hidden">
-              <Text style="text-gray-100 font-displayLight " size="base">
+              <Text  size="base">
                 2023 © All rights reserved. gluestack Inc
               </Text>
             </div>
@@ -61,8 +61,9 @@ export const Footer = () => {
               <Social />
             </div>
             <div className=" lg:hidden block">
-              <Text style="text-gray-100 font-displayLight " size="base">
-                2023 © All rights reserved. gluestack Inc
+              <Text  size="base">
+                <span className="text-gray-100 font-displayLigh">
+                2023 © All rights reserved. gluestack Inc</span>
               </Text>
             </div>
         </div>

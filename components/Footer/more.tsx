@@ -11,12 +11,12 @@ function More() {
       </Heading>
       <ul>
         <LinkList link="/" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" white>
             Contact Sales
           </Text>
         </LinkList>
         <LinkList link="/" style="py-2">
-          <Text size="sm" style="text-white-200">
+          <Text size="sm" white>
             Github
           </Text>
         </LinkList>

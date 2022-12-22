@@ -33,7 +33,7 @@ function Blog({
                 <Heading priority={4} style="text-black-200 dark:text-white font-displayHead hover:text-primary">{title}</Heading>
               </Linktag>
               <div className="py-2">
-                <Text style="text-base text-black-100 line-clamp-2">{shortDes}</Text>
+                <Text >{shortDes}</Text>
               </div>
             </div>
 

@@ -20,7 +20,7 @@ function List({ src, title,altText,children}: any) {
       </Heading>
     </div>
     <div className="mt-4 ">
-      <Text color="gray-700" size="sm">
+      <Text >
         {children}
      </Text>
     </div>

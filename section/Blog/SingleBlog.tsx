@@ -66,7 +66,7 @@ function SingleBlog({
 
           <div className="items-center md:flex ">
             <div className="p-2">
-              <Text size="lg" style="font-bold ">
+              <Text size="lg" bold>
                 Tags
               </Text>
             </div>

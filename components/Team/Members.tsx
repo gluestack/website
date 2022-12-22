@@ -41,12 +41,12 @@ function Members({
         </div>
         <div className="memberName">
           <div className="pt-2">
-            <Text size="lg" font="bold">
+            <Text size="lg" bold>
               {name}
             </Text>
           </div>
           <div className="pb-2">
-            <Text size="sm" font="light">
+            <Text size="sm" light>
               {designation}
             </Text>
           </div>

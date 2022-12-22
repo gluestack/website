@@ -21,7 +21,7 @@ function Card({ src, altText, title, description,href, type }: any) {
               {title}
           </Heading>
           <div className="mt-4">
-              <Text size="sm" style="text-black">
+              <Text size="sm" >
                   {description}
               </Text>
           </div>
@@ -41,7 +41,7 @@ function Card({ src, altText, title, description,href, type }: any) {
         </Heading>
         </Linktag>
         <div className="mt-2">
-            <Text size="md" style="text-black-200">
+            <Text size="md" >
                 {description}
             </Text>
         </div>

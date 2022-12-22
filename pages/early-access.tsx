@@ -20,7 +20,7 @@ function earlyAccess() {
           <div className="px-20 py-32">
             <Heading priority="1">Thanks for signing up.</Heading>
             <div className="lg:w-5/6 py-6">
-              <Text size="lg" style="text-black-200 font-displayLight">
+              <Text size="lg" light>
                 You&lsquo;re
                 <span className="font-displaySemibold text-black-200">
                   &nbsp;#542&nbsp;
@@ -29,7 +29,7 @@ function earlyAccess() {
                 available.
               </Text>
             </div>
-            <Text size="lg" style="lg:w-5/6 font-displayHead text-black-100">
+            <Text size="lg" bold>
               Share this to win credits when you deploy your app on our hosting
               platform.
             </Text>

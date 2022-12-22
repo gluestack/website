@@ -8,9 +8,11 @@ function Details({ title, last, description, btnText, link, first }: any) {
   return (
     <div className="text-center lg:text-left">
       <InnerHeadding priority={2} title={title} last={last} first={first} />
-      <Text size="md" style="py-4">
+      <div className="py-4">
+      <Text size="md" >
         {description}
       </Text>
+      </div>
       {/* <div className="mt-4">
         <Button link={link}>{btnText}</Button>
       </div> */}
