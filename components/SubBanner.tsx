@@ -26,7 +26,7 @@ function SubBanner({ heading, desc, src, btntext, isright,altText }: any) {
                   </Heading>
                   <Description>{desc}</Description>
                   <div className="py-8">
-                    <Button lg>{btntext}</Button>
+                    <Button size="lg">{btntext}</Button>
                   </div>
                 </div>
               </div>

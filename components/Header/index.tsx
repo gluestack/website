@@ -26,8 +26,8 @@ export const Header = () => {
             <Logo />
             <div className="flex items-center gap-6">
               <div className="lg:block hidden">
-              <Button isSecondary dataId="QWcoG0YF">
-                Get early access{" "}
+              <Button type="primary" dataId="QWcoG0YF">
+                Get early access
               </Button>
               </div>
               <Toggle/>

@@ -28,9 +28,9 @@ function HeroSection() {
               </Text>
             </div>
             <div className="mt-12">
-              <Button xxl isSecondary dataId="QWcoG0YF">
+              <Button size="xxl" type="primary" dataId="QWcoG0YF">
                 <div className="flex items-center">
-                  Signup for early access{" "}
+                  Signup for early access
                 </div>
               </Button>
             </div>
