@@ -19,7 +19,7 @@ export const Header = () => {
   }, [expand]);
 
   return (
-    <nav className="bg-white fixed w-full z-10 top-0">
+    <nav className="bg-white fixed w-full z-20 top-0">
       <div className=" dark:bg-black py-6">
         <div className="container ">
           <div className="flex items-center justify-between">
