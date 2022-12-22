@@ -5,17 +5,19 @@ import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
+import { SessionProvider } from "next-auth/react";
+import AuthContextProvider from "../auth-context";
 import useDarkMode from "use-dark-mode";
 
 export const AppContext = React.createContext(null);
 
-function MyApp({ Component, pageProps }: any) {
+function MyApp({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   let versionData = versions;
   let showBackButton = false;
 
-  Object.keys(plugins).map(key => {
+  Object.keys(plugins).map((key) => {
     if (router.route.includes("/docs/0.1.x/" + key)) {
       // @ts-ignore
       versionData = plugins[key].versions;
@@ -52,7 +54,7 @@ function MyApp({ Component, pageProps }: any) {
         htmlElement.classList.add("light");
         htmlElement.classList.remove("dark");
       }
-    }
+    },
   });
 
   if (router.pathname.includes("/docs")) {
@@ -66,7 +68,7 @@ function MyApp({ Component, pageProps }: any) {
           versionsData={versions}
           showBackButton={showBackButton}
         >
-          <Component {...pageProps} />
+          {children}
           <PrevNextButtons />
         </PagesLayout>
       </AppContext.Provider>
@@ -74,11 +76,23 @@ function MyApp({ Component, pageProps }: any) {
   } else {
     return (
       //@ts-ignore
-      <AppContext.Provider value={{ darkMode }}>
-        <Component {...pageProps} />
-      </AppContext.Provider>
+      <AppContext.Provider value={{ darkMode }}>{children}</AppContext.Provider>
     );
   }
 }
 
-export default MyApp;
+const App = ({ Component, pageProps: { session, ...pageProps } }: any) => {
+  return (
+    <>
+      <SessionProvider session={session}>
+        <AuthContextProvider>
+          <MyApp>
+            <Component {...pageProps} />;
+          </MyApp>
+        </AuthContextProvider>
+      </SessionProvider>
+    </>
+  );
+};
+
+export default App;
