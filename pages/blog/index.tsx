@@ -14,7 +14,7 @@ function Blog({ blogs }: any) {
       }
     >
       <HeroSection />
-      <div className="container relative">
+      <div className="container relative z-10">
         <div className="sm-container pb-32">
           <Blogs blogs={blogs} />
         </div>

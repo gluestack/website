@@ -5,6 +5,9 @@ import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
+import useDarkMode from "use-dark-mode";
+
+export const AppContext = React.createContext(null);
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
@@ -12,7 +15,7 @@ function MyApp({ Component, pageProps }: any) {
   let versionData = versions;
   let showBackButton = false;
 
-  Object.keys(plugins).map((key) => {
+  Object.keys(plugins).map(key => {
     if (router.route.includes("/docs/0.1.x/" + key)) {
       // @ts-ignore
       versionData = plugins[key].versions;
@@ -39,23 +42,41 @@ function MyApp({ Component, pageProps }: any) {
       }
     }
   }
+  const darkMode = useDarkMode(false, {
+    onChange: (state: any) => {
+      const htmlElement = document.documentElement;
+      if (state) {
+        htmlElement.classList.add("dark");
+        htmlElement.classList.remove("light");
+      } else {
+        htmlElement.classList.add("light");
+        htmlElement.classList.remove("dark");
+      }
+    }
+  });
 
   if (router.pathname.includes("/docs")) {
     return (
-      <PagesLayout
-        version={version}
-        versionInfo={getSidebarJsonData()}
-        setVersion={setVersion}
-        versionsData={versions}
-        showBackButton={showBackButton}
-      >
-        <Component {...pageProps} />
-        <PrevNextButtons />
-      </PagesLayout>
+      //@ts-ignore
+      <AppContext.Provider value={darkMode}>
+        <PagesLayout
+          version={version}
+          versionInfo={getSidebarJsonData()}
+          setVersion={setVersion}
+          versionsData={versions}
+          showBackButton={showBackButton}
+        >
+          <Component {...pageProps} />
+          <PrevNextButtons />
+        </PagesLayout>
+      </AppContext.Provider>
     );
   } else {
-    return (        
-    <Component {...pageProps} />
+    return (
+      //@ts-ignore
+      <AppContext.Provider value={{ darkMode }}>
+        <Component {...pageProps} />
+      </AppContext.Provider>
     );
   }
 }

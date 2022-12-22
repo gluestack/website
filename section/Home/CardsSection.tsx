@@ -78,7 +78,7 @@ function CardsSection() {
             src={StoryBookIcon}
             altText="StoryBook"
             title="storybook (Universal components)"
-            description="Build, test, and document your app's UI components in isolation, providing a flexible and efficient workflow."
+            description="Build, test, and document your app's UI components in isolation using gluetack/ui and Storybook, providing a flexible and efficient workflow."
           />
           <Card
             type="hasIcon"

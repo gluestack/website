@@ -19,7 +19,7 @@ function earlyAccess() {
         title={"Waitlist - gluestack"}
         ogImgUrl="https://gluestack-strapi.sfo3.digitaloceanspaces.com/3e8fa1ca95e0c2a8685486ed82785fd2.png?updated_at=2022-12-21T14:56:07.967Z"
       />
-      <div className="max-w-[1024px] bg-white dark:bg-black lg:m-auto lg:mt-20 m-4 shadow-xl rounded-lg ">
+      <div className="max-w-[1024px] bg-white dark:bg-black lg:m-auto lg:mt-20 m-4 shadow-xl rounded-lg  relative z-10">
         <div className="grid items-center gap-4 grid-col-1 lg:grid-cols-12">
           <div className="col-span-12 lg:px-20 lg:py-20 px-10 py-10 lg:col-span-6">
           <Heading  priority={2}>
