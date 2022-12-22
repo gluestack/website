@@ -29,23 +29,25 @@ function SingleBlog({
       </div>
       <div className="container mx-auto">
         <div className="sm-container">
-          <div className="flex items-center justify-around pt-4 pb-20 lg:justify-between">
-            <div className="flex flex-col flex-wrap p-2 space-x-4 lg:justify-between md:flex-row">
-              <Author
-                src={author.image.data?.attributes.url}
-                altText={author.altText}
-                name={author.name}
-              />
-              <span className="items-center hidden px-2 lg:flex dark:text-white">|</span>
-              <div className="flex justify-around p-2">
-                <Text size="sm">{formatDate(blog.publish_date)}</Text>
-              </div>
-              {categories.map((data: any, index: number) => (
-                <Tags solid key={index}>
+        <div className="flex items-center justify-around pt-4 pb-20 lg:justify-between">
+            <div className="flex flex-col items-start space-x-0 space-y-2 lg:items-center lg:space-x-1 lg:space-y-0 lg:flex-row ">
+                <Author
+                  src={author.image.data?.attributes.url}
+                  altText={author.altText}
+                  name={author.name}
+                />
+
+                <span className="hidden px-1 lg:block dark:text-white">|</span>
+                <div className="w-full pl-4 text-center lg:pl-0 md:w-auto"><Text size="sm">{formatDate(blog.publish_date)}</Text></div>
+                <div className="w-full pl-0 text-center md:w-auto lg:pl-4">
+                {categories.map((data: any, index: number) => (
+                <Tags  key={index}>
                   {data.attributes.name}
                 </Tags>
               ))}
-            </div>
+                    
+                </div>
+              </div>
           </div>
           <div className="flex justify-center relative h-[400px] w-full">
             <Image
@@ -57,7 +59,7 @@ function SingleBlog({
             />
           </div>
 
-          <div className="py-16 prose lg:prose-xl sm-container  dark:prose-invert ">
+          <div className="py-16 prose lg:prose-xl sm-container dark:prose-invert ">
             {/* <div dangerouslySetInnerHTML={{ __html: blog.details }}></div> */}
             <ReactMarkdown children={blog.details}></ReactMarkdown>
           </div>
