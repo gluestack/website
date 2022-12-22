@@ -151,3 +151,12 @@
   .dark-gradient{
     background:linear-gradient(89.93deg, #232323 0.06%, #323131 47.82%, #232323 99.95%);
   }
+
+
+  body #c-bns button:first-child, body #s-bns button:first-child, body .cc_div .b-tg .c-tg{
+    @apply bg-primary hover:bg-primary;
+
+  }
+  body #c-bns button+button, body #s-c-bn, body #s-cnt button+button, body #s-bl .c-bl.b-ex, body .b-tl.exp{
+    @apply bg-purple-100 hover:bg-purple-100 ;
+  }
