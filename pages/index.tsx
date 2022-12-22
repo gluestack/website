@@ -1,22 +1,25 @@
 import React from "react";
-import SubBanner from "../components/SubBanner";
 import HeroSection from "../section/Home/HeroSection";
-import Services from "../section/Home/Services";
-import SubSection from "../section/Home/SubSection";
-import Solution from "../section/Home/Solution";
-import Testimonial from "../section/Home/Testimonial";
-import Community from "../section/Home/Community";
-import Hook from "../components/Animation";
 import Layout from "../Layout/Layout";
 import DeveloperPreview from "../components/DeveloperPreview";
+import MordenStack from "../section/Home/MorderStack";
+import EcoSystem from "../section/Home/EcoSystem";
+import CardsSection from "../section/Home/CardsSection";
+import SignupFooter from "../section/Home/SignupFooter";
 
 export default function Home() {
   return (
     <Layout >
       <div className="grid fixed-layout">
+        <DeveloperPreview/>
         <HeroSection />
+        <MordenStack />
+        <CardsSection />
+        <EcoSystem />
+        <SignupFooter />
       </div>
-      <DeveloperPreview/>
+      {/* <Footer /> */}
+
     </Layout>
   );
 }

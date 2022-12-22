@@ -15,7 +15,7 @@ function Layout({ children,title,description, ogImgUrl, ogUrl }: any) {
       <div className="absolute top-0 left-0 w-full -z-10">
         <Image src={bannerImg} alt="image" objectFit="contain"  />
       </div> 
-      <div className="dark:bg-black-300">
+      <div className="dark:bg-black-300 pt-20 h-screen">
       {children}
       </div>
       {/* <Footer /> */}

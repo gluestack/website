@@ -5,55 +5,57 @@ export function BlogService() {
   return client.query({
     query: gql`
     query getBlog {
-      blogs {
-        data {
-          attributes {
-            title
-            shortDes
-            slug
-            coverImg {
-              data {
-                attributes {
-                  url
-                }
-              }
-            }
-            altText
-            details
-            publish_date
-            blog_author {
-              data {
-                attributes {
-                  name
-                  image {
-                    data {
-                      attributes {
-                        url
-                      }
+      blogs(sort: "publish_date:DESC")
+      {
+            data {
+              id
+              attributes {
+                title
+                shortDes
+                slug
+                coverImg {
+                  data {
+                    attributes {
+                      url
                     }
                   }
-                  altText
                 }
-              }
-            }
-            blog_tags{
-              data{
-                attributes{
-                  name
+                altText
+                details
+                publish_date
+                blog_author {
+                  data {
+                    attributes {
+                      name
+                      image {
+                        data {
+                          attributes {
+                            url
+                          }
+                        }
+                      }
+                      altText
+                    }
+                  }
                 }
-              }
-            }
-            blog_categories{
-              data{
-                attributes{
-                  name
+                blog_tags{
+                  data{
+                    attributes{
+                      name
+                    }
+                  }
+                }
+                blog_categories{
+                  data{
+                    attributes{
+                      name
+                    }
+                  }
                 }
               }
             }
           }
         }
-      }
-    }
     `,
   });
 }

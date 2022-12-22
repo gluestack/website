@@ -1,23 +1,23 @@
 import React from "react";
 
-const Heading = ({ isLight, color, priority, children,style }: any) => {
+const Heading = ({ isLight, color, priority, children,style, single }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
     <div>
       <DynamicTag
-        className={`${
+        className={`tracking-wide	${
           priority == 1
-            ? "lg:text-6xl text-4xl leading-normal font-displayHead"
+            ? `${single ? "lg:text-5xl text-4xl leading-normal font-displayHead test"  : "lg:text-6xl text-4xl leading-normal font-displayHead"}`
             : priority == 2
-            ? "text-4xl md:text-5xl font-displaySemibold"
+            ? "lg:text-5xl text-4xl font-displayHead text-secondary dark:text-white leading-tight"
             : priority == 3
-            ? " text-3xl font-displaySemibold"
+            ? "lg:text-3xl text-2xl font-displaySemibold"
             : priority == 4
-            ? " text-lg"
+            ? " lg:text-xxl text-xl"
             : priority == 5
-            ? "lg:text-xl text-lg font-displaySemibold"
+            ? "lg:text-xl text-lg font-displayHead text-secondary dark:text-white leading-normal"
             : priority == 6
-            ? "text-base font-displaySemibold "
+            ? "lg:text-lg text-md font-displayHead text-secondary dark:text-white leading-normal "
             : "text-lg font-displaySemibold "
         }
         ${style}

@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import blognext from "/public/blog/Rectangle 3467571next.svg";
-import leftArrow from "/public/blog/left.svg";
-import rightArrow from "/public/blog/rightarrow.svg";
 import Text from "../../elements/Text";
 import Linktag from "../../elements/Linktag";
-function BlogControl({ right, left, arrowTitle, blogTitle, href,altText }: any) {
+import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
+function BlogControl({ right, left, arrowTitle, blogTitle, href,altText,src }: any) {
   return (
     <>
       {/* <div className="p-6 border border-gray-200 rounded-lg">
@@ -34,22 +32,22 @@ function BlogControl({ right, left, arrowTitle, blogTitle, href,altText }: any) 
         </div>
       </div> */}
 
-      <div className="flex flex-col items-center p-5 bg-gray-200 border rounded-lg shadow-md md:flex-row">
+      <div className="flex flex-col p-4 bg-gray-200 rounded-lg shadow-md dark:border-gray-200 md:flex-row dark:bg-black-200">
         <Image
-          src={blognext}
+          src={src}
           alt={altText || "profileImage"}
-          width={100}
+          width={200}
           className="rounded-lg "
-          height={100}
+          height={200}
         />
         <div className="flex flex-col justify-between p-2 leading-normal">
           <Linktag href={`${href}`}>
             <div className="flex p-1">
-              {right && <Image src={rightArrow} alt={altText || "icon"} className="" />}
+              {right && <FaArrowLeft className="mt-2 dark:text-white"/>}
               <Text size="md" style=" p-1">
                 {arrowTitle}
               </Text>
-              {left && <Image src={leftArrow} alt={altText || "icon"} className="" />}
+              {left &&<FaArrowRight className="mt-2 dark:text-white"/>}
             </div>
           </Linktag>
           <Text size="lg">{blogTitle}</Text>

@@ -21,7 +21,7 @@ module.exports = {
         xs: ".75rem", // 12px
         sm: ".875rem", // 14px
         base: "1rem", // 16px
-        md: "1.125rem", // 18px
+        md: "20px", // 18px
         lg: "1.5rem", // 24px
         xl: ["2.5rem", "4rem"], //40
         xxl: "1.625rem", // 26px
@@ -34,7 +34,9 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#8944CE",
+          50: "#FAF5FF",
           100: "#BF7EFF",
+          200: "#853ECC",
           600: "#8944CE",
           700: "#8944CE",
         },
@@ -47,6 +49,7 @@ module.exports = {
           100: "#222020",
           200: "#404040",
           300:"#232323",
+          400: "#565454"
         },
         white: {
           DEFAULT: "#ffffff",
@@ -59,6 +62,26 @@ module.exports = {
           200:"#F8F8F8",
         },
         skyBlue: "#4A99E9",
+        purple: {
+          DEFAULT: "#8B6CB2",
+          100: "#F2E4FF",
+        },
+        beige: {
+          DEFAULT: "#C77E35",
+          100: "#FFEFDC",
+        },
+        blue: {
+          DEFAULT: "#4D7EC0",
+          100: "#DEECFF",
+        },
+        pink: {
+          DEFAULT: "#E769AB",
+          100: "#F8D8E9",
+        },
+        cyan: {
+          DEFAULT: "#1EB4D4",
+          100: "#E7FAFF",
+        },
       },
     },
     fontFamily: {
@@ -91,27 +114,31 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography'),
+
+
     function ({ addComponents }) {
       addComponents({
         ".container": {
           maxWidth: "100%",
           "@screen sm": {
-            maxWidth: "640px",
+            maxWidth: "100%",
             paddingLeft: "20px",
             paddingRight: "20px",
           },
           "@screen md": {
-            maxWidth: "768px",
+            maxWidth: "100%",
             paddingLeft: "30px",
             paddingRight: "30px",
           },
           "@screen lg": {
-            maxWidth: "1240px",
+            maxWidth: "1024px",
             marginLeft: "auto",
             marginRight: "auto",
           },
           "@screen xl": {
-            maxWidth: "1380px",
+            maxWidth: "1280px",
             marginLeft: "auto",
             marginRight: "auto",
           },

@@ -19,31 +19,37 @@ export const Header = () => {
   }, [expand]);
 
   return (
-    <div className=" dark:bg-black py-6">
-    <div className="container  ">
-      <div className="flex items-center justify-between">
-      <Logo />
-
-      <Toggle/>
-      </div>
-      <div className="flex md:order-2">
-       
-        <Modal
-          height="3/6"
-          isVisible={showModel}
-          onClose={() => setModel(false)}
-        >
-          <SearchBar />
-        </Modal>
-        {/* <div className="hidden lg:block">
-              <Button link="/docs">DOCUMENTATION</Button>
-            </div> */}
-        {/* <Hamburger setExpand={setExpand} expand={expand} /> */}
-      </div>
-      {/* <Menu expand={expand} /> */}
-
-     
-    </div>
-    </div>
+    <nav className="bg-white fixed w-full z-10 top-0">
+      <div className=" dark:bg-black py-6">
+        <div className="container ">
+          <div className="flex items-center justify-between">
+            <Logo />
+            <div className="flex items-center gap-6">
+              <div className="lg:block hidden">
+              <Button isSecondary dataId="QWcoG0YF">
+                Get early access{" "}
+              </Button>
+              </div>
+              <Toggle/>
+            </div>
+          </div>
+          <div className="flex md:order-2">
+            <Modal
+              height="3/6"
+              isVisible={showModel}
+              onClose={() => setModel(false)}
+            >
+              <SearchBar />
+            </Modal>
+            {/* <div className="hidden lg:block">
+                  <Button link="/docs">DOCUMENTATION</Button>
+                </div> */}
+            {/* <Hamburger setExpand={setExpand} expand={expand} /> */}
+          </div>
+          {/* <Menu expand={expand} /> */}
+          </div>
+        </div>
+      </nav>
+      
   );
 };
