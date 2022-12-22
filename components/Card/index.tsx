@@ -21,7 +21,7 @@ function Card({ src, altText, title, description,href, type }: any) {
               {title}
           </Heading>
           <div className="mt-4">
-              <Text size="sm" >
+              <Text size="base" >
                   {description}
               </Text>
           </div>
