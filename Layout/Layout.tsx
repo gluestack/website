@@ -5,10 +5,13 @@ import Meta from "../components/Meta";
 import Cookies from "../components/Cookies";
 import Image from "next/image";
 import bannerImg from "../public/images/gradient.png"
+import Script from "next/script";
 
 function Layout({ children,title,description, ogImgUrl, ogUrl }: any) {
   return (
     <>
+          <Script src="//embed.typeform.com/next/embed.js"></Script>
+
       <Meta title={title} description={description} ogImgUrl={ogImgUrl} ogUrl={ogUrl} />
       <Cookies />
       <Header/>
