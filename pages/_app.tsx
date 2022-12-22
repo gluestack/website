@@ -44,7 +44,6 @@ function MyApp({ Component, pageProps }: any) {
   }
   const darkMode = useDarkMode(false, {
     onChange: (state: any) => {
-      console.log({ state });
       const htmlElement = document.documentElement;
       if (state) {
         htmlElement.classList.add("dark");
