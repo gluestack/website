@@ -5,7 +5,7 @@ import DeveloperPreview from "../../components/DeveloperPreview";
 
 export default function Home() {
   return (
-    <Layout >
+    <Layout title={"gluestack"} >
       <div className="grid fixed-layout">
         <HeroSection />
       </div>
