@@ -9,7 +9,7 @@ import Image from "next/image";
 
 function MordenStack() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full ">
          <div className="absolute top-16 right-0 -z-10">
         <Image src={Gradient} alt="image" objectFit="contain"  />
       </div>
@@ -18,7 +18,7 @@ function MordenStack() {
       <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
         <CustomImage  src={DarkBg}  alt="image" style="rounded-lg" />
        
-        <div className="lg:pl-12 pl-0">
+        <div className=" pl-0">
         <Details
           title="Building beautiful apps with "
           last="modern stacks."
@@ -30,12 +30,12 @@ function MordenStack() {
       </div>
 
       <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4  lg:pt-40 pt-20 items-center">
-      <div className="lg:pr-12 pr-0">
+      <div className=" pr-0">
 
         <Details
           title="Simple. Modular. "
           last="Complete."
-          description="gluestack balances the power of standardization and flexibility . Our language-independent core helps ‘glue’ together swappable modules. Choose from the list of recommended plugins or build your own. Install in a jiffy and get started in no-time. Don’t build things from scratch over and over again!"
+          description="gluestack balances the power of standardization and flexibility. Our language-independent core helps ‘glue’ together swappable modules. Choose from the list of recommended plugins or build your own. Install in a jiffy and get started in no-time. Don’t build things from scratch over and over again!"
           // link="/"
           // btnText="STARTER KITS"
         />

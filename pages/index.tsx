@@ -9,7 +9,7 @@ import SignupFooter from "../section/Home/SignupFooter";
 
 export default function Home() {
   return (
-    <Layout >
+    <Layout>
       <div className="grid fixed-layout">
         <DeveloperPreview/>
         <HeroSection />
