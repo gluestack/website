@@ -3,9 +3,9 @@ import React from "react";
 function Tags({ children }: any) {
   return (
     <>
-      <button className="tagsButton">
+      <span className="tagsButton">
         {children}
-      </button>
+      </span>
     </>
   );
 }

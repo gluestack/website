@@ -71,10 +71,10 @@ function showcase({ events, categories, tags }: any) {
                 <Description size="base">{events.shortDes}</Description>
               </div>
               <div className="flex items-center justify-around py-4 lg:justify-start">
-                <Button link={events.demoLink} isSecondary>
+                <Button link={events.demoLink} type="primary">
                   Demo
                 </Button>
-               <div className="lg:ml-2"> <Button link>GITHUB</Button></div>
+               <div className="lg:ml-2"> <Button link="">GITHUB</Button></div>
               </div>
             </div>
           </div>
