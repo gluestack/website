@@ -21,12 +21,10 @@ function MordenStack() {
       </div>
     <div className="container lg:pt-32 pt-12 pb-12 relative">
         
-      <div className="grid lg:grid-cols-5 lg:gap-40 grid-cols-1 gap-4 items-center">
-        <div className="lg:w-[400px] w-full lg:col-span-2">
+      <div className="grid lg:grid-cols-2 lg:gap-32 grid-cols-1 gap-4 items-center">
            <CustomImage  src={DarkBg}  alt="image" style="rounded-lg" />
-        </div>
        
-        <div className="lg:col-span-3">
+        <div className="">
         <Details
           title="Building beautiful apps with "
           last="modern stacks."
@@ -37,22 +35,17 @@ function MordenStack() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-5 lg:gap-40 grid-cols-1 gap-4  lg:pt-40 pt-20 items-center">
-      <div className=" pr-0 col-span-3">
+      <div className="grid lg:grid-cols-2 lg:gap-32 grid-cols-1 gap-4  lg:pt-40 pt-20 items-center">
 
         <Details
           title="Simple. Modular. "
           last="Complete."
           description="gluestack balances the power of standardization and flexibility. Our language-independent core helps ‘glue’ together swappable modules. Choose from the list of recommended plugins or build your own. Install in a jiffy and get started in no-time. Don’t build things from scratch over and over again!"
-          // link="/"
-          // btnText="STARTER KITS"
+         
         />
-        </div>
-        <div className="lg:w-[400px] w-full col-span-2 relatvie">
         <CustomImage  src={Module}  alt="image" style="rounded-lg dark:hidden block -z-20" />
         <CustomImage  src={ModuleDark}  alt="image" style="rounded-lg dark:block hidden" />
 
-        </div>
 
        
       </div>

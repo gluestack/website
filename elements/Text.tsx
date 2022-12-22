@@ -4,7 +4,7 @@ function Text({  size, isLight,children, primary, primaryLight,white,light,bold 
   return (
     <>
       <div
-        className={`${light ? "font-displayLight" : bold ? "displayHead" : "font-display"} ${primary ? "text-primary" : primaryLight ? "text-primary-700" : white ? "text-white dark:text-white-100" : "text-black-200 dark:text-white-100"} tracking-wide		${
+        className={`${light ? "font-displayLight" : bold ? "font-displayHead" : "font-display"} ${primary ? "text-primary" : primaryLight ? "text-primary-700" : white ? "text-white dark:text-white-100" : "text-black-200 dark:text-white-100"} tracking-wide		${
           size == "xxl"
             ? `lg:text-xxl text-lg`
             : size == "md"

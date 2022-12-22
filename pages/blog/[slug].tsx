@@ -20,6 +20,7 @@ function Blog({
 
   return (
     <Layout ogUrl={router.asPath} title={blogData.attributes.title} description={blogData.attributes.shortDes} ogImgUrl={blogData.attributes.coverImg.data.attributes.url}>
+      <div className="relative z-10">
       <SingleBlog
         blog={blogData.attributes}
         author={author.attributes}
@@ -28,6 +29,7 @@ function Blog({
         nextblog={nextblog}
         previousblog={previousblog}
       />
+      </div>
  
 
     </Layout>
