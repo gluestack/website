@@ -1,19 +1,28 @@
 import React from "react";
 import Heading from "../../elements/Heading";
 import Gradient from "../../public/images/gradient-pink.png";
+
 import seal from "../../public/images/seal.png";
 import CustomImage from "../../components/CustomImage";
 import Text from "../../elements/Text";
 import ecoSystem2 from "../../public/images/system.png";
 import InnerHeadding from "../../elements/InnerHeading";
 
+
 import Image from "next/image";
 
 function EcoSystem() {
+  
+  
+
+ 
   return (
-    <div className="relative w-full">
-      <div className="absolute bottom-0 right-0 -z-10">
+    <div className="relative w-full ">
+      <div className="absolute bottom-0 right-0 -z-10 dark:hidden block">
         <Image src={Gradient} alt="image" objectFit="contain" />
+      </div>
+      <div className="absolute top-0 left-0 bottom-0 right-0   dark:block hidden">
+        <div className="dark-gradient h-full"></div>
       </div>
       <div className="container py-32 relative">
         <div className="text-center lg:w-2/4	mx-auto w-full">
@@ -58,6 +67,7 @@ function EcoSystem() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

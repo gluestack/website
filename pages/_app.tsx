@@ -54,7 +54,9 @@ function MyApp({ Component, pageProps }: any) {
       </PagesLayout>
     );
   } else {
-    return <Component {...pageProps} />;
+    return (        
+    <Component {...pageProps} />
+    );
   }
 }
 

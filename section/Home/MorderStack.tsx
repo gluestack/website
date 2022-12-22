@@ -5,6 +5,8 @@ import Module from "../../public/images/mode_light.gif";
 import ModuleDark from "../../public/images/mode_dark.gif";
 
 import Gradient from "../../public/images/gradient-pink.png";
+import GradientDark from "../../public/images/gradientDark-pink.png";
+
 import CustomImage from "../../components/CustomImage";
 
 import Image from "next/image";
@@ -12,8 +14,10 @@ import Image from "next/image";
 function MordenStack() {
   return (
     <div className="relative w-full ">
-         <div className="absolute top-16 right-0 -z-10">
-        <Image src={Gradient} alt="image" objectFit="contain"  />
+         <div className="absolute top-16 right-0 ">
+        <Image src={Gradient} alt="image" objectFit="contain"  className="dark:hidden block" />
+        <Image src={GradientDark} alt="image" objectFit="contain"  className="dark:block hidden" />
+
       </div>
     <div className="container lg:pt-32 pt-12 pb-12 relative">
         
