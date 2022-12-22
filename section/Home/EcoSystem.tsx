@@ -5,7 +5,9 @@ import Gradient from "../../public/images/gradient-pink.png";
 import seal from "../../public/images/seal.png";
 import CustomImage from "../../components/CustomImage";
 import Text from "../../elements/Text";
-import ecoSystem2 from "../../public/images/system.png";
+import ecoSystemLight from "../../public/images/echosystem-light.svg";
+import ecoSystemDark from "../../public/images/echosystem-dark.svg";
+
 import InnerHeadding from "../../elements/InnerHeading";
 
 
@@ -61,8 +63,11 @@ function EcoSystem() {
                 </Text>
               </div>
             </div>
-            <div>
-              <CustomImage src={ecoSystem2} alt="EcoSystem" />
+            <div className="dark:hidden block">
+              <CustomImage src={ecoSystemLight} alt="EcoSystem" />
+            </div>
+            <div className="dark:block hidden">
+              <CustomImage src={ecoSystemDark} alt="EcoSystem" />
             </div>
           </div>
         </div>
