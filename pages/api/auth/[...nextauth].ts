@@ -25,6 +25,7 @@ export const authOptions: NextAuthOptions = {
   useSecureCookies: process.env.NODE_ENV === "development" ? false : true,
   cookies: getCookies(),
   session: { strategy: "jwt" },
+  secret: config.app.next_auth_secret,
   providers: [
     CredentialsProvider({
       name: process.env.NEXT_PUBLIC_APP_NAME ?? "",
@@ -132,8 +133,8 @@ function changeTeam(_teamId: string, _accessToken?: string) {
 
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await client.mutate({
-        mutation: gql`
+          const response = await client.mutate({
+            mutation: gql`
         mutation {
          refreshToken(input: {team_id: ${_teamId}}) {
           success
@@ -155,30 +156,29 @@ function changeTeam(_teamId: string, _accessToken?: string) {
         }
           }
         `,
-      });
+          });
 
-      console.log("SIGN IN RESPONSE", response);
+          let _user =
+            JSON.parse(JSON.stringify(response?.data?.refreshToken?.data)) ||
+            null;
 
-      let _user =
-        JSON.parse(JSON.stringify(response?.data?.refreshToken?.data)) || null;
+          if (!response?.data?.refreshToken?.success) {
+            resolve({
+              error: response?.data?.refreshToken?.message,
+            });
+            return;
+          }
 
-      if (!response?.data?.refreshToken?.success) {
-        resolve({
-          error: response?.data?.refreshToken?.message,
-        });
-        return;
-      }
+          _user = {
+            ..._user,
+            team: {
+              ..._user.team,
+              refreshToken: _accessToken,
+            },
+          };
 
-      _user = {
-        ..._user,
-        team: {
-          ..._user.team,
-          refreshToken: _accessToken,
-        },
-      };
-
-      resolve(_user);
-    } catch (error) {
+          resolve(_user);
+        } catch (error) {
       console.log("Erara", error);
       reject(null);
     }
