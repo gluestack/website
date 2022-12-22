@@ -6,8 +6,9 @@ import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
 import { SessionProvider } from "next-auth/react";
+import AuthContextProvider from "../auth-context";
 
-function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
+function MyApp({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   let versionData = versions;
@@ -43,28 +44,34 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: any) {
 
   if (router.pathname.includes("/docs")) {
     return (
-      <SessionProvider session={session}>
-        <PagesLayout
-          version={version}
-          versionInfo={getSidebarJsonData()}
-          setVersion={setVersion}
-          versionsData={versions}
-          showBackButton={showBackButton}
-        >
-          <Component {...pageProps} />
-          <PrevNextButtons />
-        </PagesLayout>
-      </SessionProvider>
+      <PagesLayout
+        version={version}
+        versionInfo={getSidebarJsonData()}
+        setVersion={setVersion}
+        versionsData={versions}
+        showBackButton={showBackButton}
+      >
+        {children}
+        <PrevNextButtons />
+      </PagesLayout>
     );
   } else {
-    return (
-      <>
-        <SessionProvider session={session}>
-          <Component {...pageProps} />;
-        </SessionProvider>
-      </>
-    );
+    return <>{children}</>;
   }
 }
 
-export default MyApp;
+const App = ({ Component, pageProps: { session, ...pageProps } }: any) => {
+  return (
+    <>
+      <SessionProvider session={session}>
+        <AuthContextProvider>
+          <MyApp>
+            <Component {...pageProps} />;
+          </MyApp>
+        </AuthContextProvider>
+      </SessionProvider>
+    </>
+  );
+};
+
+export default App;

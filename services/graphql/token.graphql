@@ -1,0 +1,19 @@
+mutation refreshToken($team_id: Int!) {
+  refreshToken(input: { team_id: $team_id }) {
+    data {
+      email
+      id
+      name
+      status
+      team {
+        token
+        role
+        name
+        id
+        is_single_member
+      }
+    }
+    message
+    success
+  }
+}

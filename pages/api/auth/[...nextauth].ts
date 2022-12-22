@@ -1,8 +1,7 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import config from "../../config";
-import GitHubProvider from "next-auth/providers/github";
+import config from "../../../config";
 
 const getCookies = () => {
   let cookies = {
@@ -17,6 +16,7 @@ const getCookies = () => {
 
   return cookies;
 };
+
 if (!config.app.api_url) {
   throw new Error("API URL is required");
 }
@@ -90,6 +90,8 @@ export const authOptions: NextAuthOptions = {
         } else if (account.provider === "credentials") {
           token = user?.team?.token;
           if (token) {
+            account.status = user?.status;
+            account.refresh_token = user?.team?.refresh_token;
             account.team = user?.team;
             return true;
           }
@@ -100,14 +102,15 @@ export const authOptions: NextAuthOptions = {
     },
     async jwt({ token, account, profile }: any) {
       if (account) {
+        token.status = account?.status;
         token.team = account?.team ?? null;
       }
       return token;
     },
     async session({ session, token }: any) {
       session.error = token.error;
-      session.team = token?.team;
       session.user.team = token?.team;
+      session.user.status = token?.status;
       return session;
     },
   },
@@ -131,8 +134,8 @@ function changeTeam(_teamId: string, _accessToken?: string) {
     try {
       const response = await client.mutate({
         mutation: gql`
-          mutation {
-         refreshToken(input: {team_id: ${parseInt(_teamId)}}) {
+        mutation {
+         refreshToken(input: {team_id: ${_teamId}}) {
           success
           message
           data {
@@ -154,6 +157,8 @@ function changeTeam(_teamId: string, _accessToken?: string) {
         `,
       });
 
+      console.log("SIGN IN RESPONSE", response);
+
       let _user =
         JSON.parse(JSON.stringify(response?.data?.refreshToken?.data)) || null;
 
@@ -174,6 +179,7 @@ function changeTeam(_teamId: string, _accessToken?: string) {
 
       resolve(_user);
     } catch (error) {
+      console.log("Erara", error);
       reject(null);
     }
   });

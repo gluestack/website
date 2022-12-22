@@ -6,12 +6,15 @@ import MordenStack from "../section/Home/MorderStack";
 import EcoSystem from "../section/Home/EcoSystem";
 import CardsSection from "../section/Home/CardsSection";
 import SignupFooter from "../section/Home/SignupFooter";
+import useAuthHook from "../auth-context/use-auth-hook";
 
 export default function Home() {
+  const [user, isLoading] = useAuthHook();
+
   return (
-    <Layout >
+    <Layout>
       <div className="grid fixed-layout">
-        <DeveloperPreview/>
+        <DeveloperPreview />
         <HeroSection />
         <MordenStack />
         <CardsSection />
@@ -19,7 +22,6 @@ export default function Home() {
         <SignupFooter />
       </div>
       {/* <Footer /> */}
-
     </Layout>
   );
 }
