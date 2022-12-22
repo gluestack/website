@@ -6,6 +6,7 @@ import MordenStack from "../section/Home/MorderStack";
 import EcoSystem from "../section/Home/EcoSystem";
 import CardsSection from "../section/Home/CardsSection";
 import SignupFooter from "../section/Home/SignupFooter";
+import CodeAnimation from "../section/Home/CodeAnimation";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="grid fixed-layout">
         <DeveloperPreview/>
         <HeroSection />
+        <CodeAnimation />
         <MordenStack />
         <CardsSection />
         <EcoSystem />

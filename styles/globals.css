@@ -15,6 +15,7 @@
 @import "./footer.css";
 @import "./team/team.css";
 @import "./docs/leftPanel.css";
+@import "./typing-animation.css";
 
 @font-face {
   font-family: "sf-pro-regular";
