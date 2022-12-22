@@ -43,8 +43,10 @@ function MordenStack() {
           description="gluestack balances the power of standardization and flexibility. Our language-independent core helps ‘glue’ together swappable modules. Choose from the list of recommended plugins or build your own. Install in a jiffy and get started in no-time. Don’t build things from scratch over and over again!"
          
         />
+        <div className="lg:w-[546px] w-full">
         <CustomImage  src={Module}  alt="image" style="rounded-lg dark:hidden block -z-20" />
         <CustomImage  src={ModuleDark}  alt="image" style="rounded-lg dark:block hidden" />
+        </div>
 
 
        
