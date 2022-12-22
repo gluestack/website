@@ -54,7 +54,6 @@ function Toggle(): JSX.Element | null {
   const { darkMode } = useContext(AppContext);
   const value = darkMode?.value ?? "light";
   const [isMounted, setIsMounted] = React.useState(false);
-  console.log({ value });
 
   React.useEffect(() => {
     setIsMounted(true);
