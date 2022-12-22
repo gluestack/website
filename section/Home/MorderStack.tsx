@@ -1,7 +1,9 @@
 import React from "react";
 import Details from "../../components/Details";
-import DarkBg from "../../public/images/code.gif";
-import Module from "../../public/images/module.gif";
+import DarkBg from "../../public/images/code_new.gif";
+import Module from "../../public/images/mode_light.gif";
+import ModuleDark from "../../public/images/mode_dark.gif";
+
 import Gradient from "../../public/images/gradient-pink.png";
 import CustomImage from "../../components/CustomImage";
 
@@ -42,8 +44,10 @@ function MordenStack() {
           // btnText="STARTER KITS"
         />
         </div>
-        <div className="lg:w-[400px] w-full col-span-2">
-        <CustomImage  src={Module}  alt="image" style="rounded-lg" />
+        <div className="lg:w-[400px] w-full col-span-2 relatvie">
+        <CustomImage  src={Module}  alt="image" style="rounded-lg dark:hidden block -z-20" />
+        <CustomImage  src={ModuleDark}  alt="image" style="rounded-lg dark:block hidden" />
+
         </div>
 
        
