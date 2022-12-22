@@ -8,7 +8,7 @@ function Privacy() {
   return (
     <Layout title={"Privacy Policy - gluestack"}>
       <InerBanner title="Privacy" last=" Policy" />
-      <div className="container pb-14">
+      <div className="container pb-14 relative z-10">
         <div className="">
           <ol className="list-nonel list-outside	">
             <li>

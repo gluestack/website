@@ -8,7 +8,7 @@ function Cookies() {
   return (
     <Layout title={"Cookie Policy - gluestack"}>
       <InerBanner title="Cookie" last=" Policy" />
-      <div className="container pb-14">
+      <div className="container pb-14 relative z-10">
         <div className="">
           <ol className="list-none list-outside	">
             <li>
