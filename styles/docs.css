@@ -14,8 +14,14 @@
 .content-body {
     @apply px-10 md:px-0 break-words
 }
-.layout-theme.fixed .link-list {
-    @apply md:overflow-y-auto md:max-h-[calc(100vh_-_150px)]
+.layout-theme.fixed .fixed-layout {
+    @apply xl:max-h-[100vh] xl:overflow-y-auto xl:pb-10
+}
+.layout-theme.fixed .sidebarNav {
+    @apply xl:max-w-[20rem]
+}
+.layout-theme.fixed .sidebarNav {
+    @apply xl:overflow-y-auto xl:max-h-[100vh]
 }
 .mobile-header {
     @apply py-7 px-10  w-full flex-row z-30
@@ -27,7 +33,7 @@
     @apply max-w-[100vw] md:max-w-none md:pr-40
 }
 .layout-theme .sidebarNav {
-    @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black-100 ease-in-out md:w-[420px] md:px-10 px-5
+    @apply hidden md:block md:min-h-full bg-white-200 dark:bg-black-100 ease-in-out xl:w-[100%] xl:max-w-[32rem] md:px-10 px-5
 }
 .sidebarNav.showNav {
     @apply block md:block w-full ease-in-out duration-150 absolute top-[85px] md:h-[100%] w-[100vw] bg-white-200 z-20 pb-10 shadow-md md:shadow-none 
