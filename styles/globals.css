@@ -158,5 +158,20 @@
 
   }
   body #c-bns button+button, body #s-c-bn, body #s-cnt button+button, body #s-bl .c-bl.b-ex, body .b-tl.exp{
-    @apply bg-purple-100 hover:bg-purple-100 ;
+    @apply bg-gray hover:bg-gray;
+  }
+  #cc_div #cm{
+    @apply w-full max-w-full left-0 right-0 bottom-0 dark:bg-black dark:text-white py-2;
+  }
+  body #cc_div #cm h3{
+    @apply dark:text-white;
+  }
+  #cm #c-inr{
+    @apply flex justify-between items-center;
+  }
+  body .cc_div #c-bns{
+    @apply m-0  ml-8;
+  }
+  body .cc_div .c-bn{
+    @apply flex-none px-3 py-2;
   }

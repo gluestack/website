@@ -17,9 +17,9 @@ export default function Cookies() {
         languages: {
           en: {
             consent_modal: {
-              title: "<h3 class='text-black'>We use cookies!</h3>",
+              // title: "<h3 class='text-black dark:text-white'>We use cookies!</h3>",
               description:
-                '<div class="text-secondary">Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="text-primary">Let me choose</button></div>',
+                '<div class="text-secondar dark:text-white-100">Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="text-primary font-displayHead underline">Let me choose</button></div>',
               primary_btn: {
                 text: "Accept all",
                 role: "accept_all", // 'accept_selected' or 'accept_all'
@@ -45,7 +45,7 @@ export default function Cookies() {
                 {
                   title: "Cookie usage 📢",
                   description:
-                    'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/privacy-policy" class="cc-link">privacy policy</a>.',
+                    'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/privacy-policy" class=" text-primary">privacy policy</a>.',
                 },
                 {
                   title: "Strictly necessary cookies",
@@ -96,7 +96,7 @@ export default function Cookies() {
                 {
                   title: "More information",
                   description:
-                    'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="/cookie-policy">contact us</a>.',
+                    'For any queries in relation to our policy on cookies and your choices, please <a class=" text-primary" href="/cookie-policy">contact us</a>.',
                 },
               ],
             },
