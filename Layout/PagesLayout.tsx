@@ -25,7 +25,7 @@ function PagesLayout(props: any) {
 
       <div
         className={
-          "flex flex-1 min-h-screen relative layout-theme" +
+          "flex flex-1 min-h-screen relative layout-theme " +
           (router.route == "/docs/0.1.x/storybook/storybook" ? "fixed" : "")
         }
       >
