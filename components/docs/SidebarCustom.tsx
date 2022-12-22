@@ -9,7 +9,7 @@ import { BiArrowBack } from "react-icons/bi";
 export default function app(props: any) {
   const router = useRouter();
   return (
-    <nav className="pb-16">
+    <nav className="pb-16 xl:w-80 xl:ml-auto">
       {/* font-displaySemibold */}
       <div className="px-10 pt-14 hidden md:block">
         <Logo />

@@ -26,7 +26,7 @@ function PagesLayout(props: any) {
       <div
         className={
           "flex flex-1 min-h-screen relative layout-theme " +
-          (router.route == "/docs/1.x/gluestack-ui" ? "fixed" : "")
+          (router.route == "/docs/0.1.x/storybook/storybook" ? "fixed" : "")
         }
       >
         <div className="flex w-full min-h-full flex-col">
@@ -46,7 +46,7 @@ function PagesLayout(props: any) {
           </div>
           {/* <div className="w-1/5"> */}
 
-          <div className="flex w-full min-h-full full-doc-content">
+          <div className="flex w-full min-h-full full-doc-content ">
             <div
               className={
                 "sidebarNav " +
@@ -63,11 +63,13 @@ function PagesLayout(props: any) {
             </div>
 
             {router.route.includes("storybook") ? (
-              <IFrameContent {...props} />
+              <div className="fixed-layout flex flex-1">
+                <IFrameContent {...props} />
+              </div>
             ) : (
               <div className="content-holder flex flex-1 flex-col">
                 <ContentHeader />
-                <div className="content flex-1 h-full prose lg:prose-xl  dark:prose-invert docs-layout">
+                <div className="content flex-1 h-full prose dark:prose-invert docs-layout">
                   <Content {...props} />
                 </div>
               </div>
