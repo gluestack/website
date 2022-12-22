@@ -40,7 +40,7 @@ function earlyAccess() {
                   "Share this to win credits when you deploy your app on our hosting platform."
                 }
               >
-                <Button xxl tertiary>
+                <Button size="xxl" type="tertiary">
                   <div className="flex items-center">
                     <div className="pr-4">
                       <FaTwitter />

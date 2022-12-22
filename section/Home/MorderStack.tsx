@@ -15,10 +15,12 @@ function MordenStack() {
       </div>
     <div className="container lg:pt-32 pt-12 pb-12 relative">
         
-      <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
-        <CustomImage  src={DarkBg}  alt="image" style="rounded-lg" />
+      <div className="grid lg:grid-cols-5 lg:gap-40 grid-cols-1 gap-4 items-center">
+        <div className="lg:w-[400px] w-full lg:col-span-2">
+           <CustomImage  src={DarkBg}  alt="image" style="rounded-lg" />
+        </div>
        
-        <div className=" pl-0">
+        <div className="lg:col-span-3">
         <Details
           title="Building beautiful apps with "
           last="modern stacks."
@@ -29,8 +31,8 @@ function MordenStack() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4  lg:pt-40 pt-20 items-center">
-      <div className=" pr-0">
+      <div className="grid lg:grid-cols-5 lg:gap-40 grid-cols-1 gap-4  lg:pt-40 pt-20 items-center">
+      <div className=" pr-0 col-span-3">
 
         <Details
           title="Simple. Modular. "
@@ -40,7 +42,9 @@ function MordenStack() {
           // btnText="STARTER KITS"
         />
         </div>
+        <div className="lg:w-[400px] w-full col-span-2">
         <CustomImage  src={Module}  alt="image" style="rounded-lg" />
+        </div>
 
        
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import CustomImage from "../../components/CustomImage";
-import CardImg from "../../public/images/cardImg.png";
+import architecture from "../../public/images/architecture.svg";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
 import Card from "../../components/Card";
@@ -37,7 +37,7 @@ function CardsSection() {
                 </Text>
             </div>
             <div className="grid bg-white shadow-md py-5 px-20 mt-10 rounded-md">
-                <CustomImage  src={CardImg}  alt="image"  />
+                <CustomImage  src={architecture}  alt="image"  />
             </div> 
           </div>
         </div>

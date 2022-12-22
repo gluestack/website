@@ -4,7 +4,7 @@ import Gradient from "../../public/images/gradient-pink.png";
 import seal from "../../public/images/seal.png";
 import CustomImage from "../../components/CustomImage";
 import Text from "../../elements/Text";
-import ecoSystem from "../../public/images/ecosystem.png";
+import ecoSystem2 from "../../public/images/system.png";
 import InnerHeadding from "../../elements/InnerHeading";
 
 import Image from "next/image";
@@ -23,7 +23,7 @@ function EcoSystem() {
       
         <div className="lg:pt-32 pt-18">
           <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
-            <div className="lg:pl-32 pl-0 horizental-line relative py-8">
+            <div className="lg:pl-24 pl-0 horizental-line relative py-8">
               <div className="dot relative">
                 <div className="flex items-center justify-center lg:justify-start">
                   <div
@@ -53,7 +53,7 @@ function EcoSystem() {
               </div>
             </div>
             <div>
-              <CustomImage src={ecoSystem} alt="EcoSystem" />
+              <CustomImage src={ecoSystem2} alt="EcoSystem" />
             </div>
           </div>
         </div>
