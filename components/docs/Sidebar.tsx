@@ -130,8 +130,8 @@ const HeadingDropdown = ({ props, version }: any) => {
 
   return (
     <div className="accordion" id="accordionExample">
-      <div className="accordion-item bg-white">
-        <h2 className="accordion-header font-displaySemibold" id="headingOne">
+      <div className="accordion-item">
+        <div className="accordion-header font-displaySemibold" id="headingOne">
           <button
             className="relative flex items-center w-full text-gray-800 dark:text-white justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
@@ -178,13 +178,13 @@ const HeadingDropdown = ({ props, version }: any) => {
               </>
             )}
           </button>
-        </h2>
+        </div>
         <div
           id="collapseOne"
           // className="accordion-collapse show"
-          className={`${
+          className={ `${
             isOpen ? "" : "hidden"
-          } bg-white accordion-collapse show `}
+          } accordion-collapse show`}
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
@@ -201,7 +201,7 @@ const HeadingDropdown = ({ props, version }: any) => {
                 href={"/" + version + "/" + pageInfo.id}
                 // onClick={() => handleItemClick(pageInfo)}
               >
-                <div className="text-gray-800 dark:text-white pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10">
+                <div className="text-gray-800 dark:text-white pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10 pl-[60px]">
                   {pageInfo.title}
                 </div>
               </Link>
@@ -218,8 +218,8 @@ function CategoryDropdown(props: any) {
 
   return (
     <div className="accordion" id="accordionExample">
-      <div className="accordion-item bg-white">
-        <h2 className="accordion-header font-displaySemibold" id="headingOne">
+      <div className="accordion-item">
+        <div className="accordion-header font-displaySemibold" id="headingOne">
           <button
             className="relative flex items-center w-full text-gray-800 dark:text-white justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
@@ -267,7 +267,7 @@ function CategoryDropdown(props: any) {
               </>
             )}
           </button>
-        </h2>
+        </div>
         <div
           id="collapseOne"
           // className="accordion-collapse show"

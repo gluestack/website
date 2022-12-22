@@ -60,6 +60,9 @@ module.exports = {
           DEFAULT: "#E6E6E6",
           100: "#AEAEAE",
           200:"#F8F8F8",
+          300: "#808080",
+          400: "#DCDCDC",
+          500: "#687076",
         },
         skyBlue: "#4A99E9",
         purple: {
