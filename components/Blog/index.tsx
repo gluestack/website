@@ -30,7 +30,7 @@ function Blog({
             <div className="py-2 ">
               <Linktag href={`blog/${slug}`}>
 
-                <Heading priority={4} style="text-black-200 dark:text-white font-displayHead hover:text-primary">{title}</Heading>
+                <Heading priority={4} style="text-black-200 dark:text-white font-displayHead hover:text-primary dark:hover:text-primary">{title}</Heading>
               </Linktag>
               <div className="py-2">
                 <Text >{shortDes}</Text>
