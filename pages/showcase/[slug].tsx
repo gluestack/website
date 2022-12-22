@@ -7,19 +7,16 @@ import Button from "../../components/Button";
 import Text from "../../elements/Text";
 import Description from "../../elements/Description";
 import Image from "next/image";
-import smallCard from "../../public/showcase/smallShowCase.svg";
 import Card from "../../components/Card";
 import Tags from "../../components/Tags";
 import profileImg from "../../public/blog/Ellipse 1682person.svg";
 import { fetchAPI } from "../../lib/api";
 import { useRouter } from "next/router";
 import InerBanner from "../../components/InerBanner";
-import { ShowCaseService } from "../../services";
 
 function showcase({ events, categories, tags, showcase }: any) {
   console.log(showcase.length);
 
-  let flag = true;
   const router = useRouter();
   return (
     <>
@@ -83,11 +80,10 @@ function showcase({ events, categories, tags, showcase }: any) {
           <div className="grid gap-8 py-12 grid-col-1 lg:grid-cols-3">
             {showcase &&
               showcase.map((ele: any, index: number) => {
-               
                   return (
                     <Card
                       key={index}
-                      src={smallCard}
+                      src={ele.attributes.coverImg.data?.attributes.url}
                       title={ele.attributes.title}
                       description={ele.attributes.shortDes}
                       altText={""}
