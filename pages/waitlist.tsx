@@ -10,7 +10,7 @@ import { TwitterShareButton } from "next-share";
 function earlyAccess() {
   return (
     <Layout noAccess  pageTitle={"One stack for web, mobile & backend"}  description={"100% open source full-stack framework that takes away the complexities of building modern web & mobile apps. Build effortlessly and scale swiftly from idea to enterprise."}
-     ogImgUrl="../images/og-img.png">
+  >
       {/* <Meta
         title={"Waitlist - gluestack"}
         ogImgUrl="https://gluestack-strapi.sfo3.digitaloceanspaces.com/3e8fa1ca95e0c2a8685486ed82785fd2.png?updated_at=2022-12-21T14:56:07.967Z"
