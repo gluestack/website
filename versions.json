@@ -12,29 +12,34 @@
                 "title": "Introduction"
               },
               {
-                "id": "why-gluestack",
-                "title": "Why gluestack?"
+                "id": "architecture",
+                "title": "Architecture"
               },
               {
-                "id": "goals-and-non-goals",
-                "title": "Goals and non-goals"
-              },
-              {
-                "id": "faq",
-                "title": "FAQ"
-              },
-              {
-                "id": "installation",
-                "title": "Installation"
+                "id": "philosophy",
+                "title": "Philosophy"
               },
               {
                 "id": "prerequisites",
                 "title": "Prerequisites"
               },
               {
-                "id": "architecture",
-                "title": "Architecture"
+                "id": "installation",
+                "title": "Installation"
               },
+              {
+                "id": "goals-and-non-goals",
+                "title": "Goals and non-goals"
+              },
+              {
+                "id": "why-gluestack",
+                "title": "Why gluestack?"
+              },
+              {
+                "id": "faq",
+                "title": "FAQ"
+              },
+
               {
                 "type": "heading",
                 "title": "Usage",
@@ -68,6 +73,10 @@
                       {
                         "id": "usage/your-first-project/authentication",
                         "title": "Authentication"
+                      },
+                      {
+                        "id": "usage/your-first-project/environment-variables",
+                        "title": "Environment Variables"
                       }
                     ]
                   },
@@ -187,12 +196,24 @@
                 "title": "Web",
                 "pages": [
                   {
-                    "id": "web/hello",
-                    "title": "Hello"
+                    "id": "web/installation",
+                    "title": "Installation"
                   },
                   {
-                    "id": "web/helo2",
-                    "title": "Hello2"
+                    "id": "web/dependencies",
+                    "title": "Dependencies"
+                  },
+                  {
+                    "id": "web/starter-template",
+                    "title": "Starter Template"
+                  },
+                  {
+                    "id": "web/other-recommendation",
+                    "title": "Other Recommendation"
+                  },
+                  {
+                    "id": "web/working-with-other-plugins",
+                    "title": "Working with other Plugins"
                   }
                 ]
               }
@@ -211,12 +232,24 @@
                 "title": "Mobile",
                 "pages": [
                   {
-                    "id": "web/hello",
-                    "title": "Hello"
+                    "id": "mobile/installation",
+                    "title": "Installation"
                   },
                   {
-                    "id": "web/helo2",
-                    "title": "Hello2"
+                    "id": "mobile/dependencies",
+                    "title": "Dependencies"
+                  },
+                  {
+                    "id": "mobile/starter-template",
+                    "title": "Starter Template"
+                  },
+                  {
+                    "id": "mobile/other-recommendation",
+                    "title": "Other Recommenation"
+                  },
+                  {
+                    "id": "mobile/working-with-other-plugins",
+                    "title": "Working with other Plugins"
                   }
                 ]
               }
@@ -324,6 +357,40 @@
                 "type": "heading",
                 "title": "Environment Varaibles",
                 "pages": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "gluestack-ui": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "gluestack/ui",
+                "pages": [
+                  {
+                    "id": "gluestack-ui/introduction",
+                    "title": "Introduction"
+                  },
+                  {
+                    "id": "gluestack-ui/architecture",
+                    "title": "Architecture"
+                  },
+
+                  {
+                    "id": "gluestack-ui/installation",
+                    "title": "Installation"
+                  },
+
+                  {
+                    "id": "gluestack-ui/why-gluestack-ui",
+                    "title": "Why gluestack/ui?"
+                  }
+                ]
               }
             ]
           }

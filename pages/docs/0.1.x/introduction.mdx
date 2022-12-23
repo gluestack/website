@@ -7,84 +7,11 @@
 
 gluestack is an open-source framework for building full-stack web and mobile apps.
 
-It has two parts
+The goal is to help you quickly turn your ideas into successful enterprises, so you can focus on solving real world problems rather than worrying about the engineering problems.
 
-While almost everything is built as swapable modules, the core pieces are Next.js, Storybook, TypeScript, GraphQL, Hasura & Dapr for functions. Yes, that’s some opinions!
+While almost everything is built as swappable modules, the recommended plugins include Next.js, Storybook, TypeScript, GraphQL, Hasura & Dapr for functions.
 
-As of now, the mobile app module uses React Native. The UI components are shared between Web and Mobile with `@gluestack/ui`. For mobile app, we are considering Flutter as an option for the future versions.
-
-We have Smart Contracts, Native platforms, etc. under consideration.
-
-## Is it a CLI? A framework? A dev environment?
-
-Yes, it’s all three. You can use the CLI to initialize the project, run the dev environment, add plugins like Web, API or Storybook.
-
-We have an optional plugin that makes it easy to deploy any gluestack app to the Seal platform. Seal is a hosting service optimized and built for gluestack apps by the creators of gluestack.
-
-# What gluestack is not?
-
-…
-
-# Core beliefs
-
-This project has a specific set of principles that guide our decision-making. These principles form the foundation of our approach to building.
-
-### Innovate Carefully
-
-We love using cutting-edge technologies. They can bring a lot of speed and excitement to a project. However, we believe in being strategic about where we use these riskier technologies. This means we might be hesitant to use untested database tech (PostgreSQL is great), but we're happy to experiment with GraphQL & TypeScript generations because it's easy to switch out if necessary.
-
-### No compromise with the Performance
-
-…
-
-### Developer Experience
-
-…
-
-### Architecture first, language indepedent
-
-…
-
-We have two parts of the gluestack framework, the first part gives us the platform on top of which we build apps.
-
-## Part 1: The core
-
-The core has the following principles.
-
-- Architecture first, **l**anguage indepedent
-- Bring what you want
-- Loosly coupled
-
-The core provides the bare-bones to initialize a gluestack project, and an environment to use and build plugins. The first decision that we made was to use NPM as the package manager that let us initialize projects and plugins. The second decision was to use Dockers to provide the dev environment and boot the depedent services.
-
-Note: This doesn’t mean that the core enforces to use JavaScript / TypeScript to build a gluestack app. The part 2 does that.
-
-## Part 2: The opinions
-
-Most of the opinions that were formed comes from our experience of running an app development agency and building hundreds of web and mobile apps.
-
-It's easy to fall into the habit of adding everything under the sun, but that's not our goal. Any additions to the create-gluestack-app project should address a specific issue within the core technologies included.
-
-[Rephrase the following]
-
-For example, we won't add state libraries (like zustand or redux), but we will add something like NextAuth.js and integrate Hasura and GraphQL for you.
-
-[ Include Standarization, Proven technology, … ]
-
-These opinions
-
-- Solve for most but not for all
-- Adopt the best
-- Comes with no lock-in
-
-…
-
-Opinions
-
-- Next
-- ..
-- ..
-- ..
+As of now, the mobile app plugin uses React Native. The UI components are shared between Web and Mobile with `@gluestack/ui`. We are considering Flutter, which is available as an experimental plugin for the mobile app.
 
 ## Features
 
@@ -93,23 +20,6 @@ Opinions
 - Database modeling & migrations
 - Queue workers for background jobs
 - Third-party integration with services for Messaging, Webhook, etc
-- Plugin architecture to exhance the functionality of an app
-- A platform to design & build components and share across web and mobile projects
-- Localisation and Internationalisation
-
-## Core plugins
-
-- **web** (React with Next.js)
-- **mobile** (React Native)
-- **storybook** (Universal components)
-- **auth**
-- **graphql** (Hasura)
-- **functions** (Dapr)
-- **storage**
-- **jobs**
-- **cron**
-
-## Future (Under consideration)
-
-- CMS (Strapi)
-- Flutter
+- Plugin architecture to enhance the functionality of an app
+- A platform to design & build components and share across web and mobile projects (Under R&D)
+- Localisation and Internationalisation (Upcoming)
