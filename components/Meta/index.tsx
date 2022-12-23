@@ -27,7 +27,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           }
         />
         <meta key="og:type" property="og:type" content="website" />
-        <meta content="summary" name="twitter:card" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           key="og:title"
           property="og:title"
@@ -60,7 +60,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
         />
 
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content={
             ogImgUrl || "https://gluestack.io/images/og-img.png"
           }
