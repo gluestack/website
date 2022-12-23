@@ -20,7 +20,6 @@ function Blog({
   altText,
   slug,
 }: any) {
-  console.log(autherImage,"car");
   
   return (
     <>
@@ -30,7 +29,7 @@ function Blog({
             <div className="py-2 ">
               <Linktag href={`blog/${slug}`}>
 
-                <Heading priority={4} style="text-black-200 dark:text-white font-displayHead hover:text-primary dark:hover:text-primary">{title}</Heading>
+                <Heading priority='3' style="text-black-200 dark:text-white font-displayHead hover:text-primary dark:hover:text-primary">{title}</Heading>
               </Linktag>
               <div className="py-2">
                 <Text >{shortDes}</Text>
@@ -46,7 +45,7 @@ function Blog({
 
                 <span className="hidden px-1 lg:block dark:text-white">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
-                <div className="lg:pl-4 pl-0">
+                <div className="pl-0 lg:pl-4">
                     <Tags>{category}</Tags>
                 </div>
               </div>

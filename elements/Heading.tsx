@@ -1,28 +1,41 @@
 import React from "react";
 
-const Heading = ({ isLight, onlyLight, color, priority, children,style, single }: any) => {
+const Heading = ({
+  isLight,
+  color,
+  priority,
+  onlyLight,
+  children,
+  style,
+  single,
+}: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
     <div>
       <DynamicTag
-        className={`tracking-wide	${
+        className={`tracking-wide	leading-tight font-displayHead  ${
           priority == 1
-            ? `${single ? "lg:text-5xl text-4xl leading-normal font-displayHead"  : "lg:text-6xl text-4xl leading-normal font-displayHead"}`
+            ? `${single ? "lg:text-5xl text-4xl  " : "lg:text-6xl text-4xl  "}`
             : priority == 2
-            ? "lg:text-5xl text-4xl font-displayHead text-secondary dark:text-white leading-tight"
+            ? "lg:text-5xl text-4xl  text-secondary dark:text-white "
             : priority == 3
-            ? "lg:text-3xl text-2xl font-displaySemibold"
+            ? "lg:text-3xl text-2xl "
             : priority == 4
             ? " lg:text-xxl text-xl"
             : priority == 5
-            ? "lg:text-xl text-lg font-displayHead text-secondary dark:text-white leading-normal"
+            ? "lg:text-xl text-lg  text-secondary dark:text-white "
             : priority == 6
-            ? "lg:text-lg text-md font-displayHead text-secondary dark:text-white leading-normal "
-            : "text-lg font-displaySemibold "
+            ? "lg:text-lg text-md  text-secondary dark:text-white  "
+            : "text-lg  "
         }
         ${style}
-      ${isLight ? "text-white dark:text-black-100" : onlyLight ? 'text-white dark:text-white' : `text-black-100 dark:text-white`} 
-       `}
+      ${
+          isLight
+          ? "text-white dark:text-black-100"
+          : onlyLight 
+          ? 'text-white dark:text-white' 
+          : `text-black-100 dark:text-white`
+      } `}
       >
         {children}
       </DynamicTag>
