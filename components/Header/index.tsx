@@ -26,12 +26,12 @@ export const Header = ({noAccess} :any) => {
             <Logo />
             {!noAccess &&
             <div className="flex items-center gap-6">
+              <Toggle/>
               <div className="lg:block hidden">
               <Button type="primary" dataId="QWcoG0YF">
                 Get early access
               </Button>
               </div>
-              <Toggle/>
             </div>
             }
                       </div>
