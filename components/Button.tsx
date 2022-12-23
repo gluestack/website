@@ -3,13 +3,18 @@ import Link from "next/link";
 
 
 
-function Button({ type, size , link, children, dataId }: any) {
+function Button({ type, size , link, white, children, dataId }: any) {
   return (
     <>
       {link ? (
         <Link href={`${link}`} prefetch={false} className="btn_outline group">
               <ButtonSpan children={children} type={type} size={size} />
         </Link>
+      ) : 
+      white ? (
+        <button className="outline_white group" data-tf-popup={dataId}>
+            <ButtonSpan children={children} type={type} size={size} />
+        </button>
       ) : (
         <button className="btn_outline group" data-tf-popup={dataId}>
             <ButtonSpan children={children} type={type} size={size} />
@@ -29,7 +34,9 @@ const ButtonSpan = ({ children, type, size }: any) => {
             (type == 'primary')
               ? "text-white  bg-primary  ring-primary  ring-offset-primary "
               : (type == 'tertiary')  
-                  ? "text-white  bg-skyBlue  ring-skyBlue  ring-offset-skyBlue "
+              ? "text-white  bg-skyBlue  ring-skyBlue  ring-offset-skyBlue "
+              :(type == 'normal')
+              ? "text-black bg-white ring-white ring-offset-white"
               : "text-primary  bg-white ring-primary "
           } ${
               (size == 'sm')
