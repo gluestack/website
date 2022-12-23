@@ -60,12 +60,11 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
         />
 
         <meta
-          name="twitter:image"
+          property="twitter:image"
           content={
-            ogImgUrl ||
-            "https://gluestack.io/images/og-img.png"
+            ogImgUrl || "https://gluestack.io/images/og-img.png"
           }
-        ></meta>
+        />
         <meta
           property="og:url"
           content={ogUrl|| "https://gluestack.io"}
