@@ -9,57 +9,40 @@ function Logo({ darkLogo }: any) {
   //@ts-ignore
   const { darkMode } = useContext(AppContext);
   const [isMounted, setIsMounted] = React.useState(false);
-  const value = darkMode?.value ?? "dark";
+  const dark = darkMode?.value ?? "dark";
+  const LogoWrap = () => {
+    return (
+      <Link href="/" passHref legacyBehavior>
+      <a className="inline-flex items-center">
+        {!dark ? (
+          <Image
+            src={darkLogo ? logodark : logo}
+            alt="gluestack"
+            width={200}
+            height={100}
+          />
+        ) : (
+          <Image
+            src={darkLogo ? logo : logodark}
+            alt="gluestack"
+            width={200}
+            height={100}
+          />
+        )}
+      </a>
+    </Link>
+    )}
 
   React.useEffect(() => {
     setIsMounted(true);
   }, []);
   if (!isMounted)
     return (
-      <div className="visibility-none">
-        <Link href="/" passHref legacyBehavior>
-          <a className="inline-flex items-center">
-            {!value ? (
-              <Image
-                src={darkLogo ? logodark : logo}
-                alt="gluestack"
-                width={200}
-                height={100}
-              />
-            ) : (
-              <Image
-                src={darkLogo ? logo : logodark}
-                alt="gluestack"
-                width={200}
-                height={100}
-              />
-            )}
-          </a>
-        </Link>
-      </div>
+       <LogoWrap />
     );
   return (
-    <>
-      <Link href="/" passHref legacyBehavior>
-        <a className="inline-flex items-center">
-          {!value ? (
-            <Image
-              src={darkLogo ? logodark : logo}
-              alt="gluestack"
-              width={200}
-              height={100}
-            />
-          ) : (
-            <Image
-              src={darkLogo ? logo : logodark}
-              alt="gluestack"
-              width={200}
-              height={100}
-            />
-          )}
-        </a>
-      </Link>
-    </>
+    <LogoWrap />
+
   );
 }
 

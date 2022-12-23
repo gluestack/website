@@ -12,7 +12,8 @@ export default function ContentHeader(props: any) {
           <div className="flex row ">
             <SearchInput />
             <Dropdown />
-            <Toggle />
+            <Toggle/>
+            
 
           </div>
         </div>
