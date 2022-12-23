@@ -24,12 +24,12 @@ function BlogControl({
         />
         <div className="flex flex-col justify-between p-2 leading-normal">
           <Linktag href={`${href}`}>
-            <div className="flex p-1">
-              {right && <FaArrowLeft className="mt-2 dark:text-white" />}
+            <div className="flex items-center p-1">
+              {right && <FaArrowLeft className=" dark:text-white" />}
               <div className="pl-1">
                 <Text size="md">{arrowTitle}</Text>
               </div>
-              {left && <FaArrowRight className="mt-2 dark:text-white" />}
+              {left && <FaArrowRight className=" dark:text-white" />}
             </div>
           </Linktag>
           <Text size="lg">{blogTitle}</Text>
