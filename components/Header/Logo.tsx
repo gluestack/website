@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import logo from "/public/images/logo/lightLogo.svg";
 import logodark from "/public/images/logo/darkLogo.svg";
 import { AppContext } from "../../pages/_app";
+import CustomImage from "../CustomImage";
 
 function Logo({ darkLogo }: any) {
   //@ts-ignore
@@ -13,37 +14,26 @@ function Logo({ darkLogo }: any) {
   const LogoWrap = () => {
     return (
       <Link href="/" passHref legacyBehavior>
-      <a className="inline-flex items-center">
-        {!dark ? (
-          <Image
-            src={darkLogo ? logodark : logo}
-            alt="gluestack"
-            width={200}
-            height={100}
-          />
-        ) : (
-          <Image
-            src={darkLogo ? logo : logodark}
-            alt="gluestack"
-            width={200}
-            height={100}
-          />
-        )}
-      </a>
-    </Link>
-    )}
+        <a className="inline-flex items-center">
+          {!dark ? (
+            <div className=" lg:w-[200px] w-[150px]">
+              <CustomImage src={darkLogo ? logodark : logo} alt="gluestack" />
+            </div>
+          ) : (
+            <div className=" lg:w-[200px] w-[150px]">
+              <CustomImage src={darkLogo ? logo : logodark} alt="gluestack" />
+            </div>
+          )}
+        </a>
+      </Link>
+    );
+  };
 
   React.useEffect(() => {
     setIsMounted(true);
   }, []);
-  if (!isMounted)
-    return (
-       <LogoWrap />
-    );
-  return (
-    <LogoWrap />
-
-  );
+  if (!isMounted) return <LogoWrap />;
+  return <LogoWrap />;
 }
 
 export default Logo;

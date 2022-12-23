@@ -4,32 +4,20 @@ import ceo from "../../public/team/image 7ceo.png";
 import md from "../../public/team/image 10md.png";
 import cto from "../../public/team/imagecto.png";
 import UI from "../../public/team/imageui.png";
-import chief from '../../public/team/imagecfo.png'
-import doe from '../../public/team/imagedoe.png'
-import vp from '../../public/team/imagevp.png'
-import Sarwar from '../../public/team/imageoperations.png'
-import kunal from '../../public/team/imagekunal.png'
-import Aswathy from '../../public/team/imagesales.png'
-import Gaurav from '../../public/team/image.png'
-import atul from '../../public/team/imagecoo.png'
+import chief from "../../public/team/imagecfo.png";
+import doe from "../../public/team/imagedoe.png";
+import vp from "../../public/team/imagevp.png";
+import Sarwar from "../../public/team/imageoperations.png";
+import kunal from "../../public/team/imagekunal.png";
+import Aswathy from "../../public/team/imagesales.png";
+import Gaurav from "../../public/team/image.png";
+import atul from "../../public/team/imagecoo.png";
 
-function Details({team}:any) {
+function Details({ team }: any) {
   // As Tailwind Doc we cant use as bg-${variable}-500
   return (
     <>
-    
       <div className="container bg-white">
-        {/* <div className="text-center">
-          <Heading
-            title={undefined}
-            isLight={undefined}
-            color={undefined}
-            priority={2}
-          >
-            Team
-          </Heading>
-        </div> */}
-
         <div className=" team">
           <Members
             profile={ceo}
