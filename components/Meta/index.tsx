@@ -1,7 +1,8 @@
 import Head from "next/head";
 import React from "react";
+import ogImg from "../../public/images/og-img.png"
 
-function Meta({ title, description, ogImgUrl, ogUrl }: any) {
+function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
   return (
     <>
       <Head>
@@ -10,7 +11,7 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.86, user-scalable=no"
         />
-        <title>{title || "gluestack"}</title>
+        <title>{pageTitle || "gluestack"}</title>
         <link
           rel="icon"
           type="image/svg"
@@ -29,9 +30,9 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
         <meta
           key="og:title"
           property="og:title"
-          content={title || "gluestack"}
+          content={pageTitle || "gluestack"}
         />
-        <meta name="twitter:title" content={title  || "gluestack"} />
+        <meta name="twitter:title" content={pageTitle || "gluestack"} />
 
         <meta
           key="og:description"
@@ -53,8 +54,7 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           key="og:image"
           property="og:image"
           content={
-            ogImgUrl ||
-            "//gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z"
+            ogImgUrl || "//gluestack.io/images/og-img.png"
           }
         />
 
@@ -62,16 +62,16 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           name="twitter:image"
           content={
             ogImgUrl ||
-            "https://gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z"
+            "https://gluestack.io/images/og-img.png"
           }
         ></meta>
         <meta
           property="og:url"
-          content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
+          content={ogUrl|| "https://gluestack.io"}
         />
         <meta
           property="twitter:url"
-          content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
+          content={ogUrl || "https://gluestack.io"}
         />
 
       

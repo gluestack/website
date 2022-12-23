@@ -8,7 +8,7 @@ import React from "react";
 function Blog({ blogs }: any) {
   return (
     <Layout
-      title={"Articles and Insights - gluestack"}
+    pageTitle={"Articles and Insights - gluestack"}
       description={
         "Curated ideas, experiments, and the latest developments in gluestack."
       }
