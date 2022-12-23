@@ -54,7 +54,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           key="og:image"
           property="og:image"
           content={
-            ogImgUrl || "../../public/images/og-img.png"
+            ogImgUrl || "//gluestack.io/images/og-img.png"
           }
         />
 
@@ -62,7 +62,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           name="twitter:image"
           content={
             ogImgUrl ||
-            "../../public/images/og-img.png"
+            "https://gluestack.io/images/og-img.png"
           }
         ></meta>
         <meta
