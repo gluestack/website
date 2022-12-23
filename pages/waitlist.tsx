@@ -28,7 +28,7 @@ function earlyAccess() {
             <div className="mt-10">
               <TwitterShareButton
                 style={{ width: "100%" }}
-                url={"https://gluestack.io"}
+                url={"https://gluestack.io."}
                 title={
                   `I’m ready to make full-stack fun again. Just signed up for the alpha access of @gluestackio. Get yours here at`
                 }
