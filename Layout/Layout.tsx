@@ -9,12 +9,12 @@ import Script from "next/script";
 import bannerDark from "../public/images/gradient-dark.png"
 
 
-function Layout({ children,title,description, ogImgUrl, ogUrl, noAccess }: any) {
+function Layout({ children,pageTitle,description, ogImgUrl, ogUrl, noAccess }: any) {
   return (
     <>
           <Script src="//embed.typeform.com/next/embed.js"></Script>
 
-      <Meta title={title} description={description} ogImgUrl={ogImgUrl} ogUrl={ogUrl} />
+      <Meta title={pageTitle} description={description} ogImgUrl={ogImgUrl} ogUrl={ogUrl} />
       <Cookies />
       <Header noAccess={noAccess} />
       <div className="absolute top-0 left-0 w-full ">
