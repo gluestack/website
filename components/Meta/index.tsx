@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import ogImg from "../../public/images/og-img.png"
 
 function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
   return (
