@@ -60,7 +60,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
   if (router.pathname.includes("/docs")) {
     return (
       //@ts-ignore
-      <AppContext.Provider value={darkMode}>
+      <AppContext.Provider value={{darkMode}}>
         <PagesLayout
           version={version}
           versionInfo={getSidebarJsonData()}
@@ -76,7 +76,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
   } else {
     return (
       //@ts-ignore
-      <AppContext.Provider value={{ darkMode }}>{children}</AppContext.Provider>
+      <AppContext.Provider value={{darkMode}}>{children}</AppContext.Provider>
     );
   }
 }
