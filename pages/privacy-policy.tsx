@@ -616,7 +616,7 @@ function Privacy() {
                 <span className="font-displaySemibold">
                   (d) Other cases. We may disclose your information also:
                 </span>
-                <div className="ml-4">
+                <p className="ml-4">
                   <p className="py-4">
                     (i) to our subsidiaries and affiliates;
                   </p>
@@ -643,7 +643,7 @@ function Privacy() {
                     protect the rights, property, or safety of our Company, our
                     Customers, or others.
                   </p>
-                </div>
+                </p>
                 <span className="font-displaySemibold">
                   (e) Anonymized Information
                 </span>

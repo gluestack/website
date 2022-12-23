@@ -16,7 +16,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   1. Introduction
                 </Heading>
-                <div className="py-4">
+                <li className="py-4">
                   <Text>
                     <p>
                       Welcome to{" "}
@@ -24,7 +24,7 @@ function term() {
                         GeekyAnts Inc.
                       </span>
                     </p>
-                    <div className="py-4 ml-8">
+                    <Text style="py-4 ml-8">
                       <ul className="list-disc">
                         <li>
                           GeekyAnts Inc., ({" "}
@@ -130,17 +130,16 @@ function term() {
                           THE SERVICES.
                         </li>
                       </ul>
-                    </div>
+                    </Text>
                   </Text>
-                </div>
+                </li>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   2. Your Account
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> Your
                       account on the Services (your{" "}
@@ -189,7 +188,6 @@ function term() {
                       defined hereunder.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
@@ -306,8 +304,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   4. Proprietary Rights
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> You
                       acknowledge and agree that, we shall own and retain all
@@ -335,15 +332,13 @@ function term() {
                       obligation to do so on your behalf.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   5. Fair Use
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> We will
                       use commercially reasonable efforts to provide all plan
@@ -360,18 +355,17 @@ function term() {
                       business operations.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   6. Acceptable Use
                 </Heading>
-                <div className="ml-4 dark:text-white">
+                <Text style="ml-4 dark:text-white">
                   <p className="py-4">
                     a. The following are the acceptable uses of our Services:
                   </p>
-                  <div className="ml-8">
+                  <p className="ml-8">
                     <ul className="list-decimal ">
                       <li className="py-4">
                         The Services may only be used for lawful purposes.
@@ -432,7 +426,7 @@ function term() {
                         unless you first obtain our prior written approval.
                       </li>
                     </ul>
-                  </div>
+                  </p>
                   <p className="py-4">
                     b. The final decision of whether an account is in violation
                     of any of these acceptable use terms is at the sole
@@ -446,18 +440,18 @@ function term() {
                     stored to identify the offending person, and permanent
                     restriction from holding an account via our Services.
                   </p>
-                </div>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   7. Restrictions on Use
                 </Heading>
-                <div className="ml-4">
+                <Text className="ml-4">
                   <p className="py-4">
                     a. You will not, directly or indirectly:
                   </p>
-                  <div className="ml-8 dark:text-white">
+                  <p className="ml-8 dark:text-white">
                     <ul className="list-decimal ">
                       <li className="py-4">
                         sublicense, resell, rent, lease, transfer, assign, or
@@ -540,7 +534,7 @@ function term() {
                         Services.
                       </li>
                     </ul>
-                  </div>
+                  </p>
                   <p className="py-4">
                     b. You shall comply with all codes of conduct, policies or
                     other notices we provide you or publish in connection with
@@ -558,15 +552,14 @@ function term() {
                     to change these general practices and limits at any time, in
                     our sole discretion.
                   </p>
-                </div>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   8. Etiquette
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> Without
                       limiting any of these Terms, you shall not use the
@@ -592,7 +585,6 @@ function term() {
                       ABOVE IN THESE TERMS.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
@@ -638,8 +630,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   10. Confidentiality and Other Rights
                 </Heading>
-                <p className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span>{" "}
                       <span className="font-displaySemibold">
@@ -773,14 +764,13 @@ function term() {
                       stating that you do not wish to be used as a reference.
                     </p>
                   </Text>
-                </p>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   11. Representations
                 </Heading>
-                <div className="ml-4 dark:text-white">
+                <p className="ml-4 dark:text-white">
                   <p className="py-4">
                     a. Each party represents and warrants to the other that it
                     has full right and power to enter into and perform under
@@ -788,7 +778,7 @@ function term() {
                     conflicts with any other agreement.
                   </p>
                   <p className="py-4">b. You represent and warrant that:</p>
-                  <div className="ml-8">
+                  <p className="ml-8">
                     <ul className="list-decimal ">
                       <li className="py-4">
                         you own all the User Content or have obtained all
@@ -812,16 +802,15 @@ function term() {
                         policies and all applicable laws and regulations.
                       </li>
                     </ul>
-                  </div>
-                </div>
+                  </p>
+                </p>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   12.Disclaimer of Warranty
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> YOU
                       EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE
@@ -867,15 +856,13 @@ function term() {
                       BY APPLICABLE LAW.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   13. Limitation of Liability
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> SUBJECT
                       TO SECTION 12 ABOVE, YOU EXPRESSLY UNDERSTAND AND AGREE
@@ -911,15 +898,13 @@ function term() {
                       OR ONE THOUSAND DOLLARS ($1000.00), WHICHEVER IS GREATER.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   14. Indemnification
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> You agree
                       to hold harmless and indemnify GeekyAnts Inc. and Partners
@@ -949,20 +934,19 @@ function term() {
                       such matter.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   15. Location of Server
                 </Heading>
-                <div className="ml-4 dark:text-white">
+                <p className="ml-4 dark:text-white">
                   <p className="py-4 dark:text-white">
                     a. Our Servers and Data Centres (including that of our
                     sub-processors) are located in:
                   </p>
                   <p className="py-4">b. You represent and warrant that:</p>
-                  <div className="ml-8">
+                  <p className="ml-8">
                     <ul className="list-decimal dark:text-white ">
                       <li className="py-2">India</li>
                       <li className="py-2">Germany</li>
@@ -977,8 +961,8 @@ function term() {
                       <li className="py-2">Canada</li>
                       <li className="py-2">Australia</li>
                     </ul>
-                  </div>
-                </div>
+                  </p>
+                </p>
                 <p className="py-4 dark:text-white">
                   Any change to the above list that pertains to the location of
                   the Servers will be updated in the following versions of these
@@ -989,8 +973,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   16. Third-Party Content and Materials
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> You may
                       be able to access or use third party websites, resources,
@@ -1017,15 +1000,13 @@ function term() {
                       through the Services.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   17. Third-Party Content and Materials
                 </Heading>
-                <div className="py-4 ml-8">
-                  <Text>
+                  <Text style='py-4 ml-8'>
                     <p>
                       <span className="font-displaySemibold">a.</span> The
                       Services may incorporate certain third party software (
@@ -1044,7 +1025,6 @@ function term() {
                       Providers to monitor and analyze your use of our Service.
                     </p>
                   </Text>
-                </div>
               </li>
 
               <li>
