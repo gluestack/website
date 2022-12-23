@@ -4,6 +4,7 @@ const Heading = ({
   isLight,
   color,
   priority,
+  onlyLight,
   children,
   style,
   single,
@@ -29,8 +30,10 @@ const Heading = ({
         }
         ${style}
       ${
-        isLight
+          isLight
           ? "text-white dark:text-black-100"
+          : onlyLight 
+          ? 'text-white dark:text-white' 
           : `text-black-100 dark:text-white`
       } `}
       >

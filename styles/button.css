@@ -8,3 +8,6 @@
 .outline{
     @apply border border-primary  focus:outline-none lg:inline-flex
 }
+.outline_white{
+    @apply border border-white  focus:outline-none inline-flex rounded-lg;
+}
