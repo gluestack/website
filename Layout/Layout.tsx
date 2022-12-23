@@ -14,7 +14,7 @@ function Layout({ children,pageTitle,description, ogImgUrl, ogUrl, noAccess }: a
     <>
           <Script src="//embed.typeform.com/next/embed.js"></Script>
 
-      <Meta title={pageTitle} description={description} ogImgUrl={ogImgUrl} ogUrl={ogUrl} />
+      <Meta pageTitle={pageTitle} description={description} ogImgUrl={ogImgUrl} ogUrl={ogUrl} />
       <Cookies />
       <Header noAccess={noAccess} />
       <div className="absolute top-0 left-0 w-full ">

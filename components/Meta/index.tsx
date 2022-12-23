@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import ogImg from "../../public/images/og-img.png"
 
 function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
   return (
@@ -31,7 +32,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           property="og:title"
           content={pageTitle || "gluestack"}
         />
-        <meta name="twitter:title" content={pageTitle  || "gluestack"} />
+        <meta name="twitter:title" content={pageTitle || "gluestack"} />
 
         <meta
           key="og:description"
@@ -53,8 +54,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           key="og:image"
           property="og:image"
           content={
-            ogImgUrl ||
-            "//gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z"
+            ogImgUrl || "../../public/images/og-img.png"
           }
         />
 
@@ -62,16 +62,16 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           name="twitter:image"
           content={
             ogImgUrl ||
-            "https://gluestack-strapi.sfo3.digitaloceanspaces.com/635d1accfe750c74ecd57f67d6aab3e4.png?updated_at=2022-12-19T06:51:52.905Z"
+            "../../public/images/og-img.png"
           }
         ></meta>
         <meta
           property="og:url"
-          content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
+          content={ogUrl|| "https://gluestack.io"}
         />
         <meta
           property="twitter:url"
-          content={`https://gluestack.io${ogUrl}` || "https://gluestack.io"}
+          content={ogUrl || "https://gluestack.io"}
         />
 
       
