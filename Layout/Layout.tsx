@@ -60,7 +60,7 @@ function Layout({
       <div className="absolute top-0 left-0 w-full ">
         {!isMounted ? <Gradient /> : <Gradient />}
       </div>
-      <div className="dark:bg-black-300 pt-20 min-h-screen">{children}</div>
+      <div className="dark:bg-black-300 lg:pt-20 pt-14 min-h-screen">{children}</div>
       {/* <Footer /> */}
     </>
   );
