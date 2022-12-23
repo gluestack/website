@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar";
 import React from "react";
 import Toggle from "./Toggle";
 
-export const Header = () => {
+export const Header = ({noAccess} :any) => {
   const [expand, setExpand] = useState(false);
   const [showModel, setModel] = useState(false);
 
@@ -24,6 +24,7 @@ export const Header = () => {
         <div className="container ">
           <div className="flex items-center justify-between">
             <Logo />
+            {!noAccess &&
             <div className="flex items-center gap-6">
               <Toggle/>
               <div className="lg:block hidden">
@@ -32,7 +33,10 @@ export const Header = () => {
               </Button>
               </div>
             </div>
-          </div>
+            }
+                      </div>
+
+          
           <div className="flex md:order-2">
             <Modal
               height="3/6"
