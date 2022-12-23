@@ -5,7 +5,7 @@ import { ShowCaseService } from "../../services";
 
 function showcase({showcase}:any) {
   return (
-    <Layout title={"ShowCase - gluestack"} description={""}>
+    <Layout pageTitle={"ShowCase - gluestack"} description={""}>
         <HeroSection />
       <Showcase showcase={showcase}/>
     </Layout>

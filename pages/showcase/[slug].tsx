@@ -22,7 +22,7 @@ function showcase({ events, categories, tags, showcase }: any) {
     <>
       <Layout
         ogUrl={router.asPath}
-        title={events.title}
+        pageTitle={events.title}
         description={events.shortDes}
         ogImgUrl={events.coverImg.data.attributes.url}
       >

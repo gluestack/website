@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-function Meta({ title, description, ogImgUrl, ogUrl }: any) {
+function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
   return (
     <>
       <Head>
@@ -10,7 +10,7 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.86, user-scalable=no"
         />
-        <title>{title || "gluestack"}</title>
+        <title>{pageTitle || "gluestack"}</title>
         <link
           rel="icon"
           type="image/svg"
@@ -29,9 +29,9 @@ function Meta({ title, description, ogImgUrl, ogUrl }: any) {
         <meta
           key="og:title"
           property="og:title"
-          content={title || "gluestack"}
+          content={pageTitle || "gluestack"}
         />
-        <meta name="twitter:title" content={title  || "gluestack"} />
+        <meta name="twitter:title" content={pageTitle  || "gluestack"} />
 
         <meta
           key="og:description"

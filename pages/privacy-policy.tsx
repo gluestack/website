@@ -6,7 +6,7 @@ import InerBanner from "../components/InerBanner";
 
 function Privacy() {
   return (
-    <Layout title={"Privacy Policy - gluestack"}>
+    <Layout pageTitle={"Privacy Policy - gluestack"}>
       <InerBanner title="Privacy" last=" Policy" />
       <div className="container pb-14 relative z-10">
         <div className="">

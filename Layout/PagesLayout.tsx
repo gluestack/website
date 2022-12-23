@@ -17,7 +17,7 @@ function PagesLayout(props: any) {
   return (
     <>
       <Meta
-        title="gluestack - docs"
+        pageTitle="gluestack - docs"
         description={props.description}
         ogImgUrl={props.ogImgUrl}
         ogUrl={props.ogUrl}
