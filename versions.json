@@ -329,6 +329,40 @@
           }
         }
       ]
+    },
+    "gluestack-ui": {
+      "versions": [
+        {
+          "0.1.x": {
+            "sidebar": [
+              {
+                "type": "heading",
+                "title": "gluestack/ui",
+                "pages": [
+                  {
+                    "id": "gluestack-ui/introduction",
+                    "title": "Introduction"
+                  },
+                  {
+                    "id": "gluestack-ui/architecture",
+                    "title": "Architecture"
+                  },
+
+                  {
+                    "id": "gluestack-ui/installation",
+                    "title": "Installation"
+                  },
+
+                  {
+                    "id": "gluestack-ui/why-glustack-ui",
+                    "title": "Why gluestack/ui?"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }
