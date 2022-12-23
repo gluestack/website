@@ -55,14 +55,14 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           key="og:image"
           property="og:image"
           content={
-            ogImgUrl || "//gluestack.io/images/og-img.png"
+            ogImgUrl || "//gluestack.io/images/ogImg.png"
           }
         />
 
         <meta
           name="twitter:image"
           content={
-            ogImgUrl || "https://gluestack.io/images/og-img.png"
+            ogImgUrl || "https://gluestack.io/images/ogImg.png"
           }
         />
         <meta
