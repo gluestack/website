@@ -27,6 +27,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           }
         />
         <meta key="og:type" property="og:type" content="website" />
+        <meta content="summary" name="twitter:card" />
         <meta
           key="og:title"
           property="og:title"
