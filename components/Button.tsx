@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import Link from "next/link";
 
 function Button({ type, size, link, white, children, dataId }: any) {
@@ -11,8 +11,7 @@ function Button({ type, size, link, white, children, dataId }: any) {
       ) : 
       white ? (
         <button className="outline_white group" data-tf-popup={dataId}>
-            <ButtonSpan children={children} type={type} size={size} >
-            </ButtonSpan>
+            <ButtonSpan children={children} type={type} size={size} />
         </button>
       ) : (
         <button className="btn_outline group" data-tf-popup={dataId}>
