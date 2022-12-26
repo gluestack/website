@@ -42,7 +42,7 @@ function CardsSection() {
         <div className="container pt-10 pb-12 relative ">
           <div className="sm:max-w-[900px] m-auto">
             <div className="text-center mb-10">
-              <Heading priority={2} primaryBg>
+              <Heading priority={2} dark>
                  Core Plugins to get you off the ground
               </Heading>
             </div>

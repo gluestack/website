@@ -13,7 +13,7 @@ function SignupFooter() {
           </div>
         <div className="container items-center justify-center flex flex-col flex-1 py-5">
           <div className="text:white text-center mb-2">
-                <Heading priority={3} primaryBg>Let's build the future!</Heading>
+                <Heading priority={3} dark>Let's build the future!</Heading>
             </div>
             <div className="flex flex-row items-center mt-2 mb-10">
               <div className="sm:w-[500px] text-center">

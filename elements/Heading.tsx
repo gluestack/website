@@ -1,11 +1,6 @@
 import React from "react";
 
-const Heading = ({
-  priority,
-  primaryBg,
-  children,
-  single,
-}: any) => {
+const Heading = ({ priority, dark, children, single }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
     <div>
@@ -27,9 +22,7 @@ const Heading = ({
         }
        
       ${
-          primaryBg 
-          ? 'text-white dark:text-white' 
-          : `text-secondary dark:text-white`
+        dark ? "text-white dark:text-white" : `text-secondary dark:text-white`
       } `}
       >
         {children}
