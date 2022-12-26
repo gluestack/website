@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import FooterBg from "../../public/images/footerBg.svg";
 import Text from "../../elements/Text";
 import Heading from "../../elements/Heading";
@@ -10,7 +9,7 @@ function SignupFooter() {
   return (
     <div className="relative w-full bg-primary-200 py-20 ">
        <div className="absolute top-0 right-0 z-1 w-[100px] sm:w-[150px] xl:w-[250px]">
-            <CustomImage src={FooterBg} alt="image" />
+            <CustomImage src={FooterBg} alt="Footer Background" />
           </div>
         <div className="container items-center justify-center flex flex-col flex-1 py-5">
           <div className="text:white text-center mb-2">

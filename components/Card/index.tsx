@@ -6,7 +6,7 @@ import Linktag from "../../elements/Linktag";
 
 function Card({ src, altText, title, description, href, type }: any) {
   return (
-    <div className="bg-white  border rounded-lg border-gray dark:bg-black-100 dark:border-black-200 relative ">
+    <div className="bg-white  border rounded-lg border-gray dark:bg-secondary dark:border-black-200 relative ">
       {type == "hasIcon" ? (
         <div className=" ml-auto h-[54px] w-[54px] bg-primary-50 dark:bg-black-200 top-0 right-0 rounded-bl-lg rounded-tr-lg  flex justify-center items-center">
           <div className="relative h-[30px] w-[30px] ">

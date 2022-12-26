@@ -21,7 +21,7 @@ function EcoSystem() {
           <Text size="sm" white>
             <span className="relative">
             Design System
-            <div className="absolute rounded bg-secondary-400 px-1 py-1 text-[8px] -right-[55px] -top-2">
+            <div className="absolute rounded bg-black-200 px-1 py-1 text-[8px] -right-[55px] -top-2">
               Upcoming
 
             </div>
