@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import Link from "next/link";
 
 function Button({ type, size, link, white, children, dataId }: any) {
@@ -6,16 +6,11 @@ function Button({ type, size, link, white, children, dataId }: any) {
     <>
       {link ? (
         <Link href={`${link}`} prefetch={false} className="btn_outline group">
-          <ButtonSpan children={children} type={type} size={size} />
+          <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
-      ) : 
-      white ? (
-        <button className="outline_white group" data-tf-popup={dataId}>
-            <ButtonSpan children={children} type={type} size={size} />
-        </button>
       ) : (
-        <button className="btn_outline group" data-tf-popup={dataId}>
-          <ButtonSpan children={children} type={type} size={size} />
+        <button className={`group  ${white ? ' outline_white' : ' btn_outline'}`}  data-tf-popup={dataId}>
+          <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </button>
       )}
     </>
