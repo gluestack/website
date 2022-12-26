@@ -3,6 +3,7 @@ import Layout from "../Layout/Layout";
 import InerBanner from "../components/InerBanner";
 import Heading from "../elements/Heading";
 import Text from "../elements/Text";
+import Disclaimer from "../components/Disclaimer";
 
 function term() {
   return (
@@ -1481,6 +1482,7 @@ function term() {
           </div>
         </div>
       </div>
+      <Disclaimer first='DISCLAIMER:' last='THE SERVICES BEING PROVIDED ARE PART OF A PREVIEW OR TEST VERSION AND ARE NOT INTENDED FOR USE IN A PRODUCTION OR LIVE ENVIRONMENT. GEEKYANTS INC. IS NOT LIABLE FOR ANY ISSUES THAT MAY ARISE FROM USING THE PREVIEW VERSION, WHICH MAY CONTAIN BUGS OR ERRORS. THE USER IS RESPONSIBLE FOR EVALUATING THE PREVIEW.'/>
     </Layout>
   );
 }

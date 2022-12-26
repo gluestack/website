@@ -28,7 +28,7 @@ function Privacy() {
                   <a href="https://gluestack.io/" className="text-primary">
                     https://gluestack.io
                   </a>
-                  ,
+                  ,&nbsp;
                   <a href="https://seal.gluestack.io/" className="text-primary">
                     https://seal.gluestack.io
                   </a>{" "}
@@ -44,8 +44,8 @@ function Privacy() {
                   governs your visit to{" "}
                   <a href="https://gluestack.io/" className="text-primary">
                     https://gluestack.io
-                  </a>{" "}
-                  ,{" "}
+                  </a>
+                  ,&nbsp;
                   <a href="https://seal.gluestack.io/" className="text-primary">
                     https://seal.gluestack.io
                   </a>{" "}
@@ -127,8 +127,7 @@ function Privacy() {
                 <p className="py-4">
                   <span className="font-displaySemibold">
                     PERSONAL DATA OR PERSONAL INFORMATION
-                  </span>
-                  means data that is unique to a living individual who can be
+                  </span> means data that is unique to a living individual who can be
                   identified from those data (or from those and other
                   information either in our possession or likely to come into
                   our possession).
@@ -936,8 +935,13 @@ function Privacy() {
                     If you submit a request to stop selling your personal
                     information, we will stop making such transfers. If you are
                     a California resident, to opt-out of the sale of your
-                    personal information, please reach out us via email at
-                    support@gluestack.io
+                    personal information, please reach out us via email at  &nbsp;
+                    <a
+                          href="mailto:support@gluestack.io."
+                          className="text-primary"
+                        >
+                          support@gluestack.io.
+                        </a>
                   </p>
                   <p className="py-4">
                     Please note, if you ask us to delete or stop selling your
@@ -963,8 +967,8 @@ function Privacy() {
                   <p className="py-4">
                     Your data protection rights, described above, are covered by
                     the CCPA, short for the California Consumer Privacy Act. To
-                    find out more, visit the official California Legislative
-                    Information website. The CCPA took effect on 01/01/2020.
+                    find out more, visit the official  <a className="text-primary" href="http://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB375">California Legislative
+                    Information website</a>. The CCPA took effect on 01/01/2020.
                   </p>
                 </div>
               </Text>
@@ -1217,7 +1221,11 @@ function Privacy() {
                   <Text>
                     <p className="py-4">
                       Our Services are not intended for use by children under
-                      the age of 18 (“Child” or “Children”). We do not knowingly
+                      the age of 18 (<span className="font-displaySemibold">
+                      “Child”
+                    </span> or <span className="font-displaySemibold">
+                    “Children”
+                    </span>). We do not knowingly
                       collect personally identifiable information from Children
                       under 18. We encourage parents and legal guardians to
                       monitor their children's Internet usage and to help
