@@ -5,7 +5,7 @@ import Text from "../../elements/Text";
 function TermsCondition({title,children}:any) {
   return (
     <div className="container py-14">
-    <Heading priority={4} style="text-md font-displaySemibold">{title}</Heading>
+    <Heading priority={4}>{title}</Heading>
     <div className="container pb-14">
      <Text size="md" >
        {children}

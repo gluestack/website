@@ -29,7 +29,9 @@ function Blog({
             <div className="py-2 ">
               <Linktag href={`blog/${slug}`}>
 
-                <Heading priority='3' style="text-black-200 dark:text-white font-displayHead hover:text-primary dark:hover:text-primary">{title}</Heading>
+                <Heading priority='3'>
+                  <span className="hover:text-primary dark:hover:text-primary">{title}</span>
+                </Heading>
               </Linktag>
               <div className="py-2">
                 <Text >{shortDes}</Text>

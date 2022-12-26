@@ -119,7 +119,7 @@ function Dropdown() {
 
 function SearchInput() {
   return (
-    <div className="relative flex w-full flex-wrap items-stretch mb-3">
+    <div className="relative flex w-full flex-wrap items-stretch ">
       <span className="z-10 h-full leading-snug font-normal absolute text-center text-black-400 dark:text-white absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3 border-transparent">
         <AiOutlineSearch size={21}/>
       </span>

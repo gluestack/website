@@ -14,7 +14,7 @@ function term() {
           <div className="">
             <ol className="list-none list-outside ">
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   1. Introduction
                 </Heading>
                 <li className="py-4">
@@ -137,7 +137,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   2. Your Account
                 </Heading>
                 <Text>
@@ -188,7 +188,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   3.Content
                 </Heading>
                 <div className="py-4">
@@ -298,7 +298,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   4. Proprietary Rights
                 </Heading>
                 <Text>
@@ -332,7 +332,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   5. Fair Use
                 </Heading>
                 <Text>
@@ -355,7 +355,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   6. Acceptable Use
                 </Heading>
                 <Text>
@@ -441,7 +441,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   7. Restrictions on Use
                 </Heading>
                 <Text className="ml-4">
@@ -553,7 +553,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   8. Etiquette
                 </Heading>
                 <Text>
@@ -584,7 +584,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   9. Plans and Pricing Terms
                 </Heading>
                 <Text>
@@ -623,7 +623,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   10. Confidentiality and Other Rights
                 </Heading>
                 <Text>
@@ -760,7 +760,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   11. Representations
                 </Heading>
                 <p className="ml-4 dark:text-white">
@@ -800,7 +800,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   12.Disclaimer of Warranty
                 </Heading>
                 <Text>
@@ -851,7 +851,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   13. Limitation of Liability
                 </Heading>
                 <Text>
@@ -893,7 +893,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   14. Indemnification
                 </Heading>
                 <Text>
@@ -928,7 +928,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   15. Location of Server
                 </Heading>
                 <p className=" dark:text-white">
@@ -961,7 +961,7 @@ function term() {
                 </p>
               </li>
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   16. Third-Party Content and Materials
                 </Heading>
                 <Text>
@@ -993,7 +993,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   17. Third-Party Content and Materials
                 </Heading>
                 <Text>
@@ -1018,7 +1018,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   18. Inactivity
                 </Heading>
                 <div className="py-4">
@@ -1057,7 +1057,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   19.Trademark Violations
                 </Heading>
                 <p className="py-4">
@@ -1089,7 +1089,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   20. Governing Law
                 </Heading>
                 <div className="py-4">
@@ -1106,7 +1106,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   21. Disputes and Arbitration
                 </Heading>
                 <div className="py-4">
@@ -1181,7 +1181,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   22. Security
                 </Heading>
                 <div className="py-4 ">
@@ -1211,7 +1211,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   23. Support
                 </Heading>
                 <div className="py-4 ">
@@ -1234,7 +1234,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   24. Modification and Termination of Services
                 </Heading>
                 <div className="py-4 ">
@@ -1298,7 +1298,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   25. Changes to the Terms of Service
                 </Heading>
                 <div className="py-4 ">
@@ -1319,7 +1319,7 @@ function term() {
                 </div>
               </li>
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   26. Privacy Policy
                 </Heading>
                 <div className="py-4">
@@ -1342,7 +1342,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   27. No Third-Party Beneficiaries
                 </Heading>
                 <div className="py-4 ">
@@ -1357,7 +1357,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   28. Miscellaneous
                 </Heading>
                 <div className="py-4">
@@ -1424,7 +1424,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   29. Previews
                 </Heading>
                 <div className="py-4 ">
@@ -1456,7 +1456,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4" style="text-md font-displaySemibold">
+                <Heading priority="4">
                   30.Support
                 </Heading>
                 <div className="py-4">

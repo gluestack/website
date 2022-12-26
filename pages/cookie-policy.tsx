@@ -12,7 +12,7 @@ function Cookies() {
         <div className="">
           <ol className="list-none list-outside ">
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 1. Introduction
               </Heading>
               <Text style="py-4">
@@ -52,7 +52,7 @@ function Cookies() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 2. What are Cookies, Pixels and Local Storage?
               </Heading>
               <div className="py-4">
@@ -98,7 +98,7 @@ function Cookies() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 3. How and Why Do We Use Your Cookies?
               </Heading>
               <div className="py-4">
@@ -116,7 +116,7 @@ function Cookies() {
                     while not essential, help us improve our Platform or measure
                     audiences.
                   </p>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4">
                     Why we use cookies is described below in more detail:
                   </Heading>
                   <div className="py-4 ml-8">
@@ -166,7 +166,7 @@ function Cookies() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 4. Your Choices
               </Heading>
               <div className="py-4">
@@ -207,7 +207,7 @@ function Cookies() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 5. Our Customers
               </Heading>
               <div className="py-4">
@@ -225,7 +225,7 @@ function Cookies() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 6. Changes to this Cookie Policy
               </Heading>
               <div className="py-4">
@@ -248,7 +248,7 @@ function Cookies() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4">
                 7. Contact Us
               </Heading>
               <div className="py-4">

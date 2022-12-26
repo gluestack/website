@@ -6,9 +6,11 @@ import Heading from "../../elements/Heading";
 function Resources() {
   return (
     <div>
-      <Heading priority="6" style="uppercase text-white pb-2">
-        GENERAL RESOURCES
-      </Heading>
+      <div className="pb-2">
+        <Heading priority="6">
+          <span className="uppercase text-white">GENERAL RESOURCES</span>
+        </Heading>
+      </div>
       <ul>
         <LinkList link="/docs" style="py-2">
           <Text size="sm" white>
