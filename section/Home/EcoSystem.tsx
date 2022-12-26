@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import Heading from "../../elements/Heading";
 import Gradient from "../../public/images/gradient-pink.png";
-import seal from "../../public/images/seal.png";
+import Seal from "../../public/images/seal.png";
+import Dsx from "../../public/images/dsx.svg";
 import CustomImage from "../../components/CustomImage";
 import Text from "../../elements/Text";
 import ecoSystemLight from "../../public/images/echosystem-light.svg";
@@ -51,7 +52,7 @@ function EcoSystem() {
               <div className="dot relative">
                 <div className="flex items-center justify-center lg:justify-start">
                   <div className="mr-4 w-[40px] h-[36px] ">
-                    <CustomImage src={seal} alt="seal-logo" />
+                    <CustomImage src={Seal} alt="seal-logo" />
                   </div>
                   <Heading priority="6" style="">
                     seal
@@ -68,17 +69,21 @@ function EcoSystem() {
               </div>
               <div className="pt-16">
                 <div className="dot relative text-center lg:text-left">
-                  <Heading priority="6">
-                    Design System{" "}
-                    <button className="tagsButton relative -top-2">
-                      Upcoming
-                    </button>
-                  </Heading>
+                  <div className="flex items-center justify-center lg:justify-start">
+                    <div className="mr-4 w-[40px] h-[36px] ">
+                      <CustomImage src={Dsx} alt="dsx-logo" />
+                    </div>
+                    <Heading priority="6">
+                      DSX (R&amp;D)
+                      {/* <button className="tagsButton relative -top-2">
+                        Upcoming
+                      </button> */}
+                    </Heading>
+                  </div>
                 </div>
                 <div className="pt-4 text-center lg:text-left">
                   <Text size="md">
-                    Create your Design System using our platform designed to
-                    create UI standards and components. Coming soon.
+                  Build your design system using DSX to ship multiple products faster with better collaboration, consistency, and standardization.
                   </Text>
                 </div>
               </div>
