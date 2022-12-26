@@ -8,7 +8,7 @@ function Showcase({showcase}:any) {
         <div className="grid gap-8 grid-col-1 lg:grid-cols-3">
          {
             showcase.map((ele:any,index:number)=>{
-              return  <Card src={ele.attributes.coverImg.data.attributes.url} title={ele.attributes.title} href={`showcase/${ele.attributes.slug}`} description={ele.attributes.description} key={index} />
+              return  <Card src={ele?.attributes?.coverImg?.data?.attributes?.url} title={ele.attributes.title} href={`showcase/${ele.attributes.slug}`} description={ele.attributes.description} key={index} />
           
             })
           }
