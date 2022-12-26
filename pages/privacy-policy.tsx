@@ -12,7 +12,7 @@ function Privacy() {
         <div className="">
           <ol className="list-outside list-nonel ">
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 1. Introduction
               </Heading>{" "}
               <Text>
@@ -90,7 +90,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 2. Definitions
               </Heading>
               <Text>
@@ -204,7 +204,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 3. Information Collection and Use
               </Heading>
 
@@ -218,7 +218,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md py-4 font-displaySemibold">
+              <Heading priority="4">
                 4. Types of Data Collected
               </Heading>
               <Text>
@@ -358,7 +358,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 5. Use of Data
               </Heading>
 
@@ -466,7 +466,7 @@ function Privacy() {
               </Text>
             </li>
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 6. Information we Process on Behalf of Customers
               </Heading>
 
@@ -507,7 +507,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 7. Retention of Data
               </Heading>
 
@@ -539,7 +539,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 8. Transfer of Data
               </Heading>
 
@@ -577,7 +577,7 @@ function Privacy() {
               </Text>
             </li>
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 9. Disclosure of Data
               </Heading>
 
@@ -661,7 +661,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 10. Account Protection:
               </Heading>
 
@@ -680,7 +680,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 11. Security of Data
               </Heading>
 
@@ -696,7 +696,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 12. Your Data Protection Rights Under General Data Protection
                 Regulation (GDPR)
               </Heading>
@@ -778,7 +778,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 13. Your Data Protection Rights under the California Online
                 Privacy Protection Act (CalOPPA)
               </Heading>
@@ -834,7 +834,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 14. Our Policy on “Do Not Track” Signals
               </Heading>
 
@@ -848,7 +848,7 @@ function Privacy() {
               </Text>
             </li>
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 15. Your Data Protection Rights under the California Consumer
                 Privacy Act (CCPA)
               </Heading>
@@ -975,7 +975,7 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" >
                 16. Service Providers
               </Heading>
 
@@ -1099,7 +1099,7 @@ function Privacy() {
                   </ul>
                 </p>
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     17. Interactive and Public Spaces
                   </Heading>
 
@@ -1124,7 +1124,7 @@ function Privacy() {
                 </li>
 
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     18. Domain Registrations
                   </Heading>
 
@@ -1146,7 +1146,7 @@ function Privacy() {
                 </li>
 
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     19. Payments
                   </Heading>
 
@@ -1173,7 +1173,7 @@ function Privacy() {
                   </Text>
                 </li>
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     Stripe:
                   </Heading>
 
@@ -1190,7 +1190,7 @@ function Privacy() {
                   </Text>
                 </li>
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     20. Links to Other Sites
                   </Heading>
 
@@ -1214,7 +1214,7 @@ function Privacy() {
                 </li>
 
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     21. Children's Privacy
                   </Heading>
 
@@ -1241,7 +1241,7 @@ function Privacy() {
                 </li>
 
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     22. Changes to This Privacy Policy
                   </Heading>
 
@@ -1264,7 +1264,7 @@ function Privacy() {
                 </li>
 
                 <li>
-                  <Heading priority="4" style="text-md font-displaySemibold">
+                  <Heading priority="4" >
                     23. Contact Us
                   </Heading>
                   <div className="py-4">

@@ -20,8 +20,7 @@ function InerBanner({ title, description, last, style, paddingBottom, single }: 
               </div>
           </button>
         </div>
-        <Heading priority={1} style={`text-secondary ${style} `} single={single}>
-          {" "}
+        <Heading priority="1" single={single}>
           {title}
           <span className="text-primary">{last}</span>
         </Heading>

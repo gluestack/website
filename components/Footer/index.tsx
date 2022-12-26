@@ -24,7 +24,7 @@ export const Footer = () => {
     },
   ];
   return (
-    <div className="bg-black-100">
+    <div className="bg-secondary">
       <div className="container py-12">
         <Logo darkLogo />
 

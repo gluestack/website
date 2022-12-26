@@ -6,9 +6,12 @@ import Heading from "../../elements/Heading";
 function More() {
   return (
     <div>
-      <Heading priority="6" style="uppercase text-white pb-2">
-        More
-      </Heading>
+      <div className="pb-2">
+        <Heading priority="6">
+          <span className="uppercase text-white">More</span>
+        </Heading>
+      </div>
+      
       <ul>
         <LinkList link="/" style="py-2">
           <Text size="sm" white>

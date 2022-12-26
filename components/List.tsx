@@ -12,8 +12,6 @@ function List({ src, title,altText,children}: any) {
     <Image src={src} alt={altText || "Image"} className="filter-primary" />
     <div className="py-4">
       <Heading
-        isLight={undefined}
-        color={undefined}
         priority={3}
       >
         {title}

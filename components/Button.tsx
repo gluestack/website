@@ -27,7 +27,7 @@ const ButtonSpan = ({ children, type, size }: any) => {
           ? "text-white  bg-primary  ring-primary  ring-offset-primary "
           : type == "tertiary"
           ? "text-white  bg-skyBlue  ring-skyBlue  ring-offset-skyBlue "
-          : type == 'normal'
+          : type == 'secondary'
           ? "text-black bg-white ring-white ring-offset-white"
           : "text-primary  bg-white ring-primary "
       } ${

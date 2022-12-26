@@ -54,7 +54,7 @@ function EcoSystem() {
                   <div className="mr-4 w-[40px] h-[36px] ">
                     <CustomImage src={Seal} alt="seal-logo" />
                   </div>
-                  <Heading priority="6" style="">
+                  <Heading priority="6">
                     seal
                   </Heading>
                 </div>

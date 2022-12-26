@@ -6,9 +6,11 @@ import Heading from "../../elements/Heading";
 function EcoSystem() {
   return (
     <div>
-      <Heading priority="6" style="uppercase text-white pb-2">
-      EcoSystem
-      </Heading>
+      <div className="pb-2">
+        <Heading priority="6">
+          <span className="uppercase text-white">EcoSystem</span>
+        </Heading>
+      </div>
       <ul>
         <LinkList src="/" style="py-2">
           <Text size="sm" white>
@@ -19,7 +21,7 @@ function EcoSystem() {
           <Text size="sm" white>
             <span className="relative">
             Design System
-            <div className="absolute rounded bg-secondary-400 px-1 py-1 text-[8px] -right-[55px] -top-2">
+            <div className="absolute rounded bg-black-200 px-1 py-1 text-[8px] -right-[55px] -top-2">
               Upcoming
 
             </div>
