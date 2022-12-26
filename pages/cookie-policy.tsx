@@ -15,42 +15,40 @@ function Cookies() {
               <Heading priority="4" style="text-md font-displaySemibold">
                 1. Introduction
               </Heading>
-              <div className="py-4">
-                <Text>
-                  <p>
-                    Welcome to{" "}
-                    <span className="font-displaySemibold">GeekyAnts Inc.</span>
-                  </p>
-                  <p className="py-4">
-                    GeekyAnts Inc. (
-                    <span className="font-displaySemibold">“us”</span> ,{" "}
-                    <span className="font-displaySemibold">“we”</span> , or{" "}
-                    <span className="font-displaySemibold">“our”</span>)
-                    understands that your privacy is important to you and are
-                    committed to being transparent about the technology it uses.
-                    This Cookie Policy explains how and why cookies and other
-                    technologies may be stored on and accessed from your device
-                    when you use our Services and your related choices.
-                  </p>
-                  <p>
-                    The terms used in this Cookie Policy but not defined here
-                    will have the meanings given to them in our{" "}
-                    <a
-                      href="https://gluestack.io/privacy-policy"
-                      className=" font-displaySemibold text-primary"
-                    >
-                      Privacy Policy
-                    </a>
-                    . Therefore, this Cookie Policy must be read with our
-                    Privacy Policy.
-                  </p>
-                  <p className="py-4 font-displaySemibold">
-                    By continuing to use our Services, you agree that we can
-                    store, and access Cookies and Other Tracking Technologies as
-                    described in this Cookie Policy.
-                  </p>
-                </Text>
-              </div>
+              <Text style="py-4">
+                <p className="py-4">
+                  Welcome to{" "}
+                  <span className="font-displaySemibold">GeekyAnts Inc.</span>
+                </p>
+                <p className="py-4">
+                  GeekyAnts Inc. (
+                  <span className="font-displaySemibold">“us”</span> ,{" "}
+                  <span className="font-displaySemibold">“we”</span> , or{" "}
+                  <span className="font-displaySemibold">“our”</span>)
+                  understands that your privacy is important to you and are
+                  committed to being transparent about the technology it uses.
+                  This Cookie Policy explains how and why cookies and other
+                  technologies may be stored on and accessed from your device
+                  when you use our Services and your related choices.
+                </p>
+                <p>
+                  The terms used in this Cookie Policy but not defined here will
+                  have the meanings given to them in our{" "}
+                  <a
+                    href="https://gluestack.io/privacy-policy"
+                    className=" font-displaySemibold text-primary"
+                  >
+                    Privacy Policy
+                  </a>
+                  . Therefore, this Cookie Policy must be read with our Privacy
+                  Policy.
+                </p>
+                <p className="py-4 font-displaySemibold">
+                  By continuing to use our Services, you agree that we can
+                  store, and access Cookies and Other Tracking Technologies as
+                  described in this Cookie Policy.
+                </p>
+              </Text>
             </li>
 
             <li>
@@ -103,11 +101,9 @@ function Cookies() {
               <Heading priority="4" style="text-md font-displaySemibold">
                 3. How and Why Do We Use Your Cookies?
               </Heading>
-
-              <span className="text-md font-displaySemibold"></span>
               <div className="py-4">
                 <Text>
-                  <p>
+                  <p className="py-4">
                     We use both 1st party cookies (which are set by us) and 3rd
                     party cookies (which are set by a server located outside the
                     domain of our Site). Some of the cookies or similar
@@ -182,8 +178,8 @@ function Cookies() {
                       className="text-primary"
                     >
                       https://www.allaboutcookies.org
-                    </a>
-                    , which includes additional useful information on cookies
+                    </a> &nbsp;
+                    ,  which includes additional useful information on cookies
                     and how to block cookies using different types of browsers
                   </p>
                   <p className="py-4">

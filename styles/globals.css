@@ -194,3 +194,6 @@
   .prose p {
     @apply leading-7;
   }
+  body #cc_div #cm{
+    @apply rounded-none;
+  }

@@ -1,11 +1,17 @@
 import Head from "next/head";
 import React from "react";
+import {useRouter} from 'next/router';
 
 function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
+  const router = useRouter ();
+  const canonical = `https://gluestack.io${router.asPath.split ('?')[0]}`;
+
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
+        <link rel="canonical" href={canonical} />
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.86, user-scalable=no"

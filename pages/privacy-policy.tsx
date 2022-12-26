@@ -15,8 +15,8 @@ function Privacy() {
               <Heading priority="4" style="text-md font-displaySemibold">
                 1. Introduction
               </Heading>{" "}
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   Welcome to{" "}
                   <span className="font-displaySemibold">GeekyAnts Inc.</span>
                 </p>
@@ -28,7 +28,7 @@ function Privacy() {
                   <a href="https://gluestack.io/" className="text-primary">
                     https://gluestack.io
                   </a>
-                  ,
+                  ,&nbsp;
                   <a href="https://seal.gluestack.io/" className="text-primary">
                     https://seal.gluestack.io
                   </a>{" "}
@@ -44,8 +44,8 @@ function Privacy() {
                   governs your visit to{" "}
                   <a href="https://gluestack.io/" className="text-primary">
                     https://gluestack.io
-                  </a>{" "}
-                  ,{" "}
+                  </a>
+                  ,&nbsp;
                   <a href="https://seal.gluestack.io/" className="text-primary">
                     https://seal.gluestack.io
                   </a>{" "}
@@ -93,9 +93,8 @@ function Privacy() {
               <Heading priority="4" style="text-md font-displaySemibold">
                 2. Definitions
               </Heading>
-
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   <span className="font-displaySemibold">SERVICE</span> means
                   &nbsp;{" "}
                   <a href="https://gluestack.io/" className="text-primary">
@@ -128,8 +127,7 @@ function Privacy() {
                 <p className="py-4">
                   <span className="font-displaySemibold">
                     PERSONAL DATA OR PERSONAL INFORMATION
-                  </span>
-                  means data that is unique to a living individual who can be
+                  </span> means data that is unique to a living individual who can be
                   identified from those data (or from those and other
                   information either in our possession or likely to come into
                   our possession).
@@ -210,8 +208,8 @@ function Privacy() {
                 3. Information Collection and Use
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   When you use our Services, we collect several different types
                   of information as defined below for various purposes to
                   provide and improve our Service to you.
@@ -220,12 +218,11 @@ function Privacy() {
             </li>
 
             <li>
-              <Heading priority="4" style="text-md font-displaySemibold">
+              <Heading priority="4" style="text-md py-4 font-displaySemibold">
                 4. Types of Data Collected
               </Heading>
-
-              <Text style="py-4">
-                <ul className="ml-8 list-disc list-outside">
+              <Text>
+                <ul className="ml-4 list-disc list-outside ">
                   <li>
                     <span className="font-displaySemibold">Personal Data</span>
                     <p className="py-4">
@@ -234,12 +231,14 @@ function Privacy() {
                       used to contact or identify you (“Personal Data”).
                       Personally identifiable information may include, but is
                       not limited to:
-                      <p>(a) Email address</p>
-                      <p>(b) First name and last name</p>
-                      <p>(c) Phone number</p>
-                      <p>(d) Address, State, Province, ZIP/Postal code, City</p>
-                      <p>(e) Cookies and Usage Data</p>
-                      <p>(e) Cookies and Usage Data</p>
+                     <p className="ml-4">
+                     <p className="py-2">(a) Email address</p>
+                      <p className="py-2">(b) First name and last name</p>
+                      <p className="py-2">(c) Phone number</p>
+                      <p className="py-2">(d) Address, State, Province, ZIP/Postal code, City</p>
+                      <p className="py-2">(e) Cookies and Usage Data</p>
+                      <p className="py-2">(e) Cookies and Usage Data</p>
+                     </p>
                       <p className="py-4">
                         We may use your Personal Data to contact you with
                         newsletters, marketing or promotional materials and
@@ -363,8 +362,8 @@ function Privacy() {
                 5. Use of Data
               </Heading>
 
-              <Text style="py-4">
-                <ul className="ml-8 list-disc list-outside">
+              <Text>
+                <ul className="ml-4 list-disc list-outside">
                   <li>
                     <p className="py-4">
                       We use your Data for for a number of different reasons, as
@@ -471,8 +470,8 @@ function Privacy() {
                 6. Information we Process on Behalf of Customers
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   We also use and/or collect the personal data and other
                   information of Customer’s End Users’ (“End Users”) when the
                   End User uses our Services through our Customer or when
@@ -512,8 +511,8 @@ function Privacy() {
                 7. Retention of Data
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   We will retain your Personal Data only for as long as is
                   necessary for the purposes set out in this Privacy Policy. We
                   will retain and use your Personal Data to the extent necessary
@@ -544,8 +543,8 @@ function Privacy() {
                 8. Transfer of Data
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   Your information, including Personal Data, may be transferred
                   to India and maintained on Indian computers located outside of
                   your state, province, country, or other governmental
@@ -582,8 +581,8 @@ function Privacy() {
                 9. Disclosure of Data
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   We may disclose personal data that we collect, or you provide
                 </p>
                 <span className="font-displaySemibold">
@@ -666,8 +665,8 @@ function Privacy() {
                 10. Account Protection:
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   If you register with us, your password is the key to your
                   account. You shall be solely responsible for all the
                   activities happening under your username and you shall be
@@ -685,8 +684,8 @@ function Privacy() {
                 11. Security of Data
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   The security of your data is important to us but remember that
                   no method of transmission over the Internet or method of
                   electronic storage is 100% secure. While we strive to use
@@ -702,8 +701,8 @@ function Privacy() {
                 Regulation (GDPR)
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   If you are a resident of the European Union (EU) and European
                   Economic Area (EEA), you have certain data protection rights,
                   covered by GDPR. – See more at{" "}
@@ -784,8 +783,8 @@ function Privacy() {
                 Privacy Protection Act (CalOPPA)
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   CalOPPA is the first state law in the nation to require
                   commercial websites and online services to post a privacy
                   policy. The law’s reach stretches well beyond California to
@@ -839,8 +838,8 @@ function Privacy() {
                 14. Our Policy on “Do Not Track” Signals
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   We do not respond to Do Not Track ("DNT") browser signals. For
                   more information on DNT settings generally, please visit{" "}
                   <a href="https://allaboutdnt.com">https://allaboutdnt.com</a>{" "}
@@ -854,8 +853,8 @@ function Privacy() {
                 Privacy Act (CCPA)
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   If you are a California resident, you are entitled to learn
                   what data we collect about you, ask to delete your data and
                   not to sell (share) it. To exercise your data protection
@@ -936,8 +935,13 @@ function Privacy() {
                     If you submit a request to stop selling your personal
                     information, we will stop making such transfers. If you are
                     a California resident, to opt-out of the sale of your
-                    personal information, please reach out us via email at
-                    support@gluestack.io
+                    personal information, please reach out us via email at  &nbsp;
+                    <a
+                          href="mailto:support@gluestack.io."
+                          className="text-primary"
+                        >
+                          support@gluestack.io.
+                        </a>
                   </p>
                   <p className="py-4">
                     Please note, if you ask us to delete or stop selling your
@@ -963,8 +967,8 @@ function Privacy() {
                   <p className="py-4">
                     Your data protection rights, described above, are covered by
                     the CCPA, short for the California Consumer Privacy Act. To
-                    find out more, visit the official California Legislative
-                    Information website. The CCPA took effect on 01/01/2020.
+                    find out more, visit the official  <a className="text-primary" href="http://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB375">California Legislative
+                    Information website</a>. The CCPA took effect on 01/01/2020.
                   </p>
                 </div>
               </Text>
@@ -975,8 +979,8 @@ function Privacy() {
                 16. Service Providers
               </Heading>
 
-              <Text style="py-4">
-                <p>
+              <Text>
+                <p className="py-4">
                   We may employ third party companies and individuals to
                   facilitate our Service (“Service Providers”), provide Service
                   on our behalf, perform Service-related services or assist us
@@ -1099,8 +1103,8 @@ function Privacy() {
                     17. Interactive and Public Spaces
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       The Service we provide may offer publicly accessible
                       blogs, community forums, comments sections, discussion
                       forums, or other interactive features etc. If you choose
@@ -1124,8 +1128,8 @@ function Privacy() {
                     18. Domain Registrations
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       Note that if you purchase a domain name from us, we may be
                       required to collect registrant data for the purposes of
                       domain registration and listing via the WHOIS protocol. We
@@ -1146,8 +1150,8 @@ function Privacy() {
                     19. Payments
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       We may provide paid products and/or services within
                       Service. In that case, we use third-party services for
                       payment processing (e.g. payment processors).
@@ -1173,8 +1177,8 @@ function Privacy() {
                     Stripe:
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       Their Privacy Policy can be viewed at:{" "}
                       <a
                         href="https://stripe.com/us/privacy"
@@ -1190,8 +1194,8 @@ function Privacy() {
                     20. Links to Other Sites
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       Our Service may contain links to other sites that are not
                       operated by us. This policy and procedures we describe
                       here do not apply to Third Party Sites, and links to such
@@ -1214,10 +1218,14 @@ function Privacy() {
                     21. Children's Privacy
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       Our Services are not intended for use by children under
-                      the age of 18 (“Child” or “Children”). We do not knowingly
+                      the age of 18 (<span className="font-displaySemibold">
+                      “Child”
+                    </span> or <span className="font-displaySemibold">
+                    “Children”
+                    </span>). We do not knowingly
                       collect personally identifiable information from Children
                       under 18. We encourage parents and legal guardians to
                       monitor their children's Internet usage and to help
@@ -1237,8 +1245,8 @@ function Privacy() {
                     22. Changes to This Privacy Policy
                   </Heading>
 
-                  <Text style="py-4">
-                    <p>
+                  <Text>
+                    <p className="py-4">
                       We may update our Privacy Policy from time to time without
                       prior notice, at our sole discretion. We will notify you
                       of any changes by posting the new Privacy Policy on this
@@ -1261,7 +1269,7 @@ function Privacy() {
                   </Heading>
                   <div className="py-4">
                     <Text>
-                      <p>
+                      <p className="py-4">
                         If you have any questions about this Cookie Policy,
                         please contact us:
                       </p>
