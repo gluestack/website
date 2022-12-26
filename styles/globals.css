@@ -149,7 +149,7 @@
   }
   .dot:after{
     content:'';
-    @apply absolute w-[18px] h-[18px] bg-gray -left-[104px] top-2 rounded-sm lg:block hidden;
+    @apply absolute w-[18px] h-[18px] bg-gray-100 -left-[103px] top-2 rounded-sm lg:block hidden z-10;
 
   }
   .dark-gradient{
