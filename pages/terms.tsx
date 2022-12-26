@@ -6,7 +6,7 @@ import Text from "../elements/Text";
 
 function term() {
   return (
-    <Layout  pageTitle={"Terms & Condition - gluestack"}>
+    <Layout pageTitle={"Terms & Condition - gluestack"}>
       <div className="relative z-10">
         <InerBanner title="Terms & " last="Conditions" />
         <div className="container relative z-10 pb-14">
@@ -18,14 +18,14 @@ function term() {
                 </Heading>
                 <li className="py-4">
                   <Text>
-                    <p>
+                    <p className="py-4">
                       Welcome to{" "}
                       <span className="font-displaySemibold">
                         GeekyAnts Inc.
                       </span>
                     </p>
                     <Text style="py-4 ml-8">
-                      <ul className="list-disc">
+                      <ol className="list-outside list-nonel">
                         <li>
                           GeekyAnts Inc., ({" "}
                           <span className="font-displaySemibold">"we"</span>,
@@ -129,7 +129,7 @@ function term() {
                           THESE TERMS, THEN YOU MAY NOT USE OR OTHERWISE ACCESS
                           THE SERVICES.
                         </li>
-                      </ul>
+                      </ol>
                     </Text>
                   </Text>
                 </li>
@@ -139,62 +139,58 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   2. Your Account
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> Your
-                      account on the Services (your{" "}
-                      <span className="font-displaySemibold">
-                        “User Account”
-                      </span>
-                      ) gives you access to the Services and functionality that
-                      we may establish and maintain from time to time and at our
-                      sole discretion. We may maintain different types of User
-                      Accounts for different types of Users. By connecting to
-                      the Services with a third-party service, you give us
-                      permission to access and use your information from that
-                      service as permitted by that service, and to store your
-                      log-in credentials for that service.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span>
-                      You may never use another User’s User Account without
-                      permission. In the course of registering for a User
-                      Account or using the Services, you may be required to
-                      provide us with certain information, including your name,
-                      contact information, username and password ({" "}
-                      <span className="font-displaySemibold">
-                        “Credentials”
-                      </span>{" "}
-                      ). GeekyAnts Inc., handles such information with the
-                      utmost attention, care and security. Nonetheless, you, not
-                      GeekyAnts Inc., shall be responsible for maintaining and
-                      protecting your Credentials in connection with the
-                      Services. If your contact information or other information
-                      relating to your User Account changes, you must notify us
-                      promptly and keep such information current. You are solely
-                      responsible for any activity using your Credentials,
-                      whether or not you authorized that activity. You should
-                      immediately notify us of any unauthorized use of your
-                      Credentials or if your email or password has been hacked
-                      or stolen. If you discover that someone is using your
-                      Credentials without your consent, or you discover any
-                      other breach of security, you agree to notify us
-                      immediately.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">c.</span> We
-                      reserve the right to access your account in order to
-                      respond to your requests for any Support Services as
-                      defined hereunder.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> Your
+                    account on the Services (your{" "}
+                    <span className="font-displaySemibold">“User Account”</span>
+                    ) gives you access to the Services and functionality that we
+                    may establish and maintain from time to time and at our sole
+                    discretion. We may maintain different types of User Accounts
+                    for different types of Users. By connecting to the Services
+                    with a third-party service, you give us permission to access
+                    and use your information from that service as permitted by
+                    that service, and to store your log-in credentials for that
+                    service.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span>
+                    You may never use another User’s User Account without
+                    permission. In the course of registering for a User Account
+                    or using the Services, you may be required to provide us
+                    with certain information, including your name, contact
+                    information, username and password ({" "}
+                    <span className="font-displaySemibold">
+                      “Credentials”
+                    </span>{" "}
+                    ). GeekyAnts Inc., handles such information with the utmost
+                    attention, care and security. Nonetheless, you, not
+                    GeekyAnts Inc., shall be responsible for maintaining and
+                    protecting your Credentials in connection with the Services.
+                    If your contact information or other information relating to
+                    your User Account changes, you must notify us promptly and
+                    keep such information current. You are solely responsible
+                    for any activity using your Credentials, whether or not you
+                    authorized that activity. You should immediately notify us
+                    of any unauthorized use of your Credentials or if your email
+                    or password has been hacked or stolen. If you discover that
+                    someone is using your Credentials without your consent, or
+                    you discover any other breach of security, you agree to
+                    notify us immediately.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">c.</span> We reserve
+                    the right to access your account in order to respond to your
+                    requests for any Support Services as defined hereunder.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   3.Content
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> A variety
@@ -304,69 +300,69 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   4. Proprietary Rights
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> You
-                      acknowledge and agree that, we shall own and retain all
-                      legal right, title and interest in and to (i) the
-                      Services, any other Supplied Content provided by us, all
-                      improvements, enhancements or modifications thereto and
-                      (ii) all intellectual property rights related to any of
-                      the foregoing and other proprietary rights and laws
-                      (whether those rights happen to be registered or not, and
-                      wherever in the world those rights may exist).
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> Except as
-                      provided in Section 3, GeekyAnts Inc. acknowledges and
-                      agrees that it obtains no right, title or interest from
-                      you (or your licensors) under these Terms in or to any
-                      Content that you create, upload, submit, post, transmit,
-                      share or display on, or through, the Services, including
-                      any intellectual property rights which subsist in that
-                      User Content (whether those rights happen to be registered
-                      or not, and wherever in the world those rights may exist).
-                      Notwithstanding anything contained to the contrary in
-                      these Terms, you agree that you are responsible for
-                      protecting and enforcing those rights and that we have no
-                      obligation to do so on your behalf.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> You
+                    acknowledge and agree that, we shall own and retain all
+                    legal right, title and interest in and to (i) the Services,
+                    any other Supplied Content provided by us, all improvements,
+                    enhancements or modifications thereto and (ii) all
+                    intellectual property rights related to any of the foregoing
+                    and other proprietary rights and laws (whether those rights
+                    happen to be registered or not, and wherever in the world
+                    those rights may exist).
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> Except as
+                    provided in Section 3, GeekyAnts Inc. acknowledges and
+                    agrees that it obtains no right, title or interest from you
+                    (or your licensors) under these Terms in or to any Content
+                    that you create, upload, submit, post, transmit, share or
+                    display on, or through, the Services, including any
+                    intellectual property rights which subsist in that User
+                    Content (whether those rights happen to be registered or
+                    not, and wherever in the world those rights may exist).
+                    Notwithstanding anything contained to the contrary in these
+                    Terms, you agree that you are responsible for protecting and
+                    enforcing those rights and that we have no obligation to do
+                    so on your behalf.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   5. Fair Use
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> We will
-                      use commercially reasonable efforts to provide all plan
-                      levels with sufficient bandwidth, builds, and serverless
-                      function invocations that we determine are typical of
-                      projects at that plan level. We don't want you to worry
-                      about usage when hosting your projects.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> We will
-                      notify you if your usage is unreasonable, and we may shut
-                      down and terminate projects and accounts that are creating
-                      an unreasonable burden on our infrastructure and/or
-                      business operations.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> We will use
+                    commercially reasonable efforts to provide all plan levels
+                    with sufficient bandwidth, builds, and serverless function
+                    invocations that we determine are typical of projects at
+                    that plan level. We don't want you to worry about usage when
+                    hosting your projects.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> We will
+                    notify you if your usage is unreasonable, and we may shut
+                    down and terminate projects and accounts that are creating
+                    an unreasonable burden on our infrastructure and/or business
+                    operations.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   6. Acceptable Use
                 </Heading>
-                <Text style="ml-4 dark:text-white">
+                <Text>
                   <p className="py-4">
                     a. The following are the acceptable uses of our Services:
                   </p>
                   <p className="ml-8">
-                    <ul className="list-decimal ">
+                    <ul className="list-decimal">
                       <li className="py-4">
                         The Services may only be used for lawful purposes.
                       </li>
@@ -559,46 +555,45 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   8. Etiquette
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> Without
-                      limiting any of these Terms, you shall not use the
-                      Services for, or in conjunction with, a website (including
-                      links from a website) that has any content that may be
-                      objectionable (as determined in our sole discretion),
-                      abusive, profane, contain hate speech or violates any
-                      applicable law. You hereby agree to indemnify and hold
-                      GeekyAnts Inc., its parent company, group companies and
-                      its affiliates harmless against any damages, losses,
-                      liabilities, settlements and expenses (including without
-                      limitation costs and attorneys' fees) in connection with
-                      any third party claim or action that arises from an
-                      alleged violation of the foregoing or otherwise from your
-                      use of Services in a manner not authorized by these Terms.
-                      Although we have no obligation to monitor your use of the
-                      Services, we may do so and may prohibit any use of the
-                      Services it believes may be (or alleged to be) in
-                      violation of the foregoing. YOU ACKNOWLEDGE THAT WE MAY
-                      DISABLE OR TERMINATE THE SERVICES IF WE BELIEVE THERE IS
-                      ANY CONTENT THAT VIOLATES THESE TERMS, INCLUDING THE
-                      ACCEPTABLE USE TERMS AND THE RESTRICTIONS ON USE PROVIDED
-                      ABOVE IN THESE TERMS.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> Without
+                    limiting any of these Terms, you shall not use the Services
+                    for, or in conjunction with, a website (including links from
+                    a website) that has any content that may be objectionable
+                    (as determined in our sole discretion), abusive, profane,
+                    contain hate speech or violates any applicable law. You
+                    hereby agree to indemnify and hold GeekyAnts Inc., its
+                    parent company, group companies and its affiliates harmless
+                    against any damages, losses, liabilities, settlements and
+                    expenses (including without limitation costs and attorneys'
+                    fees) in connection with any third party claim or action
+                    that arises from an alleged violation of the foregoing or
+                    otherwise from your use of Services in a manner not
+                    authorized by these Terms. Although we have no obligation to
+                    monitor your use of the Services, we may do so and may
+                    prohibit any use of the Services it believes may be (or
+                    alleged to be) in violation of the foregoing. YOU
+                    ACKNOWLEDGE THAT WE MAY DISABLE OR TERMINATE THE SERVICES IF
+                    WE BELIEVE THERE IS ANY CONTENT THAT VIOLATES THESE TERMS,
+                    INCLUDING THE ACCEPTABLE USE TERMS AND THE RESTRICTIONS ON
+                    USE PROVIDED ABOVE IN THESE TERMS.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   9. Plans and Pricing Terms
                 </Heading>
-                <Text className="ml-4">
+                <Text>
                   <p className="py-4">
                     a.The Services will be provided according to the plan level
                     you select. There are both Free Plans as well as Paid Plans.
                   </p>
-                  <Text className="ml-8">
+                  <Text>
                     <ul className="list-decimal ">
-                      <li className="py-4">
+                      <li className="py-4 ml-4">
                         <span className="font-displaySemibold">Free Plan:</span>{" "}
                         We offer FREE PLANS at our sole discretion. We may
                         change the terms and conditions applicable to the free
@@ -613,7 +608,7 @@ function term() {
                         without limitation, those caused by a malicious attack
                         on a project or deployment.
                       </li>
-                      <li className="py-4">
+                      <li className="py-4 ml-4">
                         <span className="font-displaySemibold">
                           Paid Plans:
                         </span>{" "}
@@ -630,140 +625,137 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   10. Confidentiality and Other Rights
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span>{" "}
-                      <span className="font-displaySemibold">
-                        Confidentiality:
-                      </span>{" "}
-                      Each party (the{" "}
-                      <span className="font-displaySemibold">
-                        "Receiving Party"
-                      </span>
-                      ) understands that the other party (the{" "}
-                      <span className="font-displaySemibold">
-                        "Disclosing Party"
-                      </span>
-                      ) has disclosed or may disclose business, technical,
-                      product or financial information or data relating to the
-                      Disclosing Party's business (hereinafter referred to as{" "}
-                      <span className="font-displaySemibold">
-                        "Proprietary Information"
-                      </span>{" "}
-                      of the Disclosing Party). Proprietary Information of
-                      GeekyAnts Inc. means information including but not limited
-                      to non-public information regarding features,
-                      functionality, performance and other sensitive data
-                      related to the Services. Your Proprietary Information
-                      includes non-public personal data provided by you to us to
-                      enable the provision of the Services and that you upload
-                      to the Services (collectively,{" "}
-                      <span className="font-displaySemibold">"Your Data"</span>{" "}
-                      ). The Receiving Party agrees: (i) to take reasonable
-                      precautions to protect such Proprietary Information, and
-                      (ii) not to use or divulge to any third person any such
-                      Proprietary Information (except in performance of the
-                      Services or as otherwise permitted herein). The Disclosing
-                      Party agrees that the foregoing shall not apply with
-                      respect to any information that the Receiving Party can
-                      document (a) is or becomes generally available to the
-                      public, or (b) was rightfully in its possession or known
-                      by it prior to receipt from the Disclosing Party, or (c)
-                      was rightfully disclosed to it without confidentiality
-                      restrictions by a third party, or (d) is or was
-                      independently developed without use of any Proprietary
-                      Information of the Disclosing Party as evidenced by its
-                      internal files. If a Receiving Party is required by law or
-                      a governmental agency to disclose the Disclosing Party's
-                      Proprietary Information, the Receiving Party must provide
-                      reasonable notice to the Disclosing Party of such required
-                      disclosure so as to permit the Disclosing Party a
-                      reasonable period of time to seek a protective order or
-                      limit the amount of Proprietary Information to be
-                      disclosed.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span>{" "}
-                      <span className="font-displaySemibold">
-                        Temporary Use License:
-                      </span>{" "}
-                      During the period for which you are authorized to use the
-                      Services, and subject to your compliance with these Terms,
-                      you are granted a personal, non-sublicensable,
-                      nonexclusive, non transferable, limited license, to use
-                      the Services for your internal business or personal
-                      purposes according to the service capacity of your
-                      account. Any rights not expressly granted herein are
-                      reserved and no license or right to use any
-                      trademark/intellectual property of GeekyAnts Inc., or any
-                      third-party is granted to you in connection with the
-                      Services.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">c.</span>{" "}
-                      <span className="font-displaySemibold">Feedback: </span>{" "}
-                      You may choose to or we may invite you to submit comments
-                      or ideas about the Services, including without limitation
-                      about how to improve the Services. By submitting any
-                      feedback, you agree that your disclosure is gratuitous,
-                      unsolicited and without restriction and will not place
-                      GeekyAnts Inc., its parent company, group companies and/or
-                      its affiliates under any fiduciary or other obligation,
-                      and that we are free to use such feedback without any
-                      additional compensation to you, and/or to disclose such
-                      feedback on a non-confidential basis or otherwise to
-                      anyone. Further, you warrant that your feedback is not
-                      subject to any license terms that would purport to require
-                      us to comply with any additional obligations with respect
-                      to any products or services that incorporate any of your
-                      feedback. You further acknowledge that, by acceptance of
-                      your submission, we do not waive any rights to use similar
-                      or related ideas previously known to us, or developed by
-                      its employees, or obtained from sources other than you.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">d.</span>{" "}
-                      <span className="font-displaySemibold">
-                        Aggregate Data:{" "}
-                      </span>{" "}
-                      We shall have the right to collect and analyze data and
-                      other information relating to the provision, use and
-                      performance of various aspects of the Services and related
-                      systems and technologies (excluding Your Data and data
-                      derived therefrom), and we will be free (during and after
-                      the term hereof) to (i) use such information and data to
-                      improve and enhance the Services and for other
-                      development, diagnostic and corrective purposes in
-                      connection with the Services and other offerings, and (ii)
-                      disclose such data solely in aggregate or other
-                      de-identified form in connection with its business.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">e.</span>{" "}
-                      <span className="font-displaySemibold">
-                        Customer Name:{" "}
-                      </span>{" "}
-                      During the term of this Agreement, you grant us a
-                      non-exclusive, royalty-free, fully-paid up license to use
-                      and reproduce your trademarks, trade names and logos (
-                      <span className="font-displaySemibold">
-                        “Customer Name”
-                      </span>
-                      ) in our marketing materials and website(s) and to
-                      indicate that you are our customer. We will abide by any
-                      written trademark usage guidelines provided by you. All
-                      goodwill arising out of the use of your trademarks, trade
-                      names and logos shall inure to your benefit. To decline us
-                      this license you need to email{" "}
-                      <a
-                        href="mailto:support@gluestack.io"
-                        className="text-primary"
-                      >
-                        support@gluestack.io
-                      </a>{" "}
-                      stating that you do not wish to be used as a reference.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span>{" "}
+                    <span className="font-displaySemibold">
+                      Confidentiality:
+                    </span>{" "}
+                    Each party (the{" "}
+                    <span className="font-displaySemibold">
+                      "Receiving Party"
+                    </span>
+                    ) understands that the other party (the{" "}
+                    <span className="font-displaySemibold">
+                      "Disclosing Party"
+                    </span>
+                    ) has disclosed or may disclose business, technical, product
+                    or financial information or data relating to the Disclosing
+                    Party's business (hereinafter referred to as{" "}
+                    <span className="font-displaySemibold">
+                      "Proprietary Information"
+                    </span>{" "}
+                    of the Disclosing Party). Proprietary Information of
+                    GeekyAnts Inc. means information including but not limited
+                    to non-public information regarding features, functionality,
+                    performance and other sensitive data related to the
+                    Services. Your Proprietary Information includes non-public
+                    personal data provided by you to us to enable the provision
+                    of the Services and that you upload to the Services
+                    (collectively,{" "}
+                    <span className="font-displaySemibold">"Your Data"</span> ).
+                    The Receiving Party agrees: (i) to take reasonable
+                    precautions to protect such Proprietary Information, and
+                    (ii) not to use or divulge to any third person any such
+                    Proprietary Information (except in performance of the
+                    Services or as otherwise permitted herein). The Disclosing
+                    Party agrees that the foregoing shall not apply with respect
+                    to any information that the Receiving Party can document (a)
+                    is or becomes generally available to the public, or (b) was
+                    rightfully in its possession or known by it prior to receipt
+                    from the Disclosing Party, or (c) was rightfully disclosed
+                    to it without confidentiality restrictions by a third party,
+                    or (d) is or was independently developed without use of any
+                    Proprietary Information of the Disclosing Party as evidenced
+                    by its internal files. If a Receiving Party is required by
+                    law or a governmental agency to disclose the Disclosing
+                    Party's Proprietary Information, the Receiving Party must
+                    provide reasonable notice to the Disclosing Party of such
+                    required disclosure so as to permit the Disclosing Party a
+                    reasonable period of time to seek a protective order or
+                    limit the amount of Proprietary Information to be disclosed.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span>{" "}
+                    <span className="font-displaySemibold">
+                      Temporary Use License:
+                    </span>{" "}
+                    During the period for which you are authorized to use the
+                    Services, and subject to your compliance with these Terms,
+                    you are granted a personal, non-sublicensable, nonexclusive,
+                    non transferable, limited license, to use the Services for
+                    your internal business or personal purposes according to the
+                    service capacity of your account. Any rights not expressly
+                    granted herein are reserved and no license or right to use
+                    any trademark/intellectual property of GeekyAnts Inc., or
+                    any third-party is granted to you in connection with the
+                    Services.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">c.</span>{" "}
+                    <span className="font-displaySemibold">Feedback: </span> You
+                    may choose to or we may invite you to submit comments or
+                    ideas about the Services, including without limitation about
+                    how to improve the Services. By submitting any feedback, you
+                    agree that your disclosure is gratuitous, unsolicited and
+                    without restriction and will not place GeekyAnts Inc., its
+                    parent company, group companies and/or its affiliates under
+                    any fiduciary or other obligation, and that we are free to
+                    use such feedback without any additional compensation to
+                    you, and/or to disclose such feedback on a non-confidential
+                    basis or otherwise to anyone. Further, you warrant that your
+                    feedback is not subject to any license terms that would
+                    purport to require us to comply with any additional
+                    obligations with respect to any products or services that
+                    incorporate any of your feedback. You further acknowledge
+                    that, by acceptance of your submission, we do not waive any
+                    rights to use similar or related ideas previously known to
+                    us, or developed by its employees, or obtained from sources
+                    other than you.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">d.</span>{" "}
+                    <span className="font-displaySemibold">
+                      Aggregate Data:{" "}
+                    </span>{" "}
+                    We shall have the right to collect and analyze data and
+                    other information relating to the provision, use and
+                    performance of various aspects of the Services and related
+                    systems and technologies (excluding Your Data and data
+                    derived therefrom), and we will be free (during and after
+                    the term hereof) to (i) use such information and data to
+                    improve and enhance the Services and for other development,
+                    diagnostic and corrective purposes in connection with the
+                    Services and other offerings, and (ii) disclose such data
+                    solely in aggregate or other de-identified form in
+                    connection with its business.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">e.</span>{" "}
+                    <span className="font-displaySemibold">
+                      Customer Name:{" "}
+                    </span>{" "}
+                    During the term of this Agreement, you grant us a
+                    non-exclusive, royalty-free, fully-paid up license to use
+                    and reproduce your trademarks, trade names and logos (
+                    <span className="font-displaySemibold">
+                      “Customer Name”
+                    </span>
+                    ) in our marketing materials and website(s) and to indicate
+                    that you are our customer. We will abide by any written
+                    trademark usage guidelines provided by you. All goodwill
+                    arising out of the use of your trademarks, trade names and
+                    logos shall inure to your benefit. To decline us this
+                    license you need to email{" "}
+                    <a
+                      href="mailto:support@gluestack.io"
+                      className="text-primary"
+                    >
+                      support@gluestack.io
+                    </a>{" "}
+                    stating that you do not wish to be used as a reference.
+                  </p>
+                </Text>
               </li>
 
               <li>
@@ -810,137 +802,135 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   12.Disclaimer of Warranty
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> YOU
-                      EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE
-                      SERVICES ARE AT YOUR SOLE RISK AND THAT THE SERVICES ARE
-                      PROVIDED “AS IS” AND “AS AVAILABLE.”
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> GEEKYANTS
-                      INC., ITS PARENT COMPANY, GROUP COMPANIES, AFFILIATES,
-                      LICENSORS, OFFICERS, AGENTS, EMPLOYEES, ADVERTISERS,
-                      SUPPLIERS OR PARTNERS (Collectively,{" "}
-                      <span className="font-displaySemibold">
-                        “GeekyAnts Inc. and Partners”
-                      </span>{" "}
-                      ) MAKE NO EXPRESS WARRANTIES AND DISCLAIM ALL IMPLIED
-                      WARRANTIES REGARDING THE SERVICES, INCLUDING IMPLIED
-                      WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-                      PURPOSE AND NON-INFRINGEMENT. WITHOUT LIMITING THE
-                      GENERALITY OF THE FOREGOING, GEEKYANTS INC., ITS PARENT
-                      COMPANY, GROUP COMPANIES AND AFFILIATES, AND ITS LICENSORS
-                      DO NOT REPRESENT OR WARRANT TO YOU THAT: (i) YOUR USE OF
-                      THE SERVICES WILL MEET YOUR REQUIREMENTS, (ii) YOUR USE OF
-                      THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE
-                      FROM ERROR, AND (iii) USAGE DATA PROVIDED THROUGH THE
-                      SERVICES WILL BE ACCURATE.
-                    </p>
-                    <p>
-                      <span className="font-displaySemibold">c.</span> IN
-                      ADDITION, YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT NO
-                      ORAL OR WRITTEN INFORMATION OR ADVICE PROVIDED BY
-                      GEEKYANTS INC., ITS OFFICERS, DIRECTORS, EMPLOYEES, OR
-                      AGENTS , AND THIRD PARTY SERVICE PROVIDERS WILL (i)
-                      CONSTITUTE LEGAL OR FINANCIAL ADVICE OR (ii) CREATE A
-                      WARRANTY OF ANY KIND WITH RESPECT TO THIS SITE OR THE
-                      SERVICES FOUND AT THIS SITE, AND USERS SHOULD NOT RELY ON
-                      ANY SUCH INFORMATION OR ADVICE.
-                    </p>
-                    <p>
-                      <span className="font-displaySemibold">d.</span> NOTHING
-                      IN THESE TERMS, INCLUDING SECTIONS 12 AND 13, SHALL
-                      EXCLUDE OR LIMIT GEEKYANTS INC.’S, WARRANTY OR LIABILITY
-                      FOR LOSSES WHICH MAY NOT BE LAWFULLY EXCLUDED OR LIMITED
-                      BY APPLICABLE LAW.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> YOU
+                    EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE SERVICES
+                    ARE AT YOUR SOLE RISK AND THAT THE SERVICES ARE PROVIDED “AS
+                    IS” AND “AS AVAILABLE.”
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> GEEKYANTS
+                    INC., ITS PARENT COMPANY, GROUP COMPANIES, AFFILIATES,
+                    LICENSORS, OFFICERS, AGENTS, EMPLOYEES, ADVERTISERS,
+                    SUPPLIERS OR PARTNERS (Collectively,{" "}
+                    <span className="font-displaySemibold">
+                      “GeekyAnts Inc. and Partners”
+                    </span>{" "}
+                    ) MAKE NO EXPRESS WARRANTIES AND DISCLAIM ALL IMPLIED
+                    WARRANTIES REGARDING THE SERVICES, INCLUDING IMPLIED
+                    WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                    PURPOSE AND NON-INFRINGEMENT. WITHOUT LIMITING THE
+                    GENERALITY OF THE FOREGOING, GEEKYANTS INC., ITS PARENT
+                    COMPANY, GROUP COMPANIES AND AFFILIATES, AND ITS LICENSORS
+                    DO NOT REPRESENT OR WARRANT TO YOU THAT: (i) YOUR USE OF THE
+                    SERVICES WILL MEET YOUR REQUIREMENTS, (ii) YOUR USE OF THE
+                    SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM
+                    ERROR, AND (iii) USAGE DATA PROVIDED THROUGH THE SERVICES
+                    WILL BE ACCURATE.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">c.</span> IN
+                    ADDITION, YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT NO
+                    ORAL OR WRITTEN INFORMATION OR ADVICE PROVIDED BY GEEKYANTS
+                    INC., ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS , AND
+                    THIRD PARTY SERVICE PROVIDERS WILL (i) CONSTITUTE LEGAL OR
+                    FINANCIAL ADVICE OR (ii) CREATE A WARRANTY OF ANY KIND WITH
+                    RESPECT TO THIS SITE OR THE SERVICES FOUND AT THIS SITE, AND
+                    USERS SHOULD NOT RELY ON ANY SUCH INFORMATION OR ADVICE.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">d.</span> NOTHING IN
+                    THESE TERMS, INCLUDING SECTIONS 12 AND 13, SHALL EXCLUDE OR
+                    LIMIT GEEKYANTS INC.’S, WARRANTY OR LIABILITY FOR LOSSES
+                    WHICH MAY NOT BE LAWFULLY EXCLUDED OR LIMITED BY APPLICABLE
+                    LAW.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   13. Limitation of Liability
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> SUBJECT
-                      TO SECTION 12 ABOVE, YOU EXPRESSLY UNDERSTAND AND AGREE
-                      THAT GEEKYANTS INC. AND ITS PARTNERS SHALL NOT BE LIABLE
-                      TO YOU FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
-                      CONSEQUENTIAL, OR EXEMPLARY DAMAGES WHICH MAY BE INCURRED
-                      BY YOU, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY.
-                      THIS SHALL INCLUDE, BUT NOT BE LIMITED TO, ANY LOSS OF
-                      PROFIT (WHETHER INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS
-                      OF GOODWILL OR BUSINESS REPUTATION, ANY LOSS OF DATA
-                      SUFFERED, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR
-                      SERVICES, OR OTHER INTANGIBLE LOSS. THESE LIMITATIONS
-                      SHALL APPLY NOTWITHSTANDING THE FAILURE OF ESSENTIAL
-                      PURPOSE OF ANY LIMITED REMEDY.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> THE
-                      LIMITATIONS ON GEEKYANTS INC.’S LIABILITY TO YOU IN THIS
-                      SECTION SHALL APPLY WHETHER OR NOT GEEKYANTS INC. HAS BEEN
-                      ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF
-                      ANY SUCH LOSSES ARISING.
-                    </p>
-                    <p>
-                      <span className="font-displaySemibold">c.</span> SOME
-                      STATES AND JURISDICTIONS MAY NOT ALLOW THE LIMITATION OR
-                      EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL
-                      DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT
-                      APPLY TO YOU. IN NO EVENT SHALL GEEKYANTS INC. AND
-                      PARTNER’S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES,
-                      AND CAUSES OF ACTION (WHETHER IN CONTRACT, TORT (INCLUDING
-                      NEGLIGENCE), OR OTHERWISE) EXCEED THE AMOUNT THAT YOU HAVE
-                      ACTUALLY PAID FOR THE SERVICES IN THE PAST TWELVE MONTHS,
-                      OR ONE THOUSAND DOLLARS ($1000.00), WHICHEVER IS GREATER.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> SUBJECT TO
+                    SECTION 12 ABOVE, YOU EXPRESSLY UNDERSTAND AND AGREE THAT
+                    GEEKYANTS INC. AND ITS PARTNERS SHALL NOT BE LIABLE TO YOU
+                    FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
+                    EXEMPLARY DAMAGES WHICH MAY BE INCURRED BY YOU, HOWEVER
+                    CAUSED AND UNDER ANY THEORY OF LIABILITY. THIS SHALL
+                    INCLUDE, BUT NOT BE LIMITED TO, ANY LOSS OF PROFIT (WHETHER
+                    INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS OF GOODWILL OR
+                    BUSINESS REPUTATION, ANY LOSS OF DATA SUFFERED, COST OF
+                    PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER
+                    INTANGIBLE LOSS. THESE LIMITATIONS SHALL APPLY
+                    NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY
+                    LIMITED REMEDY.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> THE
+                    LIMITATIONS ON GEEKYANTS INC.’S LIABILITY TO YOU IN THIS
+                    SECTION SHALL APPLY WHETHER OR NOT GEEKYANTS INC. HAS BEEN
+                    ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF
+                    ANY SUCH LOSSES ARISING.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">c.</span> SOME STATES
+                    AND JURISDICTIONS MAY NOT ALLOW THE LIMITATION OR EXCLUSION
+                    OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE
+                    ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU. IN NO
+                    EVENT SHALL GEEKYANTS INC. AND PARTNER’S TOTAL LIABILITY TO
+                    YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION (WHETHER
+                    IN CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE)
+                    EXCEED THE AMOUNT THAT YOU HAVE ACTUALLY PAID FOR THE
+                    SERVICES IN THE PAST TWELVE MONTHS, OR ONE THOUSAND DOLLARS
+                    ($1000.00), WHICHEVER IS GREATER.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   14. Indemnification
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> You agree
-                      to hold harmless and indemnify GeekyAnts Inc. and Partners
-                      from and against any third party claim arising from or in
-                      any way related to (i) your breach of the Terms, (ii) your
-                      use of the Services, (iii) your violation of applicable
-                      laws, rules or regulations in connection with the
-                      Services, or (iv) your User Content, including any
-                      liability or expense arising from all claims, losses,
-                      damages (actual and consequential), suits, judgments,
-                      litigation costs and attorneys’ fees, of every kind and
-                      nature.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> THE
-                      LIMITATIONS ON GEEKYANTS INC.’S LIABILITY TO YOU IN THIS
-                      SECTION SHALL APPLY WHETHER OR NOT GEEKYANTS INC. HAS BEEN
-                      ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF
-                      ANY SUCH LOSSES ARISING.
-                    </p>
-                    <p>
-                      <span className="font-displaySemibold">c.</span> We
-                      reserve the right to assume the exclusive defense and
-                      control of any matter which is subject to indemnification
-                      under this Section. In such case, you agree to cooperate
-                      with any reasonable requests for assisting our defense of
-                      such matter.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> You agree
+                    to hold harmless and indemnify GeekyAnts Inc. and Partners
+                    from and against any third party claim arising from or in
+                    any way related to (i) your breach of the Terms, (ii) your
+                    use of the Services, (iii) your violation of applicable
+                    laws, rules or regulations in connection with the Services,
+                    or (iv) your User Content, including any liability or
+                    expense arising from all claims, losses, damages (actual and
+                    consequential), suits, judgments, litigation costs and
+                    attorneys’ fees, of every kind and nature.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> THE
+                    LIMITATIONS ON GEEKYANTS INC.’S LIABILITY TO YOU IN THIS
+                    SECTION SHALL APPLY WHETHER OR NOT GEEKYANTS INC. HAS BEEN
+                    ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF
+                    ANY SUCH LOSSES ARISING.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">c.</span> We reserve
+                    the right to assume the exclusive defense and control of any
+                    matter which is subject to indemnification under this
+                    Section. In such case, you agree to cooperate with any
+                    reasonable requests for assisting our defense of such
+                    matter.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   15. Location of Server
                 </Heading>
-                <p className="ml-4 dark:text-white">
+                <p className=" dark:text-white">
                   <p className="py-4 dark:text-white">
                     a. Our Servers and Data Centres (including that of our
                     sub-processors) are located in:
@@ -973,65 +963,64 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   16. Third-Party Content and Materials
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> You may
-                      be able to access or use third party websites, resources,
-                      content, communications or information ({" "}
-                      <span className="font-displaySemibold">
-                        “Third Party Materials”
-                      </span>
-                      ) via the Services. You acknowledge sole responsibility
-                      for and assume all risk arising from your access to,
-                      reliance upon or use of any such Third Party Materials and
-                      we disclaim any and all liabilities that you may incur
-                      arising from access to, reliance upon or use of such Third
-                      Party Materials via the Services.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> You
-                      acknowledge and agree that we: (i) are not responsible for
-                      the availability or accuracy of such Third Party
-                      Materials; (ii) have no liability to you or any third
-                      party for any harm, injuries or losses suffered as a
-                      result of your access to, reliance upon or use of such
-                      Third Party Materials; and (iii) do not make any promises
-                      to remove Third Party Materials from being accessed
-                      through the Services.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> You may be
+                    able to access or use third party websites, resources,
+                    content, communications or information ({" "}
+                    <span className="font-displaySemibold">
+                      “Third Party Materials”
+                    </span>
+                    ) via the Services. You acknowledge sole responsibility for
+                    and assume all risk arising from your access to, reliance
+                    upon or use of any such Third Party Materials and we
+                    disclaim any and all liabilities that you may incur arising
+                    from access to, reliance upon or use of such Third Party
+                    Materials via the Services.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> You
+                    acknowledge and agree that we: (i) are not responsible for
+                    the availability or accuracy of such Third Party Materials;
+                    (ii) have no liability to you or any third party for any
+                    harm, injuries or losses suffered as a result of your access
+                    to, reliance upon or use of such Third Party Materials; and
+                    (iii) do not make any promises to remove Third Party
+                    Materials from being accessed through the Services.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   17. Third-Party Content and Materials
                 </Heading>
-                  <Text style='py-4 ml-8'>
-                    <p>
-                      <span className="font-displaySemibold">a.</span> The
-                      Services may incorporate certain third party software (
-                      <span className="font-displaySemibold">
-                        “Third Party Software”
-                      </span>
-                      ), which is licensed subject to the terms and conditions
-                      of such Third Party Software. Nothing in these Terms
-                      limits your rights under, or grants you rights that
-                      supersede, the terms and conditions of any applicable
-                      license for such Third Party Software.
-                    </p>
-                    <p className="py-4">
-                      <span className="font-displaySemibold">b.</span> You
-                      acknowledge and agree that we may use third-party Service
-                      Providers to monitor and analyze your use of our Service.
-                    </p>
-                  </Text>
+                <Text>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">a.</span> The
+                    Services may incorporate certain third party software (
+                    <span className="font-displaySemibold">
+                      “Third Party Software”
+                    </span>
+                    ), which is licensed subject to the terms and conditions of
+                    such Third Party Software. Nothing in these Terms limits
+                    your rights under, or grants you rights that supersede, the
+                    terms and conditions of any applicable license for such
+                    Third Party Software.
+                  </p>
+                  <p className="py-4">
+                    <span className="font-displaySemibold">b.</span> You
+                    acknowledge and agree that we may use third-party Service
+                    Providers to monitor and analyze your use of our Service.
+                  </p>
+                </Text>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   18. Inactivity
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span>{" "}
@@ -1068,9 +1057,9 @@ function term() {
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
-                  18.Trademark Violations
+                  19.Trademark Violations
                 </Heading>
-                <div className="py-4 ml-4">
+                <p className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> When we
@@ -1095,14 +1084,14 @@ function term() {
                       </li>
                     </ul>
                   </Text>
-                </div>
+                </p>
               </li>
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
                   20. Governing Law
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> The Terms
@@ -1119,7 +1108,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   21. Disputes and Arbitration
                 </Heading>
-                <div className="py-4 ml-4">
+                <div className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">
@@ -1194,9 +1183,9 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   22. Security
                 </Heading>
-                <div className="py-4 ml-4">
+                <div className="py-4 ">
                   <Text>
-                    <p>
+                    <p className="py-4">
                       <span className="font-displaySemibold">a.</span> You
                       understand that the operation of the Services, including
                       the User Content, may be unencrypted and involve (a)
@@ -1222,9 +1211,32 @@ function term() {
 
               <li>
                 <Heading priority="4" style="text-md font-displaySemibold">
+                  23. Support
+                </Heading>
+                <div className="py-4 ">
+                  <Text>
+                    <p>
+                      <span className="font-displaySemibold">a.</span> Subject
+                      to the terms hereof, we may, but are not required to,
+                      provide you with commercially reasonable remote technical
+                      support services during our normal business hours (
+                      <span className="font-displaySemibold">
+                        "Support Services"
+                      </span>
+                      ). Notwithstanding anything to the contrary contained in
+                      these Terms, all Support Services are provided at our sole
+                      discretion. Furthermore, Support Services are not provided
+                      for Free Plans.
+                    </p>
+                  </Text>
+                </div>
+              </li>
+
+              <li>
+                <Heading priority="4" style="text-md font-displaySemibold">
                   24. Modification and Termination of Services
                 </Heading>
-                <div className="py-4 ml-4">
+                <div className="py-4 ">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> GeekyAnts
@@ -1288,7 +1300,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   25. Changes to the Terms of Service
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4 ">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> These
@@ -1309,7 +1321,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   26. Privacy Policy
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> These
@@ -1332,7 +1344,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   27. No Third-Party Beneficiaries
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4 ">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> Nothing
@@ -1347,7 +1359,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   28. Miscellaneous
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> If
@@ -1414,7 +1426,7 @@ function term() {
                 <Heading priority="4" style="text-md font-displaySemibold">
                   29. Previews
                 </Heading>
-                <div className="py-4 ml-8">
+                <div className="py-4 ">
                   <Text>
                     <p>
                       <span className="font-displaySemibold">a.</span> GeekyAnts
