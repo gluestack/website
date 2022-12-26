@@ -78,7 +78,7 @@
                     "default": true,
                     "pages": [
                       {
-                        "id": "web/web",
+                        "id": "web/installation",
                         "title": "Web"
                       },
                       {
@@ -187,12 +187,44 @@
                 "title": "Web",
                 "pages": [
                   {
-                    "id": "web/hello",
-                    "title": "Hello"
+                    "id": "web/installation",
+                    "title": "Installation"
                   },
                   {
-                    "id": "web/helo2",
-                    "title": "Hello2"
+                    "id": "web/dependencies",
+                    "title": "Dependencies"
+                  },
+                  {
+                    "id": "web/starter-template",
+                    "title": "Starter Template"
+                  },
+                  {
+                    "id": "web/other-recommendation",
+                    "title": "Other Recommendation"
+                  },
+                  {
+                    "type": "heading",
+                    "title": "Making API calls",
+                    "isCollapsed": true,
+                    "default": false,
+                    "pages": [
+                      {
+                        "id": "web/api-calls/auth",
+                        "title": "Auth"
+                      },
+                      {
+                        "id": "web/api-calls/graphql",
+                        "title": "GraphQL"
+                      },
+                      {
+                        "id": "web/api-calls/storage",
+                        "title": "Storage"
+                      },
+                      {
+                        "id": "web/api-calls/functions",
+                        "title": "Functions"
+                      }
+                    ]
                   }
                 ]
               }
