@@ -38,7 +38,7 @@ function CardsSection() {
           className="dark:block hidden"
         />
       </div>
-      <div className="bg-primary-200 pt-10 max-h-[600px] lg:max-h-[450px] xl:max-h-[500px]">
+      <div className="bg-primary-200 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
         <div className="container pt-10 pb-12 relative ">
           <div className="sm:max-w-[900px] m-auto">
             <div className="text-center mb-10">
@@ -54,7 +54,7 @@ function CardsSection() {
               </div>
             </Text>
           </div>
-          <div className="grid bg-white shadow-md py-5 lg:px-20 px-4 mt-10 rounded-md">
+          <div className="grid bg-white shadow-md py-5 lg:px-20 px-4 mt-5 sm:mt-10 rounded-md">
             <CustomImage src={architecture} alt="image" />
           </div>
         </div>
