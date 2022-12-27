@@ -60,7 +60,7 @@ function CardsSection() {
         </div>
       </div>
       <div className="container pt-5 sm:pt-40 lg:pt-50 xl:pt-60 pb-10 md:pb-20">
-        <div className="grid gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 lg:gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3">
           <Card
             type="hasIcon"
             src={NextIcon}
