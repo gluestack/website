@@ -19,7 +19,7 @@ export default function Cookies() {
             consent_modal: {
               // title: "<h3 class='text-black dark:text-white-300'>We use cookies!</h3>",
               description:
-                '<div class="text-secondar dark:text-white-300">Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="text-primary font-displayHead underline">Let me choose</button></div>',
+                '<div class="text-secondary dark:text-white-300">Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="text-primary font-displayHead underline">Let me choose</button></div>',
               primary_btn: {
                 text: "Accept all",
                 role: "accept_all", // 'accept_selected' or 'accept_all'
