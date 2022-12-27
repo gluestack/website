@@ -30,6 +30,28 @@ function EcoSystem() {
       </>
     );
   };
+  const SealLogo = () => {
+    return (
+      <>
+        {!dark ? (
+          <CustomImage src={Seal} alt="seal-logo" />
+        ) : (
+          <CustomImage src={SealDark} alt="seal-logo" />
+        )}
+      </>
+    );
+  };
+  const DsxLogo = () => {
+    return (
+      <>
+        {!dark ? (
+          <CustomImage src={Dsx} alt="dsx-logo" />
+        ) : (
+          <CustomImage src={DsxDark} alt="dsx-logo" />
+        )}
+      </>
+    );
+  };
 
   return (
     <div className="relative w-full ">
@@ -54,12 +76,7 @@ function EcoSystem() {
               <div className="dot relative">
                 <div className="flex items-center justify-start">
                   <div className="mr-4 w-[83px] ">
-                  {!dark ? (
-                    <CustomImage src={Seal} alt="seal-logo" />
-                  ) : (
-                    <CustomImage src={SealDark} alt="seal-logo" />
-                  )}
-
+                    {!isMounted ? <SealLogo /> : <SealLogo />}
                   </div>
                   {/* <Heading priority="6">
                     seal
@@ -78,11 +95,7 @@ function EcoSystem() {
                 <div className="dot relative text-center lg:text-left">
                   <div className="flex items-center justify-start">
                     <div className="mr-2 w-[86px] ">
-                      {!dark ? (
-                        <CustomImage src={Dsx} alt="dsx-logo" />
-                      ) : (
-                        <CustomImage src={DsxDark} alt="dsx-logo" />
-                      )}
+                      {!isMounted ? <DsxLogo /> : <DsxLogo />}
                     </div>
                     <Heading priority="6">
                        (R&amp;D)
