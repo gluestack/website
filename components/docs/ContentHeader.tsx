@@ -48,7 +48,7 @@ function Dropdown() {
           >
             <div>
               <div className=" text-gray-400 text-xs mb-2">VERSIONS</div>
-              <div className="flex text-sm dark:text-white">
+              <div className="flex text-sm dark:text-white-300">
                 1.x
                 {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,13 +120,13 @@ function Dropdown() {
 function SearchInput() {
   return (
     <div className="relative flex w-full flex-wrap items-stretch ">
-      <span className="z-10 h-full leading-snug font-normal absolute text-center text-black-400 dark:text-white absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3 border-transparent">
+      <span className="z-10 h-full leading-snug font-normal absolute text-center text-black-400 dark:text-white-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3 border-transparent">
         <AiOutlineSearch size={21}/>
       </span>
       <input
         type="text"
         placeholder=""
-        className="px-3 py-3 relative text-sm border-b border-gray-100  w-full pl-10 text-sm placeholder-gray-700 text-gray-700 block w-full p-2.5 focus:ring-0 focus:ring-offset-0 focus:outline-none focus:ring-0 focus:border-b dark:bg-black-200 dark:text-white"
+        className="px-3 py-3 relative text-sm border-b border-gray-100  w-full pl-10 text-sm placeholder-gray-700 text-gray-700 block w-full p-2.5 focus:ring-0 focus:ring-offset-0 focus:outline-none focus:ring-0 focus:border-b dark:bg-black-200 dark:text-white-300"
       />
     </div>
   );

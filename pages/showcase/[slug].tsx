@@ -31,10 +31,10 @@ function showcase({ events, categories, tags, showcase }: any) {
         <div className="container py-4">
           <div className="flex items-center py-4 lg:py-1">
             <Author name="Williams" src={profileImg} />
-            <span className="p-2 text-lg dark:text-white">
+            <span className="p-2 text-lg dark:text-white-300">
               <FaGithub />
             </span>
-            <span className="p-1 text-lg dark:text-white">
+            <span className="p-1 text-lg dark:text-white-300">
               <FaTwitter />
             </span>
           </div>
@@ -46,7 +46,7 @@ function showcase({ events, categories, tags, showcase }: any) {
               alt={events.altText || "banner"}
             />
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-4 lg:mt-0">
-              <div className="p-2 rounded-lg bg-gray dark:bg-black-200">
+              <div className="p-2 rounded-lg bg-white-300 dark:bg-black-200">
                 <Text size="md">
                   Category:
                   {categories.map((ele: any, index: number) => (

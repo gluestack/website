@@ -8,5 +8,5 @@
     @apply flex-1 w-full py-1 pl-8 pr-4 tracking-wide text-gray-400 placeholder-gray-500 bg-transparent border-b focus:outline-none
 }
 .lable{
-    @apply mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white
+    @apply mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white-300
 }

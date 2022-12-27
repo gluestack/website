@@ -110,7 +110,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
 
                   return (
                     <Link href={linkUrl + "/" + pageInfo.id}>
-                      <div className="text-gray-800 dark:text-white py-3 hover:bg-gray-100 hover:cursor-pointer px-10 ">
+                      <div className="text-gray-800 dark:text-white-300 py-3 hover:bg-gray-100 hover:cursor-pointer px-10 ">
                         {pageInfo.title}
                       </div>
                     </Link>
@@ -133,7 +133,7 @@ const HeadingDropdown = ({ props, version }: any) => {
       <div className="accordion-item">
         <div className="accordion-header font-displaySemibold" id="headingOne">
           <button
-            className="relative flex items-center w-full text-gray-800 dark:text-white justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
+            className="relative flex items-center w-full text-gray-800 dark:text-white-300 justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
@@ -201,7 +201,7 @@ const HeadingDropdown = ({ props, version }: any) => {
                 href={"/" + version + "/" + pageInfo.id}
                 // onClick={() => handleItemClick(pageInfo)}
               >
-                <div className="text-gray-800 dark:text-white pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10 pl-[60px]">
+                <div className="text-gray-800 dark:text-white-300 pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10 pl-[60px]">
                   {pageInfo.title}
                 </div>
               </Link>
@@ -221,7 +221,7 @@ function CategoryDropdown(props: any) {
       <div className="accordion-item">
         <div className="accordion-header font-displaySemibold" id="headingOne">
           <button
-            className="relative flex items-center w-full text-gray-800 dark:text-white justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
+            className="relative flex items-center w-full text-gray-800 dark:text-white-300 justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"

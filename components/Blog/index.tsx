@@ -45,7 +45,7 @@ function Blog({
                   name={autherName}
                 />
 
-                <span className="hidden px-1 lg:block dark:text-white">|</span>
+                <span className="hidden px-1 lg:block dark:text-white-300">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
                 <div className="pl-0 lg:pl-4">
                     <Tags>{category}</Tags>
