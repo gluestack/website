@@ -17,7 +17,7 @@ function SubBanner({ heading, desc, src, btntext, isright,altText }: any) {
             } `}
           >
             <div className="py-8 md:py-0 lg:w-1/2">
-              <div className="flex items-center justify-center xl:px-0 ">
+              <div className="flex items-center justify-center lg:px-0 ">
                 <div className="sm:max-w-[480px]">
                   <Heading
                     priority={2}

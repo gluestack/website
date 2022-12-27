@@ -37,8 +37,6 @@ module.exports = {
           50: "#FAF5FF",
           100: "#BF7EFF",
           200: "#853ECC",
-          600: "#8944CE",
-          700: "#8944CE",
         },
         secondary: {
           DEFAULT: "#222020",
@@ -95,15 +93,15 @@ module.exports = {
       displayItalic: ["display-BoldItalic", "sans-serif"],
       displayMedium: ["sf-pro-medium", "sans-serif"],
     },
-    screens: {
-      sm: "640px",
+    // screens: {
+    //   sm: "640px",
 
-      md: "998px",
+    //   md: "998px",
 
-      lg: "1024px",
+    //   lg: "1024px",
 
-      xl: "1280px",
-    },
+    //   xl: "1280px",
+    // },
     container: {
       padding: {
         DEFAULT: "1rem",
