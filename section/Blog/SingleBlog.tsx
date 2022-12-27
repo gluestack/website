@@ -37,7 +37,7 @@ function SingleBlog({
                   name={author.name}
                 />
 
-                <span className="hidden px-1 lg:block dark:text-white">|</span>
+                <span className="hidden px-1 lg:block dark:text-white-300">|</span>
                 <div className="w-full pl-4 text-center lg:pl-0 md:w-auto"><Text size="sm">{formatDate(blog.publish_date)}</Text></div>
                 <div className="w-full pl-0 text-center md:w-auto lg:pl-4">
                 {categories.map((data: any, index: number) => (

@@ -448,7 +448,7 @@ function term() {
                   <p className="py-4">
                     a. You will not, directly or indirectly:
                   </p>
-                  <p className="ml-8 dark:text-white">
+                  <p className="ml-8 dark:text-white-300">
                     <ul className="list-decimal ">
                       <li className="py-4">
                         sublicense, resell, rent, lease, transfer, assign, or
@@ -763,7 +763,7 @@ function term() {
                 <Heading priority="4">
                   11. Representations
                 </Heading>
-                <p className="ml-4 dark:text-white">
+                <p className="ml-4 dark:text-white-300">
                   <p className="py-4">
                     a. Each party represents and warrants to the other that it
                     has full right and power to enter into and perform under
@@ -931,14 +931,14 @@ function term() {
                 <Heading priority="4">
                   15. Location of Server
                 </Heading>
-                <p className=" dark:text-white">
-                  <p className="py-4 dark:text-white">
+                <p className=" dark:text-white-300">
+                  <p className="py-4 dark:text-white-300">
                     a. Our Servers and Data Centres (including that of our
                     sub-processors) are located in:
                   </p>
                   <p className="py-4">b. You represent and warrant that:</p>
                   <p className="ml-8">
-                    <ul className="list-decimal dark:text-white ">
+                    <ul className="list-decimal dark:text-white-300 ">
                       <li className="py-2">India</li>
                       <li className="py-2">Germany</li>
                       <li className="py-2">Sweden</li>
@@ -954,7 +954,7 @@ function term() {
                     </ul>
                   </p>
                 </p>
-                <p className="py-4 dark:text-white">
+                <p className="py-4 dark:text-white-300">
                   Any change to the above list that pertains to the location of
                   the Servers will be updated in the following versions of these
                   Terms.

@@ -37,6 +37,7 @@ module.exports = {
           50: "#FAF5FF",
           100: "#BF7EFF",
           200: "#853ECC",
+          300: "#6726A7",
         },
         secondary: {
           DEFAULT: "#222020",
@@ -51,6 +52,7 @@ module.exports = {
           DEFAULT: "#ffffff",
           100: "#F5F5F5",
           200: "#F6FAF9",
+          300: "#E6E6E6",
         },
         gray: {
           DEFAULT: "#E6E6E6",

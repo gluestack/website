@@ -38,7 +38,7 @@ function CardsSection() {
           className="dark:block hidden"
         />
       </div>
-      <div className="bg-primary-200 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
+      <div className="bg-primary-200 dark:bg-primary-300 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
         <div className="container pt-10 pb-12 relative ">
           <div className="sm:max-w-[900px] m-auto">
             <div className="text-center mb-10">
@@ -54,13 +54,13 @@ function CardsSection() {
               </div>
             </Text>
           </div>
-          <div className="grid bg-white shadow-md py-5 lg:px-20 px-4 mt-5 sm:mt-10 rounded-md">
+          <div className="grid bg-white shadow-md px-4 mt-5 sm:mt-10 rounded-md">
             <CustomImage src={architecture} alt="image" />
           </div>
         </div>
       </div>
       <div className="container pt-5 sm:pt-40 lg:pt-50 xl:pt-60 pb-10 md:pb-20">
-        <div className="grid gap-4 lg:gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 lg:gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3 mt-10">
           <Card
             type="hasIcon"
             src={NextIcon}

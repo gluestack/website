@@ -20,7 +20,7 @@ export default function app(props: any) {
             return (
               <div className="mt-4 link-list pb-4">
                 {props.showBackButton ? (
-                  <div  className="mx-10 dark:text-white" >
+                  <div  className="mx-10 dark:text-white-300" >
                     <Link href={"/docs"} className="inline-block px-4 py-2 rounded-sm border border-gray-300">
                       <BiArrowBack />
                     </Link>
@@ -110,7 +110,7 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
             </div>
               <div className={`${
                     isOpen ? "rotate-180" : ""
-                  }  text-black-400 dark:text-white px-3 transition-all duration-50 `}>
+                  }  text-black-400 dark:text-white-300 px-3 transition-all duration-50 `}>
                     <FaCaretDown />
               </div>
           </button>

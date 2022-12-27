@@ -21,7 +21,7 @@ function earlyAccess() {
           <Heading  priority={2}>
             Thanks for signing up.
           </Heading>
-            <p className="mt-10 text-md text-black-200 dark:text-white">
+            <p className="mt-10 text-md text-black-200 dark:text-white-300">
               You’re in the waitlist and will be notified as soon as a spot
               becomes available.
             </p>
