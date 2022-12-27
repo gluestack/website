@@ -37,7 +37,7 @@ function Card({ src, altText, title, description, href, type }: any) {
           />
         </div>
       )}
-      <div className={`p-6 ${type == "hasIcon" ? "text-center pt-0" : ""}`}>
+      <div className={`p-6 ${type == "hasIcon" ? " pt-0 " : ""}`}>
         <Heading priority={`${type == "hasIcon" ? "6" : "3"}`}>{title}</Heading>
         <div className="mt-4">
           <Text size="base">{description}</Text>
