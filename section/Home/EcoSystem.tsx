@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import Heading from "../../elements/Heading";
 import Gradient from "../../public/images/gradient-pink.png";
-import Seal from "../../public/images/seal.png";
-import Dsx from "../../public/images/dsx.svg";
+import Seal from "../../public/images/ecosystem/seal-logo-light.svg";
+import SealDark from "../../public/images/ecosystem/seal-logo-dark.svg";
+import Dsx from "../../public/images/ecosystem/dsx-logo-light.svg";
+import DsxDark from "../../public/images/ecosystem/dsx-logo-dark.svg";
 import CustomImage from "../../components/CustomImage";
 import Text from "../../elements/Text";
-import ecoSystemLight from "../../public/images/echosystem-light.svg";
-import ecoSystemDark from "../../public/images/echosystem-dark.svg";
+import EcoSystemLight from "../../public/images/ecosystem/gluestack-ecosystem-light.svg";
+import EcoSystemDark from "../../public/images/ecosystem/gluestack-ecosystem-dark.svg";
 import InnerHeadding from "../../elements/InnerHeading";
 import { AppContext } from "../../pages/_app";
 import Image from "next/image";
@@ -21,9 +23,9 @@ function EcoSystem() {
     return (
       <>
         {!dark ? (
-          <CustomImage src={ecoSystemLight} alt="EcoSystem" />
+          <CustomImage src={EcoSystemLight} alt="EcoSystem" />
         ) : (
-          <CustomImage src={ecoSystemDark} alt="EcoSystem" />
+          <CustomImage src={EcoSystemDark} alt="EcoSystem" />
         )}
       </>
     );
@@ -51,12 +53,17 @@ function EcoSystem() {
             <div className="lg:pl-24 pl-0 horizental-line relative py-8">
               <div className="dot relative">
                 <div className="flex items-center justify-start">
-                  <div className="mr-4 w-[40px] h-[36px] ">
+                  <div className="mr-4 w-[83px] ">
+                  {!dark ? (
                     <CustomImage src={Seal} alt="seal-logo" />
+                  ) : (
+                    <CustomImage src={SealDark} alt="seal-logo" />
+                  )}
+
                   </div>
-                  <Heading priority="6">
+                  {/* <Heading priority="6">
                     seal
-                  </Heading>
+                  </Heading> */}
                 </div>
                 <div className="pt-4 text-left">
                   <Text size="md">
@@ -70,11 +77,15 @@ function EcoSystem() {
               <div className="pt-16">
                 <div className="dot relative text-center lg:text-left">
                   <div className="flex items-center justify-start">
-                    <div className="mr-4 w-[40px] h-[36px] ">
-                      <CustomImage src={Dsx} alt="dsx-logo" />
+                    <div className="mr-2 w-[86px] ">
+                      {!dark ? (
+                        <CustomImage src={Dsx} alt="dsx-logo" />
+                      ) : (
+                        <CustomImage src={DsxDark} alt="dsx-logo" />
+                      )}
                     </div>
                     <Heading priority="6">
-                      DSX (R&amp;D)
+                       (R&amp;D)
                       {/* <button className="tagsButton relative -top-2">
                         Upcoming
                       </button> */}
