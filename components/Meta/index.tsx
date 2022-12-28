@@ -10,7 +10,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="index,follow" />
 
         <link rel="manifest" href="/manifest.json" />
 
