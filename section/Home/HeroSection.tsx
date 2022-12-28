@@ -6,6 +6,7 @@ import Button from "../../components/Button";
 import light from "../../public/images/light.gif";
 import darkImg from "../../public/images/dark.gif";
 import { AppContext } from "../../pages/_app";
+import CustomImage from "../../components/CustomImage";
 
 import Image from "next/image";
 
@@ -19,9 +20,9 @@ function HeroSection() {
     return (
       <>
         {!dark ? (
-          <Image src={light} alt="Fulll-stack" />
+          <CustomImage src={light} alt="Fulll-stack" />
         ) : (
-          <Image src={darkImg} alt="full-stack" />
+          <CustomImage src={darkImg} alt="full-stack" />
         )}
       </>
     );

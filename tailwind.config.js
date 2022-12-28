@@ -105,6 +105,8 @@ module.exports = {
       addComponents ({
         '.container': {
           maxWidth: '100%',
+          paddingLeft: '20px',
+          paddingRight: '20px',
           '@screen sm': {
             maxWidth: '100%',
             paddingLeft: '20px',
