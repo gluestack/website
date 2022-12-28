@@ -1,0 +1,16 @@
+{
+  "name": "gluestack",
+  "short_name": "gluestack",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon/favicon.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }
+  ]
+}

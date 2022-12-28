@@ -1,28 +1,73 @@
 import Head from "next/head";
 import React from "react";
-import {useRouter} from 'next/router';
+import { useRouter } from "next/router";
 
 function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
-  const router = useRouter ();
-  const canonical = `https://gluestack.io${router.asPath.split ('?')[0]}`;
+  const router = useRouter();
+  const canonical = `https://gluestack.io${router.asPath.split("?")[0]}`;
 
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta name="robots" content="noindex" />
+
+        <link rel="manifest" href="/manifest.json" />
+
         <link rel="canonical" href={canonical} />
 
         <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0,  user-scalable=no"
-      />
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
         <title>{pageTitle || "gluestack"}</title>
+
         <link
-          rel="icon"
-          type="image/svg"
-          sizes="32x32"
+          rel="shortcut icon"
           href="/icon/favicon.ico"
-        ></link>
+          type="image/x-icon"
+        />
+        <link rel="apple-touch-icon" href="/icon/apple-touch-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="/icon/apple-touch-icon-57x57.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="/icon/apple-touch-icon-72x72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/icon/apple-touch-icon-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="/icon/apple-touch-icon-114x114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/icon/apple-touch-icon-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/icon/apple-touch-icon-144x144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/icon/apple-touch-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/icon/apple-touch-icon-180x180.png"
+        />
         <meta
           key="description"
           name="description"
@@ -39,6 +84,7 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           content={pageTitle || "gluestack"}
         />
         <meta name="twitter:title" content={pageTitle || "gluestack"} />
+        <meta name="theme-color" content="#fff" />
 
         <meta
           key="og:description"
@@ -59,29 +105,19 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
         <meta
           key="og:image"
           property="og:image"
-          content={
-            ogImgUrl || "//gluestack.io/images/ogImg.png"
-          }
+          content={ogImgUrl || "//gluestack.io/images/ogImg.png"}
         />
 
         <meta
           name="twitter:image"
-          content={
-            ogImgUrl || "https://gluestack.io/images/ogImg.png"
-          }
+          content={ogImgUrl || "https://gluestack.io/images/ogImg.png"}
         />
-        <meta
-          property="og:url"
-          content={ogUrl|| "https://gluestack.io"}
-        />
+        <meta property="og:url" content={ogUrl || "https://gluestack.io"} />
         <meta
           property="twitter:url"
           content={ogUrl || "https://gluestack.io"}
         />
-
-      
       </Head>
-
     </>
   );
 }
