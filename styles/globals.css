@@ -90,7 +90,12 @@
   }
 }
 
-
+/* For MarkDownText Link */
+.markdownview a{
+  color:#8944CE ;
+  text-decoration: none;
+}
+/* For MarkDownText Link */
 
 .filter-primary {
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
