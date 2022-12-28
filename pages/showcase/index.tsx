@@ -11,20 +11,18 @@ function showcase({showcase}:any) {
   const [user, isLoading] = useAuthHook();
   const router = useRouter() as any;
 
-  // FETCHING USER DETAILS
-
   useEffect(() => {
-    if (!user && !isLoading) {
-      router.push("/");
+    if (!isLoading) {
+      if (!user) {
+        router.push("/");
+      }
     }
-  });
+  }, [isLoading]);
 
   if (isLoading) {
     return <></>;
   }
- 
-
-  if (user && !isLoading) {
+  if (user) {
   return (
     <Layout pageTitle={"ShowCase - gluestack"} description={""}>
         <HeroSection />
@@ -32,9 +30,9 @@ function showcase({showcase}:any) {
     </Layout>
     );
   }
+
   return <></>;
 }
-
 export default showcase;
 
 export async function getServerSideProps() {
