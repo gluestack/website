@@ -37,13 +37,20 @@ function Card({ src, altText, title, description, type }: any) {
         </div>
       )}
       <div className={`p-6 `}>
-        <Heading priority="3">
+      {type == "hasIcon" ? (
+          <Heading priority="3"> <span className=" lg:text-lg text-md leading-3">{title}</span></Heading>
+      ):(
+<Heading priority="3"> {title}</Heading>
+      )
+}
+
+        {/* <Heading priority="3">
           {type == "hasIcon" ? (
-            <span className=" lg:text-lg text-md leading-3	">{title}</span>
+            <span className=" lg:text-lg text-md leading-3">{title}</span>
           ) : (
-            { title }
+            {title}
           )}
-        </Heading>
+        </Heading> */}
 
         <div className="mt-4">
           <Text size="base">{description}</Text>
