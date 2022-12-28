@@ -33,11 +33,10 @@ module.exports = {
 
       colors: {
         primary: {
-          DEFAULT: '#8944CE',
+          DEFAULT: '#853ECC',
           50: '#FAF5FF',
           100: '#BF7EFF',
-          200: '#853ECC',
-          300: '#6726A7',
+          200: '#6726A7',
         },
         secondary: {
           DEFAULT: '#222020',
@@ -105,17 +104,17 @@ module.exports = {
       addComponents ({
         '.container': {
           maxWidth: '100%',
-          paddingLeft: '20px',
-          paddingRight: '20px',
+          paddingLeft: '2rem',
+          paddingRight: '2rem',
           '@screen sm': {
             maxWidth: '100%',
-            paddingLeft: '20px',
-            paddingRight: '20px',
+            paddingLeft: '2rem',
+            paddingRight: '2rem',
           },
           '@screen md': {
             maxWidth: '100%',
-            paddingLeft: '30px',
-            paddingRight: '30px',
+            paddingLeft: '2rem',
+            paddingRight: '2rem',
           },
           '@screen lg': {
             maxWidth: '1024px',

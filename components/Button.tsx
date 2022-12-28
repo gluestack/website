@@ -9,7 +9,7 @@ function Button({ type, size, link, white, children, dataId }: any) {
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
       ) : (
-        <button className={`btnWrapper group  ${white ? ' border-white' : ' border-primary'}`}  data-tf-popup={dataId}>
+        <button className={`btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`}  data-tf-popup={dataId}>
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </button>
       )}
@@ -24,12 +24,12 @@ const ButtonSpan = ({ children, type, size }: any) => {
     <span
       className={`btn ${
         type == "primary"
-          ? "text-white  bg-primary  ring-primary  ring-offset-primary "
+          ? "text-white  bg-primary  dark:bg-primary-200 ring-primary dark:ring-primary-200 ring-offset-primary dark:ring-offset-primary-200"
           : type == "tertiary"
           ? "text-white  bg-skyBlue  ring-skyBlue  ring-offset-skyBlue "
           : type == 'secondary'
           ? "text-black bg-white ring-white ring-offset-white"
-          : "text-primary  bg-white ring-primary "
+          : "text-primary  bg-white ring-primary dark:ring-primary-200 "
       } ${
         size == "sm"
           ? "text-sm px-2 py-2"

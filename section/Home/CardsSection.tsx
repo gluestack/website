@@ -38,7 +38,7 @@ function CardsSection() {
           className="dark:block hidden"
         />
       </div>
-      <div className="bg-primary-200 dark:bg-primary-300 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
+      <div className="bg-primary dark:bg-primary-200 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
         <div className="container pt-10 pb-12 relative ">
           <div className="sm:max-w-[900px] m-auto">
             <div className="text-center mb-10">
