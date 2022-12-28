@@ -1,7 +1,4 @@
-import Image from "next/image";
 import Text from "../../elements/Text";
-import Linktag from "../../elements/Linktag";
-import LinkList from "./LinkList";
 import Resources from "./resources";
 import EcoSystem from "./ecosystem";
 import More from "./more";
