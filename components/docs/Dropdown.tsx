@@ -176,7 +176,7 @@ export const Dropdown = ({
         <div className="py-1" role="none">
           {versions.map((item: any, index: any) => {
             return (
-              <div className="px-1 py-1 ">
+              <div className="px-1 py-1 " key={index}>
                 <button
                   className="text-gray-700 block px-4 py-2 text-sm"
                   role="menuitem"

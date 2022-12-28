@@ -21,9 +21,9 @@ function MordenStack() {
     return (
       <>
         {!dark ? (
-          <Image src={GradientLight} alt="image" objectFit="contain" />
+          <Image src={GradientLight} alt="Gradient" objectFit="contain" />
         ) : (
-          <Image src={GradientDark} alt="image" objectFit="contain" />
+          <Image src={GradientDark} alt="Gradient" objectFit="contain" />
         )}
       </>
     );
@@ -33,9 +33,9 @@ function MordenStack() {
     return (
       <>
         {!dark ? (
-          <CustomImage src={Module} alt="image" style="rounded-lg -z-20" />
+          <CustomImage src={Module} alt="Module" style="rounded-lg -z-20" />
         ) : (
-          <CustomImage src={ModuleDark} alt="image" style="rounded-lg " />
+          <CustomImage src={ModuleDark} alt="Module" style="rounded-lg " />
         )}
       </>
     );
@@ -52,7 +52,7 @@ function MordenStack() {
       <div className="container lg:pt-32 pt-12 pb-12 relative">
         <div className="grid lg:grid-cols-2 lg:gap-32 grid-cols-1 gap-4 items-center">
           <div className="lg:order-1 order-2">
-            <CustomImage src={DarkBg} alt="image" style="rounded-lg " />
+            <CustomImage src={DarkBg} alt="Apps" style="rounded-lg " />
           </div>
 
           <div className="lg:order-2 order-1">

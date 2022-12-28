@@ -56,7 +56,7 @@ function EcoSystem() {
   return (
     <div className="relative w-full ">
       <div className="absolute bottom-0 right-0 -z-10 dark:hidden block">
-        <Image src={Gradient} alt="image" objectFit="contain" />
+        <Image src={Gradient} alt="Gradient" objectFit="contain" />
       </div>
       <div className="absolute top-0 left-0 bottom-0 right-0   dark:block hidden">
         <div className="dark-gradient h-full"></div>

@@ -22,9 +22,9 @@ function Cookies() {
                 </p>
                 <p className="py-4">
                   GeekyAnts Inc. (
-                  <span className="font-displaySemibold">“us”</span> ,{" "}
-                  <span className="font-displaySemibold">“we”</span> , or{" "}
-                  <span className="font-displaySemibold">“our”</span>)
+                  <span className="font-displaySemibold">&quot;us&quot;</span> ,{" "}
+                  <span className="font-displaySemibold">&quot;we&quot;</span> , or{" "}
+                  <span className="font-displaySemibold">&quot;ou&quot;”</span>)
                   understands that your privacy is important to you and are
                   committed to being transparent about the technology it uses.
                   This Cookie Policy explains how and why cookies and other
@@ -75,9 +75,9 @@ function Cookies() {
                     or <span className="font-displaySemibold"> “pixels”</span>)
                     are small blocks of code on a web page or in an email
                     notification. Pixels allow companies to collect information
-                    such as an individual's IP address, when the individual
+                    such as an individual&lsquo;s IP address, when the individual
                     viewed the pixel and the type of browser used. We use pixel
-                    tags to understand whether you've interacted with content on
+                    tags to understand whether you&lsquo;ve interacted with content on
                     our Platform, which helps us measure and improve our
                     Platform and personalize your experience.
                   </p>
@@ -109,7 +109,7 @@ function Cookies() {
                     domain of our Site). Some of the cookies or similar
                     technologies that we use are{" "}
                     <span className="font-displaySemibold">
-                      "strictly necessary"
+                    &quot;strictly necessary&quot;
                     </span>{" "}
                     , that they are essential to the Site. Without them, the
                     Site will not work. Other cookies or similar technologies,
@@ -131,7 +131,7 @@ function Cookies() {
                         websites, authentication cookies are set which let us
                         know who you are during a browsing session. We have to
                         load essential cookies for legitimate interests pursued
-                        by us in delivering our Site's essential functionality
+                        by us in delivering our Site&apos;s essential functionality
                         to you.
                       </li>
                       <li className="py-4 list-alpha">
@@ -183,8 +183,8 @@ function Cookies() {
                     and how to block cookies using different types of browsers
                   </p>
                   <p className="py-4">
-                    If you'd like to remove or disable cookies via your browser,
-                    please refer to your browser's configuration documentation.
+                    If you&apos;d like to remove or disable cookies via your browser,
+                    please refer to your browser&apos;s configuration documentation.
                     Please note, however, that by blocking or deleting all
                     cookies used on the Site, you may not be able to take full
                     advantage of the Site and you may not be able to properly

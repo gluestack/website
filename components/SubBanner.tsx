@@ -4,7 +4,7 @@ import Heading from "../elements/Heading";
 import Button from "./Button";
 import Description from "../elements/Description";
 
-function SubBanner({ heading, desc, src, btntext, isright,altText }: any) {
+function SubBanner({ heading, desc, src, btntext, isright, altText }: any) {
   return (
     <>
       <div className="container mx-auto">
@@ -19,11 +19,7 @@ function SubBanner({ heading, desc, src, btntext, isright,altText }: any) {
             <div className="py-8 md:py-0 lg:w-1/2">
               <div className="flex items-center justify-center lg:px-0 ">
                 <div className="sm:max-w-[480px]">
-                  <Heading
-                    priority={2}
-                  >
-                    {heading}
-                  </Heading>
+                  <Heading priority={2}>{heading}</Heading>
                   <Description>{desc}</Description>
                   <div className="py-8">
                     <Button size="lg">{btntext}</Button>

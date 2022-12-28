@@ -5,8 +5,14 @@ import Text from "../elements/Text";
 import { useRouter } from "next/router";
 import { FaBackward } from "react-icons/fa";
 
-function InerBanner({ title, description, last, style, paddingBottom, single }: any) {
-  const router = useRouter()
+function InerBanner({
+  title,
+  description,
+  last,
+  paddingBottom,
+  single,
+}: any) {
+  const router = useRouter();
   return (
     <div className="mt-8">
       <Banner paddingBottom={paddingBottom}>
@@ -17,7 +23,7 @@ function InerBanner({ title, description, last, style, paddingBottom, single }: 
                 <FaBackward />
               </div>
               Back{" "}
-              </div>
+            </div>
           </button>
         </div>
         <Heading priority="1" single={single}>

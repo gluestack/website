@@ -13,9 +13,9 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
         <link rel="canonical" href={canonical} />
 
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.86, user-scalable=no"
-        />
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.86, user-scalable=no"
+      />
         <title>{pageTitle || "gluestack"}</title>
         <link
           rel="icon"

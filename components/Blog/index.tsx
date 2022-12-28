@@ -55,7 +55,7 @@ function Blog({
           <div className="order-1 lg:order-2">
           <Linktag href={`blog/${slug}`}>
             <div className="relative h-40 col-span-1 w-50 lg:w-80">
-              <Image src={coverImg} alt="Image"  className="rounded-lg" layout="fill" objectFit="cover"/>
+              <Image src={coverImg} alt="Cover"  className="rounded-lg" layout="fill" objectFit="cover"/>
             </div>
           </Linktag>
           </div>

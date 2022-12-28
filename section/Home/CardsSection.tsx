@@ -27,13 +27,13 @@ function CardsSection() {
       <div className="absolute top-[660px] left-0 w-full h-full">
         <Image
           src={GradientImg}
-          alt="image"
+          alt="Gradient"
           objectFit="contain"
           className="dark:hidden block"
         />
         <Image
           src={bannerDark}
-          alt="image"
+          alt="Core Plugins"
           objectFit="contain"
           className="dark:block hidden"
         />
@@ -55,7 +55,7 @@ function CardsSection() {
             </Text>
           </div>
           <div className="grid bg-white shadow-md px-4 mt-5 sm:mt-10 rounded-md">
-            <CustomImage src={architecture} alt="image" />
+            <CustomImage src={architecture} alt="architecture" />
           </div>
         </div>
       </div>
