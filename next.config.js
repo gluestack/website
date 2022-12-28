@@ -26,15 +26,15 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  async redirects() {
-    return [
-      {
-        source: "/docs",
-        destination: "/",
-        permanent: false,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/docs",
+  //       destination: "/",
+  //       permanent: false,
+  //     },
+  //   ];
+  // },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
 };
 
