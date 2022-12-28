@@ -68,9 +68,9 @@ function EcoSystem() {
           />
         </div>
 
-        <div className="lg:pt-32 pt-18">
+        <div className="lg:pt-32 pt-10">
           <div className="grid lg:grid-cols-2 lg:gap-40 grid-cols-1 gap-4 items-center">
-            <div className="lg:pl-24 pl-0 horizental-line relative py-8">
+            <div className="pl-12 lg:pl-24 horizental-line relative py-8">
               <div className="dot relative">
                 <div className="flex items-center justify-start">
                   <div className="mr-4 w-[83px] ">

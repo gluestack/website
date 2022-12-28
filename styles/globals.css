@@ -145,11 +145,11 @@
   }
   .horizental-line:after{
     content:'';
-    @apply bg-gray dark:bg-black-200 w-[4px] absolute top-0 bottom-0 left-0 lg:block hidden;
+    @apply bg-gray dark:bg-black-200 w-[4px] absolute top-0 bottom-0 left-0 ;
   }
   .dot:after{
     content:'';
-    @apply absolute w-[18px] h-[18px] bg-gray-100 dark:bg-gray-600 -left-[103px] top-2 rounded-sm lg:block hidden z-10;
+    @apply absolute w-[18px] h-[18px] bg-gray-100 dark:bg-gray-600 -left-[55px] lg:-left-[103px] top-2 rounded-sm  z-10;
 
   }
   .dark-gradient{
