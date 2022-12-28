@@ -3,7 +3,6 @@ import React from "react";
 const Heading = ({ priority, dark, children, single }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
-    <div>
       <DynamicTag
         className={`tracking-wide	leading-tight font-displayHead  ${
           priority == 1
@@ -27,7 +26,6 @@ const Heading = ({ priority, dark, children, single }: any) => {
       >
         {children}
       </DynamicTag>
-    </div>
   );
 };
 
