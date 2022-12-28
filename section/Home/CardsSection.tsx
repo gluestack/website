@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 
 import CustomImage from "../../components/CustomImage";
@@ -18,25 +18,47 @@ import ReactNativeIcon from "../../public/images/cardIcons/reactNative.svg";
 import StorageIcon from "../../public/images/cardIcons/storage.svg";
 import StoryBookIcon from "../../public/images/cardIcons/storybook.svg";
 
-import GradientImg from "../../public/images/gradient.png";
+import GradientImg from "../../public/images/gradient.svg";
 import bannerDark from "../../public/images/gradient-dark.png";
+import { AppContext } from "../../pages/_app";
 
 function CardsSection() {
-  return (
-    <div className="relative w-full pt-20 sm:pt-40">
-      <div className="absolute top-[660px] left-0 w-full h-full">
-        <Image
+      //@ts-ignore
+
+  const { darkMode } = useContext(AppContext);
+  const [isMounted, setIsMounted] = React.useState(false);
+  const dark = darkMode?.value ?? "dark";
+  const Gradient = () => {
+    return (
+      <>
+        {!dark ? (
+          <Image
           src={GradientImg}
           alt="Gradient"
           objectFit="contain"
           className="dark:hidden block"
         />
-        <Image
+        ) : (
+          <Image
           src={bannerDark}
           alt="Core Plugins"
           objectFit="contain"
           className="dark:block hidden"
         />
+        )}
+      </>
+    );
+  };
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  return (
+    <div className="relative w-full pt-20 sm:pt-40">
+      <div className="absolute top-[660px] left-0 w-full h-full">
+      {!isMounted ? <Gradient /> : <Gradient />}
+
+       
+       
       </div>
       <div className="bg-primary dark:bg-primary-200 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
         <div className="container pt-10 pb-12 relative ">

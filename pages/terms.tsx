@@ -8,15 +8,15 @@ import Disclaimer from "../components/Disclaimer";
 function term() {
   return (
     <Layout pageTitle={"Terms & Condition - gluestack"}>
+      <Disclaimer title="DISCLAIMER: THE SERVICES BEING PROVIDED ARE PART OF A PREVIEW OR TEST VERSION AND ARE NOT INTENDED FOR USE IN A PRODUCTION OR LIVE ENVIRONMENT. GEEKYANTS INC. IS NOT LIABLE FOR ANY ISSUES THAT MAY ARISE FROM USING THE PREVIEW VERSION, WHICH MAY CONTAIN BUGS OR ERRORS. THE USER IS RESPONSIBLE FOR EVALUATING THE PREVIEW." />
+
       <div className="relative z-10">
         <InerBanner title="Terms & " last="Conditions" />
         <div className="container relative z-10 pb-14">
           <div className="">
             <ol className="list-none list-outside ">
               <li>
-                <Heading priority="4">
-                  1. Introduction
-                </Heading>
+                <Heading priority="4">1. Introduction</Heading>
                 <li className="py-4">
                   <Text>
                     <p className="py-4">
@@ -137,9 +137,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  2. Your Account
-                </Heading>
+                <Heading priority="4">2. Your Account</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> Your
@@ -188,9 +186,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  3.Content
-                </Heading>
+                <Heading priority="4">3.Content</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -298,9 +294,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  4. Proprietary Rights
-                </Heading>
+                <Heading priority="4">4. Proprietary Rights</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> You
@@ -332,9 +326,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  5. Fair Use
-                </Heading>
+                <Heading priority="4">5. Fair Use</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> We will use
@@ -355,9 +347,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  6. Acceptable Use
-                </Heading>
+                <Heading priority="4">6. Acceptable Use</Heading>
                 <Text>
                   <p className="py-4">
                     a. The following are the acceptable uses of our Services:
@@ -441,14 +431,12 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  7. Restrictions on Use
-                </Heading>
+                <Heading priority="4">7. Restrictions on Use</Heading>
                 <Text className="ml-4">
                   <p className="py-4">
                     a. You will not, directly or indirectly:
                   </p>
-                  <p className="ml-8 dark:text-white-300">
+                  <p className="ml-8 dark:text-gray">
                     <ul className="list-decimal ">
                       <li className="py-4">
                         sublicense, resell, rent, lease, transfer, assign, or
@@ -553,9 +541,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  8. Etiquette
-                </Heading>
+                <Heading priority="4">8. Etiquette</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> Without
@@ -584,9 +570,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  9. Plans and Pricing Terms
-                </Heading>
+                <Heading priority="4">9. Plans and Pricing Terms</Heading>
                 <Text>
                   <p className="py-4">
                     a.The Services will be provided according to the plan level
@@ -760,10 +744,8 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  11. Representations
-                </Heading>
-                <p className="ml-4 dark:text-white-300">
+                <Heading priority="4">11. Representations</Heading>
+                <p className="ml-4 dark:text-gray">
                   <p className="py-4">
                     a. Each party represents and warrants to the other that it
                     has full right and power to enter into and perform under
@@ -800,9 +782,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  12.Disclaimer of Warranty
-                </Heading>
+                <Heading priority="4">12.Disclaimer of Warranty</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> YOU
@@ -851,9 +831,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  13. Limitation of Liability
-                </Heading>
+                <Heading priority="4">13. Limitation of Liability</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> SUBJECT TO
@@ -893,9 +871,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  14. Indemnification
-                </Heading>
+                <Heading priority="4">14. Indemnification</Heading>
                 <Text>
                   <p className="py-4">
                     <span className="font-displaySemibold">a.</span> You agree
@@ -928,17 +904,15 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  15. Location of Server
-                </Heading>
-                <p className=" dark:text-white-300">
-                  <p className="py-4 dark:text-white-300">
+                <Heading priority="4">15. Location of Server</Heading>
+                <p className=" dark:text-gray">
+                  <p className="py-4 dark:text-gray">
                     a. Our Servers and Data Centres (including that of our
                     sub-processors) are located in:
                   </p>
                   <p className="py-4">b. You represent and warrant that:</p>
                   <p className="ml-8">
-                    <ul className="list-decimal dark:text-white-300 ">
+                    <ul className="list-decimal dark:text-gray ">
                       <li className="py-2">India</li>
                       <li className="py-2">Germany</li>
                       <li className="py-2">Sweden</li>
@@ -954,7 +928,7 @@ function term() {
                     </ul>
                   </p>
                 </p>
-                <p className="py-4 dark:text-white-300">
+                <p className="py-4 dark:text-gray">
                   Any change to the above list that pertains to the location of
                   the Servers will be updated in the following versions of these
                   Terms.
@@ -1018,9 +992,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  18. Inactivity
-                </Heading>
+                <Heading priority="4">18. Inactivity</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -1057,9 +1029,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  19.Trademark Violations
-                </Heading>
+                <Heading priority="4">19.Trademark Violations</Heading>
                 <p className="py-4">
                   <Text>
                     <p>
@@ -1089,9 +1059,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  20. Governing Law
-                </Heading>
+                <Heading priority="4">20. Governing Law</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -1106,9 +1074,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  21. Disputes and Arbitration
-                </Heading>
+                <Heading priority="4">21. Disputes and Arbitration</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -1181,9 +1147,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  22. Security
-                </Heading>
+                <Heading priority="4">22. Security</Heading>
                 <div className="py-4 ">
                   <Text>
                     <p className="py-4">
@@ -1211,9 +1175,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  23. Support
-                </Heading>
+                <Heading priority="4">23. Support</Heading>
                 <div className="py-4 ">
                   <Text>
                     <p>
@@ -1319,9 +1281,7 @@ function term() {
                 </div>
               </li>
               <li>
-                <Heading priority="4">
-                  26. Privacy Policy
-                </Heading>
+                <Heading priority="4">26. Privacy Policy</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -1342,9 +1302,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  27. No Third-Party Beneficiaries
-                </Heading>
+                <Heading priority="4">27. No Third-Party Beneficiaries</Heading>
                 <div className="py-4 ">
                   <Text>
                     <p>
@@ -1357,9 +1315,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  28. Miscellaneous
-                </Heading>
+                <Heading priority="4">28. Miscellaneous</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -1424,9 +1380,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  29. Previews
-                </Heading>
+                <Heading priority="4">29. Previews</Heading>
                 <div className="py-4 ">
                   <Text>
                     <p>
@@ -1456,9 +1410,7 @@ function term() {
               </li>
 
               <li>
-                <Heading priority="4">
-                  30.Support
-                </Heading>
+                <Heading priority="4">30.Support</Heading>
                 <div className="py-4">
                   <Text>
                     <p>
@@ -1482,7 +1434,6 @@ function term() {
           </div>
         </div>
       </div>
-      <Disclaimer first='DISCLAIMER:' last='THE SERVICES BEING PROVIDED ARE PART OF A PREVIEW OR TEST VERSION AND ARE NOT INTENDED FOR USE IN A PRODUCTION OR LIVE ENVIRONMENT. GEEKYANTS INC. IS NOT LIABLE FOR ANY ISSUES THAT MAY ARISE FROM USING THE PREVIEW VERSION, WHICH MAY CONTAIN BUGS OR ERRORS. THE USER IS RESPONSIBLE FOR EVALUATING THE PREVIEW.'/>
     </Layout>
   );
 }

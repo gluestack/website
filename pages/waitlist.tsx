@@ -19,7 +19,7 @@ function earlyAccess() {
         <div className="grid items-center gap-4 grid-col-1 lg:grid-cols-12">
           <div className="col-span-12 lg:px-20 lg:py-20 px-10 py-10 lg:col-span-6">
             <Heading priority={2}>Thanks for signing up.</Heading>
-            <p className="mt-10 text-md text-black-200 dark:text-white-300">
+            <p className="mt-10 text-md text-black-200 dark:text-gray">
               You’re in the waitlist and will be notified as soon as a spot
               becomes available.
             </p>

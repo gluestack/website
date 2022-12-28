@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import Meta from "../components/Meta";
 import Cookies from "../components/Cookies";
 import Image from "next/image";
-import bannerImg from "../public/images/gradient.png";
+import bannerImg from "../public/images/gradient.svg";
 import Script from "next/script";
 import bannerDark from "../public/images/gradient-dark.png";
 import { AppContext } from "../pages/_app";

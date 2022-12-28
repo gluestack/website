@@ -21,7 +21,7 @@ const Heading = ({ priority, dark, children, single }: any) => {
         }
        
       ${
-        dark ? "text-white dark:text-white" : `text-secondary dark:text-white-200`
+        dark ? "text-white dark:text-white-200" : `text-secondary dark:text-white-200`
       } `}
       >
         {children}
