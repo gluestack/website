@@ -23,6 +23,8 @@ import bannerDark from "../../public/images/gradient-dark.png";
 import { AppContext } from "../../pages/_app";
 
 function CardsSection() {
+      //@ts-ignore
+
   const { darkMode } = useContext(AppContext);
   const [isMounted, setIsMounted] = React.useState(false);
   const dark = darkMode?.value ?? "dark";
