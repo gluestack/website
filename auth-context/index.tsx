@@ -21,13 +21,14 @@ interface IAuthContexrProvider {
 const AuthContextProvider = ({ children }: IAuthContexrProvider) => {
   const session = useSession();
   const [user, setUser] = useState<any | null>(session?.data?.user);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [authChecked, setAuthChecked] = useState(false);
 
   useEffect(() => {
     if (session.status === "unauthenticated") {
       setAuthChecked(true);
       setUser(null);
+      setIsLoading(false);
     }
     if (session.status === "authenticated") {
       if (!authChecked) {
