@@ -84,3 +84,52 @@ export function ShowCaseService() {
     `,
   });
 }
+
+export function CookieService() {
+  return client.query({
+    query: gql`
+    query{
+      cookiePolicy{
+        data{
+          attributes{
+            title
+            description
+          }
+        }
+      }
+    }
+    `,
+  });
+}
+export function TermService() {
+  return client.query({
+    query: gql`
+    query{
+      term{
+        data{
+          attributes{
+            title
+            description
+          }
+        }
+      }
+    }
+    `,
+  });
+}
+export function PrivacyService() {
+  return client.query({
+    query: gql`
+    query{
+      privacyPolicy{
+        data{
+          attributes{
+            title
+            description
+          }
+        }
+      }
+    }
+    `,
+  });
+}

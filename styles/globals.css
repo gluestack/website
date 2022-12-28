@@ -90,7 +90,12 @@
   }
 }
 
-
+/* For MarkDownText Link */
+.markdownview a{
+  color:#8944CE ;
+  text-decoration: none;
+}
+/* For MarkDownText Link */
 
 .filter-primary {
   filter: invert(34%) sepia(78%) saturate(5641%) hue-rotate(237deg)
@@ -165,7 +170,7 @@
     @apply bg-white-300 hover:bg-white-300;
   }
   #cc_div #cm{
-    @apply w-full max-w-full left-0 right-0 bottom-0 dark:bg-black dark:text-white-300 py-2;
+    @apply bottom-0 left-0 right-0 w-full max-w-full py-2 dark:bg-black dark:text-white-300;
   }
   body #cc_div #cm h3{
     @apply dark:text-white-300;
