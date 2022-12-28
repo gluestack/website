@@ -12,6 +12,8 @@ function term({ term }: any) {
     
   return (
     <Layout pageTitle={"Terms & Condition - gluestack"}>
+      <Disclaimer title="DISCLAIMER: THE SERVICES BEING PROVIDED ARE PART OF A PREVIEW OR TEST VERSION AND ARE NOT INTENDED FOR USE IN A PRODUCTION OR LIVE ENVIRONMENT. GEEKYANTS INC. IS NOT LIABLE FOR ANY ISSUES THAT MAY ARISE FROM USING THE PREVIEW VERSION, WHICH MAY CONTAIN BUGS OR ERRORS. THE USER IS RESPONSIBLE FOR EVALUATING THE PREVIEW." />
+
       <div className="relative z-10">
         <InerBanner title="Terms &" last="Conditions" />
         <div className="container relative z-10 pb-14">
@@ -20,10 +22,7 @@ function term({ term }: any) {
           </div>
         </div>
       </div>
-      <Disclaimer
-        first="DISCLAIMER:"
-        last="THE SERVICES BEING PROVIDED ARE PART OF A PREVIEW OR TEST VERSION AND ARE NOT INTENDED FOR USE IN A PRODUCTION OR LIVE ENVIRONMENT. GEEKYANTS INC. IS NOT LIABLE FOR ANY ISSUES THAT MAY ARISE FROM USING THE PREVIEW VERSION, WHICH MAY CONTAIN BUGS OR ERRORS. THE USER IS RESPONSIBLE FOR EVALUATING THE PREVIEW."
-      />
+    
     </Layout>
   );
 }

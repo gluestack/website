@@ -7,7 +7,7 @@ import CustomImage from "../../components/CustomImage";
 
 function SignupFooter() {
   return (
-    <div className="relative w-full bg-primary-200 dark:bg-primary-300 py-20 ">
+    <div className="relative w-full bg-primary dark:bg-primary-200 py-20 ">
        <div className="absolute top-0 right-0 z-1 lg:w-[250px] md:w-[150px] w-[70px] opacity-80">
             <CustomImage src={FooterBg} alt="Footer" />
           </div>
