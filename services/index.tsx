@@ -84,3 +84,20 @@ export function ShowCaseService() {
     `,
   });
 }
+
+export function EventsCategory() {
+  return client.query({
+    query: gql`
+    query{
+      event-categories{
+        data{
+          id
+          attributes{
+           name
+          }
+        }
+      }
+    }
+    `,
+  });
+}

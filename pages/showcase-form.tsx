@@ -1,8 +1,11 @@
 import React from 'react'
 import Layout from '../Layout/Layout'
-import ShowCaseForm from '../section/Showcase/ShowcaseForm'
+import ShowCaseForm from '../section/Showcase/ShowCaseForm';
+import { EventsCategory } from '../services';
 
-function showcaseform() {
+function showcaseform({categories}:any) {
+  console.log(categories,"categories");
+  
   return (
     <>
     {/* <Layout> */}
@@ -12,4 +15,26 @@ function showcaseform() {
   )
 }
 
-export default showcaseform
+export default showcaseform;
+
+export async function getServerSideProps() {
+  let categories;
+
+  try {
+    const { data } = await EventsCategory();
+    const content = data;
+    categories = content;
+    console.log(categories);
+    
+    
+  } catch (error) {
+    console.log(error,"error");
+    
+  }
+
+  return {
+    props: {
+      categories: [],
+    },
+  };
+}

@@ -1,36 +1,32 @@
 import React, { useState } from "react";
 import Alerts from "../../components/Alerts";
-import Button from "../../components/Button"
+import Button from "../../components/Button";
 import axios from "axios";
 import Multiselect from "multiselect-react-dropdown";
 
 function ShowCaseForm() {
+  const eventTags = [
+    { id: 1, name: "App" },
+    { id: 2, name: "Website" },
+    { id: 3, name: "Games" },
+  ];
+  const eventCategory = [
+    { name: "Project", id: 1 },
+    { name: "App", id: 2 },
+  ];
   const [name, setName] = useState<any>("");
   const [title, setProjectName] = useState<any>("");
-  const [github_link, setGithubLink] = useState<any>("");
+  const [github_link, setGithub_link] = useState<any>("");
   const [twitterLink, setTwitterLink] = useState<any>("");
   const [demoLink, setDemoLink] = useState<any>("");
-  const [event_categories, setEvent_category] = useState<any>([
-    { id: 1 },
-    { id: 2 }
-  ]);
-  const [event_tags, setEventsTags] = useState<any>([
-    { id: 1 },
-    { id: 2 },
-    { id: 3 },
-  ]);
+  const [event_categories, setEvent_category] = useState<any>([]);
+  const [event_tags, setEventsTags] = useState<any>([]);
   const [profileImage, setProfileImage] = useState<any>("");
   const [shortDes, setShortDes] = useState<any>("");
   const [description, setDescription] = useState<any>("");
   const [coverImg, setCoverImage] = useState<any>("");
 
   const [errors, setErrors] = useState<any>({});
-
-  // function checkError(value:any,errors:any){
-  //     console.log(value);
-
-  //     return errors.value && value.trim().length==0
-  // }
 
   const handleValidation = () => {
     let tempErrors: any = {};
@@ -64,10 +60,10 @@ function ShowCaseForm() {
       tempErrors["event_tags"] = true;
       isValid = false;
     }
-    // if (profileImage.length <= 0) {
-    //   tempErrors["profileImage"] = true;
-    //   isValid = false;
-    // }
+    if (profileImage.length <= 0) {
+      tempErrors["profileImage"] = true;
+      isValid = false;
+    }
     if (shortDes.length <= 0) {
       tempErrors["shortDes"] = true;
       isValid = false;
@@ -77,7 +73,7 @@ function ShowCaseForm() {
       isValid = false;
     }
     if (coverImg.length <= 0) {
-      tempErrors["file"] = true;
+      tempErrors["coverImg"] = true;
       isValid = false;
     }
     setErrors({ ...tempErrors });
@@ -95,10 +91,7 @@ function ShowCaseForm() {
     shortDes,
     description,
     slug: title,
-    // coverImg,
-    // profileImage
   };
-  console.log(coverImg);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -108,7 +101,6 @@ function ShowCaseForm() {
       formData.append("files.coverImg", coverImg);
       formData.append("data", JSON.stringify(postData));
       console.log(postData, "postData");
-      console.log(formData, "formData");
 
       try {
         axios({
@@ -121,6 +113,7 @@ function ShowCaseForm() {
         });
       } catch (error) {
         console.log(error);
+        
       }
     }
   };
@@ -148,21 +141,21 @@ function ShowCaseForm() {
             )}
           </div>
           <div>
-            <label htmlFor="project_name" className="form-lable">
-              Project Name
+            <label htmlFor="project_title" className="form-lable">
+              Project Title
             </label>
             <input
               type="text"
-              id="project_name"
+              id="title"
               className="form-input"
-              placeholder="project_name"
+              placeholder="project Title"
               value={title}
               onChange={(e: any) => {
                 setProjectName(e.target.value);
               }}
             />
             {errors.title && title.trim().length == 0 && (
-              <Alerts danger>project Name is required</Alerts>
+              <Alerts danger>project Title is required</Alerts>
             )}
           </div>
           <div>
@@ -173,10 +166,10 @@ function ShowCaseForm() {
               type="url"
               id="github_link"
               className="form-input"
-              placeholder="github.com"
+              placeholder="http://github.com"
               value={github_link}
               onChange={(e: any) => {
-                setGithubLink(e.target.value);
+                setGithub_link(e.target.value);
               }}
             />
             {errors.github_link && github_link.trim().length == 0 && (
@@ -191,7 +184,7 @@ function ShowCaseForm() {
               type="url"
               id="twitter_link"
               className="form-input"
-              placeholder="twitter.com"
+              placeholder="http://twitter.com"
               value={twitterLink}
               onChange={(e: any) => {
                 setTwitterLink(e.target.value);
@@ -209,7 +202,7 @@ function ShowCaseForm() {
               type="url"
               id="demo_link"
               className="form-input"
-              placeholder="xyz.com"
+              placeholder="http://xyz.com"
               value={demoLink}
               onChange={(e: any) => {
                 setDemoLink(e.target.value);
@@ -224,21 +217,22 @@ function ShowCaseForm() {
               Select Category
             </label>
             <Multiselect
-              options={event_categories}
-              displayValue="id"
-              selectedValues={setEvent_category}
+              options={eventCategory}
+              displayValue="name"
+              onSelect={(e: any) => setEvent_category(e)}
             />
-            {/* {errors.category && category.trim().length==0 && <Alerts danger>Category is required</Alerts>} */}
+            {/* {errors.event_categories && event_categories.trim().length==0 && <Alerts danger>Category is required</Alerts>} */}
           </div>
           <div>
             <label htmlFor="Tags" className="form-lable">
               Select Tags
             </label>
             <Multiselect
-              options={event_tags}
-              displayValue="id"
-              selectedValues={setEventsTags}
+              options={eventTags}
+              displayValue="name"
+              onSelect={(e: any) => setEventsTags(e)}
             />
+            {/* {errors.event_tags && event_tags.trim().length==0 && <Alerts danger>Category is required</Alerts>} */}
           </div>
           <div>
             <label className="form-lable{" htmlFor="file">
@@ -253,9 +247,9 @@ function ShowCaseForm() {
                 setProfileImage(e.target.files[0]);
               }}
             />
-            {errors.profileImage && (
+            {/* {errors.profileImage && (
               <Alerts danger>Profile Imgae is required</Alerts>
-            )}
+            )} */}
           </div>
           <div className="mb-6">
             <label htmlFor="descpertion" className="form-lable{">
@@ -283,7 +277,7 @@ function ShowCaseForm() {
             <div className="flex items-center justify-center w-full">
               <textarea
                 id="Descpertion"
-                className="block w-full py-24 textArea"
+                className="block w-full p-8 textArea"
                 placeholder=""
                 value={description}
                 onChange={(e: any) => {

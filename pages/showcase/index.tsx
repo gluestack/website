@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 
   try {
     const { data } = await ShowCaseService();
-    const content = data.events.data;
+    const content = data?.events.data;
     showcase = content;
     
   } catch (error) {}

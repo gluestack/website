@@ -2,17 +2,32 @@
     @apply block mb-2 text-sm  text-gray-900 dark:text-white
 }
 .form-input{
-    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary
+    @apply bg-gray-50 border border-gray-100 text-gray-900 text-sm rounded-lg block w-full p-2.5 placeholder-gray-300
 }
 .file-input{
-    @apply block w-full mb-5 text-gray-900 border border-gray-300 rounded-lg cursor-pointer text-[16px] bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+    @apply block w-full mb-5 text-gray-900 border border-gray-100 rounded-lg cursor-pointer text-base bg-gray-50 placeholder-gray-300
 }
 .textArea{
-    @apply text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary
+    @apply text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-100  placeholder-gray-300
 }
 .dropZone{
-    @apply flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer  
+    @apply flex flex-col items-center justify-center w-full h-64 border-2 border-gray-100 border-dashed rounded-lg cursor-pointer  
 }
-.error-color{
-    @apply text-red-500
+
+.chip{
+    background: #8944CE !important;
+}
+.highlightOption{
+    background: #8944CE !important;
+}
+
+.highlightOption :hover{
+    background-color: #8944CE !important;
+}
+.searchBox::placeholder { 
+    color: gray;
+    opacity: 1; 
+  }
+.option :hover{
+    background: #8944CE !important;
 }

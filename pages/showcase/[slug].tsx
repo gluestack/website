@@ -117,7 +117,6 @@ export async function getServerSideProps(context: any) {
     id=data.data[0].id
     events = content.attributes;
     categories = content.attributes.event_categories.data;
-    // console.log(categories[0].attributes.name, "???");
     tags = content.attributes.event_tags.data;
   } catch (error) {}
   try {
