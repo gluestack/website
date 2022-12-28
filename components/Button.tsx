@@ -5,11 +5,11 @@ function Button({ type, size, link, white, children, dataId }: any) {
   return (
     <>
       {link ? (
-        <Link href={`${link}`} prefetch={false} className="btn_outline group">
+        <Link href={`${link}`} prefetch={false} className="btnWrapper group">
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
       ) : (
-        <button className={`group  ${white ? ' outline_white' : ' btn_outline'}`}  data-tf-popup={dataId}>
+        <button className={`btnWrapper group  ${white ? ' border-white' : ' border-primary'}`}  data-tf-popup={dataId}>
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </button>
       )}

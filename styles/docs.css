@@ -17,12 +17,6 @@
 .layout-theme.fixed .fixed-layout {
     @apply xl:max-h-[100vh] xl:overflow-y-auto xl:pb-10
 }
-/* .layout-theme.fixed .sidebarNav {
-    @apply xl:max-w-[20rem]
-} */
-/* .layout-theme.fixed .sidebarNav {
-    @apply xl:overflow-y-auto xl:max-h-[100vh]
-} */
 
 .layout-theme.fixed .link-list {
     @apply md:overflow-y-auto md:max-h-[calc(100vh_-_150px)] overflow-x-hidden
