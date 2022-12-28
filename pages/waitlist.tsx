@@ -6,21 +6,19 @@ import Heading from "../elements/Heading";
 import Gradient from "../public/images/gradient-pink.png";
 import { TwitterShareButton } from "next-share";
 
-
 function earlyAccess() {
   return (
-    <Layout noAccess  pageTitle={"One stack for web, mobile & backend"}  description={"100% open source full-stack framework that takes away the complexities of building modern web & mobile apps. Build effortlessly and scale swiftly from idea to enterprise."}
-  >
-      {/* <Meta
-        title={"Waitlist - gluestack"}
-        ogImgUrl="https://gluestack-strapi.sfo3.digitaloceanspaces.com/3e8fa1ca95e0c2a8685486ed82785fd2.png?updated_at=2022-12-21T14:56:07.967Z"
-      /> */}
+    <Layout
+      noAccess
+      pageTitle={"One stack for web, mobile & backend"}
+      description={
+        "100% open source full-stack framework that takes away the complexities of building modern web & mobile apps. Build effortlessly and scale swiftly from idea to enterprise."
+      }
+    >
       <div className="max-w-[1024px] bg-white dark:bg-black lg:m-auto lg:mt-20 m-4 shadow-xl rounded-lg  relative z-10">
         <div className="grid items-center gap-4 grid-col-1 lg:grid-cols-12">
           <div className="col-span-12 lg:px-20 lg:py-20 px-10 py-10 lg:col-span-6">
-          <Heading  priority={2}>
-            Thanks for signing up.
-          </Heading>
+            <Heading priority={2}>Thanks for signing up.</Heading>
             <p className="mt-10 text-md text-black-200 dark:text-white-300">
               You’re in the waitlist and will be notified as soon as a spot
               becomes available.
@@ -29,9 +27,7 @@ function earlyAccess() {
               <TwitterShareButton
                 style={{ width: "100%" }}
                 url={"https://gluestack.io."}
-                title={
-                  `I’m ready to make full-stack fun again. Just signed up for the alpha access of @gluestackio. Get yours here at`
-                }
+                title={`I’m ready to make full-stack fun again. Just signed up for the alpha access of @gluestackio. Get yours here at`}
               >
                 <button className="flex items-center justify-center w-full py-4 text-white rounded-full bg-skyBlue">
                   <div className="pr-4">
@@ -53,7 +49,7 @@ function earlyAccess() {
         </div>
       </div>
       <div className="absolute top-16 right-0 -z-10">
-        <Image src={Gradient} alt="image" objectFit="contain"  />
+        <Image src={Gradient} alt="image" objectFit="contain" />
       </div>
     </Layout>
   );
