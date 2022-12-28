@@ -97,8 +97,10 @@ function EcoSystem() {
                     <div className="mr-2 w-[86px] ">
                       {!isMounted ? <DsxLogo /> : <DsxLogo />}
                     </div>
-                    <Heading priority="6">
+                    <Heading priority="3">
+                    <span className=" lg:text-lg text-md flex	">
                        (R&amp;D)
+                       </span>
                       {/* <button className="tagsButton relative -top-2">
                         Upcoming
                       </button> */}
