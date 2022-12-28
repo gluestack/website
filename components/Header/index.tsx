@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar";
 import React from "react";
 import Toggle from "./Toggle";
 
-export const Header = ({noAccess} :any) => {
+export const Header = ({ noAccess }: any) => {
   const [expand, setExpand] = useState(false);
   const [showModel, setModel] = useState(false);
 
@@ -24,19 +24,18 @@ export const Header = ({noAccess} :any) => {
         <div className="container ">
           <div className="flex items-center justify-between">
             <Logo />
-            {!noAccess &&
             <div className="flex items-center gap-6">
-              <Toggle/>
-              <div className="lg:block hidden">
-              <Button type="primary" dataId="QWcoG0YF">
-                Get early access
-              </Button>
-              </div>
+              <Toggle />
+              {!noAccess && (
+                <div className="lg:block hidden">
+                  <Button type="primary" dataId="QWcoG0YF">
+                    Get early access
+                  </Button>
+                </div>
+              )}
             </div>
-            }
-                      </div>
+          </div>
 
-          
           <div className="flex md:order-2">
             <Modal
               height="3/6"
@@ -51,9 +50,8 @@ export const Header = ({noAccess} :any) => {
             {/* <Hamburger setExpand={setExpand} expand={expand} /> */}
           </div>
           {/* <Menu expand={expand} /> */}
-          </div>
         </div>
-      </nav>
-      
+      </div>
+    </nav>
   );
 };
