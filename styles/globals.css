@@ -115,7 +115,7 @@
 
 .docs-layout h2,.docs-layout h1, .docs-layout p, .docs-layout h3, .docs-layout h4, .docs-layout h5, .docs-layout h6, .docs-layout li,
 .docs-layout strong{
-  @apply dark:text-white-300;
+  @apply dark:text-gray;
 }
 .docs-layout code{
   @apply dark:text-primary;
@@ -162,13 +162,13 @@
 
   }
   body #c-bns button+button, body #s-c-bn, body #s-cnt button+button, body #s-bl .c-bl.b-ex, body .b-tl.exp{
-    @apply bg-white-300 hover:bg-white-300;
+    @apply bg-gray hover:bg-gray;
   }
   #cc_div #cm{
-    @apply w-full max-w-full left-0 right-0 bottom-0 dark:bg-black dark:text-white-300 py-2;
+    @apply w-full max-w-full left-0 right-0 bottom-0 dark:bg-black dark:text-gray py-2;
   }
   body #cc_div #cm h3{
-    @apply dark:text-white-300;
+    @apply dark:text-gray;
   }
   #cm #c-inr{
     @apply flex justify-between items-center max-[600px]:flex-col items-center;
@@ -186,7 +186,7 @@
     @apply max-[600px]:w-auto max-[600px]:m-1 max-[600px]:mt-4;
   }
   .prose h1, .prose h2, .prose p, .prose ul, .prose li, .prose div {
-    @apply text-black-200 dark:text-white-300;
+    @apply text-black-200 dark:text-gray;
   }
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6, .prose strong, .prose b {
     @apply font-semibold;
