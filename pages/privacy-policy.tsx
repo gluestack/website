@@ -22,9 +22,9 @@ function Privacy() {
                 </p>
                 <p className="py-4">
                   GeekyAnts Inc. ({" "}
-                  <span className="font-displaySemibold">“us”</span> ,{" "}
-                  <span className="font-displaySemibold">“we”</span> , or{" "}
-                  <span className="font-displaySemibold">“our”</span>) operates{" "}
+                  <span className="font-displaySemibold">&quot;us&quot;</span> ,{" "}
+                  <span className="font-displaySemibold">&quot;we&quot;</span> , or{" "}
+                  <span className="font-displaySemibold">&quot;our&quot;</span>) operates{" "}
                   <a href="https://gluestack.io/" className="text-primary">
                     https://gluestack.io
                   </a>
@@ -264,7 +264,7 @@ function Privacy() {
                     </p>
                     <p className="py-4">
                       This Usage Data may include information such as your
-                      computer's Internet Protocol address (e.g. IP address),
+                      computer&apos;s Internet Protocol address (e.g. IP address),
                       browser type, browser version, the pages of our Service
                       that you visit, the time and date of your visit, the time
                       spent on those pages, unique device identifiers and other
@@ -422,7 +422,7 @@ function Privacy() {
                         In addition, for users located in the EU, we must
                         provide a valid legal basis in order to process your
                         personal data. The main legal basis under the European
-                        Union's General Data Protection Regulation (GDPR) that
+                        Union&apos;s General Data Protection Regulation (GDPR) that
                         justify our collection and use of your personal data
                         are: .
                       </p>
@@ -475,9 +475,9 @@ function Privacy() {
                   We also use and/or collect the personal data and other
                   information of Customer’s End Users’ (“End Users”) when the
                   End User uses our Services through our Customer or when
-                  Customer uses our Services. Even though we store End Users'
+                  Customer uses our Services. Even though we store End Users&apos;
                   personal data, it does not cover how or why our Customers may
-                  collect, handle and disclose their End Users' personal data
+                  collect, handle and disclose their End Users&apos; personal data
                   when the End Users’ visit or use their websites or platforms.
                   Each Customer is responsible for posting its own terms,
                   conditions, and privacy policies, and ensuring compliance with
@@ -486,13 +486,13 @@ function Privacy() {
                 <p className="py-4">
                   As noted above, our Customers may collect personal data from
                   their End Users in connection with the products or services
-                  that they offer to End Users. Because we host our Customers'
+                  that they offer to End Users. Because we host our Customers&apos;
                   websites and provide other analytics tools, we process End
-                  Users' personal data when they use our Customers' websites,
+                  Users&apos; personal data when they use our Customers&apos; websites,
                   web applications, and APIs. This information may also include,
                   but is not limited to, IP addresses, system configuration
                   information, and other information about traffic to and from
-                  Customers' websites, as well as Location Information derived
+                  Customers&apos; websites, as well as Location Information derived
                   from IP addresses. All of this information is stored as part
                   of our Services, but Customers are responsible for the content
                   transmitted across our network (e.g., images, written content,
@@ -604,9 +604,9 @@ function Privacy() {
                 <span className="font-displaySemibold">(c) Our Customers.</span>
                 <p className="py-4">
                   When we act on behalf of our Customers (as a Data Processor or
-                  Service Provider), we may provide End Users' personal data to
+                  Service Provider), we may provide End Users&apos; personal data to
                   our Customers in order to comply with their requests, End
-                  Users' requests and/or regulator requests, among others.
+                  Users&apos; requests and/or regulator requests, among others.
                   Occasionally, we will provide our Customers with aggregated
                   information that does not identify End Users directly, in
                   order to provide information about usage, demographics (such
@@ -651,7 +651,7 @@ function Privacy() {
                   non-personal information with third parties for various
                   purposes, including (i) compliance with reporting obligations;
                   (ii) for business or marketing purposes; (iii) to assist us
-                  and other parties in understanding our users' interests,
+                  and other parties in understanding our users&apos; interests,
                   habits and usage patterns for certain programs, content,
                   services, marketing and/or functionality available through the
                   use of our Services. We do not share personal data about you
@@ -840,7 +840,7 @@ function Privacy() {
 
               <Text>
                 <p className="py-4">
-                  We do not respond to Do Not Track ("DNT") browser signals. For
+                  We do not respond to Do Not Track (&quo;DNT&quo;) browser signals. For
                   more information on DNT settings generally, please visit{" "}
                   <a href="https://allaboutdnt.com">https://allaboutdnt.com</a>{" "}
                   .
@@ -1202,7 +1202,7 @@ function Privacy() {
                       Third Party Sites on our Services and do not imply that we
                       endorse or have reviewed the Third Party Sites. If you
                       click a third party link, you will be directed to that
-                      third party's site. We strongly advise you to review the
+                      third party&apos;s site. We strongly advise you to review the
                       Privacy Policy of every site you visit.
                     </p>
                     <p className="py-4">
@@ -1215,7 +1215,7 @@ function Privacy() {
 
                 <li>
                   <Heading priority="4" >
-                    21. Children's Privacy
+                    21. Children&apos;s Privacy
                   </Heading>
 
                   <Text>
@@ -1228,7 +1228,7 @@ function Privacy() {
                     </span>). We do not knowingly
                       collect personally identifiable information from Children
                       under 18. We encourage parents and legal guardians to
-                      monitor their children's Internet usage and to help
+                      monitor their children&apos;s Internet usage and to help
                       enforce our Privacy Policy by instructing their children
                       never to provide personal details. If you become aware
                       that a Child has provided us with Personal Data, please

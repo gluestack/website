@@ -16,9 +16,9 @@ export default function app(props: any) {
       </div>
       <div className="md:flex-col  md:items-stretch md:flex-nowrap flex flex-wrap items-center justify-between w-full md:pt-4 md:pl-5">
         <div className="pt-4 w-full">
-          {props.sidebar.map((sidebarItem: any) => {
+          {props.sidebar.map((sidebarItem: any, index:any) => {
             return (
-              <div className="mt-4 link-list pb-4">
+              <div className="mt-4 link-list pb-4" key={index}>
                 {props.showBackButton ? (
                   <div  className="mx-10 dark:text-white-300" >
                     <Link href={"/docs"} className="inline-block px-4 py-2 rounded-sm border border-gray-300">
@@ -72,7 +72,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                     );
                   }
                   return (
-                      <div className="leftLinks">
+                      <div className="leftLinks"  key={index} >
                         <Link href={linkUrl + "/" + version + "/" + pageInfo.id} className={
                           router.route.includes(pageInfo.id)
                             ? "active leftAnchors"
@@ -123,19 +123,20 @@ const HeadingDropdown = ({ props, version, linkUrl }: any) => {
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
-          {props?.pages.map((pageInfo: any) => {
+          {props?.pages.map((pageInfo: any, index:any) => {
             if (pageInfo.type == "heading") {
               return (
                 <SidebarItems
                   props={pageInfo}
                   version={version}
                   linkUrl={linkUrl}
+                  key={index}
                 />
               );
             }
 
             return (
-                <div className="leftLinks accordionLinks cursor-default">
+                <div className="leftLinks accordionLinks cursor-default"  key={index}>
                   <Link href={linkUrl + "/" + version + "/" + pageInfo.id} className={`leftAnchors  
                     ${router.route.includes(pageInfo.id) ? "active" : ""}`} >
                       {pageInfo.title}

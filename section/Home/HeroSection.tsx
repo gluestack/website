@@ -19,9 +19,9 @@ function HeroSection() {
     return (
       <>
         {!dark ? (
-          <Image src={light} alt="image" />
+          <Image src={light} alt="Fulll-stack" />
         ) : (
-          <Image src={darkImg} alt="image" />
+          <Image src={darkImg} alt="full-stack" />
         )}
       </>
     );
@@ -33,7 +33,7 @@ function HeroSection() {
     <>
       <Banner>
         <div className="grid lg:grid-cols-2 grid-cols-1  items-center">
-          <div className="sm:px-[148px] lg:px-0">
+          <div className="px-0">
             <Heading priority={1}>One stack for web, mobile & backend</Heading>
             <div className="pt-9">
               <Text size={"lg"}>

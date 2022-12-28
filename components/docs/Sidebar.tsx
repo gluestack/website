@@ -103,13 +103,13 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
                 <h2 className="font-medium leading-tight text-md mt-0 mb-2 text-gray-400 px-10 ">
                   {props.title}
                 </h2>
-                {props?.pages.map((pageInfo: any) => {
+                {props?.pages.map((pageInfo: any, index:any) => {
                   if (pageInfo.type == "heading") {
-                    return <SidebarItems props={pageInfo} version={version} />;
+                    return <SidebarItems props={pageInfo} version={version} key={index} />;
                   }
 
                   return (
-                    <Link href={linkUrl + "/" + pageInfo.id}>
+                    <Link href={linkUrl + "/" + pageInfo.id} key={index}>
                       <div className="text-gray-800 dark:text-white-300 py-3 hover:bg-gray-100 hover:cursor-pointer px-10 ">
                         {pageInfo.title}
                       </div>
@@ -191,14 +191,14 @@ const HeadingDropdown = ({ props, version }: any) => {
           {/* <div className=" py-4 bg-red.900 text-black px-5">
             hihi
           </div> */}
-          {props?.pages.map((pageInfo: any) => {
+          {props?.pages.map((pageInfo: any, index:any) => {
             // console.log(pageInfo);
             if (pageInfo.type == "heading") {
-              return <SidebarItems props={pageInfo} version={version} />;
+              return <SidebarItems props={pageInfo} version={version}  key={index}/>;
             }
             return (
               <Link
-                href={"/" + version + "/" + pageInfo.id}
+                href={"/" + version + "/" + pageInfo.id} key={index}
                 // onClick={() => handleItemClick(pageInfo)}
               >
                 <div className="text-gray-800 dark:text-white-300 pl-8 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10 pl-[60px]">
