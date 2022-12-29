@@ -28,7 +28,7 @@ function InerBanner({
         </div>
         <Heading priority="1" single={single}>
           {title}
-          <span className="text-primary">{last}</span>
+          <span className="text-primary dark:text-primary-100">{last}</span>
         </Heading>
         {description && (
           <Text

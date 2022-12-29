@@ -33,8 +33,8 @@ function HeroSection() {
   return (
     <>
       <Banner>
-        <div className="grid lg:grid-cols-2 grid-cols-1  items-center">
-          <div >
+        <div className="grid lg:grid-cols-5 grid-cols-1  items-center">
+          <div className="lg:col-span-2">
             <Heading priority={1}>One stack for web, mobile & backend</Heading>
             <div className="pt-9">
               <Text size={"lg"}>
@@ -53,7 +53,7 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className=" sm:mt-10 lg:mt-0">
+          <div className=" sm:mt-10 lg:mt-0 lg:col-span-3">
             {!isMounted ? <BannerImg /> : <BannerImg />}
           </div>
         </div>
