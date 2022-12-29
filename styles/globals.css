@@ -202,3 +202,28 @@
   body #cc_div #cm{
     @apply rounded-none;
   }
+
+
+  .primary-bg{
+    background: linear-gradient(180deg, #853ecc 50%, transparent 50%);
+   
+
+
+
+  }
+  @media screen and (max-width : 1024px) {
+    .primary-bg{
+    background: linear-gradient(180deg, #853ecc 100%, transparent 0%);
+    }
+    .dark .primary-bg-dark{
+      background: linear-gradient(180deg, #6726A7 100%, transparent 0%);
+  
+    }
+
+  }
+
+
+  .dark .primary-bg-dark{
+    background: linear-gradient(180deg, #6726A7 50%, transparent 50%);
+
+  }
