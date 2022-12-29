@@ -23,7 +23,7 @@ import bannerDark from "../../public/images/gradient-dark.png";
 import { AppContext } from "../../pages/_app";
 
 function CardsSection() {
-      //@ts-ignore
+  //@ts-ignore
 
   const { darkMode } = useContext(AppContext);
   const [isMounted, setIsMounted] = React.useState(false);
@@ -33,18 +33,18 @@ function CardsSection() {
       <>
         {!dark ? (
           <Image
-          src={GradientImg}
-          alt="Gradient"
-          objectFit="contain"
-          className="dark:hidden block"
-        />
+            src={GradientImg}
+            alt="Gradient"
+            objectFit="contain"
+            className="dark:hidden block"
+          />
         ) : (
           <Image
-          src={bannerDark}
-          alt="Core Plugins"
-          objectFit="contain"
-          className="dark:block hidden"
-        />
+            src={bannerDark}
+            alt="Core Plugins"
+            objectFit="contain"
+            className="dark:block hidden"
+          />
         )}
       </>
     );
@@ -53,19 +53,18 @@ function CardsSection() {
     setIsMounted(true);
   }, []);
   return (
-    <div className="relative w-full pt-20 sm:pt-40">
-      <div className="absolute top-[660px] left-0 w-full h-full">
-      {!isMounted ? <Gradient /> : <Gradient />}
-
-       
-       
+    <>
+    <div className="relative w-full mt-20 sm:mt-40">
+      <div className="absolute lg:top-2/4  top-full left-0 w-full h-full ">
+        {!isMounted ? <Gradient /> : <Gradient />}
       </div>
-      <div className="bg-primary dark:bg-primary-200 pt-10 max-h-[580px] md:max-h-[450px] lg:max-h-[500px]">
+     
+      <div className="primary-bg primary-bg-dark pt-10 ">
         <div className="container pt-10 pb-12 relative ">
-          <div className="sm:max-w-[900px] m-auto">
+          <div className="md:max-w-[900px] m-auto">
             <div className="text-center mb-10">
               <Heading priority={2} dark>
-                 Core Plugins to get you off the ground
+                Core Plugins to get you off the ground
               </Heading>
             </div>
             <Text white size="md">
@@ -76,13 +75,17 @@ function CardsSection() {
               </div>
             </Text>
           </div>
-          <div className="grid bg-white shadow-md px-4 mt-5 sm:mt-10 rounded-md">
+          <div className="grid bg-white shadow-2xl px-4 mt-5 md:mt-10 rounded-md">
             <CustomImage src={architecture} alt="architecture" />
           </div>
         </div>
       </div>
-      <div className="container pt-5 sm:pt-40 lg:pt-50 xl:pt-60 pb-10 md:pb-20">
-        <div className="grid gap-4 lg:gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+      </div>
+
+      <div className="relative">
+      
+      <div className="container ">
+        <div className="grid gap-4 lg:gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3 ">
           <Card
             type="hasIcon"
             src={NextIcon}
@@ -148,7 +151,8 @@ function CardsSection() {
           />
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

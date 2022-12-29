@@ -83,6 +83,10 @@ module.exports = {
           100: '#E7FAFF',
         },
       },
+      boxShadow: {
+        '2xl': '0px 4px 20px rgba(0, 0, 0, 0.1)',
+      },
+     
     },
     fontFamily: {
       body: ['sf-pro-regular', 'sans-serif'],
