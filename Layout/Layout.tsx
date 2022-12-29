@@ -16,6 +16,7 @@ function Layout({
   ogImgUrl,
   ogUrl,
   noAccess,
+  style
   
 }: any) {
     //@ts-ignore
@@ -46,7 +47,7 @@ function Layout({
     setIsMounted(true);
   }, []);
   return (
-    <div className="min-h-screen dark:bg-black-300">
+    <div className={`${style} min-h-screen dark:bg-black-300`}>
       <Script src="//embed.typeform.com/next/embed.js"></Script>
 
       <Meta

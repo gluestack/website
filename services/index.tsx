@@ -110,6 +110,7 @@ export function TermService() {
           attributes{
             title
             description
+            disclaimer
           }
         }
       }
