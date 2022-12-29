@@ -8,14 +8,14 @@ import { TwitterShareButton } from "next-share";
 
 function earlyAccess() {
   return (
-    <Layout
+    <Layout style="lg:flex lg:items-center lg:justify-center block"
       noAccess
       pageTitle={"One stack for web, mobile & backend"}
       description={
         "100% open source full-stack framework that takes away the complexities of building modern web & mobile apps. Build effortlessly and scale swiftly from idea to enterprise."
       }
     >
-      <div className="max-w-[1024px] bg-white dark:bg-black lg:m-auto lg:mt-20 m-4 shadow-xl rounded-lg  relative z-10">
+      <div className="max-w-[1024px] bg-white dark:bg-black lg:m-auto lg:mt-0 mt-20 m-4 shadow-xl rounded-lg  relative z-10 flex items-center">
         <div className="grid items-center gap-4 grid-col-1 lg:grid-cols-12">
           <div className="col-span-12 lg:px-20 lg:py-20 px-10 py-10 lg:col-span-6">
             <Heading priority={2}>Thanks for signing up.</Heading>

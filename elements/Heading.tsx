@@ -4,7 +4,7 @@ const Heading = ({ priority, dark, children, single }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
       <DynamicTag
-        className={`tracking-wide	 font-displayHead  ${
+        className={` font-displayHead  ${
           priority == 1
             ? `${single ? "lg:text-5xl text-4xl " : "lg:text-6xl text-4xl "}`
             : priority == 2

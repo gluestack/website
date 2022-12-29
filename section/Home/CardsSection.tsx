@@ -75,7 +75,7 @@ function CardsSection() {
               </div>
             </Text>
           </div>
-          <div className="grid bg-white shadow-2xl px-4 mt-5 md:mt-10 rounded-md">
+          <div className="grid bg-white shadow-2xl p-1 mt-5 md:mt-10 rounded-md">
             <CustomImage src={architecture} alt="architecture" />
           </div>
         </div>
@@ -85,7 +85,7 @@ function CardsSection() {
       <div className="relative">
       
       <div className="container ">
-        <div className="grid gap-4 lg:gap-12 py-12 grid-col-1 sm:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid gap-4 lg:gap-6 py-6 grid-col-1 sm:grid-cols-2 lg:grid-cols-3 ">
           <Card
             type="hasIcon"
             src={NextIcon}

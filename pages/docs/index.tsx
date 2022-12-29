@@ -12,11 +12,14 @@ export default function() {
         router.push("/");
       }
     }
+    if (isLoading) {
+      if (!user) {
+        router.push("/");
+      }
+    }
   }, [isLoading]);
 
-  if (isLoading) {
-    return <></>;
-  }
+ 
 
   if (user) {
     return <></>;

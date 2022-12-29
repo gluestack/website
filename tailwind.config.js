@@ -123,11 +123,14 @@ module.exports = {
             maxWidth: '1024px',
             marginLeft: 'auto',
             marginRight: 'auto',
+           
           },
           '@screen xl': {
             maxWidth: '1280px',
             marginLeft: 'auto',
             marginRight: 'auto',
+            paddingLeft: '0',
+            paddingRight: '0',
           },
         },
       });
