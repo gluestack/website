@@ -8,8 +8,9 @@ import { PrevNextButtons } from "../components/docs/PrevNextButtons";
 import { SessionProvider } from "next-auth/react";
 import AuthContextProvider from "../auth-context";
 import useDarkMode from "use-dark-mode";
+import useAuthHook from "../auth-context/use-auth-hook";
 
-export const AppContext = React.createContext(null);
+export const AppContext = React.createContext(({} as unknown) as any);
 
 function MyApp({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -59,24 +60,22 @@ function MyApp({ children }: { children: React.ReactNode }) {
 
   if (router.pathname.includes("/docs")) {
     return (
-      //@ts-ignore
-      <AppContext.Provider value={{darkMode}}>
-        <PagesLayout
+      <>
+        <DocsLayoutRender
+          darkMode={darkMode}
           version={version}
-          versionInfo={getSidebarJsonData()}
           setVersion={setVersion}
-          versionsData={versions}
+          versionInfo={getSidebarJsonData()}
+          versions={versions}
           showBackButton={showBackButton}
         >
           {children}
-          <PrevNextButtons />
-        </PagesLayout>
-      </AppContext.Provider>
+        </DocsLayoutRender>
+      </>
     );
   } else {
     return (
-      //@ts-ignore
-      <AppContext.Provider value={{darkMode}}>{children}</AppContext.Provider>
+      <AppContext.Provider value={{ darkMode }}>{children}</AppContext.Provider>
     );
   }
 }
@@ -96,3 +95,59 @@ const App = ({ Component, pageProps: { session, ...pageProps } }: any) => {
 };
 
 export default App;
+
+interface IDocsLayoutRender {
+  children: React.ReactNode;
+  versions: any;
+  version: any;
+  versionInfo: any;
+  setVersion: (_v: any) => void;
+  showBackButton: boolean;
+  darkMode: any;
+}
+
+const DocsLayoutRender = ({
+  children,
+  darkMode,
+  version,
+  versionInfo,
+  setVersion,
+  versions,
+  showBackButton,
+}: IDocsLayoutRender) => {
+  const [user, isLoading] = useAuthHook();
+  const router = useRouter() as any;
+
+  useEffect(() => {
+    if (!isLoading) {
+      if (!user && !isLoading) {
+        router.push("/");
+      }
+    }
+  }, [isLoading]);
+
+  if (isLoading) {
+    return <></>;
+  }
+
+  if (user) {
+    return (
+      <>
+        <AppContext.Provider value={{ darkMode }}>
+          <PagesLayout
+            version={version}
+            versionInfo={versionInfo}
+            setVersion={setVersion}
+            versionsData={versions}
+            showBackButton={showBackButton}
+          >
+            {children}
+            <PrevNextButtons />
+          </PagesLayout>
+        </AppContext.Provider>
+      </>
+    );
+  }
+
+  return <></>;
+};
