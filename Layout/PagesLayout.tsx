@@ -1,37 +1,19 @@
-import { useRouter } from "next/router";
-
-import React, { useEffect, useState } from "react";
-
+import React, { useState } from "react";
 import { Content } from "../components/docs/Content";
 import ContentHeader from "../components/docs/ContentHeader";
+import { useRouter } from "next/router";
 import { IFrameContent } from "../components/docs/IFrameContent";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Logo from "../components/Header/Logo";
 import SidebarCustom from "../components/docs/SidebarCustom";
 import Meta from "../components/Meta";
-import useAuthHook from "../auth-context/use-auth-hook";
 
 function PagesLayout(props: any) {
   const [sideBarOpen, setSideBar] = useState(false);
   const hamburgerClick = () => setSideBar(!sideBarOpen);
 
   const router = useRouter();
-
-  const [user, isLoading] = useAuthHook();
-
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user) {
-        router.push("/");
-      }
-    }
-  }, [isLoading]);
-
-  if (isLoading) {
-    return <></>;
-  }
-  if (user) {
   return (
     <>
       <Meta
@@ -98,7 +80,6 @@ function PagesLayout(props: any) {
       </div>
     </>
   );
-            }
 }
 
 export default PagesLayout;
