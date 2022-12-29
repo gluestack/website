@@ -8,18 +8,15 @@ export default function() {
 
   useEffect(() => {
     if (!isLoading) {
-      if (!user) {
-        router.push("/");
-      }
-    }
-    if (isLoading) {
-      if (!user) {
+      if (!user && !isLoading) {
         router.push("/");
       }
     }
   }, [isLoading]);
 
- 
+  if (isLoading) {
+    return <></>;
+  }
 
   if (user) {
     return <></>;
