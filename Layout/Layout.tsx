@@ -28,16 +28,14 @@ function Layout({
     return (
       <>
         {!dark ? (
-          <Image
+          <Image priority
             src={bannerImg}
             alt="image"
-            objectFit="contain"
           />
         ) : (
-          <Image
+          <Image priority
             src={bannerDark}
             alt="image"
-            objectFit="contain"
           />
         )}
       </>

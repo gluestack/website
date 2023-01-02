@@ -8,19 +8,15 @@ function Card({ src, altText, title, description, type }: any) {
     <div className="bg-white  border rounded-lg border-gray dark:bg-secondary dark:border-black-200 relative ">
       {type == "hasIcon" ? (
         <div className=" absolute ml-auto h-[53px] w-[53px] bg-primary-50 dark:bg-black-200 top-0 right-0 rounded-bl-lg rounded-tr-lg  flex justify-center items-center">
-          <div className="relative h-[30px] w-[30px] ">
+          <div className="relative w-[30px] max-h-[30px]">
             <Image
               src={src}
               alt={altText}
-              layout="fill"
-              objectFit="contain "
               className=" dark:hidden block"
             />
             <Image
               src={src}
               alt={altText}
-              layout="fill"
-              objectFit="contain "
               className="filter-white dark:block hidden"
             />
           </div>
@@ -30,8 +26,6 @@ function Card({ src, altText, title, description, type }: any) {
           <Image
             src={src}
             alt={altText || "banner"}
-            layout="fill"
-            objectFit="cover"
             className="rounded-tl-lg rounded-tr-lg"
           />
         </div>

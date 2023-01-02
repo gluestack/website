@@ -21,9 +21,9 @@ function MordenStack() {
     return (
       <>
         {!dark ? (
-          <Image src={GradientLight} alt="Gradient" objectFit="contain" />
+          <Image src={GradientLight} alt="Gradient" />
         ) : (
-          <Image src={GradientDark} alt="Gradient" objectFit="contain" />
+          <Image src={GradientDark} alt="Gradient" />
         )}
       </>
     );

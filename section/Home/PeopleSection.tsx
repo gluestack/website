@@ -8,7 +8,7 @@ function PeopleSection() {
   return (
     <div className="gradient-dark relative w-full">
       <div className="absolute bottom-0 right-0 -z-10">
-        <Image src={Gradient} alt="image" objectFit="contain" />
+        <Image src={Gradient} alt="image" />
       </div>
       <div className="container py-32 relative">
         <div className="text-center ">

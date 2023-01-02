@@ -35,14 +35,12 @@ function CardsSection() {
           <Image
             src={GradientImg}
             alt="Gradient"
-            objectFit="contain"
             className="dark:hidden block"
           />
         ) : (
           <Image
             src={bannerDark}
             alt="Core Plugins"
-            objectFit="contain"
             className="dark:block hidden"
           />
         )}

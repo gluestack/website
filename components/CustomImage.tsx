@@ -4,7 +4,7 @@ import Image from "next/image";
 function CustomImage({ src, alt, style }: any) {
   return (
     <div className={"image-container"}>
-      <Image src={src} layout="fill" className={`image ${style}`} alt={alt} />
+      <Image src={src} className={`image ${style}`} alt={alt} />
     </div>
   );
 }

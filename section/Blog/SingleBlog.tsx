@@ -53,8 +53,6 @@ function SingleBlog({
             <Image
               src={blog.coverImg.data.attributes.url}
               alt={altText || "Cover Image"}
-              layout="fill"
-              objectFit="cover"
               className="rounded-lg"
             />
           </div>

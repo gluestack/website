@@ -43,13 +43,12 @@ function earlyAccess() {
               className="object-contain w-full h-full"
               src="/images/waitlist-tweets.png"
               alt="gluestack Tweets"
-              layout="fill"
             />
           </div>
         </div>
       </div>
       <div className="absolute top-16 right-0 -z-10">
-        <Image src={Gradient} alt="image" objectFit="contain" />
+        <Image src={Gradient} alt="image" />
       </div>
     </Layout>
   );
