@@ -3,8 +3,8 @@ import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
 import Banner from "../../components/Banner";
 import Button from "../../components/Button";
-import light from "../../public/images/light.gif";
-import darkImg from "../../public/images/dark.gif";
+import light from "../../public/images/animatedImgs/light.svg";
+import darkImg from "../../public/images/animatedImgs/dark.svg";
 import { AppContext } from "../../pages/_app";
 import CustomImage from "../../components/CustomImage";
 

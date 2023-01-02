@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Details from "../../components/Details";
-import DarkBg from "../../public/images/code_new.gif";
-import Module from "../../public/images/mode_light.gif";
-import ModuleDark from "../../public/images/mode_dark.gif";
+import DarkBg from "../../public/images/animatedImgs/code_new.svg";
+import Module from "../../public/images/animatedImgs/mode_light.svg";
+import ModuleDark from "../../public/images/animatedImgs/mode_dark.svg";
 import { AppContext } from "../../pages/_app";
 import GradientLight from "../../public/images/gradient-pink.png";
 import GradientDark from "../../public/images/gradientDark-pink.png";
