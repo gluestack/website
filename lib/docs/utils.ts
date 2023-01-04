@@ -1,4 +1,4 @@
-import { versions, plugins } from "../../versions.json";
+import { versions } from "../../versions.json";
 let filePaths: string[] = [""];
 
 function getPrevNextPage(route: any) {

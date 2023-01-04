@@ -14,7 +14,7 @@ import { fetchAPI } from "../../lib/api";
 import { useRouter } from "next/router";
 import InerBanner from "../../components/InerBanner";
 
-function showcase({ events, categories, tags, showcase }: any) {
+function Showcase({ events, categories, tags, showcase }: any) {
   // console.log(showcase.length);
 
   const router = useRouter();
@@ -100,7 +100,7 @@ function showcase({ events, categories, tags, showcase }: any) {
   );
 }
 
-export default showcase;
+export default Showcase;
 
 export async function getServerSideProps(context: any) {
   let param = context.params;

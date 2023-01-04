@@ -1,15 +1,21 @@
 import React from "react";
-import Layout from "../Layout/Layout";
-import InerBanner from "../components/InerBanner";
-import Disclaimer from "../components/Disclaimer";
+import dynamic from "next/dynamic";
+
+const Layout = dynamic(() => import("../Layout/Layout"), { ssr: true });
+const InerBanner = dynamic(() => import("../components/InerBanner"), {
+  ssr: true,
+});
+const Disclaimer = dynamic(() => import("../components/Disclaimer"), {
+  ssr: true,
+});
+
 import { TermService } from "../services";
 import ReactMarkdown from "react-markdown";
 
 function term({ term }: any) {
-  
   //If need to set Title from backend put word[0]  in title word[1]in last
-    // let word= term.title.split(" ")
-    
+  // let word= term.title.split(" ")
+
   return (
     <Layout pageTitle={"Terms & Condition - gluestack"}>
       <Disclaimer title={term.disclaimer} />
@@ -18,11 +24,10 @@ function term({ term }: any) {
         <InerBanner title="Terms &" last="Conditions" />
         <div className="container relative z-10 pb-14">
           <div className="py-12 prose lg:prose-lg sm-container dark:prose-invert markdownview">
-            <ReactMarkdown children={term.description}></ReactMarkdown>
+            <ReactMarkdown>{term.description}</ReactMarkdown>
           </div>
         </div>
       </div>
-    
     </Layout>
   );
 }

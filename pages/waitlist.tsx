@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Layout from "../Layout/Layout";
+import dynamic from "next/dynamic";
+const Layout = dynamic(() => import("../Layout/Layout"), { ssr: true });
+
 import { FaTwitter } from "react-icons/fa";
 import Heading from "../elements/Heading";
 import Gradient from "../public/images/gradient-pink.png";
