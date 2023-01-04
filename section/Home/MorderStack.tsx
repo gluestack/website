@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState,useEffect } from "react";
 import Details from "../../components/Details";
 import DarkBg from "../../public/images/animatedImgs/code_new.svg";
 import Module from "../../public/images/animatedImgs/mode_light.svg";
@@ -15,7 +15,7 @@ function MordenStack() {
     //@ts-ignore
 
   const { darkMode } = useContext(AppContext);
-  const [isMounted, setIsMounted] = React.useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const dark = darkMode?.value ?? "dark";
   const Gradient = () => {
     return (
@@ -40,7 +40,7 @@ function MordenStack() {
       </>
     );
   };
-  React.useEffect(() => {
+  useEffect(() => {
     setIsMounted(true);
   }, []);
 
