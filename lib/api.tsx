@@ -32,3 +32,44 @@ export async function fetchAPI(path: any, urlParamsObject: any, options:OptinTyp
     throw new Error("404");
   }
 }
+
+export async function PostAPI(id: number) {
+  try {
+    //If we need we can pass dynamic collection name
+    let body = {
+      query: `
+    query{
+      blog ( id: "${id}" ){
+        data{
+          id
+          attributes{
+            title
+            shortDes
+            coverImg {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+            slug
+          }
+        }
+      }
+    }
+    `,
+      variables: {},
+    };
+    const requestOptions: any = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    };
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/graphql`,
+      requestOptions
+    );
+    const data = await response.json();
+    return data;
+  } catch (error) {}
+}
