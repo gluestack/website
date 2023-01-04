@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import Layout from "../Layout/Layout";
 
-const Layout = dynamic(() => import("../Layout/Layout"), { ssr: true });
 const InerBanner = dynamic(() => import("../components/InerBanner"), {
   ssr: true,
 });
