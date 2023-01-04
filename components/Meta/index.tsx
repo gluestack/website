@@ -84,7 +84,6 @@ function Meta({ pageTitle, description, ogImgUrl, ogUrl }: any) {
           content={pageTitle || "gluestack"}
         />
         <meta name="twitter:title" content={pageTitle || "gluestack"} />
-        {/* <meta name="theme-color" content="#fff" /> */}
 
         <meta
           key="og:description"
