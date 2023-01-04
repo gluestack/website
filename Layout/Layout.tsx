@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Footer } from "../components/Footer";
+import React, { useContext,useState,useEffect } from "react";
 import { Header } from "../components/Header";
 import Meta from "../components/Meta";
 import Cookies from "../components/Cookies";
@@ -22,28 +21,34 @@ function Layout({
     //@ts-ignore
 
   const { darkMode } = useContext(AppContext);
-  const [isMounted, setIsMounted] = React.useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const dark = darkMode?.value ?? "dark";
   const Gradient = () => {
     return (
       <>
         {!dark ? (
+                <div className="absolute top-0 left-0 w-full ">
+
           <Image
             src={bannerImg}
             alt="image"
             objectFit="contain"
           />
+          </div>
         ) : (
+          <div className="absolute top-0 left-0 w-full ">
+
           <Image
             src={bannerDark}
             alt="image"
             objectFit="contain"
           />
+          </div>
         )}
       </>
     );
   };
-  React.useEffect(() => {
+  useEffect(() => {
     setIsMounted(true);
   }, []);
   return (
@@ -58,9 +63,7 @@ function Layout({
       />
       <Cookies />
       <Header noAccess={noAccess} />
-      <div className="absolute top-0 left-0 w-full ">
         {!isMounted ? <Gradient /> : <Gradient />}
-      </div>
       <div className=" lg:pt-20 pt-14 ">{children}</div>
       {/* <Footer /> */}
     </div>

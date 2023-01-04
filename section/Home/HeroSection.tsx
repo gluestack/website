@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect,useState } from "react";
 import Heading from "../../elements/Heading";
 import Text from "../../elements/Text";
 import Banner from "../../components/Banner";
@@ -14,7 +14,7 @@ function HeroSection() {
     //@ts-ignore
 
   const { darkMode } = useContext(AppContext);
-  const [isMounted, setIsMounted] = React.useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const dark = darkMode?.value ?? "dark";
   const BannerImg = () => {
     return (
@@ -27,7 +27,7 @@ function HeroSection() {
       </>
     );
   };
-  React.useEffect(() => {
+  useEffect(() => {
     setIsMounted(true);
   }, []);
   return (

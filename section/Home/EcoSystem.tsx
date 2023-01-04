@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Heading from "../../elements/Heading";
 import Gradient from "../../public/images/gradient-pink.png";
 import Seal from "../../public/images/ecosystem/seal-logo-light.svg";
@@ -14,12 +14,15 @@ import { AppContext } from "../../pages/_app";
 import Image from "next/image";
 
 function EcoSystem() {
-    //@ts-ignore
+  //@ts-ignore
 
   const { darkMode } = useContext(AppContext);
-  const [isMounted, setIsMounted] = React.useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const dark = darkMode?.value ?? "dark";
   const EcoSystemBanner = () => {
+    useEffect(() => {
+      setIsMounted(true);
+    }, []);
     return (
       <>
         {!dark ? (
@@ -55,7 +58,12 @@ function EcoSystem() {
 
   return (
     <div className="relative w-full ">
-        <Image src={Gradient} alt="Gradient" objectFit="contain" className="absolute bottom-0 right-0 -z-10 dark:hidden block"/>
+      <Image
+        src={Gradient}
+        alt="Gradient"
+        objectFit="contain"
+        className="absolute bottom-0 right-0 -z-10 dark:hidden block"
+      />
       <div className="absolute top-0 left-0 bottom-0 right-0   dark:block hidden">
         <div className="dark-gradient h-full"></div>
       </div>
@@ -96,9 +104,9 @@ function EcoSystem() {
                       {!isMounted ? <DsxLogo /> : <DsxLogo />}
                     </div>
                     <Heading priority="3">
-                    <span className=" lg:text-lg text-md flex	">
-                       (R&amp;D)
-                       </span>
+                      <span className=" lg:text-lg text-md flex	">
+                        (R&amp;D)
+                      </span>
                       {/* <button className="tagsButton relative -top-2">
                         Upcoming
                       </button> */}
@@ -107,7 +115,9 @@ function EcoSystem() {
                 </div>
                 <div className="pt-4 text-left">
                   <Text size="md">
-                  Build your design system using DSX to ship multiple products faster with better collaboration, consistency, and standardization.
+                    Build your design system using DSX to ship multiple products
+                    faster with better collaboration, consistency, and
+                    standardization.
                   </Text>
                 </div>
               </div>
