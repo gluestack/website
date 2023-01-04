@@ -21,7 +21,7 @@ function SingleBlog({
     <>
       <div className="mt-16">
         <InerBanner
-          title={blog.title || "null"}
+          title={blog.title || ""}
           paddingBottom
           single={true}
           style="test"
@@ -51,7 +51,7 @@ function SingleBlog({
           </div>
           <div className="flex justify-center relative h-[400px] w-full">
             <Image
-              src={blog.coverImg.data.attributes.url}
+              src={blog.coverImg.data?.attributes.url }
               alt={altText || "Cover Image"}
               layout="fill"
               objectFit="cover"
@@ -83,10 +83,10 @@ function SingleBlog({
             {previousblog.title && (
               <BlogControl
                 right
-                src={previousblog.coverImg.data?.attributes.url || null}
+                src={previousblog.coverImg.data?.attributes.url || ""}
                 arrowTitle="Previous Post"
-                blogTitle={previousblog.title || "X"}
-                href={previousblog.slug || "null"}
+                blogTitle={previousblog.title || ""}
+                href={previousblog.slug || ""}
               />
             )}
             {nextblog.title && (

@@ -48,7 +48,9 @@ function Blog({
                 <span className="hidden px-1 lg:block dark:text-gray">|</span>
                 <Text size="sm">{formatDate(publish_date)}</Text>
                 <div className="pl-0 lg:pl-4">
-                    <Tags>{category}</Tags>
+                  {
+                    category.map((data:any,index:any)=><Tags key={index}>{data.attributes.name}</Tags>)
+                  }
                 </div>
               </div>
           </div>
