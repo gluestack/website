@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Card";
 
-function Showcase({showcase}:any) {
+function ShowcaseSIngle({showcase}:any) {
   return (
     <>
       <section className="container py-20">
@@ -18,4 +18,4 @@ function Showcase({showcase}:any) {
   );
 }
 
-export default Showcase;
+export default ShowcaseSIngle;

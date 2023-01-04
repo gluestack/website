@@ -62,10 +62,10 @@ const SidebarDocs = (props: any) => {
 const RenderSidebar = (props: any) => {
   return (
     <>
-      {props.sidebarData.map((info: any) => {
+      {props.sidebarData.map((info: any, index:any) => {
         if (info.type == "docs") {
           return (
-            <div>
+            <div key={index}>
               <SidebarDocs
                 title={info.title}
                 versions={info.versions}
@@ -75,7 +75,7 @@ const RenderSidebar = (props: any) => {
           );
         } else {
           return (
-            <div className="mt-4">
+            <div className="mt-4" key={index}>
               <SidebarItems
                 props={info}
                 version={props.version}

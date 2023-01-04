@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "get-docs-data": "node scripts/get-docs-data.js"
+    "get-docs-data": "node scripts/get-docs-data.js",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
@@ -15,6 +16,7 @@
     "@headlessui/react": "^1.7.5",
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
+    "@next/bundle-analyzer": "^13.1.1",
     "@next/mdx": "^13.0.6",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
@@ -31,6 +33,7 @@
     "next-auth": "^4.18.6",
     "next-share": "^0.19.0",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-markdown": "^8.0.4",
