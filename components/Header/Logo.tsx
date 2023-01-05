@@ -14,15 +14,14 @@ function Logo({ darkLogo }: any) {
     return (
       <Link href="/" passHref legacyBehavior>
         <a className="inline-flex items-center">
-          {!dark ? (
-            <div className=" lg:w-[200px] w-[150px]">
-              <CustomImage src={darkLogo ? logodark : logo} alt="gluestack" />
-            </div>
-          ) : (
-            <div className=" lg:w-[200px] w-[150px]">
-              <CustomImage src={darkLogo ? logo : logodark} alt="gluestack" />
-            </div>
-          )}
+        <div className=" lg:w-[200px] w-[150px]">
+            {!dark ? (
+                <CustomImage src={darkLogo ? logodark : logo} alt="gluestack" priority />
+            ) : (
+                <CustomImage src={darkLogo ? logo : logodark} alt="gluestack" priority />
+            )}
+        </div>
+
         </a>
       </Link>
     );
