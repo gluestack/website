@@ -34,7 +34,7 @@ function HeroSection() {
     <>
       <Banner>
         <div className="grid lg:grid-cols-5 grid-cols-1  items-center">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 xl:py-[138px]">
             <Heading priority={1}>One stack for web, mobile & backend</Heading>
             <div className="pt-9">
               <Text size={"lg"}>
