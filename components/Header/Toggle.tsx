@@ -25,7 +25,7 @@ function Toggle(): JSX.Element | null {
           <Image
             src={Light}
             alt="Light mode"
-            width={25}
+            width={25} priority
           />
         </button>
       ) : (
@@ -33,7 +33,7 @@ function Toggle(): JSX.Element | null {
           <Image
             src={Dark}
             alt="Dark mode"
-            width={25}
+            width={25} priority
           />
         </button>
       )}
