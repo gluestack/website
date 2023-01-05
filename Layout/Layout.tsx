@@ -32,7 +32,7 @@ function Layout({
           <Image
             src={bannerImg}
             alt="image"
-            objectFit="contain"
+            objectFit="contain" priority
           />
           </div>
         ) : (
@@ -41,7 +41,7 @@ function Layout({
           <Image
             src={bannerDark}
             alt="image"
-            objectFit="contain"
+            objectFit="contain" priority
           />
           </div>
         )}
