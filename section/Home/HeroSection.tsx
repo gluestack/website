@@ -20,9 +20,9 @@ function HeroSection() {
     return (
       <>
         {!dark ? (
-          <CustomImage src={light} alt="Fulll-stack" />
+          <CustomImage src={light} alt="Fulll-stack" priority />
         ) : (
-          <CustomImage src={darkImg} alt="full-stack" />
+          <CustomImage src={darkImg} alt="full-stack" priority />
         )}
       </>
     );
