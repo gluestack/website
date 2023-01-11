@@ -3,7 +3,6 @@ import HeroSection from "../../section/Blog/HeroSection";
 import { BlogService } from "../../services";
 import Layout from "../../Layout/Layout";
 import { useRouter } from "next/router";
-
 import React, { useEffect } from "react";
 import useAuthHook from "../../auth-context/use-auth-hook";
 
@@ -11,19 +10,19 @@ function Blog({ blogs }: any) {
   const [user, isLoading] = useAuthHook();
   const router = useRouter() as any;
 
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user) {
-        router.push("/");
-      }
-    }
-  }, [isLoading]);
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     if (!user) {
+  //       router.push("/");
+  //     }
+  //   }
+  // }, [isLoading]);
 
-  if (isLoading) {
-    return <></>;
-  }
+  // if (isLoading) {
+  //   return <></>;
+  // }
 
-  if (user) {
+  // if (user) {
     return (
       <Layout
         pageTitle={"Articles and Insights - gluestack"}
@@ -39,9 +38,9 @@ function Blog({ blogs }: any) {
         </div>
       </Layout>
     );
-  }
+  // }
 
-  return <></>;
+  // return <></>;
 }
 
 export default Blog;
