@@ -1,10 +1,10 @@
 import React from "react";
 
-function Text({  size,children, primary, primaryLight,white,light,bold }: any) {
+function Text({  size,children, primary, primaryLight,white,light,bold, offwhite }: any) {
   return (
     <>
       <div
-        className={`${light ? "font-displayLight" : bold ? "font-displayHead" : "font-display"} ${primary ? "text-primary" : primaryLight ? "text-primary" : white ? "text-gray dark:text-gray" : "text-black-200 dark:text-gray"} tracking-wide		${
+        className={`${light ? "font-displayLight" : bold ? "font-displayHead" : "font-display"} ${primary ? "text-primary" : primaryLight ? "text-primary" : white ? "text-gray dark:text-gray" : offwhite ? "text-gray-50 dark:text-gray-50" : "text-black-200 dark:text-gray"} tracking-wide		${
           size == "xxl"
             ? `text-xxl`
             : size == "md"

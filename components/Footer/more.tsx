@@ -2,6 +2,7 @@ import React from "react";
 import LinkList from "./LinkList";
 import Text from "../../elements/Text";
 import Heading from "../../elements/Heading";
+import Button from "../Button";
 
 function More() {
   return (
@@ -23,6 +24,9 @@ function More() {
             Github
           </Text>
         </LinkList>
+        <Button  lookLink dataId="N4FpGGZE">
+          Report a bug
+        </Button>
       </ul>
     </div>
   );

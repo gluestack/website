@@ -21,7 +21,8 @@ module.exports = {
         xs: '.75rem', // 12px
         sm: '.875rem', // 14px
         base: '1rem', // 16px
-        md: '20px', // 18px
+        medium: '18px',
+        md: '20px', 
         lg: '1.3rem', // 24px
         xl: ['2.5rem', '4rem'], //40
         xxl: '1.625rem', // 26px
@@ -54,6 +55,7 @@ module.exports = {
         },
         gray: {
           DEFAULT: '#E6E6E6',
+          50: '#A3A3A3',
           100: '#AEAEAE',
           200: '#F8F8F8',
           300: '#808080',

@@ -16,7 +16,7 @@ const Heading = ({ priority, dark, children, single }: any) => {
             : priority == 5
             ? "lg:text-xl text-lg "
             : priority == 6
-            ? "lg:text-lg text-md "
+            ? "lg:text-medium text-medium "
             : "text-lg  "
         }
        

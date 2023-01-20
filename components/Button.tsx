@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-function Button({ type, size, link, white, children, dataId }: any) {
+function Button({ type, size, link, white, children, dataId, lookLink }: any) {
   return (
     <>
       {link ? (
@@ -9,8 +9,8 @@ function Button({ type, size, link, white, children, dataId }: any) {
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
       ) : (
-        <button className={`btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`}  data-tf-popup={dataId}>
-          <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
+        <button className={!lookLink ? `btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`:''}  data-tf-popup={dataId}>
+          <ButtonSpan type={type} size={size} lookLink={lookLink}>{children}</ButtonSpan>
         </button>
       )}
     </>
@@ -19,10 +19,10 @@ function Button({ type, size, link, white, children, dataId }: any) {
 
 export default Button;
 
-const ButtonSpan = ({ children, type, size }: any) => {
+const ButtonSpan = ({ children, type, size, lookLink }: any) => {
   return (
     <span
-      className={`btn ${
+      className={lookLink ? 'font-display text-gray dark:text-gray tracking-wide text-sm' : `btn ${
         type == "primary"
           ? "text-white  bg-primary  dark:bg-primary-200 ring-primary dark:ring-primary-200 ring-offset-primary dark:ring-offset-primary-200"
           : type == "tertiary"
