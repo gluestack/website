@@ -9,7 +9,7 @@ function Button({ type, size, link, white, children, dataId, lookLink }: any) {
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
       ) : (
-        <button className={!lookLink ? `btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`:'py-2'}  data-tf-popup={dataId}>
+        <button className={!lookLink ? `btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`:'py-[7px]'}  data-tf-popup={dataId}>
           <ButtonSpan type={type} size={size} lookLink={lookLink}>{children}</ButtonSpan>
         </button>
       )}
