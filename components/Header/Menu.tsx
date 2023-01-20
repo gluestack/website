@@ -5,7 +5,7 @@ import Button from "../Button";
 function Menu({ expand }: any) {
   return (
     <>
-      <div className={`${expand ? "h-[50em]" : ` h-0 md:h-auto`}  nav-list`}>
+      <div className={`${expand ? "h-[50em] " : ` h-0 md:h-auto `}  nav-list `}>
         <ul className="nav-list-ul">
           <li className="item">
             <Linktag href="/" style="linkstyle font-light">

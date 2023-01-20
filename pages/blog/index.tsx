@@ -11,19 +11,19 @@ function Blog({ blogs }: any) {
   const [user, isLoading] = useAuthHook();
   const router = useRouter() as any;
 
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user) {
-        router.push("/");
-      }
-    }
-  }, [isLoading]);
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     if (!user) {
+  //       router.push("/");
+  //     }
+  //   }
+  // }, [isLoading]);
 
-  if (isLoading) {
-    return <></>;
-  }
+  // if (isLoading) {
+  //   return <></>;
+  // }
 
-  if (user) {
+  // if (user) {
     return (
       <Layout
         pageTitle={"Articles and Insights - gluestack"}
@@ -39,7 +39,7 @@ function Blog({ blogs }: any) {
         </div>
       </Layout>
     );
-  }
+  // }
 
   return <></>;
 }

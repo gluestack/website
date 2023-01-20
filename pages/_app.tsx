@@ -118,19 +118,19 @@ const DocsLayoutRender = ({
   const [user, isLoading] = useAuthHook();
   const router = useRouter() as any;
 
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user && !isLoading) {
-        router.push("/");
-      }
-    }
-  }, [isLoading]);
+  // useEffect(() => {
+    // if (!isLoading) {
+    //   if (!user && !isLoading) {
+    //     router.push("/");
+    //   }
+    // }
+  // }, [isLoading]);
 
-  if (isLoading) {
-    return <></>;
-  }
+  // if (isLoading) {
+  //   return <></>;
+  // }
 
-  if (user) {
+  // if (user) {
     return (
       <>
         <AppContext.Provider value={{ darkMode }}>
@@ -147,7 +147,7 @@ const DocsLayoutRender = ({
         </AppContext.Provider>
       </>
     );
-  }
+  // }
 
   return <></>;
 };
