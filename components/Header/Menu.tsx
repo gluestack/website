@@ -17,13 +17,13 @@ function Menu({ expand }: any) {
             Design System
             </Linktag>
           </li>
-          <li className="hidden md:block">
-            <Linktag href="/" style="linkstyle">
+          {/* <li className="hidden md:block">
+            <Linktag href="/blog" style="linkstyle">
             Blogs
             </Linktag>
-          </li>
+          </li> */}
           <li className="item">
-            <Linktag href="/" style="linkstyle font-light">
+            <Linktag href="/blog" style="linkstyle font-light">
             Blogs
             </Linktag>
           </li>

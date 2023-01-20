@@ -15,11 +15,13 @@ function Logo({ darkLogo }: any) {
       <Link href="/" passHref legacyBehavior>
         <a className="inline-flex items-center">
         <div className=" lg:w-[200px] w-[150px]">
-            {!dark ? (
-                <CustomImage src={darkLogo ? logodark : logo} alt="gluestack" priority />
+            {darkLogo ? (
+              <CustomImage src={logodark} alt="gluestack" priority />
             ) : (
-                <CustomImage src={darkLogo ? logo : logodark} alt="gluestack" priority />
-            )}
+              <CustomImage src={!dark ? logo : logodark } alt="gluestack" priority />
+            )
+
+            }
         </div>
 
         </a>

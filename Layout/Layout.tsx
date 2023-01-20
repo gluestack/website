@@ -7,6 +7,7 @@ import bannerImg from "../public/images/gradient.svg";
 import Script from "next/script";
 import bannerDark from "../public/images/gradient-dark.png";
 import { AppContext } from "../pages/_app";
+import { Footer } from "../components/Footer";
 
 function Layout({
   children,
@@ -65,7 +66,7 @@ function Layout({
       <Header noAccess={noAccess} />
         {!isMounted ? <Gradient /> : <Gradient />}
       <div className=" lg:pt-20 pt-14 ">{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

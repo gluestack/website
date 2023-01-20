@@ -24,7 +24,25 @@ export const Header = ({ noAccess }: any) => {
         <div className="container ">
           <div className="flex items-center justify-between">
             <Logo />
-            <div className="flex items-center gap-6">
+           
+          
+
+            <div className="flex order-last md:order-2 block md:hidden">
+              <Modal
+                height="3/6"
+                isVisible={showModel}
+                onClose={() => setModel(false)}
+              >
+                <SearchBar />
+              </Modal>
+              {/* <div className="hidden lg:block">
+                    <Button link="/docs">DOCUMENTATION</Button>
+                  </div> */}
+              <Hamburger setExpand={setExpand} expand={expand} />
+            </div>
+            <Menu expand={expand} />
+
+            <div className="flex items-center lg:gap-6">
               <Toggle />
               {!noAccess && (
                 <div className="lg:block hidden">
@@ -35,21 +53,6 @@ export const Header = ({ noAccess }: any) => {
               )}
             </div>
           </div>
-
-          <div className="flex md:order-2">
-            <Modal
-              height="3/6"
-              isVisible={showModel}
-              onClose={() => setModel(false)}
-            >
-              <SearchBar />
-            </Modal>
-            {/* <div className="hidden lg:block">
-                  <Button link="/docs">DOCUMENTATION</Button>
-                </div> */}
-            {/* <Hamburger setExpand={setExpand} expand={expand} /> */}
-          </div>
-          {/* <Menu expand={expand} /> */}
         </div>
       </div>
     </nav>
