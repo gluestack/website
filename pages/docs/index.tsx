@@ -1,7 +1,14 @@
-import React, { useEffect } from "react";
-import useAuthHook from "../../auth-context/use-auth-hook";
-import { useRouter } from "next/router";
+import data from "../../versions.json";
 
-export default function DocsPage() {
-  return <></>;
+export default function() {}
+
+//@ts-ignore
+let firstPage = data.firstPage;
+export async function getServerSideProps(context: any) {
+  return {
+    redirect: {
+      permanent: true,
+      destination: context.resolvedUrl + "/" + "0.1.x/" + firstPage,
+    },
+  };
 }

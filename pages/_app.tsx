@@ -18,13 +18,13 @@ function MyApp({ children }: { children: React.ReactNode }) {
   let versionData = versions;
   let showBackButton = false;
 
-  Object.keys(plugins).map((key) => {
-    if (router.route.includes("/docs/0.1.x/" + key)) {
-      // @ts-ignore
-      versionData = plugins[key].versions;
-      showBackButton = true;
-    }
-  });
+  // Object.keys(plugins).map((key) => {
+  //   if (router.route.includes("/docs/0.1.x/" + key)) {
+  //     // @ts-ignore
+  //     versionData = plugins[key].versions;
+  //     showBackButton = true;
+  //   }
+  // });
 
   useEffect(() => {
     const handleRouteChange = ({ url }: any) => GTMPageView(url);
@@ -118,36 +118,36 @@ const DocsLayoutRender = ({
   const [user, isLoading] = useAuthHook();
   const router = useRouter() as any;
 
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user && !isLoading) {
-        router.push("/");
-      }
-    }
-  }, [isLoading]);
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     if (!user && !isLoading) {
+  //       router.push("/");
+  //     }
+  //   }
+  // }, [isLoading]);
 
-  if (isLoading) {
-    return <></>;
-  }
+  // if (isLoading) {
+  //   return <></>;
+  // }
 
-  if (user) {
-    return (
-      <>
-        <AppContext.Provider value={{ darkMode }}>
-          <PagesLayout
-            version={version}
-            versionInfo={versionInfo}
-            setVersion={setVersion}
-            versionsData={versions}
-            showBackButton={showBackButton}
-          >
-            {children}
-            <PrevNextButtons />
-          </PagesLayout>
-        </AppContext.Provider>
-      </>
-    );
-  }
+  // if (user) {
+  return (
+    <>
+      <AppContext.Provider value={{ darkMode }}>
+        <PagesLayout
+          version={version}
+          versionInfo={versionInfo}
+          setVersion={setVersion}
+          versionsData={versions}
+          showBackButton={showBackButton}
+        >
+          {children}
+          <PrevNextButtons />
+        </PagesLayout>
+      </AppContext.Provider>
+    </>
+  );
+  // }
 
-  return <></>;
+  // return <></>;
 };

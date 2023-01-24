@@ -1,0 +1,10 @@
+{
+  "gitUrl": "https://github.com/gluestack/glue-plugin-engine.git",
+  "docsPath": "storybook/src/PluginDocs",
+  "branchName": "feat/storybook",
+  "assetsPath": "storybook/public/assets",
+  "repoName": "glue-plugin-engine",
+  "rootDocs": false,
+  "ignoredfolders": [],
+  "destinationPath": "/docs/0.1.x/plugin/glue-plugin-engine"
+}
