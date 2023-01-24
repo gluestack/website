@@ -28,16 +28,18 @@ const reactLiveTemplate = `
 main();
 function main() {
   cleanUp(tmpPath);
-  cleanUp(copyPath);
+
+  if (!fs.existsSync(copyPath)) {
+    createFolders(copyPath);
+  } else {
+    cleanUp(copyPath);
+  }
+
   // cleanUp(nextAssetsPath);
   cloneRepoSrc();
 }
 
 function cloneRepoSrc() {
-  if (!fs.existsSync(copyPath)) {
-    createFolders(copyPath);
-  }
-
   execSync("git clone " + repoConfig.gitUrl, {
     stdio: [0, 1, 2], // we need this so node will print the command output
     cwd: tmpPath, // path to where you want to save the file
