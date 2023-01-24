@@ -14,11 +14,11 @@ function More() {
       </div>
       
       <ul>
-        <LinkList link="/" style="py-2">
+        {/* <LinkList link="/" style="py-2">
           <Text size="sm" white>
             Contact Sales
           </Text>
-        </LinkList>
+        </LinkList> */}
         <LinkList link="/" style="py-2">
           <Text size="sm" white>
             Github

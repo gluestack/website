@@ -13,9 +13,14 @@ function Menu({ expand }: any) {
             </Linktag>
           </li>
           <li className="item">
-            <Linktag href="/" style="linkstyle font-light">
-            Design System
-            </Linktag>
+            <div className="flex items-center">
+              <Linktag href="/" style="linkstyle font-light">
+                Design System
+              </Linktag>
+              <div className="text-xs  px-2 py-0.5 bg-primary rounded-[4px] text-white ml-1">
+                Soon
+              </div>
+            </div>
           </li>
           {/* <li className="hidden md:block">
             <Linktag href="/blog" style="linkstyle">

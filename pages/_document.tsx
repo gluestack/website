@@ -22,6 +22,48 @@ export default class CustomDocument extends Document {
             rel="stylesheet"
             href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
           ></link>
+           <link
+          rel="preload"
+          href="/fonts/sf-pro/FontsFree-Net-SFProDisplay-Regular.woff2"
+          as="font"
+          crossOrigin=""
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/sf-pro/FontsFree-Net-SFProDisplay-Light.woff2"
+          as="font"
+          crossOrigin=""
+          type="font/woff2"
+        />
+          <link
+          rel="preload"
+          href="/fonts/sf-pro/FontsFree-Net-SFProDisplay-Bold1.woff2"
+          as="font"
+          crossOrigin=""
+          type="font/woff2"
+        />
+          <link
+          rel="preload"
+          href="/fonts/sf-pro/FontsFree-Net-SFProDisplay-Semibold.woff2"
+          as="font"
+          crossOrigin=""
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/sf-pro/FontsFree-Net-SFProDisplay-BoldItalic.woff2"
+          as="font"
+          crossOrigin=""
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/sf-pro/SFProDisplay-Medium.woff2"
+          as="font"
+          crossOrigin=""
+          type="font/woff2"
+        />
         </Head>
         <body>
           <noscript>

@@ -45,10 +45,9 @@ function HeroSection() {
               </Text>
             </div>
             <div className="mt-12">
-              <Button size="xxl" type="primary" dataId="QWcoG0YF">
-                <div className="flex items-center">
-                  Sign up for early access
-                </div>
+              {/* <Button size="xxl" type="primary" dataId="QWcoG0YF"> */}
+              <Button size="xxl" type="primary" link="/docs">
+                  Get Started
               </Button>
             </div>
           </div>

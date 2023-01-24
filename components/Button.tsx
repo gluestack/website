@@ -5,7 +5,7 @@ function Button({ type, size, link, white, children, dataId, lookLink }: any) {
   return (
     <>
       {link ? (
-        <Link href={`${link}`} prefetch={false} className="btnWrapper group">
+        <Link href={`${link}`} prefetch={false} className={ `btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`}>
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
       ) : (
@@ -38,7 +38,7 @@ const ButtonSpan = ({ children, type, size, lookLink }: any) => {
           : size == "xl"
           ? "px-[50px] py-2  "
           : size == "xxl"
-          ? "lg:px-20 px-8  py-2 lg:text-lg text-md "
+          ? "px-[50px] py-2  text-md "
           : "px-6 py-2   text-base"
       }
           `}

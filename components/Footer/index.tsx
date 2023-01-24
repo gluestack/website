@@ -22,11 +22,11 @@ export const Footer = () => {
     },
   ];
   return (
-    <div className="bg-secondary">
+    <div className="bg-black">
       <div className="container py-20">
         <Logo darkLogo />
 
-        <div className="grid lg:grid-cols-6  grid-cols-1 lg:gap-7 gap-4 pt-2">
+        <div className="grid lg:grid-cols-5  grid-cols-1 lg:gap-7 gap-4 pt-2">
           <div className="lg:col-span-2 col-span-1">
             <div className="py-4 mr-[50px]">
               <Text size="base" white>
@@ -46,9 +46,9 @@ export const Footer = () => {
           <div className="mb-10 lg:mb-0">
             <Resources />
           </div>
-          <div  className="mb-10 lg:mb-0">
+          {/* <div  className="mb-10 lg:mb-0">
             <EcoSystem />
-          </div>
+          </div> */}
           <div className="mb-10 lg:mb-0">
             <More />
           </div>

@@ -8,7 +8,7 @@ function Resources() {
     <div>
       <div className="pb-2">
         <Heading priority="6">
-          <span className="uppercase text-white">GENERAL RESOURCES</span>
+          <span className="uppercase text-white">Explore</span>
         </Heading>
       </div>
       <ul>
@@ -17,7 +17,29 @@ function Resources() {
             Docs
           </Text>
         </LinkList>
-        <LinkList link="/showcase" style="py-2">
+        <LinkList src="/" style="py-2">
+          <Text size="sm" white>
+            Seal
+          </Text>
+        </LinkList>
+        <LinkList src="/showcase" style="py-2">
+          <div className="flex items-center">
+          <Text size="sm" white>
+            Design System
+            </Text>
+
+            <div className="text-xs  px-2 py-0.5 bg-primary rounded-[4px] text-white ml-1">
+                Soon
+              </div>
+            {/* <div className="absolute rounded bg-black-200 px-1 py-1 text-[8px] -right-[55px] -top-2">
+              Upcoming
+
+            </div> */}
+
+          </div>
+        </LinkList>
+       
+        {/* <LinkList link="/showcase" style="py-2">
           <Text size="sm" white>
             Showcase
           </Text>
@@ -26,7 +48,7 @@ function Resources() {
           <Text size="sm" white>
             Blog
           </Text>
-        </LinkList>
+        </LinkList> */}
       </ul>
     </div>
   );
