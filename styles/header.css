@@ -20,7 +20,7 @@
     @apply py-2  text-center
 }
 .linkstyle{
-    @apply text-secondary font-normal text-md
+    @apply text-secondary font-display text-sm
 }
 /* //Dropdown List// */
 .card-list{

@@ -33,7 +33,7 @@ function InerBanner({
         {description && (
           <Text
             size="md"
-            style="text-secondary font-displayLight py-6  w-full "
+            style="text-secondary font-light py-6  w-full "
           >
             {description}
           </Text>

@@ -39,7 +39,7 @@ const ButtonSpan = ({ children, type, size, lookLink }: any) => {
           ? "px-[50px] py-2  "
           : size == "xxl"
           ? "px-[50px] py-2  text-md "
-          : "px-6 py-2   text-base"
+          : "px-4 py-1   text-base"
       }
           `}
     >

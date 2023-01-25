@@ -8,13 +8,13 @@ function Menu({ expand }: any) {
       <div className={`${expand ? "h-[50em] absolute top-[50px] left-0 bg-white w-full" : ` h-0 md:h-auto `}  nav-list `}>
         <ul className="nav-list-ul">
           <li className="item">
-            <Linktag href="http://seal.gluestack.io" style="linkstyle font-light" target="_blank">
+            <Linktag href="http://seal.gluestack.io" style="linkstyle " target="_blank">
             Hosting
             </Linktag>
           </li>
           <li className="item">
             <div className="flex items-center">
-              <Linktag href="/" style="linkstyle font-light">
+              <Linktag href="/" style="linkstyle ">
                 Design System
               </Linktag>
               <div className="text-xs  px-2 py-0.5 bg-primary rounded-[4px] text-white ml-1">
@@ -28,12 +28,12 @@ function Menu({ expand }: any) {
             </Linktag>
           </li> */}
           <li className="item">
-            <Linktag href="/docs" style="linkstyle font-light">
+            <Linktag href="/docs" style="linkstyle ">
            Docs
             </Linktag>
           </li>
           <li className="item">
-            <Linktag href="/" style="linkstyle font-light">
+            <Linktag href="/" style="linkstyle ">
             Contact Us
             </Linktag>
           </li>

@@ -131,7 +131,7 @@ const HeadingDropdown = ({ props, version }: any) => {
   return (
     <div className="accordion" id="accordionExample">
       <div className="accordion-item">
-        <div className="accordion-header font-displaySemibold" id="headingOne">
+        <div className="accordion-header font-semibold" id="headingOne">
           <button
             className="relative flex items-center w-full text-gray-800 dark:text-gray justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"
@@ -219,7 +219,7 @@ function CategoryDropdown(props: any) {
   return (
     <div className="accordion" id="accordionExample">
       <div className="accordion-item">
-        <div className="accordion-header font-displaySemibold" id="headingOne">
+        <div className="accordion-header font-semibold" id="headingOne">
           <button
             className="relative flex items-center w-full text-gray-800 dark:text-gray justify-between flex px-10 accordion-body py-3 hover:bg-gray-100 hover:cursor-pointer px-10  hover:bg-gray-100 text-black rounded-none transition focus:outline-none"
             type="button"

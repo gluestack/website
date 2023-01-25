@@ -21,7 +21,7 @@ export const Header = ({ noAccess }: any) => {
 
   return (
     <nav className="bg-white fixed w-full z-20 top-0">
-      <div className=" dark:bg-black lg:py-6 py-4">
+      <div className=" dark:bg-black  py-3">
         <div className="container ">
           <div className="flex items-center justify-between">
             <Logo />
@@ -44,7 +44,7 @@ export const Header = ({ noAccess }: any) => {
             <Menu expand={expand} />
 
             <div className="flex items-center lg:gap-6">
-            <Linktag href="http://auth.gluestack.io/" style="linkstyle font-light" target="_blank">
+            <Linktag href="http://auth.gluestack.io/" style="linkstyle" target="_blank">
            Sign Up
             </Linktag>
             <div >

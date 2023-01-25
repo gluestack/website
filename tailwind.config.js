@@ -14,9 +14,7 @@ module.exports = {
 
   theme: {
     extend: {
-      fontFamily: {
-        sfPro: ['displayRegular', 'cursive'],
-      },
+     
       fontSize: {
         xs: '.75rem', // 12px
         sm: '.875rem', // 14px
@@ -91,14 +89,9 @@ module.exports = {
      
     },
     fontFamily: {
-      body: ['sf-pro-regular', 'sans-serif'],
-      display: ['sf-pro-regular', 'sans-serif'],
-      displayHead: ['sf-pro-bold', 'sans-serif'],
-      displaySemibold: ['sf-pro-semibold', 'sans-serif'],
-      displayHeavy: ['sf-pro-heavy', 'sans-serif'],
-      displayLight: ['sf-pro-light', 'sans-serif'],
-      displayItalic: ['display-BoldItalic', 'sans-serif'],
-      displayMedium: ['sf-pro-medium', 'sans-serif'],
+      body: ['Inter'],
+      display: ['Inter'],
+     
     },
   },
   plugins: [

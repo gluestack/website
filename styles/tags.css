@@ -1,5 +1,5 @@
 .tagsButton {
-    @apply inline-block text-[11px] rounded-[2px] bg-purple-100 text-purple mr-2 my-1 px-[7px] py-[3.5px] font-displayHead
+    @apply inline-block text-[11px] rounded-[2px] bg-purple-100 text-purple mr-2 my-1 px-[7px] py-[3.5px] font-bold
 }
 .tagsButton:nth-child(2n) {
     @apply bg-beige-100 text-beige

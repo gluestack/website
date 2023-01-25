@@ -38,7 +38,7 @@ function HeroSection() {
             <Heading priority={1}>One stack for web, mobile & backend</Heading>
             <div className="pt-9">
               <Text size={"lg"}>
-                <span className="font-displaySemibold">100% open source </span>
+                <span className="font-semibold">100% open source </span>
                 full-stack framework that takes away the complexities of
                 building modern web & mobile apps. Build effortlessly and scale
                 swiftly from idea to enterprise.

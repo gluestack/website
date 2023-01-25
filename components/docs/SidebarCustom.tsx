@@ -55,7 +55,7 @@ const SidebarItems = ({ props, version, linkUrl }: any) => {
               />
             ) : (
               <>
-                <div  className={`uppercase font-displayMedium leading-tight text-base font-bold text-gray-300 dark:text-gray-400 px-10 mb-2  ${props.title ? 'mt-6' : ''}`} >
+                <div  className={`uppercase  leading-tight text-base font-bold text-gray-300 dark:text-gray-400 px-10 mb-2  ${props.title ? 'mt-6' : ''}`} >
                   {props.title}
                 </div>
                 {props?.pages.map((pageInfo: any, index: any) => {
