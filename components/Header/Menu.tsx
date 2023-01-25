@@ -28,8 +28,8 @@ function Menu({ expand }: any) {
             </Linktag>
           </li> */}
           <li className="item">
-            <Linktag href="/blog" style="linkstyle font-light">
-            Blogs
+            <Linktag href="/docs" style="linkstyle font-light">
+           Docs
             </Linktag>
           </li>
           <li className="item">

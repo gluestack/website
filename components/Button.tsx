@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-function Button({ type, size, link, white, children, dataId, lookLink }: any) {
+function Button({ type, size, link, white, children, dataId, lookLink,target }: any) {
   return (
     <>
       {link ? (
-        <Link href={`${link}`} prefetch={false} className={ `btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`}>
+        <Link href={`${link}`} prefetch={false} className={ `btnWrapper group  ${white ? ' border-white' : ' border-primary dark:border-primary-200'}`} target={target}>
           <ButtonSpan type={type} size={size} >{children}</ButtonSpan>
         </Link>
       ) : (

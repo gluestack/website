@@ -8,6 +8,7 @@ import Modal from "../modal";
 import SearchBar from "./SearchBar";
 import React from "react";
 import Toggle from "./Toggle";
+import Linktag from "../../elements/Linktag";
 
 export const Header = ({ noAccess }: any) => {
   const [expand, setExpand] = useState(false);
@@ -43,14 +44,22 @@ export const Header = ({ noAccess }: any) => {
             <Menu expand={expand} />
 
             <div className="flex items-center lg:gap-6">
+            <Linktag href="http://auth.gluestack.io/" style="linkstyle font-light" target="_blank">
+           Sign Up
+            </Linktag>
+            <div >
+                  <Button type="primary" link="http://auth.gluestack.io/" target="_blank">
+                    Sign In
+                  </Button>
+                </div>
               <Toggle />
-              {!noAccess && (
+              {/* {!noAccess && (
                 <div className="lg:block hidden">
                   <Button type="primary" dataId="QWcoG0YF">
                     Get early access
                   </Button>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

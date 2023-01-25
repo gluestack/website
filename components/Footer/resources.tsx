@@ -17,12 +17,12 @@ function Resources() {
             Docs
           </Text>
         </LinkList>
-        <LinkList src="/" style="py-2">
+        <LinkList link="http://seal.gluestack.io" style="py-2" target="_blank">
           <Text size="sm" white>
             Seal
           </Text>
         </LinkList>
-        <LinkList src="/showcase" style="py-2">
+        <LinkList link="/showcase" style="py-2">
           <div className="flex items-center">
           <Text size="sm" white>
             Design System

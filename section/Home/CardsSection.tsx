@@ -59,7 +59,7 @@ function CardsSection() {
           {!isMounted ? <Gradient /> : <Gradient />}
         </div>
 
-        <div className="primary-bg primary-bg-dark pt-10 ">
+        <div className="primary-bg lg:primary-bg-dark  dark:primary-bg pt-10 ">
           <div className="container pt-10 pb-12 relative ">
             <div className="md:max-w-[900px] m-auto">
               <div className="text-center mb-10">
