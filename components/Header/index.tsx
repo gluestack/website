@@ -44,7 +44,7 @@ export const Header = ({ noAccess }: any) => {
             <Menu expand={expand} />
 
             <div className="flex items-center lg:gap-6">
-            <Linktag href="http://auth.gluestack.io/" style="linkstyle" target="_blank">
+            <Linktag href="http://auth.gluestack.io/" style="linkstyle " target="_blank">
            Sign Up
             </Linktag>
             <div >

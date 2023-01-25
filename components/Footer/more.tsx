@@ -19,14 +19,16 @@ function More() {
             Contact Sales
           </Text>
         </LinkList> */}
-        <LinkList link="https://github.com/gluestack" style="py-2" target="_blank">
+        <LinkList link="https://github.com/gluestack" style="py-2 linkhover" target="_blank">
           <Text size="sm" white>
             Github
           </Text>
         </LinkList>
+        <div className="linkhover">
         <Button  lookLink dataId="N4FpGGZE">
-          Report a bug
+          <a>Report a bug</a>
         </Button>
+        </div>
       </ul>
     </div>
   );

@@ -180,3 +180,22 @@ body{
     background: linear-gradient(180deg, #6726A7 50%, transparent 50%);
 
   }
+  .linkhover a {
+    @apply relative inline-block;
+  }
+
+  .linkhover a:before {
+    @apply bg-primary absolute right-0 left-0 bottom-0 invisible h-0.5;
+    content: ""; 
+    right:0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+    transition: all 0.3s ease-in-out 0s; 
+}   
+
+.linkhover a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+}

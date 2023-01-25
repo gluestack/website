@@ -22,13 +22,13 @@ export const Footer = () => {
     },
   ];
   return (
-    <div className="bg-black">
+    <div className="bg-black footer">
       <div className="container py-20">
         <Logo darkLogo />
 
-        <div className="grid lg:grid-cols-5  grid-cols-1 lg:gap-7 gap-4 pt-2">
+        <div className="grid lg:grid-cols-5  grid-cols-1 lg:gap-7 gap-4 pt-6">
           <div className="lg:col-span-2 col-span-1">
-            <div className="py-4 mr-[50px]">
+            <div className="pb-4 mr-[50px]">
               <Text size="base" white>
                 An extensible full-stack framework that takes away the
                 complexities of building modern web & mobile apps.
