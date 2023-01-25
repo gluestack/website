@@ -32,11 +32,11 @@ function Menu({ expand }: any) {
            Docs
             </Linktag>
           </li>
-          <li className="item">
+          {/* <li className="item">
             <Linktag href="/" style="linkstyle ">
             Contact Us
             </Linktag>
-          </li>
+          </li> */}
           <li  className={`${expand ? "block" : "hidden"} item-btn`}>
             <div>
               <Button size="xl">DOCUMENTATION</Button>

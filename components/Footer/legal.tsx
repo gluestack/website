@@ -22,11 +22,11 @@ function Legal() {
           Privacy Policy
           </Text>
         </LinkList>
-        <LinkList link="/terms" style="py-2 linkhover">
+        {/* <LinkList link="/terms" style="py-2 linkhover">
           <Text size="sm" white>
           Terms of Service
           </Text>
-        </LinkList>
+        </LinkList> */}
       </ul>
     </div>
   );
