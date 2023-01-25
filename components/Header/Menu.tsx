@@ -8,7 +8,7 @@ function Menu({ expand }: any) {
       <div className={`${expand ? "h-[50em] absolute top-[50px] left-0 bg-white w-full" : ` h-0 md:h-auto `}  nav-list `}>
         <ul className="nav-list-ul">
           <li className="item">
-            <Linktag href="/" style="linkstyle font-light">
+            <Linktag href="http://seal.gluestack.io" style="linkstyle font-light" target="_blank">
             Hosting
             </Linktag>
           </li>

@@ -22,7 +22,7 @@ function Resources() {
             Seal
           </Text>
         </LinkList>
-        <LinkList link="/showcase" style="py-2">
+        <LinkList link="#" style="py-2">
           <div className="flex items-center">
           <Text size="sm" white>
             Design System

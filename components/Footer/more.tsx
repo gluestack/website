@@ -19,7 +19,7 @@ function More() {
             Contact Sales
           </Text>
         </LinkList> */}
-        <LinkList link="/" style="py-2">
+        <LinkList link="https://github.com/gluestack" style="py-2" target="_blank">
           <Text size="sm" white>
             Github
           </Text>
