@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { AuthContext } from ".";
+import { AuthContext } from "./index";
 
 function useAuthHook() {
-  const ctx = useContext(AuthContext);
+  const [user, isLoading, setUser] = useContext(AuthContext);
 
-  return [ctx.user, ctx.isLoading];
+  return [user, isLoading, setUser];
 }
 
 export default useAuthHook;
