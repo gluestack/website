@@ -1,139 +1,73 @@
-import { gql } from "@apollo/client";
-import { useSession } from "next-auth/react";
-import React, { createContext, useState, useEffect } from "react";
-import {
-  createApolloClient,
-  IUserModel,
-  UserStatusEnum,
-} from "../helper/isUserVerified";
+import React, { useState, useEffect, createContext } from "react";
+//import { useGetUserByEmailLazyQuery } from "../../services/__generated";
+import { useGlue } from "@gluestack/glue-client-sdk-react";
+import isEmpty from "lodash/isEmpty";
+import { getToken } from "../utils/token";
+import { UserStatusEnum } from "../helper/isUserVerified";
 
-export interface IAuthContextData {
-  user: IUserModel | null;
-  isLoading?: boolean;
-}
+const AuthContext = createContext(
+  ([] as unknown) as [any, boolean, (_user: any) => void]
+);
 
-const AuthContext = createContext({} as IAuthContextData);
+const AuthContextConsumer = AuthContext.Consumer;
 
-interface IAuthContexrProvider {
+interface IAuthContextProvider {
   children: React.ReactNode;
 }
 
-const AuthContextProvider = ({ children }: IAuthContexrProvider) => {
-  const session = useSession();
-  const [user, setUser] = useState<any | null>(session?.data?.user);
+interface IUser {
+  email: string;
+  id: number;
+  name: string;
+  status: UserStatusEnum;
+}
+
+const AuthContextProvider = ({ children }: IAuthContextProvider) => {
+  const [user, setUser] = useState<IUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [authChecked, setAuthChecked] = useState(false);
+
+  const { glue } = useGlue(["AUTH:*"]);
 
   useEffect(() => {
-    if (session.status === "unauthenticated") {
-      setAuthChecked(true);
-      setUser(null);
-      setIsLoading(false);
-    }
-    if (session.status === "authenticated") {
-      if (!authChecked) {
-        fetchAndUpdateUserSession();
-        setAuthChecked(true);
-      }
-    }
-  }, [session.status]);
+    checkIFUserIsSignedIn();
+  }, []);
 
-  const fetchAndUpdateUserSession = async () => {
+  const checkIFUserIsSignedIn = async () => {
+    setIsLoading(true);
     try {
-      if (session?.data?.user.status === UserStatusEnum.DEV_PREVIEW) {
-        setUser(session?.data?.user);
-        setIsLoading(false);
-        return;
+      const token = await getToken("token");
+      const refreshToken = await getToken("refreshToken");
+
+      console.log("TOKENS", token, refreshToken);
+
+      if (!token || !refreshToken) {
+        throw "Token does not exists";
       }
 
-      const _u = await getUpdatedUser(session?.data?.user ?? null);
+      // TOKEN SET
+      glue.auth.setAuthToken(token);
 
-      if (_u) {
-        if (_u?.status === UserStatusEnum.DEV_PREVIEW) {
-          setUser(_u);
-        }
+      const user = await glue.auth.getUser();
+
+      console.log("USER", user);
+
+      if (isEmpty(user) || user?.status === UserStatusEnum.ON_WAITLIST) {
+        throw "User does not exists";
       }
-    } catch (error) {}
+
+      setUser(user);
+    } catch (error) {
+      console.log(error);
+    }
 
     setIsLoading(false);
   };
 
   return (
-    <>
-      <AuthContext.Provider value={{ user, isLoading }}>
-        {children}
-      </AuthContext.Provider>
-    </>
+    <AuthContext.Provider value={[user, isLoading, setUser]}>
+      {children}
+    </AuthContext.Provider>
   );
 };
 
-const AuthContextConsumer = AuthContext.Consumer;
-
-export default AuthContextProvider;
-
-export { AuthContextConsumer, AuthContext };
-
-const getUpdatedUser = (_user: IUserModel | null) => {
-  return new Promise<IUserModel | null>(async (resolve, reject) => {
-    const token = _user?.team?.refresh_token ?? "";
-    const teamId = _user?.team?.id ?? 0;
-
-    // IF NO USER OR TEAM TOKEN IS PRESENT
-    if (!_user || !token || !teamId) {
-      resolve(null);
-      return;
-    }
-
-    try {
-      const client = createApolloClient(token ?? "");
-
-      const response = await client.mutate({
-        mutation: gql`
-        mutation {
-         refreshToken(input: {team_id: ${teamId}}) {
-          success
-          message
-          data {
-            email
-            id
-            name
-            status
-            team {
-              id
-              is_single_member
-              name
-              refresh_token
-              role
-              token
-            }
-          }
-        }
-          }
-        `,
-      });
-
-      let _user =
-        JSON.parse(JSON.stringify(response?.data?.refreshToken?.data)) || null;
-
-      if (!response?.data?.refreshToken?.success) {
-        resolve(null);
-        return;
-      }
-
-      _user = {
-        ..._user,
-        team: {
-          ..._user.team,
-          refreshToken: token,
-        },
-      };
-
-      resolve(_user);
-    } catch (error) {
-      resolve(null);
-      return;
-    }
-
-    resolve(null);
-  });
-};
+export { AuthContext, AuthContextConsumer, AuthContextProvider };

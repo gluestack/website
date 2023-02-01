@@ -5,10 +5,11 @@ import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
 import { versions, plugins } from "../versions.json";
 import { PrevNextButtons } from "../components/docs/PrevNextButtons";
-import { SessionProvider } from "next-auth/react";
-import AuthContextProvider from "../auth-context";
+import { GlueProvider } from "@gluestack/glue-client-sdk-react";
 import useDarkMode from "use-dark-mode";
 import useAuthHook from "../auth-context/use-auth-hook";
+import glue from "../glue";
+import { AuthContextProvider } from "../auth-context";
 
 export const AppContext = React.createContext(({} as unknown) as any);
 
@@ -83,13 +84,13 @@ function MyApp({ children }: { children: React.ReactNode }) {
 const App = ({ Component, pageProps: { session, ...pageProps } }: any) => {
   return (
     <>
-      <SessionProvider session={session}>
+      <GlueProvider glue={glue}>
         <AuthContextProvider>
           <MyApp>
             <Component {...pageProps} />
           </MyApp>
         </AuthContextProvider>
-      </SessionProvider>
+      </GlueProvider>
     </>
   );
 };
