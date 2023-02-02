@@ -15,6 +15,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Animation.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/Animation.jsx",
+    "components/docs/SidebarCustom.tsx_old"
+  ],
   "exclude": ["node_modules"]
 }

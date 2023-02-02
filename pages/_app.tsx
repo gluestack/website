@@ -1,30 +1,62 @@
 import GTMPageView from "../helper/gtm";
 import React, { useEffect, useState } from "react";
-import "../styles/globals.css";
-import PagesLayout from "../Layout/PagesLayout";
 import { useRouter } from "next/router";
-import { versions, plugins } from "../versions.json";
-import { PrevNextButtons } from "../components/docs/PrevNextButtons";
+import data from "./docs/versions.json";
 import { SessionProvider } from "next-auth/react";
 import AuthContextProvider from "../auth-context";
 import useDarkMode from "use-dark-mode";
 import useAuthHook from "../auth-context/use-auth-hook";
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import Image from "next/image";
+import Link from "next/link";
+import { MDXProvider } from "@mdx-js/react";
+import { AppProvider, Layout } from "@gluestack/design-system";
 
-export const AppContext = React.createContext(({} as unknown) as any);
+// Import for the storybook-to-next-docs config
+import storybookToNextDocs from "../storybook-to-next-docs.json";
+// Imports for all the versions.json in storybook-to-next-docs version config
+import frameworkSidebarData from "./docs/versions.json";
+import authPluginSidebarData from "./docs/plugins/auth/versions.json";
+
+export const AppContext = React.createContext({} as unknown as any);
 
 function MyApp({ children }: { children: React.ReactNode }) {
   const router = useRouter();
+  let versionData: any = {};
 
-  let versionData = versions;
-  let showBackButton = false;
+  let sideBarDataObject: any = {
+    framework: frameworkSidebarData,
+    "glue-plugin-auth": authPluginSidebarData,
+  };
 
-  Object.keys(plugins).map((key) => {
-    if (router.route.includes("/docs/0.1.x/" + key)) {
-      // @ts-ignore
-      versionData = plugins[key].versions;
-      showBackButton = true;
+  let repos = storybookToNextDocs.repos;
+  let matchRepoId = "";
+
+  for (let i = 0; i < repos.length; i++) {
+    let largestMatchDestinationPath = "";
+
+    for (let repo of repos) {
+      if (
+        router.pathname.startsWith(repo.destinationPath) &&
+        repo.destinationPath?.length > largestMatchDestinationPath?.length
+      ) {
+        largestMatchDestinationPath = repo.destinationPath;
+        matchRepoId = repo.id;
+      }
     }
-  });
+  }
+
+  let latestVersion: number = 0;
+  let sidebarData: any = {};
+
+  versionData = sideBarDataObject[matchRepoId];
+
+  let versions = versionData?.versions;
+  if (versions) {
+    latestVersion = versions[versions?.length - 1]?.version;
+    sidebarData = versions[versions?.length - 1]?.pages;
+  }
 
   useEffect(() => {
     const handleRouteChange = ({ url }: any) => GTMPageView(url);
@@ -34,17 +66,6 @@ function MyApp({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
-  const [version, setVersion]: any = useState(
-    Object.keys(versionData[versionData.length - 1])
-  );
-
-  function getSidebarJsonData() {
-    for (let i = 0; i < versionData.length; i++) {
-      if (Object.keys(versionData[i])[0] == version) {
-        return versionData[i];
-      }
-    }
-  }
   const darkMode = useDarkMode(false, {
     onChange: (state: any) => {
       const htmlElement = document.documentElement;
@@ -60,18 +81,15 @@ function MyApp({ children }: { children: React.ReactNode }) {
 
   if (router.pathname.includes("/docs")) {
     return (
-      <>
-        <DocsLayoutRender
-          darkMode={darkMode}
-          version={version}
-          setVersion={setVersion}
-          versionInfo={getSidebarJsonData()}
-          versions={versions}
-          showBackButton={showBackButton}
-        >
-          {children}
-        </DocsLayoutRender>
-      </>
+      <DocsLayoutRender
+        router={router}
+        darkMode={darkMode}
+        version={latestVersion}
+        sidebarData={sidebarData}
+        versions={versions}
+      >
+        {children}
+      </DocsLayoutRender>
     );
   } else {
     return (
@@ -100,54 +118,56 @@ interface IDocsLayoutRender {
   children: React.ReactNode;
   versions: any;
   version: any;
-  versionInfo: any;
-  setVersion: (_v: any) => void;
-  showBackButton: boolean;
+  sidebarData: any;
   darkMode: any;
+  router: any;
 }
 
 const DocsLayoutRender = ({
   children,
   darkMode,
   version,
-  versionInfo,
-  setVersion,
+  sidebarData,
   versions,
-  showBackButton,
+  router,
 }: IDocsLayoutRender) => {
-  const [user, isLoading] = useAuthHook();
-  const router = useRouter() as any;
+  const headerItems = {
+    left: [
+      {
+        type: "image",
+        url: "/images/logo/lightLogo.svg",
+        darkModeUrl: "/images/logo/darkLogo.svg",
+      },
+    ],
+    right: [
+      {
+        type: "link",
+        url: "https://github.com/gluestack/framework",
+        icon: (
+          <Image
+            src="/icon/social/github.svg"
+            alt="Github"
+            height="24"
+            width="24"
+          />
+        ),
+        text: "github",
+      },
+    ],
+    center: [{}],
+  };
 
-  useEffect(() => {
-    if (!isLoading) {
-      if (!user && !isLoading) {
-        router.push("/");
-      }
-    }
-  }, [isLoading]);
-
-  if (isLoading) {
-    return <></>;
-  }
-
-  if (user) {
-    return (
-      <>
-        <AppContext.Provider value={{ darkMode }}>
-          <PagesLayout
-            version={version}
-            versionInfo={versionInfo}
-            setVersion={setVersion}
-            versionsData={versions}
-            showBackButton={showBackButton}
-          >
-            {children}
-            <PrevNextButtons />
-          </PagesLayout>
-        </AppContext.Provider>
-      </>
-    );
-  }
-
-  return <></>;
+  return (
+    <Layout
+      version={version}
+      sidebarItems={sidebarData}
+      headerItems={headerItems}
+      router={router}
+      Link={Link}
+      MDXProvider={MDXProvider}
+      Image={Image}
+    >
+      {children}
+    </Layout>
+  );
 };

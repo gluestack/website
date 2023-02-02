@@ -1,6 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { flush } from "@gluestack/design-system";
+// @ts-ignore
+import { AppRegistry } from "react-native-web";
+import * as React from "react";
 
-export default class CustomDocument extends Document {
+class CustomDocument extends Document {
   render() {
     return (
       <Html lang="en">
@@ -14,9 +18,7 @@ export default class CustomDocument extends Document {
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-WFW8FKC');`,
             }}
-          >
-             
-            </script>
+          ></script>
           <script src="js/noflash.js" async />
           <link
             rel="stylesheet"
@@ -39,3 +41,20 @@ export default class CustomDocument extends Document {
     );
   }
 }
+
+export async function getInitialProps({ renderPage }: any) {
+  AppRegistry.registerComponent("Main", () => Main);
+  const { getStyleElement } = AppRegistry.getApplication("Main");
+  const page = await renderPage();
+  const styles = [
+    // eslint-disable-next-line react/jsx-key
+    // <style dangerouslySetInnerHTML={{ __html: style }} />,
+    getStyleElement(),
+    ...flush(),
+  ];
+  return { ...page, styles: React.Children.toArray(styles) };
+}
+
+CustomDocument.getInitialProps = getInitialProps;
+
+export default CustomDocument;

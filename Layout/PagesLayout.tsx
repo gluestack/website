@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import { Content } from "../components/docs/Content";
-import ContentHeader from "../components/docs/ContentHeader";
 import { useRouter } from "next/router";
-import { IFrameContent } from "../components/docs/IFrameContent";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Logo from "../components/Header/Logo";
-import SidebarCustom from "../components/docs/SidebarCustom";
 import Meta from "../components/Meta";
 
 function PagesLayout(props: any) {
@@ -39,14 +35,16 @@ function PagesLayout(props: any) {
             <div className="w-[110px]">
               <Logo />
             </div>
-            <div onClick={hamburgerClick} className="ease-in-out transition-2 dark:text-gray">
+            <div
+              onClick={hamburgerClick}
+              className="ease-in-out transition-2 dark:text-gray"
+            >
               {sideBarOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
             </div>
-            
           </div>
           {/* <div className="w-1/5"> */}
 
-          <div className="flex w-full min-h-full full-doc-content ">
+          {/* <div className="flex w-full min-h-full full-doc-content ">
             <div
               className={
                 "sidebarNav " +
@@ -74,8 +72,7 @@ function PagesLayout(props: any) {
                 </div>
               </div>
             )}
-            {/* </div> */}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

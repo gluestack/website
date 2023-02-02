@@ -1,0 +1,39 @@
+{
+  "meta": {},
+  "repos": [
+    {
+      "id": "framework",
+      "gitUrl": "https://github.com/gluestack/framework.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src",
+      "branchName": "feat/storybook",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "framework",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs",
+      "sidebar": {
+        "type": "heading",
+        "title": "Plugins",
+        "pages": [
+          {
+            "id": "/docs/plugins/auth",
+            "title": "Auth"
+          }
+        ]
+      }
+    },
+    {
+      "id": "glue-plugin-auth",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-auth.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/AuthPlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-auth",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/auth"
+    }
+  ]
+}

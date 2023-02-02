@@ -1,0 +1,52 @@
+
+
+
+
+# How to install
+
+##
+
+<br/>
+
+* First go to your local terminal and type this command in order to install this plugin
+
+  <br/>
+
+    ```bash
+    $ node glue add auth <instance-name>
+    ```
+
+  <br/>
+
+* For example, In my case I wanted to install **Auth plugin instance** with my instance
+  name as **“auth”**, then I will follow this pattern to install auth plugin instance in
+  my app:
+
+  <br/>
+  
+    ```bash
+    $ node glue add auth auth
+    ```
+    
+    Here my instance name is **auth**.
+
+  <br/>
+
+* Now, after installing the dependency it will ask you for selecting an 
+  instance which has the option for the list of graphql instances you 
+  have installed. Select the one with which you want to connect your auth app.
+
+  Option will be something like this:
+    
+    <img src='/assets/authScreenshot.png'/>
+    
+
+  <br/>
+
+* If the plugin is installed successfully then you can go and see that inside **backend** 
+  folder there is folder named “**services**” and inside that **services** folder, there
+  is a new folder which is named after your instance i.e. **auth** is created. 
+  
+  Overall directory path for the **auth plugin instance** should be something like this:
+  
+  **backend/services/auth**
