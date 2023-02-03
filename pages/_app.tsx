@@ -18,6 +18,11 @@ import storybookToNextDocs from "../storybook-to-next-docs.json";
 // Imports for all the versions.json in storybook-to-next-docs version config
 import frameworkSidebarData from "./docs/versions.json";
 import authPluginSidebarData from "./docs/plugins/auth/versions.json";
+import graphqlPluginSidebarData from "./docs/plugins/graphql/versions.json";
+import postgresPluginSidebarData from "./docs/plugins/postgres/versions.json";
+import enginePluginSidebarData from "./docs/plugins/engine/versions.json";
+import minioPluginSidebarData from "./docs/plugins/minio/versions.json";
+import storagePluginSidebarData from "./docs/plugins/storage/versions.json";
 
 export const AppContext = React.createContext({} as unknown as any);
 
@@ -28,6 +33,11 @@ function MyApp({ children }: { children: React.ReactNode }) {
   let sideBarDataObject: any = {
     framework: frameworkSidebarData,
     "glue-plugin-auth": authPluginSidebarData,
+    "glue-plugin-graphql": graphqlPluginSidebarData,
+    "glue-plugin-postgres": postgresPluginSidebarData,
+    "glue-plugin-engine": enginePluginSidebarData,
+    "glue-plugin-minio": minioPluginSidebarData,
+    "glue-plugin-storage": storagePluginSidebarData,
   };
 
   let repos = storybookToNextDocs.repos;
