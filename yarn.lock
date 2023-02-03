@@ -1585,10 +1585,10 @@
     lodash.merge "^4.6.2"
     react-native-media-query "^2.0.0"
 
-"@gluestack/design-system@^0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.1.8.tgz#fe0fffdf59ea61b326ebbb4db169405175483a3c"
-  integrity sha512-5u3EBZqzhcRudbdiJvsXiC4Aw7uNgnytblfHZEnQQ4svBsRUkqyj++wUTnpdAb+kP254KjWxQhNjvAyEwjvSvA==
+"@gluestack/design-system@^0.1.17":
+  version "0.1.17"
+  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.1.17.tgz#bbe4ad05edc784121c9420d74b96ce8e14d3c136"
+  integrity sha512-J1GOBQIpz7gRz9SCACDvfeYpkGX0jN/bj9D4IZRUnJEFWPpunfI6Xr+pGncrWWn9x67IiNb1ngYiI3xt0XpzMA==
   dependencies:
     "@dank-style/react" "^0.1.32"
     "@expo/html-elements" "^0.3.0"
@@ -1611,7 +1611,7 @@
     "@universa11y/overlay" "0.1.1"
     "@universa11y/popover" "^0.1.5"
     "@universa11y/popper" "0.1.1"
-    "@universa11y/pressable" "0.1.5"
+    "@universa11y/pressable" "0.1.6"
     "@universa11y/progress" "0.1.5"
     "@universa11y/provider" "0.1.5"
     "@universa11y/radio" "0.1.5"
@@ -3032,10 +3032,10 @@
     "@universa11y/utils" "*"
     react-native-svg "^13.6.0"
 
-"@universa11y/pressable@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@universa11y/pressable/-/pressable-0.1.5.tgz#93efae6fee317c610870bbe5f95bf099d0b404f2"
-  integrity sha512-9drCUvqxj9sf+1WlNRbwS19VIGBMS76KWWI61PcGuyDUWhGYjxH4DRipu9UE1Ylm6zOf1meWTCCICjE1ztpKPQ==
+"@universa11y/pressable@0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@universa11y/pressable/-/pressable-0.1.6.tgz#1a0f7e62ed193abe0dbea5a8ed932e76d095f2f4"
+  integrity sha512-nA0mKC8S/eTncMn8p6ndykkz1zrAAH10Nk/i4c0FQS4ypunYkY6onAI2j1wGPt7QbexZckWiHi8KhF7AI6b1ww==
   dependencies:
     "@react-native-aria/focus" "^0.2.7"
     react-native-svg "^13.6.0"

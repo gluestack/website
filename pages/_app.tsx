@@ -168,6 +168,17 @@ const DocsLayoutRender = ({
   };
 
   return (
+    // <MDXProvider
+    //   components={{
+    //     pre: (props: any) => {
+    //       console.log(props);
+    //       return (
+    //         //@ts-ignore
+    //         <pre {...props} />
+    //       );
+    //     },
+    //   }}
+    // >
     <Layout
       version={version}
       sidebarItems={sidebarData}
@@ -179,5 +190,6 @@ const DocsLayoutRender = ({
     >
       {children}
     </Layout>
+    // </MDXProvider>
   );
 };
