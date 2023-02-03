@@ -1,0 +1,248 @@
+
+
+
+
+# CLI Reference
+
+##
+
+<br/>
+
+
+
+
+* There is list of certain commands which are available in this plugin.
+  Below is a description of those commands.
+
+<br/>
+
+
+<details>
+  <summary>
+    <strong> develop:up</strong>
+  </summary>
+
+  <br/>
+
+  * This command will run the **Plugin Instances** inside your docker.
+
+    In order to run the docker container of all **Plugin Instances** you have created,
+    you need to run the below command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:up
+    ```
+
+    <br/>
+
+  * In order to run a particular **Plugin Instance** you need to run command in the below pattern:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:up <Instance-Name>
+    ```
+
+    <br/>
+
+    For example I have already added **Glue Plugin Postgres** in my app with my instance name as
+    postgres. Then in order to only start our postgres instance I need to run following command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:up postgres
+    ```
+
+    <br/>
+
+    **Note:** Passing instance name is optional. If you don't pass the instance name then, it will
+    start running all the instances
+
+</details>
+
+<br/>
+
+<details>
+  <summary>
+    <strong> develop:down</strong>
+  </summary>
+
+  <br/>
+
+  * This command will stop running the **Plugin Instances** inside your docker.
+
+    In order to stop the docker container of all **Plugin Instances** you have created,
+    you need to run the below command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:down
+    ```
+
+    <br/>
+
+  * In order to stop a particular **Plugin Instance** you need to run command in the below pattern:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:down <Instance-Name>
+    ```
+
+    <br/>
+
+    For example **Glue Plugin Postgres** is already running in my app with my instance name as
+    **postgres**. Then in order to only stop our postgres instance I need to run following command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:down postgres
+    ```
+
+    <br/>
+
+    **Note:** Passing instance name is optional. If you don't pass the instance name then, it will
+    stop all the instances
+
+</details>
+
+<br/>
+
+<details>
+  <summary>
+    <strong> develop:list</strong>
+  </summary>
+
+  <br/>
+
+  * This command will show us details of all **Plugin Instances** you have created.
+
+    In order to show the details of all **Plugin Instances** you have created,
+    you need to run the below command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:list
+    ```
+
+    <br/>
+
+  * In order to see the details of a particular **Plugin Instance** you need to run command in the below pattern:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:list --filter <Instance-Name>
+    ```
+
+    <br/>
+
+    For example we need to see details of **Glue Plugin Postgres** which we have already installed in our app with
+    our instance name as **postgres**. Then in order to only stop our postgres instance I need to run following
+    command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:list --filter postgres
+    ```
+
+    <br/>
+
+    **Note:** Passing **--filter** is optional.
+
+</details>
+
+<br/>
+
+<details>
+  <summary>
+    <strong> develop:watch</strong>
+  </summary>
+
+  <br/>
+
+  * This command will run your applicaion in **watch** mode. Whenever you save changes in your
+    plugin instances which have **watch() function** included in them, then this command will
+    automatically restart your **instance containers**. 
+
+    It will **watch** for all those plugin instances inside which you have implemented **watch()
+    function**.
+
+    The **watch()** function should return an array of strings. Those strings are the **file
+    path** upon which your application will run on watch mode.
+    
+    
+    In order to run this command you need to enter the following command:
+
+    <br/>
+
+    ```bash
+    $ node glue develop:watch
+    ```
+
+    <br/>
+
+</details>
+
+<br/>
+
+<details>
+  <summary>
+    <strong> route:generate</strong>
+  </summary>
+
+  <br/>
+
+  * This command will generate router file for all the container instances.
+
+    In order to generate router file for all the container instances, you need
+    to run the following command.
+
+    <br/>
+
+    ```bash
+    $ node glue route:generate
+    ```
+
+    <br/>
+
+    This command will generate a **default.conf** file, which is your main nginx.conf file. 
+    This file will be present at root of your project.
+
+</details>
+
+<br/>
+
+<details>
+  <summary>
+    <strong> route:list</strong>
+  </summary>
+
+  <br/>
+
+  * This command will generate list of all the routes available for the interaction
+  with the instances you have created.
+
+    In order to generate list of all the routes for all instances, you need
+    to run the following command.
+
+    <br/>
+
+    ```bash
+    $ node glue route:list
+    ```
+
+    <br/>
+
+    This will generate list of all routes available.
+
+</details>
+
+<br/>

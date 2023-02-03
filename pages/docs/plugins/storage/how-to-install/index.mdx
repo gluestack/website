@@ -1,0 +1,52 @@
+
+
+
+
+# How to install
+
+##
+
+<br/>
+
+* First go to your local terminal and type this command in order to install this plugin
+
+  <br/>
+
+    ```bash
+    $ node glue add storage <instance-name>
+    ```
+
+  <br/>
+
+* For example, In my case I wanted to install **storage plugin instance** with my instance
+  name as **“storage”**, then I will follow this pattern to install storage plugin instance in
+  my app:
+
+  <br/>
+  
+    ```bash
+    $ node glue add storage storage
+    ```
+    
+    Here my instance name is **storage**.
+
+  <br/>
+
+* Now, after installing the dependency it will ask you for selecting the storage instance and
+  graphql instance. Select the instance option with which you want to connect your storage
+  plugin.
+
+  Option will be something like this:
+    
+    <img src='/assets/storageScreenshot.png'/>
+    
+
+  <br/>
+
+* If the plugin is installed successfully then you can go and see that inside **backend** 
+  folder there is folder named “**services**” and inside that **services** folder, there
+  is a new folder which is named after your instance i.e. **storage** is created. 
+  
+  Overall directory path for the **storage plugin instance** should be something like this:
+  
+  **backend/services/storage**

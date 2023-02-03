@@ -1,4 +1,4 @@
-import React, { useContext,useState,useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Header } from "../components/Header";
 import Meta from "../components/Meta";
 import Cookies from "../components/Cookies";
@@ -15,10 +15,9 @@ function Layout({
   ogImgUrl,
   ogUrl,
   noAccess,
-  style
-  
+  style,
 }: any) {
-    //@ts-ignore
+  //@ts-ignore
 
   const { darkMode } = useContext(AppContext);
   const [isMounted, setIsMounted] = useState(false);
@@ -27,22 +26,12 @@ function Layout({
     return (
       <>
         {!dark ? (
-                <div className="absolute top-0 left-0 w-full ">
-
-          <Image
-            src={bannerImg}
-            alt="image"
-            objectFit="contain" priority
-          />
+          <div className="absolute top-0 left-0 w-full ">
+            <Image src={bannerImg} alt="image" objectFit="contain" priority />
           </div>
         ) : (
           <div className="absolute top-0 left-0 w-full ">
-
-          <Image
-            src={bannerDark}
-            alt="image"
-            objectFit="contain" priority
-          />
+            <Image src={bannerDark} alt="image" objectFit="contain" priority />
           </div>
         )}
       </>
@@ -63,7 +52,7 @@ function Layout({
       />
       <Cookies />
       <Header noAccess={noAccess} />
-        {!isMounted ? <Gradient /> : <Gradient />}
+      {!isMounted ? <Gradient /> : <Gradient />}
       <div className=" lg:pt-20 pt-14 ">{children}</div>
       {/* <Footer /> */}
     </div>

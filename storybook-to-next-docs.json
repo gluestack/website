@@ -1,0 +1,119 @@
+{
+  "meta": {},
+  "repos": [
+    {
+      "id": "framework",
+      "gitUrl": "https://github.com/gluestack/framework.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src",
+      "branchName": "feat/storybook",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "framework",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs",
+      "sidebar": {
+        "type": "heading",
+        "title": "Plugins",
+        "pages": [
+          {
+            "id": "/docs/plugins/auth",
+            "title": "Auth"
+          },
+          {
+            "id": "/docs/plugins/graphql",
+            "title": "GraphQL"
+          },
+          {
+            "id": "/docs/plugins/postgres",
+            "title": "Postgres"
+          },
+          {
+            "id": "/docs/plugins/engine",
+            "title": "Engine"
+          },
+          {
+            "id": "/docs/plugins/minio",
+            "title": "Minio"
+          },
+          {
+            "id": "/docs/plugins/storage",
+            "title": "Storage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "glue-plugin-auth",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-auth.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/AuthPlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-auth",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/auth"
+    },
+    {
+      "id": "glue-plugin-graphql",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-graphql.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/GraphqlPlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-graphql",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/graphql"
+    },
+    {
+      "id": "glue-plugin-postgres",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-postgres.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/PostgresPlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-postgres",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/postgres"
+    },
+    {
+      "id": "glue-plugin-engine",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-engine.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/EnginePlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-engine",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/engine"
+    },
+    {
+      "id": "glue-plugin-minio",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-minio.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/MinioPlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-minio",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/minio"
+    },
+    {
+      "id": "glue-plugin-storage",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-storage.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/StoragePlugin/",
+      "branchName": "master",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-storage",
+      "rootDocs": false,
+      "ignoredfolders": [],
+      "destinationPath": "/docs/plugins/storage"
+    }
+  ]
+}
