@@ -1,1 +1,37 @@
-{"versions":[{"version":"0.1.x","pages":[{"type":"heading","title":"Auth Plugin Docs","pages":[{"title":"Getting Started","pages":[],"id":"/docs/plugins/auth/getting-started"},{"title":"Goals","pages":[],"id":"/docs/plugins/auth/goals"},{"title":"How It Works","pages":[],"id":"/docs/plugins/auth/how-it-works"},{"title":"How to install","pages":[],"id":"/docs/plugins/auth/how-to-install"},{"title":"Requirements","pages":[],"id":"/docs/plugins/auth/requirements"}]}]}],"firstPage":"/docs/plugins/auth/getting-started"}
+{
+  "versions": [
+    {
+      "version": "0.1.x",
+      "pages": [
+        {
+          "type": "heading",
+          "title": "Auth Plugin Docs",
+          "pages": [
+            {
+              "title": "Getting Started",
+              "pages": [],
+              "id": "/docs/plugins/auth/getting-started"
+            },
+            { "title": "Goals", "pages": [], "id": "/docs/plugins/auth/goals" },
+            {
+              "title": "How It Works",
+              "pages": [],
+              "id": "/docs/plugins/auth/how-it-works"
+            },
+            {
+              "title": "How to install",
+              "pages": [],
+              "id": "/docs/plugins/auth/how-to-install"
+            },
+            {
+              "title": "Requirements",
+              "pages": [],
+              "id": "/docs/plugins/auth/requirements"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "firstPage": "/docs/plugins/auth/getting-started"
+}
