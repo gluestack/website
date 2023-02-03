@@ -67,7 +67,21 @@ const nextConfig = {
   // typescript: {
   //   ignoreBuildErrors: true,
   // },
+
+  // eslint: {
+  //   ignoreDuringBuilds: true,
+  // },
+
   reactStrictMode: true,
+  images: {
+    domains: [
+      "localhost",
+      `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}`,
+      "flowbite.s3.amazonaws.com",
+      "gluestack-strapi.sfo3.digitaloceanspaces.com",
+    ],
+  },
+
   webpack5: true,
   webpack: (config, { isServer }) => {
     config.resolve.fallback = { fs: false };
@@ -89,7 +103,7 @@ const withMDX = require("@next/mdx")({
     // If you use remark-gfm, you'll need to use next.config.mjs
     // as the package is ESM only
     // https://github.com/remarkjs/remark-gfm#install
-    remarkPlugins: [],
+    remarkPlugins: [require("remark-prism")],
     rehypePlugins: [],
     // If you use `MDXProvider`, uncomment the following line.
     // providerImportSource: "@mdx-js/react",

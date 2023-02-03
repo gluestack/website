@@ -83,7 +83,7 @@
       "id": "glue-plugin-engine",
       "gitUrl": "https://github.com/gluestack/glue-plugin-engine.git",
       "previewJSPath": "storybook/.storybook/preview.js",
-      "docsPath": "storybook/src/PluginDocs/DevProcessManager/",
+      "docsPath": "storybook/src/PluginDocs/EnginePlugin/",
       "branchName": "master",
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-engine",
