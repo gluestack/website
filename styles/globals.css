@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import "./button.css";
+@import "./button.css";
 @import "./tags.css";
 @import "./modal.css";
 @import "./header.css";
@@ -14,7 +14,7 @@
 @import "./testimonial.css";
 @import "./footer.css";
 @import "./team/team.css";
-@import "./docs.css"; */
+@import "./docs.css";
 
 @font-face {
   font-family: "sf-pro-regular";
