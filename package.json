@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn update-docs && next build",
     "start": "next start",
     "lint": "next lint",
-    "get-docs-data": "node scripts/get-docs-data.js",
-    "analyze": "ANALYZE=true next build",
-    "update-docs": "npx storybook-to-next-docs@latest --configFilePath='./storybook-to-next-docs.json'"
+    "update-docs": "npx storybook-to-next-docs@latest --configFilePath='storybook-to-next-docs.json'",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",

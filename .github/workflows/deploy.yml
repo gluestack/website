@@ -1,4 +1,4 @@
-name: Print on external push
+name: Update docs when dispatched an event
 
 # Controls when the action will run. Triggers the workflow on repository_dispatch and filters by type of event (i.e. `event_type`)
 on:
@@ -15,25 +15,23 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Install dependencies
-        run: yarn
-
-      - name: Run Fetch Repo Script
+      - name: Run Udpate docs script
         run: |
-          yarn get-docs-data
+          yarn 
+          yarn update-docs
 
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
+          branch: feat/${{  github.event.client_payload.message.repo }}--${{ github.run_id }}
           message: "Auto updated docs"
 
       - name: Run the Action
         uses: devops-infra/action-pull-request@v0.5.3
         with:
           github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          source_branch: feat/${{ github.event.repository.name }}--${{ github.run_id }}
+          source_branch: feat/${{  github.event.client_payload.message.repo }}--${{ github.run_id }}
           target_branch: main
           title: Docs Update
           body: "**Automated pull request**"
