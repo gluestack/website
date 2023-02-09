@@ -1,3 +1,6 @@
+import Meta from "../../../../components/Meta";
+
+<Meta pageTitle="How it works | Minio" description="How it works | Minio" />
 
 
 
@@ -7,29 +10,26 @@
 
 ##
 
-<br/>
+<br />
 
-* ## Working
-  
-  <br/>
-  
-  * Minio plugin instance will be running on your **Docker** as a seperate container.
-  
-  
-  <br/>
-  
-  
-  
-  * Behind the scene what happens is, your docker file of minio is created and it is included
-  the main docker-compose file of your app which starts running your **minio** container
-  
-  
-  <br/>
-  
-  
-  * Your directory stucture for the **minio plugin instance** should be something
+- ## Working
+
+  <br />
+
+  - Minio plugin instance will be running on your **Docker** as a seperate container.
+
+  <br />
+
+  - Behind the scene what happens is, your docker file of minio is created and it is included
+    the main docker-compose file of your app which starts running your **minio** container
+
+  <br />
+
+  - Your directory stucture for the **minio plugin instance** should be something
     like this:
-    <br/>
+
+    {" "}
+    <br />
 
     ```jsx
       📦storage
@@ -74,54 +74,42 @@
         ┃ ┃ ┗ 📂public
         ┃ ┗ 📜README.md
     ```
-  <br/>
-  <br/>
-  
-  * In order to upload files to **minio** server you need to install another plugin named
-  **glue-plugin-storage** which uses minio, to upload files and store them.
-  
-  <br/>
-  
-  * In order to start this plugin you need to run the following command:
-    
-    <br/>
-  
+
+    <br />
+    <br />
+
+  - In order to upload files to **minio** server you need to install another plugin named
+    **glue-plugin-storage** which uses minio, to upload files and store them.
+
+  <br />
+
+  - In order to start this plugin you need to run the following command:
+
+    <br />
+
     ```bash
     $ node glue develop:up
     ```
-  
-    <br/>
+
+    <br />
 
     This command will start running the docker image of all the instances
     and plugin we have created. Here, in this case it will start running
     our **minio plugin instance**.
-  
-  <br/>
 
-* ## Instructions to start development with this plugin:
-  
-  <br/>
-  
-  * In order to interact with your **minio** server to upload and store files,
-  you can use another plugin named **glue-plugin-storage** which already comes
-  with configuration with your minio server and you can start using that plugin
-  in our app.
+  <br />
 
-  <br/>
+- ## Instructions to start development with this plugin:
 
-  * If you want to interact with the minio server by yourself then you can simply
-  pick up the **configuration information** provided in the console when you have
-  installed the **minio plugin**.
+  <br />
 
+  - In order to interact with your **minio** server to upload and store files,
+    you can use another plugin named **glue-plugin-storage** which already comes
+    with configuration with your minio server and you can start using that plugin
+    in our app.
 
+  <br />
 
-
-
-
-
-
-
-
-
-
-
+  - If you want to interact with the minio server by yourself then you can simply
+    pick up the **configuration information** provided in the console when you have
+    installed the **minio plugin**.
