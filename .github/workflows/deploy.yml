@@ -4,34 +4,33 @@ name: Update docs when dispatched an event
 on:
   repository_dispatch:
     types: [dispatch_website_docs]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: 16.x
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
+#       - name: Run Udpate docs script
+#         run: |
+#           yarn
+#           yarn update-docs
 
-      - name: Run Udpate docs script
-        run: |
-          yarn 
-          yarn update-docs
+#       - name: Commit & Push changes
+#         uses: actions-js/push@master
+#         with:
+#           github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+#           branch: feat/${{  github.event.client_payload.message.repo }}--${{ github.run_id }}
+#           message: "Auto updated docs"
 
-      - name: Commit & Push changes
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          branch: feat/${{  github.event.client_payload.message.repo }}--${{ github.run_id }}
-          message: "Auto updated docs"
-
-      - name: Run the Action
-        uses: devops-infra/action-pull-request@v0.5.3
-        with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          source_branch: feat/${{  github.event.client_payload.message.repo }}--${{ github.run_id }}
-          target_branch: main
-          title: Docs Update
-          body: "**Automated pull request**"
+#       - name: Run the Action
+#         uses: devops-infra/action-pull-request@v0.5.3
+#         with:
+#           github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+#           source_branch: feat/${{  github.event.client_payload.message.repo }}--${{ github.run_id }}
+#           target_branch: main
+#           title: Docs Update
+#           body: "**Automated pull request**"
