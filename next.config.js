@@ -6,18 +6,18 @@ const { withExpo } = require("@expo/next-adapter");
 const withTM = require("next-transpile-modules")([
   "react-native-web",
   "react-native",
+
   "@gluestack/design-system",
-  "@universa11y/modal",
   "@gluestack/ui",
-  "@gluestack/css-injector",
-  "@gluestack/cssify",
-  "@gluestack/ui-convert-utility-to-sx",
+
   "@dank-style/react",
   "@dank-style/css-injector",
   "@dank-style/color-mode",
   "@dank-style/cssify",
+
   "@expo/html-elements",
   "expo-linear-gradient",
+
   "react-native-svg",
   "@react-native-aria/checkbox",
   "@react-native-aria/focus",
@@ -26,9 +26,11 @@ const withTM = require("next-transpile-modules")([
   "@react-native-aria/slider",
   "@react-native-aria/toggle",
   "@react-native-aria/utils",
+
   "@universa11y/actionsheet",
   "@universa11y/form-control",
   "@universa11y/avatar",
+  "@universa11y/modal",
   "@universa11y/button",
   "@universa11y/checkbox",
   "@universa11y/divider",

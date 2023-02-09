@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn update-docs && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "update-docs": "npx storybook-to-next-docs@latest --configFilePath='storybook-to-next-docs.json'",
@@ -41,16 +41,9 @@
     "vanilla-cookieconsent": "^2.8.9"
   },
   "devDependencies": {
-    "@dank-style/color-mode": "latest",
-    "@dank-style/css-injector": "latest",
-    "@dank-style/react": "latest",
+    "@dank-style/react": "^0.1.46",
     "@expo/next-adapter": "^5.0.0",
-    "@gluestack/color-mode": "^0.1.0-alpha.1",
-    "@gluestack/css-injector": "^0.1.0-alpha.3",
-    "@gluestack/cssify": "^0.1.0-alpha.1",
     "@gluestack/ui": "^0.1.0-alpha.10",
-    "@gluestack/ui-convert-utility-to-sx": "^0.1.0-alpha.3",
-    "@gluestack/ui-creator": "^0.1.0-alpha.13",
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
     "@next/mdx": "^13.0.6",
