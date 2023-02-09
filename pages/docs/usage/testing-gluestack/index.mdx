@@ -1,4 +1,6 @@
+import Meta from "../../../../components/Meta";
 
+<Meta />
 
 
 
@@ -60,7 +62,7 @@ If any of these assertions fail, it's clear that the issue is contained within t
 
 ```jsx
 // helpers.spec.js
-
+import { increment } from "./helpers";
 
 describe("increment", () => {
   test("increments the current number by 1", () => {
@@ -233,7 +235,7 @@ Assuming the following two Next.js pages:
 
 ```jsx
 // pages/index.js
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -382,7 +384,7 @@ Assuming the following two Next.js pages:
 
 ```jsx
 // pages/index.js
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -409,7 +411,7 @@ Add a test to verify that your navigation is working correctly:
 ```jsx
 // e2e/example.spec.ts
 
-
+import { test, expect } from "@playwright/test";
 
 test("should navigate to the about page", async ({ page }) => {
   // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
@@ -504,8 +506,8 @@ To test your components in Storybook, you can follow these steps:
 **Here's an example of a test case written in Jest that tests a component in Storybook:**
 
 ```jsx
-
-
+import { render } from "@testing-library/react";
+import MyComponent from "./MyComponent";
 
 test("MyComponent should render correctly", () => {
   const { container } = render(<MyComponent />);
@@ -533,7 +535,7 @@ Dapr is a distributed application runtime that simplifies the development of mic
 **Here's an example of a test case written in Jest that tests a Dapr-based application:**
 
 ```jsx
-
+import { DaprClient } from "dapr";
 
 test("Dapr should be able to save and retrieve a state", async () => {
   // Create a Dapr client
@@ -581,7 +583,7 @@ Hasura is an open-source engine that provides real-time GraphQL APIs on top of a
 Here's an example of a test case written in Jest that tests a Hasura-based application:
 
 ```jsx
-
+import { GraphQLClient } from "graphql-request";
 
 test("Hasura should be able to create and retrieve a user", async () => {
   // Create a GraphQL client
@@ -632,7 +634,7 @@ Cron is a Unix utility that allows you to schedule tasks to be executed automati
 Here's an example of a test case written in Jest that tests a cron-based application:
 
 ```jsx
-
+import { CronJob } from "cron";
 
 test("Cron job should execute every minute", () => {
   // Create a mock function to represent the cron task
