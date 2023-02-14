@@ -10,7 +10,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "framework",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs",
       "sidebar": {
         "type": "heading",
@@ -52,7 +52,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-auth",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs/plugins/auth"
     },
     {
@@ -64,7 +64,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-graphql",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs/plugins/graphql"
     },
     {
@@ -76,7 +76,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-postgres",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs/plugins/postgres"
     },
     {
@@ -88,7 +88,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-engine",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs/plugins/engine"
     },
     {
@@ -100,7 +100,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-minio",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs/plugins/minio"
     },
     {
@@ -112,7 +112,7 @@
       "assetsPath": "storybook/public/assets",
       "repoName": "glue-plugin-storage",
       "rootDocs": false,
-      "ignoredfolders": [],
+      "ignoredPaths": [],
       "destinationPath": "/docs/plugins/storage"
     }
   ]

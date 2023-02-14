@@ -1114,10 +1114,21 @@
   resolved "https://registry.yarnpkg.com/@dank-style/media-query/-/media-query-0.1.10.tgz#0177ac1aad16ae598ee00b9821ad9a88267c7292"
   integrity sha512-2/9wRePISMp4jLFuZmg8l7TdCIXgO4wsIG0sxd6wtJZBZKF32gMKvaEqIa0pL9yEqGcFL+m/lwccnEBKRIQbCA==
 
-"@dank-style/react@^0.1.45", "@dank-style/react@^0.1.46":
-  version "0.1.46"
-  resolved "https://registry.yarnpkg.com/@dank-style/react/-/react-0.1.46.tgz#33366ad8cb0d3683eb762aeff8200d84a3aef10f"
-  integrity sha512-YMTEYNidhxxeHIu7xcE1xSBwVYUJxdJanQcHdQlS0Pi8h5+XUSOVUA8PMTeffKI0cIFPy3/BVRqYSycrkiQiag==
+"@dank-style/react@0.1.51":
+  version "0.1.51"
+  resolved "https://registry.yarnpkg.com/@dank-style/react/-/react-0.1.51.tgz#6198da22eea1c8f4ba108207ba06f9941e142aa6"
+  integrity sha512-sMFfv1zI62UDLAw4yVodakmRz2sNoD63vjsnBnS/XzrduIHBNh+7hdMQb11+FSr2iFvdim5QY3PlROac7RJXmw==
+  dependencies:
+    "@dank-style/color-mode" "*"
+    "@dank-style/convert-utility-to-sx" "0.1.6"
+    "@dank-style/css-injector" "0.1.10"
+    "@dank-style/cssify" "0.1.10"
+    "@dank-style/media-query" "0.1.10"
+
+"@dank-style/react@^0.1.52":
+  version "0.1.52"
+  resolved "https://registry.yarnpkg.com/@dank-style/react/-/react-0.1.52.tgz#762164999019056e8fdc04798e3496aaf705c8b2"
+  integrity sha512-0xcPWnHkHj7dWBe4cxMIUERY7kAqsiSOglrSQ2xi2Az24LOwGEVbr6FI4zLlAURaUKaQ1Y0kv9PsUQwnTQ1/RQ==
   dependencies:
     "@dank-style/color-mode" "*"
     "@dank-style/convert-utility-to-sx" "0.1.6"
@@ -1536,12 +1547,12 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gluestack/design-system@^0.1.27":
-  version "0.1.28"
-  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.1.28.tgz#d2b467e43f9ee40e174cb712536638a5a0c916a1"
-  integrity sha512-RtSCNKgKpIo3WZcxbHgNIqgFLkkLw7z5kNNdsOO+trDPXVquw1bufuPw1T0pRF/Ws31aGwVJ6SQsjOHSlvCHhw==
+"@gluestack/design-system@^0.1.44":
+  version "0.1.44"
+  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.1.44.tgz#162e23d8ce212555d039d44b9154a5440c114076"
+  integrity sha512-a6ZOQDFI9H8sdfV1TAzJS0NtLLbs4QwhQpyn2MYu/FK7QKGhtlJe1I2O3sQ1kRVjQR4CyNzsqMw/MV3F5t+vHA==
   dependencies:
-    "@dank-style/react" "^0.1.45"
+    "@dank-style/react" "0.1.51"
     "@expo/html-elements" "^0.3.0"
     "@universa11y/actionsheet" "0.1.5"
     "@universa11y/alert-dialog" "^0.1.5"
@@ -1564,7 +1575,7 @@
     "@universa11y/popper" "0.1.1"
     "@universa11y/pressable" "0.1.6"
     "@universa11y/progress" "0.1.5"
-    "@universa11y/provider" "0.1.7"
+    "@universa11y/provider" "0.1.8"
     "@universa11y/radio" "0.1.5"
     "@universa11y/react-native-aria" "0.1.5"
     "@universa11y/select" "0.1.5"
@@ -2962,10 +2973,10 @@
     "@react-native-aria/focus" "^0.2.7"
     react-native-svg "^13.6.0"
 
-"@universa11y/provider@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@universa11y/provider/-/provider-0.1.7.tgz#1e08100bc72b57147e43e10035a6d229a2418fa2"
-  integrity sha512-XbPrwJ9NKVyOC3yzZaX8j3R6dtOsFJd9sIQI/NfJt5NWq1YGZlR6s2nW2pte9Oewazuta4dq9STMGGJUwYepTQ==
+"@universa11y/provider@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@universa11y/provider/-/provider-0.1.8.tgz#e56764225d2d3247ffb88adee4d67e8852ed4e21"
+  integrity sha512-jZnsuscl3gt9b2ff7/TT5p75SlfeKqRunHX9IImJCL3pccMd/Tx1o+EyAXnS0v4+nySn9syKNHpqmT798noK6g==
   dependencies:
     "@react-native-aria/focus" "^0.2.7"
     "@universa11y/overlay" "*"
@@ -2973,7 +2984,7 @@
     "@universa11y/toast" "*"
     "@universa11y/transitions" "^0.1.5"
     "@universa11y/utils" "*"
-    react-native-svg "^13.6.0"
+    react-native-svg "13.4.0"
 
 "@universa11y/radio@0.1.5":
   version "0.1.5"
