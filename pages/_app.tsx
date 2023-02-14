@@ -141,6 +141,11 @@ const DocsLayoutRender = ({
   versions,
   router,
 }: IDocsLayoutRender) => {
+  const [colorMode, setColorMode] = React.useState("dark");
+  const toggleColorMode = async () => {
+    colorMode === "light" ? setColorMode("dark") : setColorMode("light");
+  };
+
   const headerItems = {
     left: [
       {
@@ -187,6 +192,8 @@ const DocsLayoutRender = ({
       Link={Link}
       MDXProvider={MDXProvider}
       Image={Image}
+      colorMode={colorMode}
+      toggleColorMode={toggleColorMode}
     >
       {children}
     </Layout>
