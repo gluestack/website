@@ -43,7 +43,6 @@
   "devDependencies": {
     "@dank-style/react": "^0.1.52",
     "@expo/next-adapter": "^5.0.0",
-    "@gluestack/ui": "^0.1.0-alpha.10",
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
     "@next/mdx": "^13.0.6",

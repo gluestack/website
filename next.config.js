@@ -8,7 +8,6 @@ const withTM = require("next-transpile-modules")([
   "react-native",
 
   "@gluestack/design-system",
-  "@gluestack/ui",
 
   "@dank-style/react",
   "@dank-style/css-injector",
