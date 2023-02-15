@@ -80,6 +80,7 @@ const nextConfig = {
       `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}`,
       "flowbite.s3.amazonaws.com",
       "gluestack-strapi.sfo3.digitaloceanspaces.com",
+      "s3.us-west-2.amazonaws.com",
     ],
   },
 
