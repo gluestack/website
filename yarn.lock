@@ -887,10 +887,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@gluestack/design-system@^0.1.48":
-  version "0.1.48"
-  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.1.48.tgz#de84415ad103e9d1416c3f3b391c64519bda3aba"
-  integrity sha512-GdOZ33Zf+ubfjdNmes7kS0zIbEfwe71zdMewEIKdgTq1RIpazHQm+NxouG5dfBzTXBv1znOJvdX5iiVhIoA22Q==
+"@gluestack/design-system@^0.1.49":
+  version "0.1.49"
+  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.1.49.tgz#223d35ec7359a701d1c0d56e74bb98fc10d6f571"
+  integrity sha512-k3XXA6yVZhEvLdjQ3RlDMOMsQtDLY9NQ4S/EJXncJOlQNqV8Dm69IuiFcGdA2w0ugNY+GjCU0DkfFebWQJvwCg==
   dependencies:
     "@dank-style/react" "0.1.51"
     "@expo/html-elements" "^0.3.0"
