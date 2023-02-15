@@ -1,5 +1,5 @@
 import GTMPageView from "../helper/gtm";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import data from "./docs/versions.json";
 import { SessionProvider } from "next-auth/react";
@@ -141,10 +141,18 @@ const DocsLayoutRender = ({
   versions,
   router,
 }: IDocsLayoutRender) => {
+  const docsLayoutRef = useRef(null);
   const [colorMode, setColorMode] = React.useState("dark");
   const toggleColorMode = async () => {
     colorMode === "light" ? setColorMode("dark") : setColorMode("light");
   };
+
+  useEffect(() => {
+    if (docsLayoutRef?.current) {
+      //@ts-ignore
+      docsLayoutRef?.current?.scrollTo(0, 0);
+    }
+  }, [router.pathname]);
 
   const headerItems = {
     left: [
@@ -214,6 +222,7 @@ const DocsLayoutRender = ({
     //   }}
     // >
     <Layout
+      ref={docsLayoutRef}
       version={version}
       sidebarItems={sidebarData}
       headerItems={headerItems}
