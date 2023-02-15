@@ -3,18 +3,48 @@
     {
       "version": "0.1.x",
       "pages": [
-        { "title": "Introduction", "pages": [], "id": "/docs/introduction" },
-        { "title": "Architecture", "pages": [], "id": "/docs/architecture" },
-        { "title": "Philosophy", "pages": [], "id": "/docs/philosophy" },
-        { "title": "Prerequisites", "pages": [], "id": "/docs/prerequisites" },
-        { "title": "Installation", "pages": [], "id": "/docs/installation" },
-        { "title": "Why gluestack?", "pages": [], "id": "/docs/why-gluestack" },
         {
-          "title": "Goals and non-goals",
-          "pages": [],
-          "id": "/docs/goals-and-non-goals"
+          "type": "heading",
+          "title": "Overview",
+          "pages": [
+            {
+              "title": "Introduction",
+              "pages": [],
+              "id": "/docs/overview/introduction"
+            },
+            {
+              "title": "Architecture",
+              "pages": [],
+              "id": "/docs/overview/architecture"
+            },
+            {
+              "title": "Philosophy",
+              "pages": [],
+              "id": "/docs/overview/philosophy"
+            },
+            {
+              "title": "Prerequisites",
+              "pages": [],
+              "id": "/docs/overview/prerequisites"
+            },
+            {
+              "title": "Installation",
+              "pages": [],
+              "id": "/docs/overview/installation"
+            },
+            {
+              "title": "Why gluestack?",
+              "pages": [],
+              "id": "/docs/overview/why-gluestack"
+            },
+            {
+              "title": "Goals and non-goals",
+              "pages": [],
+              "id": "/docs/overview/goals-and-non-goals"
+            },
+            { "title": "FAQs", "pages": [], "id": "/docs/overview/faqs" }
+          ]
         },
-        { "title": "FAQs", "pages": [], "id": "/docs/faqs" },
         {
           "type": "heading",
           "title": "Usage",
@@ -72,5 +102,5 @@
       ]
     }
   ],
-  "firstPage": "/docs/introduction"
+  "firstPage": "/docs/overview/introduction"
 }
