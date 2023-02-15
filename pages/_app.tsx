@@ -166,7 +166,36 @@ const DocsLayoutRender = ({
             width="24"
           />
         ),
+        darkIcon: (
+          <Image
+            src="/icon/social/github-dark.svg"
+            alt="Github"
+            height="24"
+            width="24"
+          />
+        ),
         text: "github",
+      },
+      {
+        type: "link",
+        url: "https://discord.com/invite/95qQ84nf6f",
+        icon: (
+          <Image
+            src="/icon/social/discord.svg"
+            alt="Github"
+            height="24"
+            width="24"
+          />
+        ),
+        darkIcon: (
+          <Image
+            src="/icon/social/discord-dark.svg"
+            alt="Github"
+            height="24"
+            width="24"
+          />
+        ),
+        text: "discord",
       },
     ],
     center: [{}],
