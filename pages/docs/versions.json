@@ -99,7 +99,8 @@
             { "id": "/docs/plugins/storage", "title": "Storage" }
           ]
         }
-      ]
+      ],
+      "breadcrumbs": null
     }
   ],
   "firstPage": "/docs/overview/introduction"

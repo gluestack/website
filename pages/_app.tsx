@@ -59,6 +59,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
 
   let latestVersion: number = 0;
   let sidebarData: any = {};
+  let breadcrumbs: any = {};
 
   versionData = sideBarDataObject[matchRepoId];
 
@@ -66,6 +67,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
   if (versions) {
     latestVersion = versions[versions?.length - 1]?.version;
     sidebarData = versions[versions?.length - 1]?.pages;
+    breadcrumbs = versions[versions?.length - 1]?.breadcrumbs;
   }
 
   useEffect(() => {
@@ -97,6 +99,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
         version={latestVersion}
         sidebarData={sidebarData}
         versions={versions}
+        breadcrumbs={breadcrumbs}
       >
         {children}
       </DocsLayoutRender>
@@ -131,6 +134,7 @@ interface IDocsLayoutRender {
   sidebarData: any;
   darkMode: any;
   router: any;
+  breadcrumbs: any;
 }
 
 const DocsLayoutRender = ({
@@ -140,6 +144,7 @@ const DocsLayoutRender = ({
   sidebarData,
   versions,
   router,
+  breadcrumbs,
 }: IDocsLayoutRender) => {
   const docsLayoutRef = useRef(null);
   const [colorMode, setColorMode] = React.useState("dark");
@@ -232,6 +237,7 @@ const DocsLayoutRender = ({
       Image={Image}
       colorMode={colorMode}
       toggleColorMode={toggleColorMode}
+      breadcrumbs={breadcrumbs}
     >
       {children}
     </Layout>

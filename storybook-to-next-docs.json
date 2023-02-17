@@ -53,7 +53,14 @@
       "repoName": "glue-plugin-auth",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/auth"
+      "destinationPath": "/docs/plugins/auth",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Auth" }
+      ]
     },
     {
       "id": "glue-plugin-graphql",
@@ -65,7 +72,14 @@
       "repoName": "glue-plugin-graphql",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/graphql"
+      "destinationPath": "/docs/plugins/graphql",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "GraphQL" }
+      ]
     },
     {
       "id": "glue-plugin-postgres",
@@ -77,7 +91,14 @@
       "repoName": "glue-plugin-postgres",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/postgres"
+      "destinationPath": "/docs/plugins/postgres",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Postgres" }
+      ]
     },
     {
       "id": "glue-plugin-engine",
@@ -89,7 +110,14 @@
       "repoName": "glue-plugin-engine",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/engine"
+      "destinationPath": "/docs/plugins/engine",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Engine" }
+      ]
     },
     {
       "id": "glue-plugin-minio",
@@ -101,7 +129,14 @@
       "repoName": "glue-plugin-minio",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/minio"
+      "destinationPath": "/docs/plugins/minio",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Minio" }
+      ]
     },
     {
       "id": "glue-plugin-storage",
@@ -113,7 +148,14 @@
       "repoName": "glue-plugin-storage",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/storage"
+      "destinationPath": "/docs/plugins/storage",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Storage" }
+      ]
     }
   ]
 }
