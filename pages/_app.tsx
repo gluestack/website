@@ -23,6 +23,7 @@ import postgresPluginSidebarData from "./docs/plugins/postgres/versions.json";
 import enginePluginSidebarData from "./docs/plugins/engine/versions.json";
 import minioPluginSidebarData from "./docs/plugins/minio/versions.json";
 import storagePluginSidebarData from "./docs/plugins/storage/versions.json";
+import routerNginxPluginSidebarData from "./docs/plugins/router-nginx/versions.json";
 
 export const AppContext = React.createContext({} as unknown as any);
 
@@ -38,6 +39,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
     "glue-plugin-engine": enginePluginSidebarData,
     "glue-plugin-minio": minioPluginSidebarData,
     "glue-plugin-storage": storagePluginSidebarData,
+    "glue-plugin-router-nginx": routerNginxPluginSidebarData,
   };
 
   let repos = storybookToNextDocs.repos;
@@ -95,10 +97,8 @@ function MyApp({ children }: { children: React.ReactNode }) {
     return (
       <DocsLayoutRender
         router={router}
-        darkMode={darkMode}
         version={latestVersion}
         sidebarData={sidebarData}
-        versions={versions}
         breadcrumbs={breadcrumbs}
       >
         {children}
@@ -129,20 +129,16 @@ export default App;
 
 interface IDocsLayoutRender {
   children: React.ReactNode;
-  versions: any;
   version: any;
   sidebarData: any;
-  darkMode: any;
   router: any;
   breadcrumbs: any;
 }
 
 const DocsLayoutRender = ({
   children,
-  darkMode,
   version,
   sidebarData,
-  versions,
   router,
   breadcrumbs,
 }: IDocsLayoutRender) => {
@@ -215,17 +211,6 @@ const DocsLayoutRender = ({
   };
 
   return (
-    // <MDXProvider
-    //   components={{
-    //     pre: (props: any) => {
-    //       console.log(props);
-    //       return (
-    //         //@ts-ignore
-    //         <pre {...props} />
-    //       );
-    //     },
-    //   }}
-    // >
     <Layout
       ref={docsLayoutRef}
       version={version}
@@ -238,9 +223,9 @@ const DocsLayoutRender = ({
       colorMode={colorMode}
       toggleColorMode={toggleColorMode}
       breadcrumbs={breadcrumbs}
+      fluidLayout={false}
     >
       {children}
     </Layout>
-    // </MDXProvider>
   );
 };

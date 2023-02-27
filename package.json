@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
-    "@gluestack/design-system": "^0.1.55",
+    "@gluestack/design-system": "^0.2.12",
     "@headlessui/react": "^1.7.5",
     "@next/bundle-analyzer": "^13.1.1",
     "@tailwindcss/line-clamp": "^0.4.2",
@@ -43,7 +43,7 @@
     "vanilla-cookieconsent": "^2.8.9"
   },
   "devDependencies": {
-    "@dank-style/react": "^0.1.52",
+    "@dank-style/react": "^0.2.20",
     "@expo/next-adapter": "^5.0.0",
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",

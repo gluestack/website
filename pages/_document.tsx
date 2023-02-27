@@ -7,7 +7,7 @@ import * as React from "react";
 class CustomDocument extends ExpoDocument {
   render() {
     return (
-      <Html lang="en" style={{ height: "100%" }}>
+      <Html lang="en" style={{ height: "100%" }} className="gs-dark">
         <Head>
           <script
             async
