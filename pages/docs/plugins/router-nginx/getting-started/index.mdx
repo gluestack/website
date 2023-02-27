@@ -1,9 +1,10 @@
 import Meta from "@/components/Meta";
 
-<Meta
-  pageTitle="Getting started | router-nginx"
-  description="Getting started | router-nginx"
-/>
+<Meta pageTitle="Getting started | router-nginx" description="Getting started | router-nginx" />
+
+
+
+
 
 # Getting Started
 
@@ -20,25 +21,25 @@ Though it is essential for each plugin instance to keep a **router.js** file in 
 module.exports = () => {
   return [
     {
-      server_name: "sub-domain-name",
+      "server_name": "sub-domain-name"
     },
     {
-      path: "/path/to/instance/(.*)",
-      proxy: {
-        instance: "instance-name:app-port",
-        path: "/app/internal/path/$1",
+      "path": "/path/to/instance/(.*)",
+      "proxy": {
+        "instance": "instance-name:app-port",
+        "path": "/app/internal/path/$1"
       },
-      size_in_mb: "50",
-    },
+      size_in_mb: "50"
+    }
   ];
 };
 ```
 
-- "router.js" should return Array of Objects
-- "**server_name**" key should be a string and should be kept in a separate object, this string serves as global sub-domain for the instance
-- All other objects in the same "**router.js**" file are treated as locations, and here's how it works -
-  - "**path**" key should be a string and it is location which nginx catches from incoming traffic requests and accepts wildcard patterns as in nginx's configuration
-  - "**proxy**" key should be an object and should contain "**instance**" and "**path**" which accepts string as value
-  - "**proxy.instance**" key is combination for instance name and the port number and is used to **proxy_pass** all incoming requests
-  - "**proxy.path**" key is the path within the instance which would be used to reroute all your requests
-  - "**size_in_mb**" key accepts string and value should be the size in MB & is optional, and default is set to 50 mb
+* "router.js" should return Array of Objects
+* "**server_name**" key should be a string and should be kept in a separate object, this string serves as global sub-domain for the instance
+* All other objects in the same "**router.js**" file are treated as locations, and here's how it works -
+  * "**path**" key should be a string and it is location which nginx catches from incoming traffic requests and accepts wildcard patterns as in nginx's configuration
+  * "**proxy**" key should be an object and should contain "**instance**" and "**path**" which accepts string as value
+  * "**proxy.instance**" key is combination for instance name and the port number and is used to **proxy_pass** all incoming requests
+  * "**proxy.path**" key is the path within the instance which would be used to reroute all your requests
+  * "**size_in_mb**" key accepts string and value should be the size in MB & is optional, and default is set to 50 mb
