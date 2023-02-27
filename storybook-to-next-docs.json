@@ -29,6 +29,10 @@
             "title": "Postgres"
           },
           {
+            "id": "/docs/plugins/router-nginx",
+            "title": "Router nginx"
+          },
+          {
             "id": "/docs/plugins/engine",
             "title": "Engine"
           },
@@ -98,6 +102,25 @@
           "title": "gluestack"
         },
         { "title": "Postgres" }
+      ]
+    },
+    {
+      "id": "glue-plugin-router-nginx",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-router-nginx.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/RouterNginxPlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-router-nginx",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/router-nginx",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Router nginx" }
       ]
     },
     {

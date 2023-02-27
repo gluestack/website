@@ -1,0 +1,50 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="CLI Reference | router-nginx" description="CLI Reference | router-nginx" />
+
+
+
+
+
+# CLI Reference
+---
+
+## node glue route:generate
+
+This command generates routes against all the installed **plugin instances**. You can use
+the below command to generate routes your gluestack project:
+```sh
+$ node glue route:generate
+```
+
+## node glue route:list
+
+This command lists all the routes generated against your installed **plugin instances**.
+
+Listing contains following information:
+- Domain Name
+- Plugin Prefix Route
+- URI Route
+- URI Method
+
+You can use the below command to list all the routes generated against your installed
+**plugin instances** in your gluestack project:
+```sh
+$ node glue route:list
+```
+
+## node glue route:endpoints
+
+This command lists all the endpoints & their binding "**router.js**" config file used
+to generate routes against your installed **plugin instances**.
+
+Listing contains following information:
+- Domain Name
+- Plugin Prefix Route
+- Config Path
+
+You can use the below command to list all the endpoints & their config paths used to
+generate routes against your installed **plugin instances** in your gluestack project:
+```sh
+$ node glue route:endpoints
+```
