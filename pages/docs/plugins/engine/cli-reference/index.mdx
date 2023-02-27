@@ -1,252 +1,80 @@
 import Meta from "@/components/Meta";
 
-<Meta pageTitle="CLI Reference| engine" description="CLI Reference| engine." />
+<Meta pageTitle="CLI Reference | engine" description="CLI Reference | engine" />
 
 
 
 
 
 # CLI Reference
+---
 
-##
+Glue Plugin Engine is the process manager for your gluestack projects and it manages all the plugins.
 
-<br/>
+## node glue develop:up
 
+This command runs all the installed **plugin instances** in **Docker**. You can use
+the below command to run your gluestack project:
+```sh
+$ node glue develop:up
+```
 
+## node glue develop:down
 
+This command stops all the installed **plugin instances** running in **Docker**. You
+can use the below command to stop your gluestack project:
+```sh
+$ node glue develop:down
+```
 
-* There is list of certain commands which are available in this plugin.
-  Below is a description of those commands.
+## node glue develop:list
 
-<br/>
+This command lists all the installed **plugin instances** running in **Docker**.
 
+You can use the below command to list your installed plugin instances in your gluestack
+project:
+```sh
+$ node glue develop:list
+```
 
-<details>
-  <summary>
-    <strong> develop:up</strong>
-  </summary>
+This command comes up with an option to filter the list of plugin instances which
+helps in looking up for a specific plugin's instances.
+```sh
+$ node glue develop:list --filter <your-search-string-goes-here>
+```
 
-  <br/>
+To obtain information about the **Glue Plugin Postgres** that has been successfully installed in our application under the instance name "postgres," you
+can execute the appropriate command:
 
-  * This command will run the **Plugin Instances** inside your docker.
+```sh
+$ node glue develop:list --filter postgres
+```
 
-    In order to run the docker container of all **Plugin Instances** you have created,
-    you need to run the below command:
+## node glue develop:watch
 
-    <br/>
+This command runs your gluestack project in **watch** mode. Each plugin's container controller comes with a **watch** method which holds the list of directories
+and file paths which are watched for changes.
 
-    ```bash
-    $ node glue develop:up
-    ```
+If changes are made to such directories or files, this command will automatically restart your gluestack project with the latest changes.
 
-    <br/>
+The **watch()** function should return an array of strings. Those strings are the **file
+path** upon which your application will run on watch mode.
 
-  * In order to run a particular **Plugin Instance** you need to run command in the below pattern:
+Here's how you can run watch command:
+```sh
+$ node glue develop:watch
+```
 
-    <br/>
+## node glue build
 
-    ```bash
-    $ node glue develop:up <Instance-Name>
-    ```
+This command helps you build plugin's instances. There are two ways to build, one build all plugin instances and other build one plugin instance at a time.
 
-    <br/>
+To build all installed plugin instances, you can run the following command:
+```sh
+$ node glue build
+```
 
-    For example I have already added **Glue Plugin Postgres** in my app with my instance name as
-    postgres. Then in order to only start our postgres instance I need to run following command:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:up postgres
-    ```
-
-    <br/>
-
-    **Note:** Passing instance name is optional. If you don't pass the instance name then, it will
-    start running all the instances
-
-</details>
-
-<br/>
-
-<details>
-  <summary>
-    <strong> develop:down</strong>
-  </summary>
-
-  <br/>
-
-  * This command will stop running the **Plugin Instances** inside your docker.
-
-    In order to stop the docker container of all **Plugin Instances** you have created,
-    you need to run the below command:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:down
-    ```
-
-    <br/>
-
-  * In order to stop a particular **Plugin Instance** you need to run command in the below pattern:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:down <Instance-Name>
-    ```
-
-    <br/>
-
-    For example **Glue Plugin Postgres** is already running in my app with my instance name as
-    **postgres**. Then in order to only stop our postgres instance I need to run following command:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:down postgres
-    ```
-
-    <br/>
-
-    **Note:** Passing instance name is optional. If you don't pass the instance name then, it will
-    stop all the instances
-
-</details>
-
-<br/>
-
-<details>
-  <summary>
-    <strong> develop:list</strong>
-  </summary>
-
-  <br/>
-
-  * This command will show us details of all **Plugin Instances** you have created.
-
-    In order to show the details of all **Plugin Instances** you have created,
-    you need to run the below command:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:list
-    ```
-
-    <br/>
-
-  * In order to see the details of a particular **Plugin Instance** you need to run command in the below pattern:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:list --filter <Instance-Name>
-    ```
-
-    <br/>
-
-    For example we need to see details of **Glue Plugin Postgres** which we have already installed in our app with
-    our instance name as **postgres**. Then in order to only stop our postgres instance I need to run following
-    command:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:list --filter postgres
-    ```
-
-    <br/>
-
-    **Note:** Passing **--filter** is optional.
-
-</details>
-
-<br/>
-
-<details>
-  <summary>
-    <strong> develop:watch</strong>
-  </summary>
-
-  <br/>
-
-  * This command will run your applicaion in **watch** mode. Whenever you save changes in your
-    plugin instances which have **watch() function** included in them, then this command will
-    automatically restart your **instance containers**. 
-
-    It will **watch** for all those plugin instances inside which you have implemented **watch()
-    function**.
-
-    The **watch()** function should return an array of strings. Those strings are the **file
-    path** upon which your application will run on watch mode.
-    
-    
-    In order to run this command you need to enter the following command:
-
-    <br/>
-
-    ```bash
-    $ node glue develop:watch
-    ```
-
-    <br/>
-
-</details>
-
-<br/>
-
-<details>
-  <summary>
-    <strong> route:generate</strong>
-  </summary>
-
-  <br/>
-
-  * This command will generate router file for all the container instances.
-
-    In order to generate router file for all the container instances, you need
-    to run the following command.
-
-    <br/>
-
-    ```bash
-    $ node glue route:generate
-    ```
-
-    <br/>
-
-    This command will generate a **default.conf** file, which is your main nginx.conf file. 
-    This file will be present at root of your project.
-
-</details>
-
-<br/>
-
-<details>
-  <summary>
-    <strong> route:list</strong>
-  </summary>
-
-  <br/>
-
-  * This command will generate list of all the routes available for the interaction
-  with the instances you have created.
-
-    In order to generate list of all the routes for all instances, you need
-    to run the following command.
-
-    <br/>
-
-    ```bash
-    $ node glue route:list
-    ```
-
-    <br/>
-
-    This will generate list of all routes available.
-
-</details>
-
-<br/>
+To build one plugin instance, you can run the following command:
+```sh
+$ node glue build <instance-name>
+```
