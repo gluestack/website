@@ -24,6 +24,7 @@ import enginePluginSidebarData from "./docs/plugins/engine/versions.json";
 import minioPluginSidebarData from "./docs/plugins/minio/versions.json";
 import storagePluginSidebarData from "./docs/plugins/storage/versions.json";
 import routerNginxPluginSidebarData from "./docs/plugins/router-nginx/versions.json";
+import backendEnginePluginSidebarData from "./docs/plugins/backend-engine/versions.json";
 
 export const AppContext = React.createContext({} as unknown as any);
 
@@ -40,6 +41,7 @@ function MyApp({ children }: { children: React.ReactNode }) {
     "glue-plugin-minio": minioPluginSidebarData,
     "glue-plugin-storage": storagePluginSidebarData,
     "glue-plugin-router-nginx": routerNginxPluginSidebarData,
+    "glue-plugin-backend-engine": backendEnginePluginSidebarData,
   };
 
   let repos = storybookToNextDocs.repos;

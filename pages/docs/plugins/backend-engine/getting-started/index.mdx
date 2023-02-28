@@ -1,0 +1,20 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="Getting started | backend-engine" description="Getting started | backend-engine" />
+
+
+
+
+
+# Getting Started
+##
+
+Glue Plugin Backend creates following things post its installation -
+- **backend** directory if it does not exists in your gluestack project's root directory
+- **backend/crons** directory with **crons.json** file which contains all your project specific CRONs
+- **backend/events** directory with **app** and **database** sub-directories all your project specific events
+  - **backend/events/app** directory will contain all the app events
+  - **backend/events/database** directory will contain all the database events
+- **backend/engine** directory contains the **gluestack backend engine server** which manages **Events**, **Crons** & **Queues**
+
+> Note: Please do not make any changes in your **backend/engine** directory's codebase. Changes init might break your Events, Crons & Queue.
