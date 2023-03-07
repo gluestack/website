@@ -29,6 +29,8 @@ import storybookPluginSidebarData from "./docs/plugins/storybook/versions.json";
 import serviceNodePluginSidebarData from "./docs/plugins/service-node/versions.json";
 import serviceNodemailerPluginSidebarData from "./docs/plugins/service-nodemailer/versions.json";
 import pgAdminPluginSidebarData from "./docs/plugins/pg-admin/versions.json";
+import deployPluginSidebarData from "./docs/plugins/deploy/versions.json";
+import webPluginSidebarData from "./docs/plugins/web/versions.json";
 
 export const AppContext = React.createContext({} as unknown as any);
 
@@ -50,6 +52,8 @@ function MyApp({ children }: { children: React.ReactNode }) {
     "glue-plugin-service-node": serviceNodePluginSidebarData,
     "glue-plugin-service-nodemailer": serviceNodemailerPluginSidebarData,
     "glue-plugin-pg-admin": pgAdminPluginSidebarData,
+    "glue-plugin-deploy": deployPluginSidebarData,
+    "glue-plugin-web": webPluginSidebarData,
   };
 
   let repos = storybookToNextDocs.repos;

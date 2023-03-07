@@ -63,9 +63,55 @@
           {
             "id": "/docs/plugins/storybook",
             "title": "Storybook"
+          },
+          {
+            "id": "/docs/plugins/web",
+            "title": "Web"
+          },
+          {
+            "id": "/docs/plugins/deploy",
+            "title": "Deploy"
           }
         ]
       }
+    },
+    {
+      "id": "glue-plugin-web",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-web.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/WebPlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-web",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/web",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Web" }
+      ]
+    },
+    {
+      "id": "glue-plugin-deploy",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-deploy.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/DeployPlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-deploy",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/deploy",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Deploy" }
+      ]
     },
     {
       "id": "glue-plugin-service-nodemailer",
@@ -77,7 +123,7 @@
       "repoName": "glue-plugin-service-nodemailer",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/storybook",
+      "destinationPath": "/docs/plugins/service-nodemailer",
       "breadcrumbs": [
         {
           "id": "/docs",
@@ -96,7 +142,7 @@
       "repoName": "glue-plugin-service-node",
       "rootDocs": false,
       "ignoredPaths": [],
-      "destinationPath": "/docs/plugins/storybook",
+      "destinationPath": "/docs/plugins/service-node",
       "breadcrumbs": [
         {
           "id": "/docs",

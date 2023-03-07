@@ -1,0 +1,43 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="How to install | PG-Admin" description="How to install | PG-Admin." />
+
+
+
+
+
+
+# How to install
+
+##
+
+<br/>
+
+* To add PG-Admin into your gluestack project, you can run the following command in project's root directory:
+
+```sh
+$ node glue add pg-admin <instance-name>
+```
+
+* For instance, let's install an instance named **pg-admin** in our gluestack project:
+```sh
+$ node glue add pg-admin pg-admin
+```
+
+* After that, you will be prompted with following question -
+
+  <br/>
+
+    <img src='/assets/questions.png'/>
+
+  <br/>
+
+
+* If the plugin is installed successfully, you can navigate to the **backend/databases** folder and see that a new folder named **pg-admin** has been created.
+  Overall directory path for the graphql instance should be something like this:
+
+   ```jsx
+      📂backend
+      ┗ 📂databases
+          ┗ 📂pg-admin
+    ```
