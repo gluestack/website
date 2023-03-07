@@ -10,37 +10,32 @@ import Meta from "@/components/Meta";
 
 ##
 
-<br/>
+To install the **Auth** plugin, start by opening your local terminal and typing in the following command.
 
-* To install the Auth plugin, start by opening your local terminal and typing in the following command. 
+```sh
+$ node glue add auth auth
+```
 
-  <br/>
+It's important to note that the instance name should be **auth** and not any other name.
 
-    ```bash
-    $ node glue add auth auth
-    ```
+After the dependency is installed, you will be prompted to select a **GraphQL** instance from a list of instances that you have previously installed.
 
-  <br/>
-    
-* It's important to note that the instance name should be **auth** and not any other name. 
+This is to establish a connection between your **Auth** app and the chosen **GraphQL** instance. Simply select the instance that you want to connect with your **Auth** app and proceed with the installation.
 
-  <br/>
+Option will be something like this:
 
-* After the dependency is installed, you will be prompted to select a **GraphQL** instance from a list of instances that you have previously installed. This is to establish a connection between your **Auth** app and the chosen **GraphQL** instance. Simply select the instance that you want to connect with your **Auth** app and proceed with the installation.
+<img src='/assets/authScreenshot.png'/>
 
-  Option will be something like this:
-    
-    <img src='/assets/authScreenshot.png'/>
-    
+- If the installation of the **Auth** plugin is successful, you can verify this by checking the **backend** folder.
 
-  <br/>
+- Inside the **backend** folder, there should be a folder named **services**.
 
-* If the installation of the **Auth** plugin is successful, you can verify this by checking the **backend** folder. Inside the **backend** folder, there should be a folder named **services**. Within the **services** folder, you should see a new folder that is named after your **Auth** plugin instance, which in this case is **auth**.
+- Within the **services** folder, you should see a new folder that is named after your **Auth** plugin instance, which in this case is **auth**.
 
-  The overall directory path for the **Auth** plugin instance should look something like this:
-      
-   ```jsx
-      📂backend
-      ┗ 📂services
-          ┗ 📂auth
-    ```
+The overall directory path for the **Auth** plugin instance should look something like this:
+
+```jsx
+  📂 backend
+  ┗ 📂 services
+      ┗ 📂 auth
+```
