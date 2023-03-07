@@ -8,52 +8,27 @@ import Meta from "@/components/Meta";
 
 # CLI Reference
 
-##
+This command will display a list of available commands for the **postgres instance**.
+To execute this command using your **Gluestack App**, please run the following command:
 
+## node glue postgres:list
 
-  <summary>
-    <strong> postgres</strong>
-  </summary>
+To display the list of **postgres instances** that have been installed, you can use the following command:
+```sh
+$ node glue postgres:list
+```
 
-  <br/>
+## node glue postgres:config
 
-  * This command will show the list of available commands with postgres instance.
+To modify the **configurations** of your **postgres instance**, you can use the following command:
 
-    In order to run this command with your **Gluestack App**, you need to run the below
-    command:
+```sh
+$ node glue postgres:config
+```
 
-    <br/>
+This command will display a list of available instances and you can select one.
+After that you will be prompted for the configuration.
 
-    ```bash
-    $ node glue postgres
-    ```
+Your console output will be something like this:
 
-    <br/>
-
-  * In order show the list of installed **postgres instance** you need to run the following
-    command:
-
-    <br/>
-
-    ```bash
-    $ node glue postgres list
-    ```
-
-    <br/>
-
-  * Inorder to change **configuration** of your **postgres instance** you need to run the
-    following command:
-
-    <br/>
-
-    ```bash
-    $ node glue postgres config
-    ```
-
-    <br/>
-
-    After that it will ask for the configuration and you just need to provide it with it.
-
-    Your console output will be something like this:
-
-    <img src='/assets/PostgresCliReference.png'/>
+<img src='/assets/PostgresCliReference.png'/>
