@@ -7,65 +7,30 @@ import Meta from "@/components/Meta";
 
 
 
-# How to install
+# How to Install
 
-##
+To install this plugin, first go to your local terminal and type the following command:
 
-<br/>
+```sh
+$ node glue add graphql graphql
+```
 
-* First go to your local terminal and type this command in order to install this 
-  plugin
+The **GraphQL plugin instance** name should only be **'graphql'**.
 
-  <br/>
-  
-    ```bash
-    $ node glue add graphql <instance-name>
-    ```
+After installing the dependency, it will prompt you to select an instance from the list of **postgres** instances that you have installed. Choose the one that you want to connect your hasura with. In this case, we will connect it with the already installed **postgres instance**.
 
-  <br/>
+Option will be something like this:
 
+<img src='/assets/graphqlHowToInstall.png'/>
 
-* For example, In my case I wanted to install **graphql plugin instance** with my instance
-  name as **“graphql”**, then I will follow this pattern to install this plugin
-  in my app:
+In my case I have connected it with postgres, as I have already have postgres instance installed.
 
-  <br/>
-  
-    ```bash
-    $ node glue add graphql graphql
-    ```
-  
-  <br/>
+If the plugin is installed successfully, you can navigate to the **backend** folder and see that a new folder named **services** has been created. Inside this **services** folder, you will find a new folder named after your instance, which in this case is **graphql**. This **graphql** directory contains the folder structure of hasura.
 
-    Here my instance name is **graphql**.
+Overall directory path for the graphql instance should be something like this:
 
-  <br/>
-
-
-* Now, after installing the dependency it will ask you for selecting an 
-  instance which has the option for the list of postgres instances you 
-  have installed. Select the one with which you want to connect your hasura.
-
-  Option will be something like this:
-    
-    <img src='/assets/graphqlHowToInstall.png'/>
-    
-
-  <br/>
-
-
-* In my case I have connected it with postgres, as I have already have postgres
-  instance installed.
-
-
-  <br/>
-
-* If the plugin is installed successfully then you can go and see that inside 
-  **backend** folder there is a folder created named “**services**” and inside
-  that **services** folder a new folder has been created which is named after your
-  instance **graphql** is created. In this graphql directory you can see the folder
-  structure of hasura.
-  
-  Overall directory path for the graphql instance should be something like this:
-  
-  **backend/services/graphql**
+```jsx
+  📂backend
+  ┗ 📂services
+      ┗ 📂graphql
+```

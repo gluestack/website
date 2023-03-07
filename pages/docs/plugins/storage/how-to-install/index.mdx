@@ -13,26 +13,12 @@ import Meta from "@/components/Meta";
 <br/>
 
 * First go to your local terminal and type this command in order to install this plugin
-
-  <br/>
-
-    ```bash
-    $ node glue add storage <instance-name>
-    ```
-
-  <br/>
-
-* For example, In my case I wanted to install **storage plugin instance** with my instance
-  name as **“storage”**, then I will follow this pattern to install storage plugin instance in
-  my app:
-
   <br/>
   
     ```bash
     $ node glue add storage storage
     ```
-    
-    Here my instance name is **storage**.
+     The **Storage plugin instance** name should only be **'storage'**.
 
   <br/>
 
@@ -52,5 +38,9 @@ import Meta from "@/components/Meta";
   is a new folder which is named after your instance i.e. **storage** is created. 
   
   Overall directory path for the **storage plugin instance** should be something like this:
-  
-  **backend/services/storage**
+    
+   ```jsx
+      📂backend
+      ┗ 📂services
+          ┗ 📂storage
+    ```

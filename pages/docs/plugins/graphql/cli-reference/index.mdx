@@ -7,56 +7,27 @@ import Meta from "@/components/Meta";
 
 
 # CLI Reference
-
 ##
 
-<br/>
+GraphlQL plugin comes with commands which are available in this plugin.
+Below is the detailed description of the available commands.
 
+## node glue graphql:console
 
+This command will run **Hasura Console** locally on your system, and you can start your development from there.
 
+In order to run **Hasura Console**, you need to execute the command in the following pattern:
 
-* There is list of certain commands which are available in this plugin.
-  Below is description of those commands.
+```sh
+$ node glue graphql:console graphql --port <port-number>
+```
 
-<br/>
+For example, if you want to run hasura console on port **9695**. Then in order to run
+hasura console you need to enter the following command.
 
-<details>
-  <summary>
-    <strong> graphql:console</strong>
-  </summary>
+```sh
+$ node glue graphql:console graphql --port 9695
+```
 
-  <br/>
-
-  * This command will run hasura console locally on your system and you can start your development from there.
-
-    In order to run hasura console you need to run the command in the following pattern:
-
-    <br/>
-
-    ```bash
-    $ node glue graphql:console <instance-name> --port <port-number>
-    ```
-
-    <br/>
-
-    For example, if you have already created a **Graphql Plugin Instance** with your instance
-    name as **graphql** and you want to run hasura console on port **9695**. Then in order to run
-    hasura console you need to enter the following command.
-
-    <br/>
-
-    ```bash
-    $ node glue graphql:console graphql --port 9695
-    ```
-    
-    <br/>
-
-    **Note:** Passing port number is optional. If you haven't passed the port number
-    Then by default it will start running on port 9695.
-
-    <br/>
-
-</details>
-
-<br/>
-
+**Note:** Passing port number is optional. If you haven't passed the port number
+Then by default it will start running on port 9695.

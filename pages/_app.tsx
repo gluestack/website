@@ -26,6 +26,9 @@ import storagePluginSidebarData from "./docs/plugins/storage/versions.json";
 import routerNginxPluginSidebarData from "./docs/plugins/router-nginx/versions.json";
 import backendEnginePluginSidebarData from "./docs/plugins/backend-engine/versions.json";
 import storybookPluginSidebarData from "./docs/plugins/storybook/versions.json";
+import serviceNodePluginSidebarData from "./docs/plugins/service-node/versions.json";
+import serviceNodemailerPluginSidebarData from "./docs/plugins/service-nodemailer/versions.json";
+import pgAdminPluginSidebarData from "./docs/plugins/pg-admin/versions.json";
 
 export const AppContext = React.createContext({} as unknown as any);
 
@@ -44,6 +47,9 @@ function MyApp({ children }: { children: React.ReactNode }) {
     "glue-plugin-router-nginx": routerNginxPluginSidebarData,
     "glue-plugin-backend-engine": backendEnginePluginSidebarData,
     "glue-plugin-storybook": storybookPluginSidebarData,
+    "glue-plugin-service-node": serviceNodePluginSidebarData,
+    "glue-plugin-service-nodemailer": serviceNodemailerPluginSidebarData,
+    "glue-plugin-pg-admin": pgAdminPluginSidebarData,
   };
 
   let repos = storybookToNextDocs.repos;

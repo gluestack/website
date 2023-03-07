@@ -33,6 +33,10 @@
             "title": "Postgres"
           },
           {
+            "id": "/docs/plugins/pg-admin",
+            "title": "PG-Admin"
+          },
+          {
             "id": "/docs/plugins/graphql",
             "title": "GraphQL"
           },
@@ -49,11 +53,57 @@
             "title": "Auth"
           },
           {
+            "id": "/docs/plugins/service-node",
+            "title": "Service Node"
+          },
+          {
+            "id": "/docs/plugins/service-nodemailer",
+            "title": "Service Nodemailer"
+          },
+          {
             "id": "/docs/plugins/storybook",
             "title": "Storybook"
           }
         ]
       }
+    },
+    {
+      "id": "glue-plugin-service-nodemailer",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-service-nodemailer.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/ServiceNodemailerPlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-service-nodemailer",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/storybook",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Service Nodemailer" }
+      ]
+    },
+    {
+      "id": "glue-plugin-service-node",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-service-node.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/ServiceNodePlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-service-node",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/storybook",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Service Node" }
+      ]
     },
     {
       "id": "glue-plugin-storybook",
@@ -129,6 +179,25 @@
           "title": "gluestack"
         },
         { "title": "Postgres" }
+      ]
+    },
+    {
+      "id": "glue-plugin-pg-admin",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-pg-admin.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/PG-AdminPlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-pg-admin",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/pg-admin",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "PG-Admin" }
       ]
     },
     {
