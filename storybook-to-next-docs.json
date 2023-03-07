@@ -47,9 +47,32 @@
           {
             "id": "/docs/plugins/auth",
             "title": "Auth"
+          },
+          {
+            "id": "/docs/plugins/storybook",
+            "title": "Storybook"
           }
         ]
       }
+    },
+    {
+      "id": "glue-plugin-storybook",
+      "gitUrl": "https://github.com/gluestack/glue-plugin-storybook.git",
+      "previewJSPath": "storybook/.storybook/preview.js",
+      "docsPath": "storybook/src/PluginDocs/StorybookPlugin/",
+      "branchName": "main",
+      "assetsPath": "storybook/public/assets",
+      "repoName": "glue-plugin-storybook",
+      "rootDocs": false,
+      "ignoredPaths": [],
+      "destinationPath": "/docs/plugins/storybook",
+      "breadcrumbs": [
+        {
+          "id": "/docs",
+          "title": "gluestack"
+        },
+        { "title": "Storybook" }
+      ]
     },
     {
       "id": "glue-plugin-auth",
