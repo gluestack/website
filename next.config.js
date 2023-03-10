@@ -10,9 +10,6 @@ const withTM = require("next-transpile-modules")([
   "@gluestack/design-system",
 
   "@dank-style/react",
-  "@dank-style/css-injector",
-  "@dank-style/color-mode",
-  "@dank-style/cssify",
 
   "@expo/html-elements",
   "expo-linear-gradient",
