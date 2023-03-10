@@ -1,12 +1,13 @@
-import React, { useContext, useState, useEffect } from "react";
-import { Header } from "../components/Header";
-import Meta from "../components/Meta";
+import React, { useContext, useEffect, useState } from "react";
+
+import { AppContext } from "../pages/_app";
 import Cookies from "../components/Cookies";
+import { Header } from "../components/Header";
 import Image from "next/image";
-import bannerImg from "../public/images/gradient.svg";
+import Meta from "../components/Meta";
 import Script from "next/script";
 import bannerDark from "../public/images/gradient-dark.png";
-import { AppContext } from "../pages/_app";
+import bannerImg from "../public/images/gradient.svg";
 
 function Layout({
   children,
@@ -41,7 +42,7 @@ function Layout({
     setIsMounted(true);
   }, []);
   return (
-    <div className={`${style} min-h-screen dark:bg-black-300`}>
+    <div className={`${style}  dark:bg-black-300`}>
       <Script src="//embed.typeform.com/next/embed.js"></Script>
 
       <Meta

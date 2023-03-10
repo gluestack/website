@@ -1,0 +1,125 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="CLI Reference | backend-engine" description="CLI Reference | backend-engine" />
+
+
+
+
+
+# CLI Reference
+---
+
+## node glue service:add
+
+This command helps you create a microservice in your gluestack project. To add a new service, you should run the
+following command:
+```sh
+$ node glue service:add
+```
+
+- This command will then ask you to "**Select a service plugin**" from a dropdown list. _Currently, we only support
+**@gluestack/glue-plugin-service-node** which is basically a microservice in NodeJS_
+- Once you have selected the **service plugin**, then you will be asked to "**Enter the instance name**"
+- That's it! Your new microservice with the provided name will be installed into your **backend/services** directory
+
+## node glue event:add
+
+This command helps you create event(s) in your gluestack project. To add a new event, you should run the following command:
+```sh
+$ node glue event:add
+```
+
+- This command will ask you to "**Select Event's Type**" from two available options -
+  - **app** - Select to create a custom app event
+  - **database** - Select to create an event in the database
+- If you select **Event's Type** as "**app**" event
+  - You will be prompted to provide **event name**
+- If you select **Event's Type** as "**database**" event
+  - You will be prompted to provide **database table name**
+  - After that, you will be prompted to select **(multiple) database events** from these available options -
+    - **insert**
+    - **update**
+    - **delete**
+- After that you will be prompted to select **Event's Kind** from two available options - **sync** & **async**
+  - **sync** - events will be executed as soon as the event is received
+  - **async** - events will be executed will be pushed into the Queue and will be executed from the Queue runner
+- After that you will be prompted to select **Event's Callback Type** from two available options - **function** & **webhook**
+  - **function** - Select this option if you would like to call a Gluestack Service
+  - **webhook** - Select this option if you would like to call a Webhook URL
+- If you select **Event's Callback Type** as **function**, you will be then showed the list of services you have installed in your gluestack project
+  - You can select one service from the dropdown and then you will be asked to choose a **function-route** from the selected service
+- If you select **Event's Callback Type** as **webhook**, you will be then asked to provide the **Webhook URL**
+- That's it! Your new event(s) will be added to the **backend/events** directory
+
+## node glue event:list
+
+This commands lists **all events** registered in your gluestack project. You can run the following command:
+```sh
+$ node glue event:list
+OR
+$ node glue event:list --all
+```
+
+To lists only **app events** registered in your gluestack project. You can run the following command:
+```sh
+$ node glue event:list --app
+```
+
+To lists only **database events** registered in your gluestack project. You can run the following command:
+```sh
+$ node glue event:list --database
+```
+
+## node glue event:remove
+
+This command helps you remove **app event(s)** from the available app events registered in your gluestack project.
+
+The following command will show the list of **app events**, and you can multi-select from the list and
+press enter to submit your selection to remove those event(s):
+```sh
+$ node glue event:remove
+OR
+$ node glue event:remove --type app
+```
+
+This command helps you remove **database event(s)** from the available database events registered in your gluestack project.
+
+The following command will show the list of **database events**, and you can multi-select from the list and
+press enter to submit your selection to remove those event(s):
+```sh
+$ node glue event:remove --type database
+```
+
+## node glue cron:add
+
+This command helps you add a valid cron in your gluestack project. You can run the following command:
+```sh
+$ node glue cron:add
+```
+
+- This command will prompt you to enter a valid cron schedule
+- After that you will be prompted to select **Cron's Callback Type** from two available options - **function** & **webhook**
+  - **function** - Select this option if you would like to call a Gluestack Service
+  - **webhook** - Select this option if you would like to call a Webhook URL
+- If you select **Cron's Callback Type** as **function**, you will be then showed the list of services you have installed in your gluestack project
+  - You can select one service from the dropdown and then you will be asked to choose a **function-route** from the selected service
+- If you select **Cron's Callback Type** as **webhook**, you will be then asked to provide the **Webhook URL**
+- That's it! Your new cron will be added into the **backend/crons/crons.json** file
+
+## node glue cron:list
+
+This commands lists **all cron schedules** registered in your gluestack project. You can run the following command:
+```sh
+$ node glue cron:list
+```
+
+## node glue cron:remove
+
+This command helps you remove **cron schedules** from the available cron schedules registered in your gluestack project.
+
+The following command will show the list of **cron schedules**, and you can multi-select from the list and
+press enter to submit your selection to remove those cron(s):
+```sh
+$ node glue cron:remove
+```
+

@@ -10,46 +10,25 @@ import Meta from "@/components/Meta";
 
 ##
 
-<br />
+To install this plugin, open your local terminal and type the following command:
 
-- First go to your local terminal and type this command in order to install this plugin
+```sh
+$ node glue add minio <instance-name>
+```
 
-  <br />
+For example, if you want to install a **Minio plugin instance** with the name **minio**, use the following pattern:
 
-  ```bash
-  $ node glue add minio <instance-name>
-  ```
+```sh
+$ node glue add minio minio
+```
+_Here my instance name is **minio**._
 
-  <br />
+If the plugin is installed successfully, you can see a new **storage** folder created inside the **backend** directory.
 
-- For example, In my case I wanted to install **minio plugin instance** with my instance
-  name as **“minio”**, then I will follow this pattern to install minio plugin instance in
-  my app:
+The overall directory path for the **Minio** plugin instance should be something like this:
 
-  <br />
-
-  ```bash
-  $ node glue add minio minio
-  ```
-
-  Here my instance name is **minio**.
-
-  <br />
-
-- Now, after installing the dependency it will give you an output on the terminal in which
-  information is present in order to interacting with your **minio server**.
-
-  Output will be something like this:
-
-  {" "}
-
-  <img src="/assets/MinioCredScreenshot.png" />
-
-  <br />
-
-- If the plugin is installed successfully then you can go and see that inside **backend** there
-  is a new folder named **storage** is created.
-
-  Overall directory path for the **minio plugin instance** should be something like this:
-
-  **backend/storage**
+```jsx
+  📂 backend
+  ┗ 📂 storage
+    ┗ 📂 minio
+```

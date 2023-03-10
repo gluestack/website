@@ -1,0 +1,37 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="How to Install | Service Nodemailer Plugin" description="How to Install | Service Nodemailer Plugin" />
+
+
+
+
+
+# How to Install
+
+##
+
+<br/>
+
+* To add Nodemailer into your gluestack project, you can run the following command in project's root directory:
+  ```sh
+  $ node glue add service-nodemailer <instance-name>
+  ```
+  <br/>
+
+* For instance, let's install an instance named **nodemailer** in our gluestack project:
+  ```sh
+  $ node glue add service-nodemailer nodemailer
+  ```
+
+  <br/>
+* If the plugin is installed successfully then you can go and see that inside **backend** 
+  folder there is folder named “**services**” and inside that **services** folder, there
+  is a new folder which is named after your instance i.e. **nodemailer** is created. 
+  
+  Overall directory path should be something like this:
+    
+   ```jsx
+      📂backend
+      ┗ 📂services
+          ┗ 📂nodemailer
+    ```

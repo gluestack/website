@@ -35,16 +35,36 @@ $ node glue route:list
 
 ## node glue route:endpoints
 
-This command lists all the endpoints & their binding "**router.js**" config file used
+This command lists all the two tables for endpoints & their binding "**router.js**" config file used
 to generate routes against your installed **plugin instances**.
 
-Listing contains following information:
+Listing contains following information for **stateless** plugins:
 - Domain Name
 - Plugin Prefix Route
 - Config Path
 
+Listing contains following information for **devonly** plugins:
+- Plugin Name
+- Instance Name
+- Domain Mapping
+
+You can use the below command to list all the endpoints & their config paths used to
+generate routes against your installed **stateless & devonly plugin instances** in your gluestack project:
+```sh
+$ node glue route:endpoints
+```
+
+## node glue route:devonly
+
+This command lists all the table with their endpoints to generate routes against your installed **devonly plugin instances**.
+
+Listing contains following information for **devonly** plugins:
+- Plugin Name
+- Instance Name
+- Domain Mapping
+
 You can use the below command to list all the endpoints & their config paths used to
 generate routes against your installed **plugin instances** in your gluestack project:
 ```sh
-$ node glue route:endpoints
+$ node glue route:devonly
 ```

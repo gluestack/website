@@ -1,0 +1,31 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="Getting started | Deploy" description="Getting started | Deploy" />
+
+
+
+
+
+# CLI Reference
+
+## node glue deploy
+
+This command will compress your application and initialises the deployment.
+
+```sh
+$ node glue deploy
+```
+
+It's important to ensure that your application is properly configured and tested before running the deployment command, to avoid any issues or errors during the deployment process.
+
+## node glue deploy:watch
+
+The **deploy:watch** command is a variant of the deployment command that allows you to monitor the deployment process in real-time.
+
+When you run this command, it will compress your application and initiate the deployment process as usual, but it will also start a watch mode that allows you to view the deployment logs as they are generated.
+
+```sh
+$ node glue deploy:watch
+```
+
+The watch mode is helpful to debug, identify and resolve issues during the deployment process, as it provides real-time feedback on the progress of the deployment and any errors or warnings that may occur.
