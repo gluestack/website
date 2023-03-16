@@ -1189,10 +1189,10 @@
     "@react-native-aria/focus" "^0.2.7"
     react-native-svg "13.4.0"
 
-"@gluestack/design-system@^0.3.14":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.3.14.tgz#ff448449a838c5a8ef6acd548d2f51174a8db0a8"
-  integrity sha512-ZeOAbsHpI7r99haRs5+IBA5VM+SIiUz3Dy41y1IJnNL1ZgUnFcFtmmzstmBoG9rya70T+xECxx5T5kPcba9adQ==
+"@gluestack/design-system@^0.3.15":
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@gluestack/design-system/-/design-system-0.3.15.tgz#6853ef89897a29ed7a29d5dbb3aaf16a09866b40"
+  integrity sha512-27P/MAChufiJlFsgH4WDl4cy/PGnoW4c0+jTLzncjUpSTdaDx2pV1YnKWGjwhF48f84Bd3f17O954rzvjG/5lg==
   dependencies:
     "@dank-style/react" "0.3.1"
     "@expo/html-elements" "^0.3.0"
