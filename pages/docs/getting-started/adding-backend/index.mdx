@@ -1,0 +1,63 @@
+import Meta from "@/components/Meta";
+
+<Meta pageTitle="Adding Backend | framework" description="Adding Backend | framework." />
+
+
+
+
+
+# Adding Backend
+
+This command helps you configure backend engine in your gluestack porject.
+
+```bash
+node glue add backend-engine engine
+
+> Installing 'backend-engine' from '@gluestack/glue-plugin-backend-engine'
+> Sucessfully installed 'backend-engine' as instance engine in directory './backend/engine'
+```
+
+## **The folder structure**
+
+You get a express.js app in `backend/engine` with the following folder structure.
+
+```bash
+.env
+README.md
+components
+package.json
+router.js
+src/
+```
+
+## The **backend directory**
+
+- **backend** directory if it does not exists in your gluestack project's root directory
+- **backend/crons** directory with **crons.json** file which contains all your project specific CRONs
+- **backend/events** directory with **app** and **database** sub-directories all your project specific events
+    - **backend/events/app** directory will contain all the app events
+    - **backend/events/database** directory will contain all the database events
+- **backend/engine** directory contains the **gluestack backend engine server** which manages **Events**, **Crons** & **Queues**
+
+### **The router.js file**
+
+This file is treated as the upstream in the nginx configuration.
+
+```jsx
+module.exports = () => {
+  return [
+    {
+      "path": "/backend/engine/(.*)",
+      "proxy": {
+        "instance": "engine:3500",
+        "path": "/v1.0/invoke/engine/method/$1"
+      }
+    }
+  ];
+};
+```
+
+### **The package.json file**
+
+Since the add backend-engine command scaffolds a express.js project, all the dependencies and its related information are stored in `package.json` file.
+
