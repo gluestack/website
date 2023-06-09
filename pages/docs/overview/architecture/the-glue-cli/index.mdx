@@ -1,9 +1,10 @@
 import Meta from "@/components/Meta";
 
-<Meta
-  pageTitle="The glue CLI | framework"
-  description="The glue CLI | framework."
-/>
+<Meta pageTitle="The glue CLI | framework" description="The glue CLI | framework." />
+
+
+
+
 
 # The glue CLI
 
@@ -25,28 +26,16 @@ Commands:
   plugin:list                                Prints the list of available plugins
   plugin:init                                Initializes the gluestack app as a plugin
   plugin:version                             Prints the current version of the plugin
-  service:add                                Adds a micro-service to the project
-  event:add                                  Creates the event
-  event:list [options]                       List the events
-  event:remove [options]                     Remove events
-  cron:add                                   Create the cron
-  cron:list                                  List all Crons
-  cron:remove                                List the cron jobs with select option
   develop:list [options]                     Lists all the container instances
   develop:up                                 Starts all the containers for the project.
   develop:down                               Stops all the project containers
   develop:watch                              Watches and restarts containers when registered plugins files changes
   build [instance-name]                      Builds provided container instances or all the containers if no instance is provided
   env:generate [options]                     Generates .env.generated for all the instances
-  graphql:console [options] <instance-name>  Opens up Hasura Console against the provided GraphlQL instance name
-  postgres:list                              List installed postgres instances
-  postgres:config                            Update config of a postgres instance
   route:devonly                              Shows list of routings against 'devonly' plugins
   route:list                                 Gets routes list
   route:generate [options]                   Generates router file for all the container instances
   route:endpoints                            Gets route endpoints list
-  function:add <function-name>               Adds an express action (handler) to the project
-  function:attach-action                     Adds a graphql action against the function
   help [command]                             display help for command
 ```
 
@@ -71,6 +60,7 @@ The `glue` file is just a JS file using which you can interact and perform all a
   To list all the plugins & instances in your application, you can run the command `node glue plugin:list`.
 
 - **plugin:list**
+  
   To list all the plugins provided by the framework, you can run the command `node glue plugin:list`. This would list all the plugins that are provided by the framework.
 
   ```jsx
@@ -93,7 +83,6 @@ The `glue` file is just a JS file using which you can interact and perform all a
   │       deploy       │       '@gluestack/glue-plugin-deploy'       │                 'Installs a GlueStack Deploy Plugin'                 │
   └────────────────────┴─────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────┘
   ```
-
 - **plugin:init**
 
   To Initializes your gluestack project as a `instance` or `container` plugin, you can run the following commands. Example:
@@ -106,12 +95,11 @@ The `glue` file is just a JS file using which you can interact and perform all a
   node glue plugin:init container
   ```
 
-{/* <!-- - **plugin:version** ERROR: > Plugin not initialized --> */}
+{/*  */}
 
 - **service:add**
 
   To add an Express application as a service, you can use the following command: `node glue service:add`. Example:
-
   ```bash
   ? Select a service plugin > - Use arrow-keys. Return to submit.
   >   @gluestack/glue-plugin-service-node - Select a language for your service
@@ -125,7 +113,6 @@ The `glue` file is just a JS file using which you can interact and perform all a
 - **event:add**
 
   To add an event, you can use the following command: `node glue event:add`. Example:
-
   ```bash
   ? Select Events Type > - Use arrow-keys. Return to submit.
   >   database - Create Database Event
@@ -133,7 +120,7 @@ The `glue` file is just a JS file using which you can interact and perform all a
 
   ? Please provide table name against which you want to create event > users
 
-  ? Multi-select database events >
+  ? Multi-select database events >  
   Instructions:
       ↑/↓: Highlight option
       ←/→/[space]: Toggle selection
@@ -177,7 +164,7 @@ The `glue` file is just a JS file using which you can interact and perform all a
   To remove a event, you can run the following command: `node glue event:remove --t database`. Example:
 
   ```bash
-  ? Select event(s) to remove >
+  ? Select event(s) to remove >  
   Instructions:
       ↑/↓: Highlight option
       ←/→/[space]: Toggle selection
@@ -226,7 +213,7 @@ The `glue` file is just a JS file using which you can interact and perform all a
   To remove a cron, you can run the following command: `node glue cron:remove`. Example:
 
   ```bash
-  ? Select cron(s) to remove ›
+  ? Select cron(s) to remove ›  
   Instructions:
       ↑/↓: Highlight option
       ←/→/[space]: Toggle selection
